@@ -55,6 +55,10 @@ const SectionTitle = styled.h1`
 
 const SectionParagraph = styled.p`
   font-size: 23px;
+
+  @media(max-width: 600px) {
+    font-size: 18px;
+  }
 `
 
 
