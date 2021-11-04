@@ -50,10 +50,12 @@ const SectionWrapper = styled.div`
 
 
 const SectionTitle = styled.h1`
-
+  font-size: 36px;
 `
 
-const SectionParagraph = styled.p``
+const SectionParagraph = styled.p`
+  font-size: 23px;
+`
 
 
 const SectionLogo = styled.div`
