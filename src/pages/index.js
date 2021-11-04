@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
 
 import GlobalStyle from '../styles/globalStyles'
-
+import Logo from '../images/esy-logo.jpg'
 
 // markup
 const IndexPage = () => {
@@ -15,6 +15,7 @@ const IndexPage = () => {
       </Helmet>
 
       <SectionWrapper>
+        {/* <SectionLogo><img alt="logo" src={Logo} /></SectionLogo> */}
         <SectionTitle>Esy DAO</SectionTitle>
         <SectionParagraph>
           Web3 Writing Platform & NFT Marketplace for Authors.
@@ -54,3 +55,7 @@ const SectionTitle = styled.h1`
 
 const SectionParagraph = styled.p``
 
+
+const SectionLogo = styled.div`
+
+`
