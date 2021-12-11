@@ -10,8 +10,7 @@ const IndexPage = () => {
     <MainSection>
       <GlobalStyle />
       <Helmet>
-        <title>Esy DAO</title>
-        <script id="mcjs">{`!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/3b51c8da7ed629b563d12cc11/180c1e59f811774f6eec65a47.js");`}</script>
+        <title>Esy</title>
       </Helmet>
 
       <SectionWrapper>
