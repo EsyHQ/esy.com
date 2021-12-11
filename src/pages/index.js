@@ -15,7 +15,7 @@ const IndexPage = () => {
 
       <SectionWrapper>
         {/* <SectionLogo><img alt="logo" src={Logo} /></SectionLogo> */}
-        <SectionTitle>Esy DAO</SectionTitle>
+        <SectionTitle>Esy</SectionTitle>
         <SectionParagraph>
           Web3 Writing Platform & NFT Marketplace for Authors.
         </SectionParagraph>
