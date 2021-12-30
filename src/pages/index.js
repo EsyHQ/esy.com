@@ -1,11 +1,24 @@
-import * as React from "react"
+import React, { useMemo, useState } from 'react'
 import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
 
 import GlobalStyle from '../styles/globalStyles'
-import Logo from '../images/esy-logo.jpg'
+
+import { createEditor } from "slate"
+import { Slate, Editable, withReact } from 'slate-react'
+
 
 const IndexPage = () => {
+
+  const [value, setValue] = useState([
+    {
+      type: 'paragraph',
+      children: [{ text: 'A line of text in a paragraph.' }],
+    },
+  ])
+
+  const editor = useMemo(() => withReact(createEditor()), [])
+
   return (
     <MainSection>
       <GlobalStyle />
@@ -14,13 +27,14 @@ const IndexPage = () => {
       </Helmet>
 
       <SectionWrapper>
-        {/* <SectionLogo><img alt="logo" src={Logo} /></SectionLogo> */}
-        <SectionTitle>Esy</SectionTitle>
-        <SectionParagraph>
-          Web3 Writing Platform & NFT Marketplace for Authors.
-        </SectionParagraph>
+        <Slate
+          editor={editor}
+          value={value}
+          onChange={newValue => setValue(newValue)}
+        >
+          <Editable />
+        </Slate>
       </SectionWrapper>
-
     </MainSection>
   )
 }
