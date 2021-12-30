@@ -27,6 +27,7 @@ const IndexPage = () => {
       </Helmet>
 
       <SectionWrapper>
+        <SectionTitle>Editor</SectionTitle>
         <Slate
           editor={editor}
           value={value}
