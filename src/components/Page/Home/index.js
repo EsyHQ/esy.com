@@ -79,7 +79,7 @@ const IndexPage = ({ fetchAccounts }) => {
           <Slate editor={editor} value={value} onChange={newValue => setValue(newValue)}>
             <Editable
               renderElement={renderElement}
-              onKeyDown={onkeydown}
+              onKeyDown={onKeyDown}
             />
           </Slate>
         </EditorSection>
