@@ -55,6 +55,7 @@ module.exports = {
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    "gatsby-plugin-root-import",
     {
       resolve: "gatsby-source-filesystem",
       options: {
