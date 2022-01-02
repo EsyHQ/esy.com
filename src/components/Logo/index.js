@@ -24,5 +24,6 @@ const LogoContainer = styled.div`
         text-decoration: none;
         font-family: 'Rokkitt', serif;
         color: #fff;
+        font-weight: 400;
     }
 `
