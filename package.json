@@ -16,6 +16,7 @@
   "dependencies": {
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
+    "@material-ui/core": "^4.12.3",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
     "@metamask/detect-provider": "github:metamask/detect-provider",
@@ -32,6 +33,7 @@
     "gatsby-plugin-mdx": "^3.0.0",
     "gatsby-plugin-react-helmet": "^5.0.0",
     "gatsby-plugin-root-import": "^2.0.8",
+    "gatsby-plugin-sass": "^5.4.0",
     "gatsby-plugin-sharp": "^4.0.1",
     "gatsby-plugin-sitemap": "^5.0.0",
     "gatsby-plugin-styled-components": "^5.0.0",
@@ -47,6 +49,7 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.4.1",
     "reselect": "^4.1.5",
+    "sass": "^1.45.2",
     "slate": "^0.72.3",
     "slate-react": "^0.72.1",
     "styled-components": "^5.3.3"

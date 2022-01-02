@@ -2,23 +2,27 @@ import React, { useEffect } from "react"
 import styled from 'styled-components'
 import Helmet from 'react-helmet'
 import Grid from '@material-ui/core/Grid';
+import CssBaseline from '@mui/material/CssBaseline';
 
 
-import Header from "src/components/common/Header"
-import Footer from "src/components/common/Footer"
+import Header from "src/components/Header"
 
 import '../../styles/_globalstyles.scss'
 
 
-const Layout = ({ children }) => {
+const Layout = ({ children, fetchAccounts, activeAccount }) => {
 
   return (<Grid container spaces={3}>
+            <CssBaseline />
             <LayoutWrapper>
+              <Header 
+                fetchAccounts={fetchAccounts}
+                activeAccount={activeAccount}
+              />
               <Helmet></Helmet>
 
               <MainElement>{children}</MainElement>
               
-              {/* <Footer /> */}
             </LayoutWrapper>
           </Grid>)
 }
@@ -33,6 +37,8 @@ const LayoutWrapper = styled.div`
     flex-direction: column;
     margin: 0 auto;
     min-height: 100vh;
+    background: #fff;
+    color: #000;
 `
 
 const MainElement = styled.main`
