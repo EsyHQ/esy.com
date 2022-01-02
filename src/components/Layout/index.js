@@ -35,13 +35,17 @@ const LayoutWrapper = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    // margin: 0 auto;
     min-height: 100vh;
     background: #fff;
     color: #000;
 `
 
 const MainElement = styled.main`
-  flex: 1;
-  margin: 0 auto;
+width: 100%;
+flex: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 `
