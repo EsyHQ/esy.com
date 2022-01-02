@@ -13,7 +13,7 @@ const Header = ({ activeAccount, handleDisconnect, handleConnect }) => {
   return (
     <HeaderWrapper>
       <Logo />
-      {activeAccount && !activeAccount.isConnected && <Button handleButtonClick={handleConnect} ctaText="Connect" />}
+      {activeAccount && !activeAccount.isConnected && <Button isBoxShadow={false} handleButtonClick={handleConnect} ctaText="Connect" />}
 
       {activeAccount && activeAccount.isConnected && <AccountMenu 
         handleDisconnect={handleDisconnect}

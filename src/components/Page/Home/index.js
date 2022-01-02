@@ -38,7 +38,7 @@ const IndexPage = ({ fetchAccounts, activeAccount }) => {
         <HeroWrapper>
             <HeroSummary>
               <p>Write & Sell NFT's with Esy</p>
-              {activeAccount && !activeAccount.isConnected && <Button handleButtonClick={handleConnect} ctaText="Connect" />}
+              {activeAccount && !activeAccount.isConnected && <Button isBoxShadow={true} handleButtonClick={handleConnect} ctaText="Connect" />}
             </HeroSummary>
           </HeroWrapper>
       </SectionWrapper>
