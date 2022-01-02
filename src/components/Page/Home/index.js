@@ -12,8 +12,23 @@ import EditableSection from '../../Editor/editorSection';
 import Layout from "../../Layout/container"
 
 import bgImg from 'src/images/pen-writer.jpg'
+import Button from 'src/components/Input/Button'
 
 const IndexPage = ({ fetchAccounts, activeAccount }) => {
+
+
+  const handleConnect = (event) => {
+    event.preventDefault()
+    
+    fetchAccounts && fetchAccounts()
+  }
+
+
+  React.useEffect(() => {
+    if (activeAccount.isConnected) {
+      navigate('/profile')
+    } 
+  })
 
   return (
     <Layout>
@@ -23,7 +38,7 @@ const IndexPage = ({ fetchAccounts, activeAccount }) => {
         <HeroWrapper>
             <HeroSummary>
               <p>Write & Sell NFT's with Esy</p>
-              <div className="button"><a href={"/"}>Connect</a></div>
+              {activeAccount && !activeAccount.isConnected && <Button handleButtonClick={handleConnect} ctaText="Connect" />}
             </HeroSummary>
           </HeroWrapper>
       </SectionWrapper>
@@ -92,10 +107,11 @@ const HeroWrapper = styled.div`
     background-image:  url(${bgImg});
     transform: scaleX(-1);
     background-repeat: no-repeat;
-    opacity: 0.08;
+    opacity: 0.06;
 
 
-    background-size: 80%;
+    // background-size: 80%;
+    background-size: cover; 
     position: absolute;
     top: 0;
     right: 0;

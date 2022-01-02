@@ -12,12 +12,27 @@ import '../../styles/_globalstyles.scss'
 
 const Layout = ({ children, fetchAccounts, activeAccount }) => {
 
+  const handleConnect = (event) => {
+    event.preventDefault()
+    
+    fetchAccounts && fetchAccounts()
+  }
+
+  const handleDisconnect = (event) => {
+    event.preventDefault()
+
+    localStorage.clear()
+    window.location.reload() // need to remove state so app can re-render instead of hard reload for disconnect.
+  }
+
   return (<Grid container spaces={3}>
             <CssBaseline />
             <LayoutWrapper>
               <Header 
                 fetchAccounts={fetchAccounts}
                 activeAccount={activeAccount}
+                handleConnect={handleConnect}
+                handleDisconnect={handleDisconnect}
               />
               <Helmet></Helmet>
 

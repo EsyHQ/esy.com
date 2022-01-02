@@ -8,20 +8,7 @@ import Button from "../Input/Button"
 
 import AccountMenu from "../AccountMenu"
 
-const Header = ({ fetchAccounts, activeAccount }) => {
-  
-  const handleConnect = (event) => {
-    event.preventDefault()
-    
-    fetchAccounts && fetchAccounts()
-  }
-
-  const handleDisconnect = (event) => {
-    event.preventDefault()
-
-    localStorage.clear()
-    window.location.reload() // need to remove state so app can re-render instead of hard reload for disconnect.
-  }
+const Header = ({ activeAccount, handleDisconnect, handleConnect }) => {
 
   return (
     <HeaderWrapper>
