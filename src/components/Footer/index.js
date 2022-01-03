@@ -11,8 +11,8 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             >
-            &copy;{'2022 '}
-            Esy Media, LLC
+            &copy;{''}
+            Esy 
             </a>
         </FooterElement>)
 }
@@ -30,6 +30,7 @@ const FooterElement = styled.footer`
   justify-content: center;
   align-items: center;
   color: #fff;
+  border-top: 1px solid #272727;
 //   background-color: #bf3a30;
 //   background-image: linear-gradient(315deg,#bf3a30 0%,#864ba2 74%);
 background: #000;
