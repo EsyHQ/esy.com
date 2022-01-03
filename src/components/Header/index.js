@@ -29,10 +29,11 @@ export default Header
 const HeaderWrapper = styled.header`
   display: flex;
   justify-content: space-between;
-  padding: 15px;
+  padding: 15px 75px;
   width: 100%;
   background: #000;
   align-items: center;
+  border-bottom: 1px solid #272727;
 `
 
 const AvatarWrapper = styled.div`
