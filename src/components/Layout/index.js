@@ -6,6 +6,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 
 
 import Header from "src/components/Header"
+import Footer from "src/components/Footer";
 
 import '../../styles/_globalstyles.scss'
 
@@ -37,7 +38,7 @@ const Layout = ({ children, fetchAccounts, activeAccount }) => {
               <Helmet></Helmet>
 
               <MainElement>{children}</MainElement>
-              
+              <Footer />
             </LayoutWrapper>
           </Grid>)
 }
@@ -57,10 +58,10 @@ const LayoutWrapper = styled.div`
 `
 
 const MainElement = styled.main`
-width: 100%;
-flex: 1;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
