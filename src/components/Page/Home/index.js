@@ -37,7 +37,7 @@ const IndexPage = ({ fetchAccounts, activeAccount }) => {
       <SectionWrapper>
         <HeroWrapper>
             <HeroSummary>
-              <p>Write & Sell Literary NFT's</p>
+              <p>Write, Collect, and Sell Literary NFT's</p>
               {activeAccount && !activeAccount.isConnected && <Button isBoxShadow={true} handleButtonClick={handleConnect} ctaText="Connect" />}
             </HeroSummary>
           </HeroWrapper>
@@ -135,9 +135,11 @@ const HeroSummary = styled.div`
   display: flex;
   flex-direction: column;
   color: #fff;
-  font-size: 26px;
-  max-width: 520px;
-  line-height: 1.4;
+  font-size: 30px;
+  max-width: 430px;
+  text-align: center;
+  align-items: center;
+  line-height: 1.6;
   justify-content: center;
   font-family: 'Spartan', sans-serif;
 
