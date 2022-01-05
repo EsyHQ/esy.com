@@ -8,9 +8,9 @@ import Layout from "../../Layout/container"
 import Header from '../../Header'
 
 
-const WritePage = ({ fetchAccounts, activeAccount }) => {
+const WritePage = ({ fetchAccounts, activeAccount, location }) => {
 
-    return (<Layout>
+    return (<Layout location={location}>
                 <Helmet><title>Write</title></Helmet>
                 <SectionWrapper>
                     {activeAccount.isConnected && <EditableSection />} 

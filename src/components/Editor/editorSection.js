@@ -1,15 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import DefaultElement from 'src/components/Editor/defaultElement'
-import CodeElement from 'src/components/Editor/codeElement'
+import DefaultElement from './defaultElement'
+import CodeElement from './codeElement'
 
-import { createEditor, Editor, Transforms } from "slate"
-import { Slate, Editable, withReact } from 'slate-react'
+import { createEditor, Editor, Transforms, Text } from "slate"
+import { Slate, Editable, withReact,  } from 'slate-react'
+
+import BoldLeaf from './Leaves/boldLeaf'
+
+import { isBoldMarkActive, isCodeBlockActive, toggleBoldMark, toggleCodeBlock } from 'src/modules/utils/editor'
 
 
 const EditableSection = () => {
-    const [value, setValue] = React.useState([
+    const [value, setValue] = React.useState(
+      JSON.parse(localStorage.getItem('content')) || [
         {
         type: 'paragraph',
         children: [{ text: 'Start typing.....' }],
@@ -24,36 +29,75 @@ const EditableSection = () => {
             return <DefaultElement {...props} />
         }
       }, [])
-  
+
+    const renderBoldLeaf = React.useCallback(props => {
+      return <BoldLeaf {...props} />
+    }, [])
 
     const editor = React.useMemo(() => withReact(createEditor()), [])
 
     const onKeyDown = event => {
-      if (event.key === '`' && event.ctrlKey) {
-        event.preventDefault()
-  
-        console.log(event, 'event')
-  
-        // Determine whether any of the currently selected blocks are code blocks.
-        const [match] = Editor.nodes(editor, {
-          match: n => n.type === 'code',
-        })
-        
-        // Toggle the block type depending on whether there's already a match.
-        Transforms.setNodes( // Toggle doesn't allow switching back to paragraph, must review.
-          editor,
-          { type: match ? 'paragraph' : 'code' },
-          { match: n => Editor.isBlock(editor, n) }
-        )
+      if (!event.ctrlKey) {
+        return
+      }
+
+      switch (event.key) {
+        case "`": {
+          event.preventDefault()
+          toggleCodeBlock(editor)
+          break
+        }
+
+        case 'b': {
+          event.preventDefault()
+          toggleBoldMark(editor)
+          break
+        }
       }
     }
 
     return (<SectionWrapper>
                 <SectionTitle>Editor</SectionTitle>
-                <Slate editor={editor} value={value} onChange={newValue => setValue(newValue)}>
+                <Slate 
+                  editor={editor} 
+                  value={value} 
+                  onChange={newValue => {
+                    setValue(newValue)
+
+                    const isAstChange = editor.operations.some(
+                      op => 'set_selection' !== op.type
+                    )
+                    if (isAstChange) {
+                      // Save the value to Local Storage.
+                      const content = JSON.stringify(value)
+                      localStorage.setItem('content', content)
+                    }
+                  }}
+                >
+                  <div>
+                    <button
+                      onMouseDown={event => {
+                        event.preventDefault()
+                        toggleBoldMark(editor)
+                      }}
+                    >
+                      Bold
+                    </button>
+
+                    <button
+                      onMouseDown={event => {
+                        event.preventDefault()
+                        toggleCodeBlock(editor)
+                      }}  
+                    >
+                      Code Block
+                    </button>
+                  </div>
                     <Editable
-                        renderElement={renderElement}
-                        onKeyDown={onKeyDown}
+                      editor={editor}
+                      renderElement={renderElement}
+                      renderLeaf={renderBoldLeaf}
+                      onKeyDown={onKeyDown}
                     />
                 </Slate>
             </SectionWrapper>
