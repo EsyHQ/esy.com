@@ -1,4 +1,4 @@
-import { Transforms, Editor, Text } from "slate"
+import { Transforms, Editor } from "slate"
 
 
 const isBoldMarkActive = editor => {
@@ -38,7 +38,7 @@ const toggleCodeBlock = (editor) => {
 
 
 
-export  {
+export default {
     isBoldMarkActive,
     isCodeBlockActive,
     toggleBoldMark,
