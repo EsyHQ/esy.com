@@ -1,11 +1,11 @@
 import React from "react"
 import styled from "styled-components"
 
-import EditableSection from "../../Editor/editorSection"
 import { Helmet } from "react-helmet"
 
-import Layout from "../../Layout/container"
-import Header from '../../Header'
+import Layout from "src/components/Layout/container"
+import Editor from "src/components/Editor"
+
 
 
 const WritePage = ({ fetchAccounts, activeAccount, location }) => {
@@ -13,7 +13,7 @@ const WritePage = ({ fetchAccounts, activeAccount, location }) => {
     return (<Layout location={location}>
                 <Helmet><title>Write</title></Helmet>
                 <SectionWrapper>
-                    {activeAccount.isConnected && <EditableSection />} 
+                    {activeAccount.isConnected && <Editor />} 
                 </SectionWrapper>
             </Layout>)
 }

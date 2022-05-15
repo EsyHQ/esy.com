@@ -13,7 +13,7 @@ const Header = ({ activeAccount, handleDisconnect, handleConnect }) => {
   return (
     <HeaderWrapper>
       <Logo />
-      {activeAccount && !activeAccount.isConnected && <Button isBoxShadow={false} handleButtonClick={handleConnect} ctaText="Connect" />}
+      {/* {activeAccount && !activeAccount.isConnected && <Button isBoxShadow={false} handleButtonClick={handleConnect} ctaText="Connect" />} */}
 
       {activeAccount && activeAccount.isConnected && <AccountMenu 
         handleDisconnect={handleDisconnect}
@@ -29,7 +29,7 @@ export default Header
 const HeaderWrapper = styled.header`
   display: flex;
   justify-content: space-between;
-  padding: 15px 75px;
+  padding: 15px 50px;
   width: 100%;
   background: #000;
   align-items: center;

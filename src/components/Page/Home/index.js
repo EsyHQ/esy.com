@@ -3,16 +3,13 @@ import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
 
 import { navigate } from 'gatsby'
-// import GlobalStyle from '../styles/globalStyles'
-
-import Header from 'src/components/Header'
-
-import EditableSection from '../../Editor/editorSection';
 
 import Layout from "../../Layout/container"
 
 import bgImg from 'src/images/pen-writer.jpg'
 import Button from 'src/components/Input/Button'
+import EmailForm from 'src/components/Form/emailForm'
+
 
 const IndexPage = ({ fetchAccounts, activeAccount }) => {
 
@@ -38,7 +35,7 @@ const IndexPage = ({ fetchAccounts, activeAccount }) => {
         <HeroWrapper>
             <HeroSummary>
               <p>Write, Collect, and Sell Literary NFT's</p>
-              {activeAccount && !activeAccount.isConnected && <Button isBoxShadow={true} handleButtonClick={handleConnect} ctaText="Connect" />}
+              <EmailForm />
             </HeroSummary>
           </HeroWrapper>
       </SectionWrapper>
@@ -135,13 +132,17 @@ const HeroSummary = styled.div`
   display: flex;
   flex-direction: column;
   color: #fff;
-  font-size: 30px;
-  max-width: 430px;
+  font-size: 36px;
+  max-width: 480px;
   text-align: center;
-  align-items: center;
+  align-items: flex-start;
   line-height: 1.6;
   justify-content: center;
   font-family: 'Spartan', sans-serif;
+
+  p:first-child {
+    text-align: left;
+  }
 
   @media(max-width: 600px) {
     font-size: 22px;

@@ -23,7 +23,7 @@ const Layout = ({ children, fetchAccounts, activeAccount, location }) => {
     event.preventDefault()
 
     localStorage.clear()
-    window.location.reload() // need to remove state so app can re-render instead of hard reload for disconnect.
+    window.location.href = "/"
   }
 
   return (<Grid container spaces={3}>
