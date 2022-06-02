@@ -34,7 +34,7 @@ const IndexPage = ({ fetchAccounts, activeAccount }) => {
       <SectionWrapper>
         <HeroWrapper>
             <HeroSummary>
-              <p>Write, Collect, and Sell Literary NFT's</p>
+              <p>Write, Collect, and Trade Literary NFT's</p>
               <EmailForm />
             </HeroSummary>
           </HeroWrapper>
@@ -133,7 +133,7 @@ const HeroSummary = styled.div`
   flex-direction: column;
   color: #fff;
   font-size: 36px;
-  max-width: 480px;
+  max-width: 500px;
   text-align: center;
   align-items: flex-start;
   line-height: 1.6;
