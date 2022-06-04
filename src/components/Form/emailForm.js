@@ -55,6 +55,14 @@ const FormElement = styled.form`
     div {
         margin: 0 15px;
         height: 50px;
+
+        @media(max-width: 600px) {
+            margin: 50px 0;
+        }
+    }
+
+    @media(max-width: 600px) {
+        flex-direction: column;
     }
 `
 
@@ -67,6 +75,10 @@ const InputElement = styled.input`
     width: 250px;
     outline: none;
     font-size: 16px;
+
+    @media(max-width: 600px) {
+        margi
+    }
 `
 
 

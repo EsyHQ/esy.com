@@ -12,7 +12,8 @@ export default Button
 
 const ButtonWrapper = styled.div`
   font-size: 16px;
-  width: 120px;
+  width: 100%;
+  max-width: 120px;
   color: #fff;
   height: 40px;
   border-radius: 4px;
@@ -35,6 +36,12 @@ const ButtonWrapper = styled.div`
   align-items: center;
   font-weight: 700;
   z-index: 1000;
+
+  @media(max-width: 600px) {
+    margin: 50px 0;
+    max-height: 35px;
+    max-width: 145px;
+  }
 `
 
 

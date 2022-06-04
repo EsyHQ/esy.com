@@ -77,6 +77,7 @@ const EditorSection = styled.div`
 
 const SectionWrapper = styled.div`
   width: 100%;
+  height: 100%;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -118,14 +119,12 @@ const HeroWrapper = styled.div`
 
     @media(max-width: 900px) {
       background-position: 50% 0%;
-      background-size: 1000px;
     }
 
   }
 
 
 `
-
 
 
 const HeroSummary = styled.div`
@@ -145,19 +144,20 @@ const HeroSummary = styled.div`
   }
 
   @media(max-width: 600px) {
-    font-size: 22px;
+    font-size: 32px;
   }
 
   @media(max-width: 500px) {
-    font-size: 18px;
+    font-size: 28px;
+    line-height: 1.8;
   }
 
   @media(max-width: 400px) {
-    font-size: 16px;
+    font-size: 19px;
   }
 
   @media(max-width: 320px) {
-    font-size: 12px;
+    font-size: 16px;
   }
 
 
