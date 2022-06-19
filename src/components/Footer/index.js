@@ -12,7 +12,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             >
             &copy;{''}
-            2022 Esy 
+            2022 Esy Research Technologies
             </a>
         </FooterElement>)
 }
