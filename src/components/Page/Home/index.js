@@ -152,8 +152,8 @@ const HeroSummary = styled.div`
     line-height: 1.8;
   }
 
-  @media(max-width: 400px) {
-    font-size: 19px;
+  @media(max-width: 430px) {
+    font-size: 23px;
   }
 
   @media(max-width: 320px) {
