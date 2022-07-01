@@ -1,6 +1,6 @@
 
 import { EtherscanProvider } from "@ethersproject/providers"
-import detectEthereumProvider from "@metamask/detect-provider"
+// import detectEthereumProvider from "@metamask/detect-provider"
 
 import { 
          FETCH_ACCOUNTS,
@@ -19,7 +19,9 @@ const fetchAccounts = () => {
         try {
             dispatch(fetchAccountsPending())
 
-            const metaMaskProvider = await detectEthereumProvider()
+            // const metaMaskProvider = await detectEthereumProvider()
+            const metaMaskProvider = {}
+
             const web3Provider = await getWeb3Provider(metaMaskProvider)
             const accounts = await metaMaskProvider.request({ method: "eth_requestAccounts" })
             const userAccount = await accounts[0]

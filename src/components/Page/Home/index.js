@@ -14,18 +14,18 @@ import EmailForm from 'src/components/Form/emailForm'
 const IndexPage = ({ fetchAccounts, activeAccount }) => {
 
 
-  const handleConnect = (event) => {
-    event.preventDefault()
+  // const handleConnect = (event) => {
+  //   event.preventDefault()
     
-    fetchAccounts && fetchAccounts()
-  }
+  //   fetchAccounts && fetchAccounts()
+  // }
 
 
-  React.useEffect(() => {
-    if (activeAccount.isConnected) {
-      navigate('/profile')
-    } 
-  })
+  // React.useEffect(() => {
+  //   if (activeAccount.isConnected) {
+  //     navigate('/profile')
+  //   } 
+  // })
 
   return (
     <Layout>
@@ -150,7 +150,7 @@ const HeroSummary = styled.div`
   @media(max-width: 500px) {
     font-size: 28px;
     line-height: 1.8;
-  }
+  } 
 
   @media(max-width: 430px) {
     font-size: 23px;

@@ -13,9 +13,9 @@ export default Button
 const ButtonWrapper = styled.div`
   font-size: 16px;
   width: 100%;
-  max-width: 120px;
+  max-width: 125px;
   color: #fff;
-  height: 40px;
+  height: 30px;
   border-radius: 4px;
   // background: ${({ isDisabled }) => (isDisabled ? "#cccccc" : "gold")};
   // cursor: ${({ isDisabled }) => (isDisabled ? "default" : "pointer")};
