@@ -32,7 +32,7 @@ exports.handler = async function(event, context) {
             body: data,
         }
 
-        const response = client.request(request)
+        const response = await client.request(request)
 
         return {
             statusCode: 200,
