@@ -81,7 +81,7 @@ const EmailForm = () => {
                     {!isEmailValid && email && email.length > 0 && <EmailErrorLabel>Invalid email</EmailErrorLabel>}
                 </InputWrapper>
                 <ButtonWrapper>
-                    <Button isBoxShadow={true}  ctaText="Subscribe" />
+                    <Button isBoxShadow={true}  ctaText="Notify Me" />
                     {isPending && <Loader />}
                 </ButtonWrapper>
             </FormElement>)
