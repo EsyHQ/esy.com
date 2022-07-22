@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Button = ({ isBoxShadow, handleButtonClick, ctaText }) => {
-    return (<ButtonWrapper isBoxShadow={isBoxShadow} onClick={handleButtonClick}>
+const Button = ({ isBoxShadow, handleButtonClick, ctaText, classNames}) => {
+    return (<ButtonWrapper className={classNames} isBoxShadow={isBoxShadow} onClick={handleButtonClick}>
                 {ctaText}
             </ButtonWrapper>)
 }
@@ -15,20 +15,9 @@ const ButtonWrapper = styled.div`
   width: 100%;
   max-width: 125px;
   color: #fff;
-  height: 30px;
+  height: 40px;
   border-radius: 4px;
-  // background: ${({ isDisabled }) => (isDisabled ? "#cccccc" : "gold")};
-  // cursor: ${({ isDisabled }) => (isDisabled ? "default" : "pointer")};
-  background-image: linear-gradient(to right bottom, #e8962e, #e45131);
-
-  box-shadow: ${({ isBoxShadow }) => (isBoxShadow ? "0 1px 28px rgb(255 152 0 / 66%)" : "")};
-
-  background-color: #08e1ae;
-  background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 100%);
-  
-  
-  background-color: #bf3a30;
-  background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
+  border: 2px solid #282828;
 
   cursor: pointer;
   display: flex;
@@ -36,6 +25,13 @@ const ButtonWrapper = styled.div`
   align-items: center;
   font-weight: 700;
   z-index: 1000;
+
+  &.active {
+    background-color: #bf3a30;
+    background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
+    box-shadow: ${({ isBoxShadow }) => (isBoxShadow ? "0 1px 28px rgb(255 152 0 / 66%)" : "")};
+    border: none;
+  }
 
   @media(max-width: 600px) {
     margin: 50px 0;

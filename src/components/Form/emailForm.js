@@ -30,6 +30,8 @@ const EmailForm = () => {
                 const response = await axios.get(url)
                 const { statusCode, body } = response
 
+                // Display loader - 
+
                 if (statusCode === 200) {
                     // Remove loader
                     // Show success banner and confirm email notification.
@@ -68,7 +70,7 @@ const EmailForm = () => {
     // })
 
     return (<FormElement noValidate onSubmit={handleFormSubmit}>
-                <InputWrapper>
+                {/* <InputWrapper>
                     <InputElement 
                             type="email" 
                             id="email" 
@@ -79,9 +81,10 @@ const EmailForm = () => {
                             required
                     />
                     {!isEmailValid && email && email.length > 0 && <EmailErrorLabel>Invalid email</EmailErrorLabel>}
-                </InputWrapper>
+                </InputWrapper> */}
                 <ButtonWrapper>
-                    <Button isBoxShadow={true}  ctaText="Notify Me" />
+                    <Button classNames="active" isBoxShadow={true}  ctaText="Explore" />
+                    <Button isBoxShadow={true}  ctaText="Write" />
                     {isPending && <Loader />}
                 </ButtonWrapper>
             </FormElement>)
@@ -95,7 +98,7 @@ const ButtonWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 185px;
+    max-width: 285px;
 `
 
 

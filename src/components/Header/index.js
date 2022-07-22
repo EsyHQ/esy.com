@@ -4,7 +4,7 @@ import { navigate } from "gatsby"
 
 import HeaderMenu from '../Menu/headerMenu'
 import Logo from '../Logo'
-import Button from "../Input/Button"
+import Button from 'src/components/Input/Button'
 
 import AccountMenu from "../AccountMenu"
 
@@ -14,11 +14,17 @@ const Header = ({ activeAccount, handleDisconnect, handleConnect }) => {
     <HeaderWrapper>
       <Logo />
       {/* {activeAccount && !activeAccount.isConnected && <Button isBoxShadow={false} handleButtonClick={handleConnect} ctaText="Connect" />} */}
-
-      {activeAccount && activeAccount.isConnected && <AccountMenu 
+      <HeaderNav>
+        <NavItem><a href="/learn">Explore</a></NavItem>
+        <NavItem><a href="/learn">Learn</a></NavItem>
+        <NavItem><a href="/blog">Blog</a></NavItem>
+        {/* <NavItem><a href="/blog">Write</a></NavItem> */}
+        <Button isBoxShadow={true}  ctaText="Write" />
+      </HeaderNav>
+      {/* {<AccountMenu 
         handleDisconnect={handleDisconnect}
         activeAccount={activeAccount} 
-      />}
+      />} */}
     </HeaderWrapper>
   )
 }
@@ -37,6 +43,24 @@ const HeaderWrapper = styled.header`
 
   @media(max-width: 600px) {
     padding: 15px 25px;
+  }
+`
+
+const HeaderNav = styled.nav`
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  color: #fff;
+  align-items: center;
+  font-family: 'Spartan',sans-serif;
+  font-weight: 500;
+`
+
+const NavItem = styled.div`
+  margin-right: 50px;
+
+  a {
+    text-decoration: none;
   }
 `
 
