@@ -23,7 +23,9 @@ const EmailForm = () => {
 
     const addEmailToContactList = async (email) => {
         if (validator.isEmail(email)) {
-            let url = (`/.netlify/functions/trigger-launch-email?email=${email}`)
+            let url = ''
+            
+            // etlify/functions/trigger-launch-email?email=${email}`)
             // let url = (`http://localhost:9999/netlify/functions/trigger-launch-email`)
 
             try {
