@@ -35,7 +35,7 @@ export default Header
 const HeaderWrapper = styled.header`
   display: flex;
   justify-content: space-between;
-  padding: 15px 50px;
+  padding: 5px 50px;
   width: 100%;
   background: #000;
   align-items: center;
