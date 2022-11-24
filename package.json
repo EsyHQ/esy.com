@@ -60,6 +60,8 @@
     "slate": "^0.72.8",
     "slate-react": "^0.72.9",
     "styled-components": "^5.3.5",
+    "svg-react-loader": "^0.4.6",
+    "url-loader": "^4.1.1",
     "validator": "^13.7.0",
     "validatorjs": "^3.22.1"
   },

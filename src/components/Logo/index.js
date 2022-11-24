@@ -3,7 +3,9 @@ import styled from 'styled-components'
 
 import { Link } from "gatsby"
 import LogoImg from '../../images/color-nobg.png'
-import LogoSVG from '../../svg/color-wo-bg.svg'
+import LogoSVG from '../../svg/user-icon-svg.svg'
+
+
 
 const Logo = () => {
     return (<LogoContainer>
@@ -23,6 +25,7 @@ const LogoContainer = styled.div`
 
     img {
         max-width: 65px;
+        margin: 0;
     }
 
     a {

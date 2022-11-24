@@ -12,6 +12,14 @@ module.exports = {
   plugins: [
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
+    "gatsby-plugin-mdx",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-root-import",
+    "gatsby-plugin-sass",
+    "gatsby-transformer-remark",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap",
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
@@ -44,20 +52,12 @@ module.exports = {
           timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
       },
     },
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/icon.png",
       },
     },
-    "gatsby-plugin-mdx",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-root-import",
-    "gatsby-plugin-sass",
-    "gatsby-transformer-remark",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -74,13 +74,12 @@ module.exports = {
       __key: "images",
     },
     {
-      resolve: 'gatsby-plugin-react-svg',
+      resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /images\/.*\.svg/,
-          omitKeys: ["featureKey"]
+          include: `${__dirname}/src/svg/`,
         },
-      },
+      }
     },
     {
       resolve: "gatsby-source-filesystem",

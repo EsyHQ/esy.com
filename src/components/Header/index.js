@@ -1,29 +1,38 @@
 import React from "react"
 import styled from "styled-components"
-import { navigate } from "gatsby"
+import { navigate, Link } from "gatsby"
 
 import HeaderMenu from '../Menu/headerMenu'
 import Logo from '../Logo'
 import Button from 'src/components/Input/Button'
-
+// import { ReactComponent as UserIcon } from '../../svg/user-icon-svg.svg'
+import UserIcon from 'src/svg/user-icon-svg.svg'
 import AccountMenu from "../AccountMenu"
+
+
 
 const Header = ({ activeAccount, handleDisconnect, handleConnect }) => {
 
   return (
     <HeaderWrapper>
-      <Logo />
+      <Link to="/"><Logo /></Link>
       {/* {activeAccount && !activeAccount.isConnected && <Button isBoxShadow={false} handleButtonClick={handleConnect} ctaText="Connect" />} */}
       <HeaderNav>
-        <NavItem><a href="/learn">Explore</a></NavItem>
-        <NavItem><a href="/learn">Learn</a></NavItem>
-        <NavItem><a href="/blog">Blog</a></NavItem>
+        {/* <NavItem><a href="/learn">Products</a></NavItem> */}
+        {/* <NavItem><a href="/learn">Developers</a></NavItem> */}
+        {/* <NavItem><a href="/learn">Edu</a></NavItem> */}
+        {/* <NavItem><a href="/blog">Blog</a></NavItem> */}
+        <NavItem><a href="/blog">Journals</a></NavItem>
         {/* <NavItem><a href="/blog">Write</a></NavItem> */}
-        <Button isBoxShadow={true}  ctaText="Write" />
+        {/* <NavItem><Button isBoxShadow={true}  ctaText="Write" /></NavItem> */}
+        <NavItem><a href="/write">Write</a></NavItem>
+
+        <NavItem><UserIcon /></NavItem>
+        {/* <NavItem><img src={UserIcon} /></NavItem> */}
       </HeaderNav>
       {/* {<AccountMenu 
         handleDisconnect={handleDisconnect}
-        activeAccount={activeAccount} 
+        activeAccount={activeAccount}
       />} */}
     </HeaderWrapper>
   )
@@ -54,13 +63,27 @@ const HeaderNav = styled.nav`
   align-items: center;
   font-family: 'Spartan',sans-serif;
   font-weight: 500;
+  max-width: 300px;
 `
 
 const NavItem = styled.div`
-  margin-right: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:not(:last-child) {
+    // margin-right: 50px;
+  }
 
   a {
     text-decoration: none;
+  }
+
+  svg {
+    fill: #fff;
+    max-width: 25px;
+    height: 100%;
   }
 `
 
