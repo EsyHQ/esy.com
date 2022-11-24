@@ -32,8 +32,9 @@ const Footer = () => {
                     <FooterListItem>
                       <FooterListItemTitle>Resources</FooterListItemTitle>
                       <FooterList>
-                        {/* <FooterListItem>Edu</FooterListItem> */}
                         {/* <FooterListItem>Blog</FooterListItem> */}
+                        {/* <FooterListItem>Edu</FooterListItem> */}
+                        {/* <FooterListItem>Glossary</FooterListItem> */}
                       </FooterList>
                     </FooterListItem>
                     

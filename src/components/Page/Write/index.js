@@ -4,7 +4,9 @@ import styled from "styled-components"
 import { Helmet } from "react-helmet"
 
 import Layout from "src/components/Layout/container"
-import Editor from "src/components/Editor"
+// import Editor from "src/components/Editor"
+import TinyEditor from 'src/components/TinyEditor'
+
 
 
 
@@ -13,7 +15,8 @@ const WritePage = ({ fetchAccounts, activeAccount, location }) => {
     return (<Layout location={location}>
                 <Helmet><title>Write</title></Helmet>
                 <SectionWrapper>
-                    {activeAccount.isConnected && <Editor />} 
+                    {/* {activeAccount.isConnected && <Editor />}  */}
+                    <TinyEditor />
                 </SectionWrapper>
             </Layout>)
 }
