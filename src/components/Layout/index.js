@@ -11,7 +11,7 @@ import Footer from "src/components/Footer";
 import '../../styles/_globalstyles.scss'
 
 
-const Layout = ({ children, fetchAccounts, activeAccount, location }) => {
+const Layout = ({ children, fetchAccounts, activeAccount, location, hasFooter = true }) => {
 
   const handleConnect = (event) => {
     event.preventDefault()
@@ -39,7 +39,7 @@ const Layout = ({ children, fetchAccounts, activeAccount, location }) => {
               <Helmet></Helmet>
 
               <MainElement>{children}</MainElement>
-              <Footer />
+              {hasFooter && <Footer />}
             </LayoutWrapper>
           </Grid>)
 }

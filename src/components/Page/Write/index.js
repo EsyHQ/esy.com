@@ -12,11 +12,19 @@ import TinyEditor from 'src/components/TinyEditor'
 
 const WritePage = ({ fetchAccounts, activeAccount, location }) => {
 
-    return (<Layout location={location}>
+    return (<Layout location={location} hasFooter={false}>
                 <Helmet><title>Write</title></Helmet>
                 <SectionWrapper>
-                    {/* {activeAccount.isConnected && <Editor />}  */}
                     <TinyEditor />
+                    {/* <SidebarContainer>
+                      <SidebarNav>
+                        <SidebarList>
+                          <SidebarListItem>
+
+                          </SidebarListItem>
+                        </SidebarList>
+                      </SidebarNav>
+                    </SidebarContainer> */}
                 </SectionWrapper>
             </Layout>)
 }
@@ -48,8 +56,22 @@ const EditorSection = styled.div`
 
 const SectionWrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   align-items: center;
   width: 100%;
+  height: 100%;
+
+  &:first-child {
+    // max-width: 95%;
+  }
 `
 
+const SidebarContainer = styled.div`
+  background: #000;
+  width: 100%;
+`
+const SidebarNav = styled.nav``
+
+const SidebarList = styled.ul``
+
+const SidebarListItem = styled.li``

@@ -17,7 +17,7 @@ const EditableSection = () => {
       JSON.parse(localStorage.getItem('content')) || [
         {
         type: 'paragraph',
-        children: [{ text: 'Start typing.....' }],
+        children: [{ text: 'Start your essay' }],
       },
     ])
 
@@ -108,7 +108,10 @@ const EditableSection = () => {
 export default EditableSection
 
 
-const SectionWrapper = styled.div``
+const SectionWrapper = styled.div`
+  height: 100%;
+  width: 100%;
+`
 
 
 const SectionTitle = styled.h1`
