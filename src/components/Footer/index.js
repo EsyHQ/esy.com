@@ -31,19 +31,33 @@ const Footer = () => {
                   <FooterList>
                     <FooterListItem>
                       <FooterListItemTitle>Resources</FooterListItemTitle>
-                      <FooterList>
-                        {/* <FooterListItem>Blog</FooterListItem> */}
-                        {/* <FooterListItem>Edu</FooterListItem> */}
-                        {/* <FooterListItem>Glossary</FooterListItem> */}
-                      </FooterList>
+                      <FooterSubNav>
+                        <FooterSubNavList>
+                          <FooterSubNavListItem>Edu</FooterSubNavListItem>
+                          <FooterSubNavListItem>Glossary</FooterSubNavListItem>
+                        </FooterSubNavList>
+                      </FooterSubNav>
                     </FooterListItem>
                     
                     <FooterListItem>
-                      <FooterListItemTitle>Contact Us</FooterListItemTitle>
+                      <FooterListItemTitle>Developers</FooterListItemTitle>
+                      <FooterSubNav>
+                        <FooterSubNavList>
+                          <FooterSubNavListItem>Docs</FooterSubNavListItem>
+
+                        </FooterSubNavList>
+                      </FooterSubNav>
                     </FooterListItem>
 
                     <FooterListItem>
-                      <FooterListItemTitle>About Us</FooterListItemTitle>
+                      <FooterListItemTitle>Organization</FooterListItemTitle>
+                      <FooterSubNav>
+                        <FooterSubNavList>
+                          <FooterSubNavListItem>About Us</FooterSubNavListItem>
+                          <FooterSubNavListItem>Blog</FooterSubNavListItem>
+                          <FooterSubNavListItem>Contact Us</FooterSubNavListItem>
+                        </FooterSubNavList>
+                      </FooterSubNav>
                     </FooterListItem>
                   </FooterList>
                 </FooterNav>
@@ -120,6 +134,7 @@ const FooterList = styled.ul ``
 const FooterListItem = styled.li`
   display: flex;
   flex-direction: column;
+  margin: 0 20px;
 `
 const FooterListItemTitle = styled.span`
   font-size: 18px;
@@ -174,7 +189,7 @@ const FooterTop = styled.div`
 
     li {
       list-style-type: none;
-      margin: 0 20px;
+  
     }
   }
 `
@@ -185,8 +200,6 @@ const FooterLeft = styled.div`
 const FooterRight = styled.div`
   width: 100%;
 `
-
-
 
 const FooterBody = styled.div`
   display: flex;
@@ -203,4 +216,14 @@ const FooterBody = styled.div`
   }
 `
 
-
+const FooterSubNav = styled.nav``
+const FooterSubNavList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  padding: 0;
+  margin-top: 10px;
+`
+const FooterSubNavListItem = styled.li`
+  margin-top: 10px;
+`

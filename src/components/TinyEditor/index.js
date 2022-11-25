@@ -30,12 +30,12 @@ const TinyEditor = () => {
                     toolbar: 'undo redo | formatselect | ' +
                     'bold italic backcolor | alignleft aligncenter ' +
                     'alignright alignjustify | bullist numlist outdent indent | ' +
-                    'removeformat | help',
-                    content_css: 'document',
+                    'removeformat',
+                    content_css: 'default',
                     content_style: 'body { "Roboto","Helvetica","Arial",sans-serif; font-size:14px }, textarea { resize: none}'
                     }}
                   />
-       <button onClick={log}>Log editor content</button>
+                    {/* <button onClick={log}>Log editor content</button> */}
 
             </TinyEditorWrapper>)
 }

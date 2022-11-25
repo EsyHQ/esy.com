@@ -21,9 +21,9 @@ const Header = ({ activeAccount, handleDisconnect, handleConnect }) => {
         {/* <NavItem><a href="/learn">Products</a></NavItem> */}
         {/* <NavItem><a href="/learn">Developers</a></NavItem> */}
         {/* <NavItem><a href="/learn">Edu</a></NavItem> */}
-        {/* <NavItem><a href="/blog">Blog</a></NavItem> */}
+        <NavItem><a href="/blog">Blog</a></NavItem>
         <NavItem><a href="/blog">Journals</a></NavItem>
-        {/* <NavItem><a href="/blog">Write</a></NavItem> */}
+        {/* <NavItem><a href="/blog">Blog</a></NavItem> */}
         {/* <NavItem><Button isBoxShadow={true}  ctaText="Write" /></NavItem> */}
         <NavItem><a href="/write">Write</a></NavItem>
 
@@ -63,7 +63,7 @@ const HeaderNav = styled.nav`
   align-items: center;
   font-family: 'Spartan',sans-serif;
   font-weight: 500;
-  max-width: 300px;
+  max-width: 400px;
 `
 
 const NavItem = styled.div`
