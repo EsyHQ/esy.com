@@ -1,22 +1,46 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import { navigate, Link } from "gatsby"
+import { Location } from '@reach/router'
 
 import Logo from '../Logo'
-import UserIcon from 'src/svg/user-icon-svg.svg'
+import UserIcon from 'src/svg/user-icon.svg'
 
 
 
 const Header = () => {
-
+  const [ activeNav, setActiveNav ] = useState(0)
+  console.log(Location, 'location')
   return (<HeaderWrapper>
-            <Link to="/"><Logo /></Link>
-            <HeaderNav>
-              <NavItem><Link to="/blog">Blog</Link></NavItem>
-              <NavItem><Link to="/journals">Journals</Link></NavItem>
-              <NavItem><a href="/write">Write</a></NavItem>
-              <NavItem><UserIcon /></NavItem>
-            </HeaderNav>
+            <HeaderLogo>
+              <Link to="/"><Logo /></Link>
+            </HeaderLogo>
+
+            <Location>
+              {({ location: { pathname } }) => {
+                console.log(pathname, 'path')
+                if (pathname === '/') {
+                  setActiveNav(0)
+                } else if (pathname.includes('edu')) {
+                  setActiveNav(1)
+                } else if (pathname.includes('journals')) {
+                  setActiveNav(2)
+                } else if (pathname.includes('write')) {
+                  setActiveNav(3)
+                } 
+
+                return (
+                  <HeaderNav>
+                    <NavItem className={activeNav === 1 ? 'active' : ""}><Link to="/edu">Edu</Link></NavItem>
+                    <NavItem className={activeNav === 2 ? 'active' : ""}><Link to="/journals">Journals</Link></NavItem>
+                    <NavItem className={activeNav === 3 ? 'active' : ""}><a href="/write">Write</a></NavItem>
+                    <NavItem><UserIcon /></NavItem>
+                  </HeaderNav>
+                )
+              }}
+            </Location>
+
+           
           </HeaderWrapper>)
 }
 
@@ -37,6 +61,8 @@ const HeaderWrapper = styled.header`
   }
 `
 
+const HeaderLogo = styled.div``
+
 const HeaderNav = styled.nav`
   display: flex;
   justify-content: flex-end;
@@ -46,14 +72,19 @@ const HeaderNav = styled.nav`
   font-family: 'Spartan',sans-serif;
   font-weight: 500;
   max-width: 400px;
+ 
 `
 
 const NavItem = styled.div`
-  width: 100%;
+  // width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  position: relative;
+  margin: 0 20px;
+  &:last-child {
+    width: 100%;
+  }
   &:not(:last-child) {
     // margin-right: 50px;
   }
@@ -70,6 +101,21 @@ const NavItem = styled.div`
     fill: #fff;
     max-width: 25px;
     height: 100%;
+  }
+
+  &.active:after, &:hover:after {
+    content: '';
+    height: 5px;
+    background: #864ba2;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    @media(max-width: 576px) {
+      bottom: -15px;
+    }
   }
 `
 

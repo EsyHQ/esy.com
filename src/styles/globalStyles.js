@@ -5,6 +5,9 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         background: #000;
+    }
+
+    div, p {
         color: #fff;
     }
 `

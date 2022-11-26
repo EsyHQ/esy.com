@@ -5,6 +5,7 @@ import axios from 'axios'
 
 import Button from 'src/components/Input/Button'
 import Loader from 'src/components/Loader'
+import { navigate } from 'gatsby'
 
 
 
@@ -17,77 +18,57 @@ const EmailForm = () => {
     const handleFormSubmit = (event) => {
         event.preventDefault()
 
-        addEmailToContactList(email)
+        console.log(event, 'event')
+
+        // addEmailToContactList(email)
     }
 
 
-    const addEmailToContactList = async (email) => {
-        if (validator.isEmail(email)) {
-            let url = ''
+    // const addEmailToContactList = async (email) => {
+    //     if (validator.isEmail(email)) {
+    //         let url = ''
             
-            // etlify/functions/trigger-launch-email?email=${email}`)
-            // let url = (`http://localhost:9999/netlify/functions/trigger-launch-email`)
+    //         // etlify/functions/trigger-launch-email?email=${email}`)
+    //         // let url = (`http://localhost:9999/netlify/functions/trigger-launch-email`)
 
-            try {
-                const response = await axios.get(url)
-                const { statusCode, body } = response
+    //         try {
+    //             const response = await axios.get(url)
+    //             const { statusCode, body } = response
 
-                // Display loader - 
+    //             // Display loader - 
 
-                if (statusCode === 200) {
-                    // Remove loader
-                    // Show success banner and confirm email notification.
-                    console.log('fetch was successful', statusCode)
-                } 
+    //             if (statusCode === 200) {
+    //                 // Remove loader
+    //                 // Show success banner and confirm email notification.
+    //                 console.log('fetch was successful', statusCode)
+    //             } 
 
-            } catch(error) {
-                console.log(error, 'error')
-            }
-        }
-    }
+    //         } catch(error) {
+    //             console.log(error, 'error')
+    //         }
+    //     }
+    // }
       
 
-    const handleEmailInput = event => {
-        event.preventDefault()
+    // const handleEmailInput = event => {
+    //     event.preventDefault()
 
-        const emailInput = event.target.value
+    //     const emailInput = event.target.value
 
-        setIsEmailValid(validator.isEmail(emailInput))
-        setEmail(emailInput)
-    } 
+    //     setIsEmailValid(validator.isEmail(emailInput))
+    //     setEmail(emailInput)
+    // } 
 
-    const textFieldInputProps = {
-        style: {
-            color: '#fff',
-            outline: '#fff',
-            border: '1px solid #fff',
-            borderRadius: '6px',
-            background: '#fff',
-        }
+
+    const handleWriteClick = () => {
+        navigate("/write")
     }
 
 
-    // React.useEffect(() => {
-    //     sgMail.setApiKey()
-    // })
-
     return (<FormElement noValidate onSubmit={handleFormSubmit}>
-                {/* <InputWrapper>
-                    <InputElement 
-                            type="email" 
-                            id="email" 
-                            name="email" 
-                            placeholder='Your email' 
-                            onChange={handleEmailInput}
-                            autoComplete="off"
-                            required
-                    />
-                    {!isEmailValid && email && email.length > 0 && <EmailErrorLabel>Invalid email</EmailErrorLabel>}
-                </InputWrapper> */}
                 <ButtonWrapper>
                     <Button classNames="active" isBoxShadow={true}  ctaText="Sign Up" />
-                    <Button isBoxShadow={true}  ctaText="Write" />
-                    {isPending && <Loader />}
+                    <Button handleButtonClick={handleWriteClick} isBoxShadow={true}  ctaText="Write" />
                 </ButtonWrapper>
             </FormElement>)
 }
@@ -128,13 +109,6 @@ const FormElement = styled.form`
     margin-top: 30px;
     z-index: 10;
     width: 100%;
-
-    // div {
-    //     height: 32px;
-    //     @media(max-width: 600px) {
-    //         margin: 50px 0;
-    //     }
-    // }
 
     @media(max-width: 600px) {
         flex-direction: column;

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import { Link } from "gatsby"
 import LogoImg from '../../images/color-nobg.png'
-import LogoSVG from '../../svg/user-icon-svg.svg'
+import LogoSVG from '../../svg/user-icon.svg'
 
 
 
