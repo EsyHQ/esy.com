@@ -2,40 +2,22 @@ import React from "react"
 import styled from "styled-components"
 import { navigate, Link } from "gatsby"
 
-import HeaderMenu from '../Menu/headerMenu'
 import Logo from '../Logo'
-import Button from 'src/components/Input/Button'
-// import { ReactComponent as UserIcon } from '../../svg/user-icon-svg.svg'
 import UserIcon from 'src/svg/user-icon-svg.svg'
-import AccountMenu from "../AccountMenu"
 
 
 
-const Header = ({ activeAccount, handleDisconnect, handleConnect }) => {
+const Header = () => {
 
-  return (
-    <HeaderWrapper>
-      <Link to="/"><Logo /></Link>
-      {/* {activeAccount && !activeAccount.isConnected && <Button isBoxShadow={false} handleButtonClick={handleConnect} ctaText="Connect" />} */}
-      <HeaderNav>
-        {/* <NavItem><a href="/learn">Products</a></NavItem> */}
-        {/* <NavItem><a href="/learn">Developers</a></NavItem> */}
-        {/* <NavItem><a href="/learn">Edu</a></NavItem> */}
-        <NavItem><a href="/blog">Blog</a></NavItem>
-        <NavItem><a href="/blog">Journals</a></NavItem>
-        {/* <NavItem><a href="/blog">Blog</a></NavItem> */}
-        {/* <NavItem><Button isBoxShadow={true}  ctaText="Write" /></NavItem> */}
-        <NavItem><a href="/write">Write</a></NavItem>
-
-        <NavItem><UserIcon /></NavItem>
-        {/* <NavItem><img src={UserIcon} /></NavItem> */}
-      </HeaderNav>
-      {/* {<AccountMenu 
-        handleDisconnect={handleDisconnect}
-        activeAccount={activeAccount}
-      />} */}
-    </HeaderWrapper>
-  )
+  return (<HeaderWrapper>
+            <Link to="/"><Logo /></Link>
+            <HeaderNav>
+              <NavItem><Link to="/blog">Blog</Link></NavItem>
+              <NavItem><Link to="/journals">Journals</Link></NavItem>
+              <NavItem><a href="/write">Write</a></NavItem>
+              <NavItem><UserIcon /></NavItem>
+            </HeaderNav>
+          </HeaderWrapper>)
 }
 
 export default Header
@@ -78,6 +60,10 @@ const NavItem = styled.div`
 
   a {
     text-decoration: none;
+
+    &:hover {
+      color: #864ba2;
+    }
   }
 
   svg {
