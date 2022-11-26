@@ -103,7 +103,7 @@ const NavItem = styled.div`
     height: 100%;
   }
 
-  &.active:after, &:hover:after {
+  &.active:after, &:not(:last-child):hover:after {
     content: '';
     height: 5px;
     background: #864ba2;
