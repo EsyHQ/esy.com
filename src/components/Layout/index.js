@@ -11,31 +11,12 @@ import Footer from "src/components/Footer";
 import '../../styles/_globalstyles.scss'
 
 
-const Layout = ({ children, fetchAccounts, activeAccount, location, hasFooter = true }) => {
-
-  const handleConnect = (event) => {
-    event.preventDefault()
-    
-    fetchAccounts && fetchAccounts()
-  }
-
-  const handleDisconnect = (event) => {
-    event.preventDefault()
-
-    localStorage.clear()
-    window.location.href = "/"
-  }
+const Layout = ({ children, hasFooter = true }) => {
 
   return (<Grid container spaces={3}>
             <CssBaseline />
             <LayoutWrapper>
-              <Header 
-                fetchAccounts={fetchAccounts}
-                activeAccount={activeAccount}
-                handleConnect={handleConnect}
-                handleDisconnect={handleDisconnect}
-                location={location}
-              />
+              <Header />
               <Helmet></Helmet>
 
               <MainElement>{children}</MainElement>
