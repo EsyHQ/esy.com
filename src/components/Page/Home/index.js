@@ -34,7 +34,7 @@ const IndexPage = ({ fetchAccounts, activeAccount }) => {
       <SectionWrapper>
         <HeroWrapper>
             <HeroSummary>
-              <p>The Smart Journal for Writing AI Powered Essays</p>
+              <HeroParagraph>The Smart Journal for Writing AI Powered Essays</HeroParagraph>
               <EmailForm />
             </HeroSummary>
           </HeroWrapper>
@@ -49,7 +49,16 @@ const IndexPage = ({ fetchAccounts, activeAccount }) => {
 export default IndexPage
 
 
+const HeroParagraph = styled.p`
 
+  @media(max-width: 1200px) {
+    // font-size: 32px;
+  }
+
+  @media(max-width: 900px) {
+    font-size: 32px;
+  }
+`
 
 
 const MainSection = styled.main`
@@ -96,9 +105,7 @@ const HeroWrapper = styled.div`
   background: #000;
   position: relative;
 
-  @media(max-width: 600px) {
-    padding: 0 25px;
-  }
+  
 
   ::before {
     content: "";
@@ -117,8 +124,16 @@ const HeroWrapper = styled.div`
     left: 0;
     background-position: -50% 50%;
 
+    @media(max-width: 1200px) {
+
+    }
+
     @media(max-width: 900px) {
       background-position: 50% 0%;
+    }
+
+    @media(max-width: 600px) {
+      padding: 0 25px;
     }
 
   }
@@ -141,6 +156,14 @@ const HeroSummary = styled.div`
 
   p:first-child {
     text-align: left;
+  }
+
+  @media(max-width: 1200px) {
+    max-width: 500px;
+  }
+
+  @media(max-width: 900px) {
+    max-width: 400px;
   }
 
   @media(max-width: 600px) {

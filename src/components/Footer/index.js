@@ -41,6 +41,13 @@ const FooterElement = styled.footer`
   svg { 
     fill: #fff;
   }
+
+    
+  @media(max-width: 1200px) {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
 `
 
 

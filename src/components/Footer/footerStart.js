@@ -54,6 +54,19 @@ const FooterStartContainer = styled.div`
 
         }
     }
+
+      
+      @media(max-width: 1200px) {
+        flex-direction: column;
+      }
+
+      @media(max-width: 900px) {
+
+      }
+
+      @media(max-width: 600px) {
+        padding: 5px 25px;
+      }
 `
 
 
@@ -67,6 +80,10 @@ const CompanyDesc = styled.div`
   color: #fff;
   max-width: 600px;
   margin-top: 50px;
+
+  @media(max-width: 900px) {
+    font-size: 16px;
+  }
 `
 
 
@@ -76,5 +93,10 @@ const FooterLeft = styled.div`
 `
 const FooterRight = styled.div`
   width: 100%;
+
+  @media(max-width: 1200px) {
+    display: flex;
+    justify-content: flex-start;
+  }
 `
 

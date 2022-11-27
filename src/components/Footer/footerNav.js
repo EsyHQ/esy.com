@@ -49,17 +49,32 @@ export default FooterNav
 
 
 
-const FooterNavContainer = styled.div``
+const FooterNavContainer = styled.div`
+  @media(max-width: 1200px) {
+    margin-top: 30px;
+  }
+`
 
-const FooterList = styled.ul ``
+const FooterList = styled.ul `
+  @media(max-width: 1200px) {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+
+`
 
 
 const FooterListItem = styled.li`
   display: flex;
   flex-direction: column;
   margin: 0 20px;
-
-
+  
+  @media(max-width: 1200px) {
+    margin-left: 0;
+  }
 `
 const FooterListItemTitle = styled.span`
   font-size: 18px;

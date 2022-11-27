@@ -82,6 +82,10 @@ const ButtonWrapper = styled.div`
     align-items: center;
     justify-content: space-between;
     max-width: 285px;
+
+    @media(max-width: 600px) {
+        max-width: 325px;
+    }
 `
 
 
