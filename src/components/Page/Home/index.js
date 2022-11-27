@@ -50,14 +50,6 @@ export default IndexPage
 
 
 const HeroParagraph = styled.p`
-
-  @media(max-width: 1200px) {
-    // font-size: 32px;
-  }
-
-  @media(max-width: 900px) {
-    font-size: 32px;
-  }
 `
 
 
@@ -113,9 +105,6 @@ const HeroWrapper = styled.div`
     transform: scaleX(-1);
     background-repeat: no-repeat;
     opacity: 0.06;
-
-
-    // background-size: 80%;
     background-size: cover; 
     position: absolute;
     top: 0;
@@ -131,11 +120,10 @@ const HeroWrapper = styled.div`
     @media(max-width: 900px) {
       background-position: 50% 0%;
     }
+  }
 
-    @media(max-width: 600px) {
-      padding: 0 25px;
-    }
-
+  @media(max-width: 600px) {
+    padding: 0 25px;
   }
 
 
@@ -160,19 +148,27 @@ const HeroSummary = styled.div`
 
   @media(max-width: 1200px) {
     max-width: 500px;
-  }
-
-  @media(max-width: 900px) {
-    max-width: 400px;
-  }
-
-  @media(max-width: 600px) {
     font-size: 32px;
   }
 
-  @media(max-width: 500px) {
-    font-size: 28px;
+  @media(max-width: 900px) {
+  }
+
+  @media(max-width: 600px) {
+    max-width: 400px;
+    font-size: 26px;
     line-height: 1.8;
+
+    form {
+      margin-top: 0;
+    }
+
+    .button-wrapper div {
+      margin: 25px 0;
+    }
+  }
+
+  @media(max-width: 500px) {
   } 
 
   @media(max-width: 430px) {

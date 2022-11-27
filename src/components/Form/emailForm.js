@@ -66,7 +66,7 @@ const EmailForm = () => {
 
 
     return (<FormElement noValidate onSubmit={handleFormSubmit}>
-                <ButtonWrapper>
+                <ButtonWrapper className="button-wrapper">
                     <Button classNames="active" isBoxShadow={true}  ctaText="Sign Up" />
                     <Button handleButtonClick={handleWriteClick} isBoxShadow={true}  ctaText="Write" />
                 </ButtonWrapper>
