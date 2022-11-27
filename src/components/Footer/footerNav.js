@@ -35,6 +35,8 @@ const FooterNav = () => {
                             <FooterSubNavList>
                             <FooterSubNavListItem><Link to="/about">About Us</Link></FooterSubNavListItem>
                             <FooterSubNavListItem><a href="mailto: support@esy.com">Contact Us</a></FooterSubNavListItem>
+                            <FooterSubNavListItem><Link to="/about">Privacy</Link></FooterSubNavListItem>
+                            <FooterSubNavListItem><Link to="/about">Terms</Link></FooterSubNavListItem>
                             </FooterSubNavList>
                         </FooterSubNav>
                         </FooterListItem>
