@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 import {Link} from 'gatsby'
-import ReadingTime from 'src/components/ReadingTime'
+import ReadingTime from 'src/components/common/ReadingTime'
 import PostDate from 'src/components/common/Post/postDate'
 import moment from 'moment'
 
