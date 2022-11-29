@@ -53,6 +53,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-ghost`,
+      options: {
+        apiUrl: `https://blog.esy.com`,
+        contentApiKey: `${process.env.CONTENT_API_KEY}`,
+      },
+    },
+    {
       resolve: "gatsby-plugin-manifest",
       options: {
         icon: "src/images/icon.png",
