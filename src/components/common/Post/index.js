@@ -34,7 +34,8 @@ const PostWrapper = styled.section`
 
         &:last-child {
             a {
-                color: rgb(250,70,22);
+                // color: rgb(250,70,22);
+                color: #d14eff;
                 opacity: 0.7;
 
                 :hover {

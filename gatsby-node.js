@@ -15,7 +15,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                         slug
                     }
                     node {
-                        sluge
+                        slug
                         title
                     }
                     next {

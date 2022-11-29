@@ -131,7 +131,9 @@ const PostCardMeta = styled.div`
     align-items: center;
 
     >span:first-child {
-        color: rgb(119, 175, 239);
+        // color: rgb(119, 175, 239);
+        color: #d14eff;
+        opacity: 0.7;
         font-family: Qanelas-Bold;
         font-size: 14px;
         font-weight: bold;

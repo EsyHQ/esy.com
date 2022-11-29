@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 import {Link} from 'gatsby'
-import ReadingTime from 'src/components/common/ReadingTime'
+import ReadingTime from 'src/components/ReadingTime'
 import PostDate from 'src/components/common/Post/postDate'
 import moment from 'moment'
 
@@ -131,8 +131,7 @@ const PostCardMeta = styled.div`
     align-items: center;
 
     >span:first-child {
-        color: rgb(119, 175, 239);
-        font-family: Qanelas-Bold;
+        color: #d14eff;
         font-size: 14px;
         font-weight: bold;
         letter-spacing: 0.44px;
@@ -141,7 +140,6 @@ const PostCardMeta = styled.div`
 
     .divider {
         color: rgb(138, 138, 138);
-        font-family: Qanelas-Bold;
         font-size: 14px;
         font-weight: bold;
         letter-spacing: 0.44px;

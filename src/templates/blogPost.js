@@ -1,7 +1,7 @@
 
 import React from "react"
 import styled from 'styled-components'
-import { graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 import moment from 'moment'
 
 import Post from 'src/components/common/Post'
@@ -9,8 +9,8 @@ import PostDate from 'src/components/common/Post/postDate'
 import PrimaryPostTag from 'src/components/common/Post/primaryPostTag'
 import PostPagination from 'src/components/common/Post/postPagination'
 
-import Layout from 'src/components/common/Layout'
-import ReadingTime from 'src/components/common/ReadingTime'
+import Layout from 'src/components/Layout'
+import ReadingTime from 'src/components/ReadingTime'
 
 
 
@@ -24,6 +24,7 @@ export default function Template(props) {
   return (
     <Layout>
       <BlogPostWrapper>
+        <BlogPostInner>
         <PostTitle>{title}</PostTitle>
         <PostMeta>
             <PrimaryMeta>
@@ -47,6 +48,8 @@ export default function Template(props) {
         </Post>
 
         <PostPagination nextPostSlug={nextPostSlug} prevPostSlug={prevPostSlug} />
+        </BlogPostInner>
+        
       </BlogPostWrapper>
     </Layout>
   )
@@ -77,11 +80,13 @@ export const pageQuery = graphql`
 
 const BlogPostWrapper = styled.div`
   margin-top: 50px;
-  max-width: 800px;
   margin: 0 auto;
+  width: 100%;
   display: flex;
+  align-items: center;
   flex-direction: column;
   padding: 2% 5%;
+  background: #151718;
 
   img {
     border-radius: 6px;
@@ -190,8 +195,10 @@ const BlogPostWrapper = styled.div`
       padding-top: 5%;
     }
   }
+`
 
-
+const BlogPostInner = styled.div`
+  max-width: 800px;
 `
 
 const ImageWrapper = styled.div`

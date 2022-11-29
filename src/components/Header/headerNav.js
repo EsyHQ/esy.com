@@ -10,7 +10,7 @@ const HeaderNav = ({ activeNav }) => {
 
   return (<HeaderNavContainer>
               <DesktopNav>
-                <NavItem className={activeNav === 1 ? 'active' : ""}><Link to="/edu">Edu</Link></NavItem>
+                <NavItem className={activeNav === 1 ? 'active' : ""}><Link to="/blog">Blog</Link></NavItem>
                 <NavItem className={activeNav === 2 ? 'active' : ""}><Link to="/journals">Journals</Link></NavItem>
                 <NavItem className={activeNav === 3 ? 'active' : ""}><a href="/write">Write</a></NavItem>
                 <NavItem><UserIcon /></NavItem>

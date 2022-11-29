@@ -12,9 +12,9 @@ const FooterNav = () => {
                         <FooterSubNav>
                             <FooterSubNavList>
                             <FooterSubNavListItem><Link to="/blog">Blog</Link></FooterSubNavListItem>
-
-                            <FooterSubNavListItem><Link to="/edu">Edu</Link></FooterSubNavListItem>
-                            <FooterSubNavListItem><Link to="/glossary">Glossary</Link></FooterSubNavListItem>
+                            <FooterSubNavListItem><Link to="/edu">Journals</Link></FooterSubNavListItem>
+                            {/* <FooterSubNavListItem><Link to="/edu">Edu</Link></FooterSubNavListItem>
+                            <FooterSubNavListItem><Link to="/glossary">Glossary</Link></FooterSubNavListItem> */}
                             </FooterSubNavList>
                         </FooterSubNav>
                         </FooterListItem>
@@ -98,7 +98,7 @@ const FooterSubNavListItem = styled.li`
   margin-top: 10px;
 
   a {
-    font-family: "Roboto","Helvetica","Arial" !important;
+    font-family: "Roboto", sans-serif, "Helvetica","Arial" !important;
     display: inline !important;
     font-weight: 400 !important;
 

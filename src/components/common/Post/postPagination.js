@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 
-import ArrowIcon from 'src/assets/svg/left-arrow.svg'
+import ArrowIcon from 'src/svg/left-arrow.svg'
 
 
 const PostPagination = ({ nextPostSlug, prevPostSlug }) => {

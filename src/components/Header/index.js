@@ -13,7 +13,7 @@ const Header = () => {
   const setHeaderNavState = (pathname) => {
     if (pathname === '/') {
       setActiveNav(0)
-    } else if (pathname.includes('edu')) {
+    } else if (pathname.includes('blog')) {
         setActiveNav(1)
     } else if (pathname.includes('journals')) {
         setActiveNav(2)

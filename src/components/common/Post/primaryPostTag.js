@@ -11,7 +11,9 @@ export default PrimaryPostTag
 
 
 const PostTagWrapper = styled.div`
-    color: rgb(119, 175, 239);
+    // color: rgb(119, 175, 239);
+    color: #d14eff;
+    opacity: 0.7;
     font-family: Qanelas-Bold;
     font-size: 14px;
     font-weight: bold;
