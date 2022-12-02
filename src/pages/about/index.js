@@ -1,5 +1,5 @@
 import React from 'react'
-import AboutPageIndex from 'src/components/Page/about'
+import AboutPageIndex from 'src/components/Page/About'
 
 
 
