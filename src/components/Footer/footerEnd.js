@@ -18,14 +18,21 @@ const FooterEnd = () => {
                         >
                         &copy;{''}
                         {/* 2022 Esy Research Technologies */}
-                        2023 Esy Technologies, LLC.
+                        {/* 2023 Esy Technologies, LLC. */}
+                        2023 Esy
                         </a>
                     </Trademark>
-                    
-                    <SocialIcons>
-                        <a href={TwitterURL} target="_blank"><TwitterIcon /></a>
-                        <a href={GithubURL} target="_blank"><GithubIcon /></a>
-                    </SocialIcons>
+
+                    <FooterEndRight>
+                      <LegalLinks>
+                        <a href="/privacy">Privacy</a>
+                        <a href="/privacy">Terms</a>
+                      </LegalLinks>
+                      <SocialIcons>
+                          <a href={TwitterURL} target="_blank"><TwitterIcon /></a>
+                          <a href={GithubURL} target="_blank"><GithubIcon /></a>
+                      </SocialIcons>
+                    </FooterEndRight>
             </FooterEndContainer>)
 }
 
@@ -36,29 +43,14 @@ const FooterEndContainer = styled.div`
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    // justify-content: space-between;
     width: 100%;
-    padding: 25px;
+    padding: 25px 50px;
     background: #000;
 
     a {
         opacity: 0.5;
-    }
-`
-
-
-
-
-const FooterBody = styled.div`
-    width: 100%;
-    padding: 25px;
-    background: #000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    a {
-        opacity: 0.5;
+        font-size: 14px !important;
     }
 `
 
@@ -93,3 +85,23 @@ const SocialIcons = styled.div`
     }
   }
 `
+
+
+const LegalLinks = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 50px;
+
+  a {
+    :not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+`
+const LegalLink = styled.div`
+
+
+`
+
+const FooterEndRight = styled.div``

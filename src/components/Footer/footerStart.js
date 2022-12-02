@@ -46,7 +46,7 @@ const FooterStartContainer = styled.div`
 
     ul {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         width: 100%;
 
         li {

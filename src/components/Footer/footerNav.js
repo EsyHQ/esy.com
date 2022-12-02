@@ -38,22 +38,13 @@ const FooterNav = () => {
                         </FooterSubNav>
                         </FooterListItem>
                         
-                        <FooterListItem>
-                          <FooterListItemTitle>Developers</FooterListItemTitle>
-                          <FooterSubNav>
-                              <FooterSubNavList>
-                              <FooterSubNavListItem><Link to="/docs">Docs</Link></FooterSubNavListItem>
 
-                              </FooterSubNavList>
-                          </FooterSubNav>
-                        </FooterListItem>
 
                         <FooterListItem>
                           <FooterListItemTitle>Developers</FooterListItemTitle>
                           <FooterSubNav>
                               <FooterSubNavList>
                               <FooterSubNavListItem><Link to="/docs">Docs</Link></FooterSubNavListItem>
-
                               </FooterSubNavList>
                           </FooterSubNav>
                         </FooterListItem>
@@ -64,8 +55,6 @@ const FooterNav = () => {
                             <FooterSubNavList>
                             <FooterSubNavListItem><Link to="/about">About Us</Link></FooterSubNavListItem>
                             <FooterSubNavListItem><a href="mailto: support@esy.com">Contact Us</a></FooterSubNavListItem>
-                            <FooterSubNavListItem><Link to="/about">Privacy</Link></FooterSubNavListItem>
-                            <FooterSubNavListItem><Link to="/about">Terms</Link></FooterSubNavListItem>
                             </FooterSubNavList>
                         </FooterSubNav>
                         </FooterListItem>
@@ -87,6 +76,7 @@ const FooterNavContainer = styled.div`
 `
 
 const FooterList = styled.ul `
+  
   @media(max-width: 1200px) {
     width: 100%;
     padding: 0;

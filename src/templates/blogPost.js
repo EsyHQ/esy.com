@@ -23,6 +23,9 @@ export default function Template(props) {
 
   return (
     <Layout>
+      <FeatureImage>
+        <img src={feature_image} />
+      </FeatureImage>
       <BlogPostWrapper>
         <BlogPostInner>
         <PostTitle>{title}</PostTitle>
@@ -38,9 +41,9 @@ export default function Template(props) {
 
 
         <Post>
-          <ImageWrapper>
+          {/* <ImageWrapper>
             <img src={feature_image} />
-          </ImageWrapper>
+          </ImageWrapper> */}
             <div
               className="blog-post-content"
               dangerouslySetInnerHTML={{ __html: html }}
@@ -54,7 +57,6 @@ export default function Template(props) {
     </Layout>
   )
 }
-
 
 
 export const pageQuery = graphql`
@@ -225,5 +227,20 @@ const PrimaryMeta = styled.div`
   .divider {
     margin: 0 5px;
     color: rgba(255,255,255, 0.5)
+  }
+`
+
+
+const FeatureImage = styled.div`
+  width: 100%;
+  height: 100%;
+  background: #151718;
+  background: #000;
+  text-align: center;
+
+  img {
+    width: 100%;
+
+    max-width: 1400px;
   }
 `
