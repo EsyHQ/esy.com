@@ -2,6 +2,25 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from "gatsby"
 
+// const navItems = [
+//   { 
+//     category: 'Resources',
+//     links: [
+//       { 
+//         title: 'Blog',
+//         url: '/blog'
+//       },
+
+//       {
+//         title: 'Journals',
+//         url: '/journals'
+//       }
+
+//     ]
+//   }
+// ]
+ 
+
 
 const FooterNav = () => {
 
@@ -20,13 +39,23 @@ const FooterNav = () => {
                         </FooterListItem>
                         
                         <FooterListItem>
-                        <FooterListItemTitle>Developers</FooterListItemTitle>
-                        <FooterSubNav>
-                            <FooterSubNavList>
-                            <FooterSubNavListItem><Link to="/docs">Docs</Link></FooterSubNavListItem>
+                          <FooterListItemTitle>Developers</FooterListItemTitle>
+                          <FooterSubNav>
+                              <FooterSubNavList>
+                              <FooterSubNavListItem><Link to="/docs">Docs</Link></FooterSubNavListItem>
 
-                            </FooterSubNavList>
-                        </FooterSubNav>
+                              </FooterSubNavList>
+                          </FooterSubNav>
+                        </FooterListItem>
+
+                        <FooterListItem>
+                          <FooterListItemTitle>Developers</FooterListItemTitle>
+                          <FooterSubNav>
+                              <FooterSubNavList>
+                              <FooterSubNavListItem><Link to="/docs">Docs</Link></FooterSubNavListItem>
+
+                              </FooterSubNavList>
+                          </FooterSubNav>
                         </FooterListItem>
 
                         <FooterListItem>
