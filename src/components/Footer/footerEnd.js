@@ -26,12 +26,12 @@ const FooterEnd = () => {
                     <FooterEndRight>
                       <LegalLinks>
                         <a href="/privacy">Privacy</a>
-                        <a href="/privacy">Terms</a>
+                        <a href="/terms">Terms</a>
                       </LegalLinks>
-                      <SocialIcons>
+                      {/* <SocialIcons>
                           <a href={TwitterURL} target="_blank"><TwitterIcon /></a>
                           <a href={GithubURL} target="_blank"><GithubIcon /></a>
-                      </SocialIcons>
+                      </SocialIcons> */}
                     </FooterEndRight>
             </FooterEndContainer>)
 }
@@ -52,12 +52,18 @@ const FooterEndContainer = styled.div`
         opacity: 0.5;
         font-size: 14px !important;
     }
+
+    @media(max-width: 600px) {
+      padding: 25px;
+    }
 `
 
 
 
 const Trademark = styled.div`
   width: 100%;
+  display: flex;
+  justify-content: flex-start;
   text-align: center;
   align-items: center;
 `
@@ -91,7 +97,7 @@ const LegalLinks = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: 50px;
+  // margin-right: 50px;
 
   a {
     :not(:last-child) {
@@ -104,4 +110,10 @@ const LegalLink = styled.div`
 
 `
 
-const FooterEndRight = styled.div``
+const FooterEndRight = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+
+`

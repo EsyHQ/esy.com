@@ -93,6 +93,10 @@ const FooterListItem = styled.li`
   flex-direction: column;
   margin: 0 20px;
   
+  :last-child {
+    margin-right: 0;
+  }
+
   @media(max-width: 1200px) {
     margin-left: 0;
   }

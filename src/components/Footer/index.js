@@ -28,6 +28,7 @@ const FooterElement = styled.footer`
   align-items: center;
   color: #fff;
   background: #000;
+  border-top: 1px solid #272727;
 
  a {
     display: flex;
