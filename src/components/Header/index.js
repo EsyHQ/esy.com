@@ -53,6 +53,7 @@ const HeaderWrapper = styled.header`
   height: 100px;
 
   position: fixed;
+  z-index: 999;
 
   @media(max-width: 600px) {
     padding: 15px 25px;
