@@ -35,9 +35,9 @@ const mainTheme = {
       postCardContent: {
         padding: '0 2%',
     }
-
-
 }
+
+
 const midTheme = {
     type: 'midTheme',
     container: {

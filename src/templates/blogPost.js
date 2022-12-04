@@ -22,24 +22,23 @@ export default function Template(props) {
   const formattedPublishedDate = moment(published_at).local().format('MMM DD YYYY').split(' ')
 
   return (
-    <Layout>
-      <FeatureImage>
-        <img src={feature_image} />
-      </FeatureImage>
+    <Layout className="blog-layout">
       <BlogPostWrapper>
         <BlogPostInner>
-        <PostTitle>{title}</PostTitle>
-        <PostMeta>
-            <PrimaryMeta>
-                <PrimaryPostTag postTag={"announcements"} />
-                <span className="divider">•</span>
-                <PostDate publishedPostDate={formattedPublishedDate} />
-            </PrimaryMeta>
-            <ReadingTime time={reading_time} />
-        </PostMeta>
+          <PrePostContainer>
+            <PostTitle>{title}</PostTitle>
+            <PostMeta>
+                <PrimaryMeta>
+                    <PrimaryPostTag postTag={"announcements"} />
+                    <span className="divider">•</span>
+                    <PostDate publishedPostDate={formattedPublishedDate} />
+                </PrimaryMeta>
+                <ReadingTime time={reading_time} />
+            </PostMeta>
 
-
-
+            <FeatureImage><img src={feature_image} /></FeatureImage>
+          </PrePostContainer>
+          
         <Post>
           {/* <ImageWrapper>
             <img src={feature_image} />
@@ -103,8 +102,12 @@ const BlogPostWrapper = styled.div`
   .blog-post-content {
 
     > figure {
+
       img {
-        display: none; 
+        // display: none; 
+        width: 100%;
+        height: 100%;
+        
       }
 
       figcaption {
@@ -126,12 +129,12 @@ const BlogPostWrapper = styled.div`
     strong {
       font-weight: 700;
       color: #fff;
-      font-family: Qanelas-Bold;
+      font-family: "Roboto", sans-serif, "Helvetica","Arial";
     }
 
     img {
-      max-width: 800px;
-      width: 100%;
+      // max-width: 800px;
+      // width: 100%;
     }
 
     h2, h3 { 
@@ -142,7 +145,7 @@ const BlogPostWrapper = styled.div`
 
     h2 {
       color: rgb(255, 255, 255);
-      font-family: Qanelas-Bold;
+      font-family: "Roboto", sans-serif, "Helvetica","Arial";
       font-size: 34px;
       font-weight: bold;
       letter-spacing: 0px;
@@ -150,7 +153,7 @@ const BlogPostWrapper = styled.div`
 
     h3 {
       color: rgb(255, 255, 255);
-      font-family: Qanelas-Bold;
+      font-family: "Roboto", sans-serif, "Helvetica","Arial";
       font-size: 26px;
       font-weight: bold;
       letter-spacing: 0px;
@@ -169,10 +172,15 @@ const BlogPostWrapper = styled.div`
     }
 
     figure {
-      margin: 0;
       margin-bottom: 20px;
+      text-align: center;
+      max-width: 900px;
+      margin: 100px auto;
+      padding: 0 10%;
+  }
+
       img {
-        max-height: 330px;
+        // max-height: 330px;
         }
     }
   }
@@ -184,7 +192,7 @@ const BlogPostWrapper = styled.div`
   
   h1 {
     color: rgb(255, 255, 255);
-    font-family: Qanelas-Bold;
+    font-family: "Roboto", sans-serif, "Helvetica","Arial";
     font-size: 46px;
     font-weight: bold;
     letter-spacing: 0px;
@@ -200,7 +208,15 @@ const BlogPostWrapper = styled.div`
 `
 
 const BlogPostInner = styled.div`
-  max-width: 800px;
+  // max-width: 800px;
+  width: 100%;
+  padding: 0 10%;
+  max-width: 1800px;
+
+  @media(max-width: 1500px) {
+    padding: 0;
+  }
+
 `
 
 const ImageWrapper = styled.div`
@@ -211,8 +227,19 @@ const ImageWrapper = styled.div`
   }
 `
 
+const PrePostContainer = styled.div`
+  // padding: 0 10%;
+  width: 100%;
+  margin: 0 auto;
+
+  @media(max-width: 1600px) {
+    padding: 0;
+  }
+`
+
 
 const PostTitle = styled.h1`
+  text-align: center;
 `
 
 const PostMeta = styled.div`
@@ -233,14 +260,14 @@ const PrimaryMeta = styled.div`
 
 const FeatureImage = styled.div`
   width: 100%;
-  height: 100%;
   background: #151718;
-  background: #000;
   text-align: center;
 
+  // width: 80%;
+  // margin: 0 auto;
   img {
     width: 100%;
 
-    max-width: 1400px;
+    // max-width: 1400px;
   }
 `

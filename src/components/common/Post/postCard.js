@@ -68,7 +68,8 @@ const PostCardWrapper = styled.div`
 `
 const PostCardTitle = styled.h1`
         color: rgba(255, 255, 255, 1);
-        font-family: Qanelas-Bold;
+        // font-family: "Roboto", sans-serif, "Helvetica","Arial";
+        font-weight: bold;
         font-size: ${({ theme }) => theme.title.fontSize };
         font-weight: bold;
         letter-spacing: 0px;
@@ -95,7 +96,7 @@ const PostCardContent = styled.div`
 
 
 const PostCardExcerpt = styled.p`
-        font-family: Qanelas-Medium;
+        // font-family: Qanelas-Medium;
         font-size: 16px;
         font-weight: 500;
         letter-spacing: 0.5px;
@@ -134,7 +135,7 @@ const PostCardMeta = styled.div`
         // color: rgb(119, 175, 239);
         color: #d14eff;
         opacity: 0.7;
-        font-family: Qanelas-Bold;
+        // font-family: "Roboto", sans-serif, "Helvetica","Arial";
         font-size: 14px;
         font-weight: bold;
         letter-spacing: 0.44px;
@@ -143,7 +144,7 @@ const PostCardMeta = styled.div`
 
     .divider {
         color: rgb(138, 138, 138);
-        font-family: Qanelas-Bold;
+        // font-family: "Roboto", sans-serif, "Helvetica","Arial";
         font-size: 14px;
         font-weight: bold;
         letter-spacing: 0.44px;

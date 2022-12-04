@@ -68,7 +68,7 @@ const PostCardWrapper = styled.div`
 `
 const PostCardTitle = styled.h1`
         color: rgba(255, 255, 255, 1);
-        font-family: Qanelas-Bold;
+        font-family: "Roboto", sans-serif, "Helvetica","Arial";
         font-size: ${({ theme }) => theme.title.fontSize };
         font-weight: bold;
         letter-spacing: 0px;

@@ -5,7 +5,6 @@ import Logo from 'src/components/Logo'
 import FooterNav from './footerNav'
 
 
-
 const FooterStart = () => {
     return (<FooterStartContainer>
                 <FooterLeft>

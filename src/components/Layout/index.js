@@ -46,4 +46,11 @@ const MainElement = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  // background: #151718;
+
+  padding-top: 100px;
+
+  @media(max-width: 600px) {
+
+  }
 `

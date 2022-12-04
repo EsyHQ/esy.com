@@ -50,6 +50,9 @@ const HeaderWrapper = styled.header`
   background: #000;
   align-items: center;
   border-bottom: 1px solid #272727;
+  height: 100px;
+
+  position: fixed;
 
   @media(max-width: 600px) {
     padding: 15px 25px;
