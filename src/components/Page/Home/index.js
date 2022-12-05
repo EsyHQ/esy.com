@@ -11,6 +11,15 @@ import Button from 'src/components/Input/Button'
 import EmailForm from 'src/components/Form/emailForm'
 
 
+import QuillImage from 'src/images/purple-quill.png'
+import QuillImage2 from 'src/images/purple-quill-sharp.png'
+import QuillImage3 from 'src/images/purple-quill-3.png'
+import QuillImage4 from 'src/images/purple-quill-4.png'
+
+
+
+
+
 const IndexPage = ({ fetchAccounts, activeAccount }) => {
 
 
@@ -38,6 +47,20 @@ const IndexPage = ({ fetchAccounts, activeAccount }) => {
               <EmailForm />
             </HeroSummary>
           </HeroWrapper>
+
+          {/* <PageContent>
+            <SectionElement>
+              <SectionImage><img src={QuillImage2} /></SectionImage>
+              <SectionContent>
+                  <ParagraphElement>Esy is for Essay.</ParagraphElement>
+                            
+                  <ParagraphElement>
+                      Esy is a digital journaling platform that offers users a suite of analytical tools for writing 
+                      AI assisted essays and discovering powerful insights about their personal writing habits.
+                  </ParagraphElement>
+              </SectionContent>
+            </SectionElement>
+          </PageContent> */}
       </SectionWrapper>
     </Layout>
   )
@@ -195,4 +218,44 @@ const HeroSummary = styled.div`
     align-items: center;
     font-weight: 600;
   }
+`
+
+
+
+
+
+
+const PageContent = styled.p`
+    width: 100%;
+    background: #000;
+    margin: 0;
+    padding-top: 100px;
+`
+
+const ParagraphElement = styled.p``
+
+
+const SectionImage = styled.div`
+    width: 100%;
+    max-width: 400px;
+
+    img {
+        width: 100%;
+        border-radius: 20%;
+    }
+`
+
+const SectionElement = styled.div`
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+`
+
+const SectionContent = styled.div`
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 50px;
 `
