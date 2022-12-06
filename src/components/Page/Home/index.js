@@ -46,9 +46,9 @@ const IndexPage = ({ fetchAccounts, activeAccount }) => {
               <HeroParagraph>The Smart Journal for Writing AI Powered Essays</HeroParagraph>
               <EmailForm />
             </HeroSummary>
-          </HeroWrapper>
+        </HeroWrapper>
 
-          {/* <PageContent>
+        {/* <PageContent>
             <SectionElement>
               <SectionImage><img src={QuillImage2} /></SectionImage>
               <SectionContent>
@@ -101,9 +101,9 @@ const EditorSection = styled.div`
 
 const SectionWrapper = styled.div`
   width: 100%;
-  height: 100%;
+  // height: 100%;
   flex: 1;
-  display: flex;
+  // display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -225,7 +225,7 @@ const HeroSummary = styled.div`
 
 
 
-const PageContent = styled.p`
+const PageContent = styled.div`
     width: 100%;
     background: #000;
     margin: 0;

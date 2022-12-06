@@ -91,7 +91,7 @@ const PageTitle = styled.div`
     font-size: 36px;
 `
 
-const PageContent = styled.p`
+const PageContent = styled.div`
     // max-width: 900px;
 
 `
@@ -102,17 +102,43 @@ const ParagraphElement = styled.p``
 const SectionImage = styled.div`
     width: 100%;
     max-width: 400px;
+    display: flex;
+    align-items: center;
 
     img {
         width: 100%;
         border-radius: 20%;
     }
+
+
+    @media(max-width: 900px) {
+        max-width: 300px;
+    }
+
+   
 `
 
 const SectionElement = styled.div`
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
+    width: 100%;
+
+ 
+
+
+    @media(max-width: 900px) {
+        font-size: 18px;
+    }
+
+    @media(max-width: 600px) {
+        flex-direction: column;
+        align-items: center;
+
+        &:nth-child(odd) {
+            flex-direction: column-reverse;
+        }
+    }
 `
 
 const SectionContent = styled.div`
@@ -121,4 +147,5 @@ const SectionContent = styled.div`
     flex-direction: column;
     max-width: 600px;
     margin: 0 50px;
+    width: 100%;
 `
