@@ -7,9 +7,9 @@ import GithubIcon from 'src/svg/github-logo.svg'
 const TwitterURL = 'http://www.twitter.com/EsyJournal'
 const GithubURL = 'http://www.github.com/EsyJournal'
 
-const CookiePolicy = "/markdown/legal/privacy_en.md"
-const PrivacyPolicy = "/markdown/legal/privacy_en.md"
-const TermPolicy = "/markdown/legal/terms_en.md"
+const CookiePolicy = "https://app.termly.io/document/cookie-policy/2c678f2d-a639-46a1-861f-b74b34e8fb23"
+const PrivacyPolicy = "https://app.termly.io/document/privacy-policy/a5285fdd-a501-4dbd-89d2-b1112dc4ee86"
+const TermPolicy = "https://app.termly.io/document/terms-of-use-for-saas/1cfc74df-69a4-4df1-ba18-8153199c1ac3"
 
 
 
@@ -30,9 +30,9 @@ const FooterEnd = () => {
 
                     <FooterEndRight>
                       <LegalLinks>
-                        <a href={PrivacyPolicy}>Privacy</a>
-                        <a href={TermPolicy}>Terms</a>
-                        <a href={CookiePolicy}>Cookies</a>
+                        <a target="_blank" href={PrivacyPolicy}>Privacy</a>
+                        <a target="_blank" href={TermPolicy}>Terms</a>
+                        <a target="_blank" href={CookiePolicy}>Cookies</a>
                       </LegalLinks>
                       {/* <SocialIcons>
                           <a href={TwitterURL} target="_blank"><TwitterIcon /></a>
