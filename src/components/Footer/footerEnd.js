@@ -7,6 +7,11 @@ import GithubIcon from 'src/svg/github-logo.svg'
 const TwitterURL = 'http://www.twitter.com/EsyJournal'
 const GithubURL = 'http://www.github.com/EsyJournal'
 
+const CookiePolicy = "/markdown/legal/privacy_en.md"
+const PrivacyPolicy = "/markdown/legal/privacy_en.md"
+const TermPolicy = "/markdown/legal/terms_en.md"
+
+
 
 const FooterEnd = () => {
     return (<FooterEndContainer>
@@ -25,8 +30,9 @@ const FooterEnd = () => {
 
                     <FooterEndRight>
                       <LegalLinks>
-                        <a href="/privacy">Privacy</a>
-                        <a href="/terms">Terms</a>
+                        <a href={PrivacyPolicy}>Privacy</a>
+                        <a href={TermPolicy}>Terms</a>
+                        <a href={CookiePolicy}>Cookies</a>
                       </LegalLinks>
                       {/* <SocialIcons>
                           <a href={TwitterURL} target="_blank"><TwitterIcon /></a>

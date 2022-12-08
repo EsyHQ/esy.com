@@ -44,7 +44,7 @@
     "gatsby-plugin-styled-components": "^5.17.0",
     "gatsby-source-filesystem": "^4.17.0",
     "gatsby-source-ghost": "^5.0.1",
-    "gatsby-transformer-remark": "^5.17.0",
+    "gatsby-transformer-remark": "^5.24.0",
     "gatsby-transformer-sharp": "^4.17.0",
     "lodash": "^4.17.21",
     "path": "^0.12.7",
