@@ -11,6 +11,7 @@ export default function HTML(props) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <script type="text/javascript" src="https://app.termly.io/embed.min.js" data-auto-block="on" data-website-uuid="0da82593-2b71-4c7e-8f87-d55af09da73f" ></script>
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
@@ -21,12 +22,6 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
-        <script
-          type="text/javascript"
-          src="https://app.termly.io/embed.min.js"
-          data-auto-block="on"
-          data-website-uuid="0da82593-2b71-4c7e-8f87-d55af09da73f">
-        </script>
       </body>
     </html>
   )
