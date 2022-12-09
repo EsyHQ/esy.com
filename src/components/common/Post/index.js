@@ -17,7 +17,7 @@ export default Post
 
 const PostWrapper = styled.section`
     padding: 2% 5%;
-    // max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 
     p {
