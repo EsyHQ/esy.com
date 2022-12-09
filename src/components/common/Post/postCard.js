@@ -85,6 +85,7 @@ const PostCardTitle = styled.h1`
 `
 const PostCardContent = styled.div`
     color: rgba(255, 255, 255, 0.5);
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
