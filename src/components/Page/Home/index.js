@@ -62,6 +62,8 @@ const IndexPage = ({ fetchAccounts, activeAccount }) => {
             </SectionElement>
           </PageContent> */}
       </SectionWrapper>
+      {/* <SectionWrapper></SectionWrapper>
+      <SectionWrapper></SectionWrapper> */}
     </Layout>
   )
 }
@@ -100,13 +102,17 @@ const EditorSection = styled.div`
 
 
 const SectionWrapper = styled.div`
-  width: 100%;
-  // height: 100%;
   flex: 1;
-  // display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  // height: 100%:
+
+  &:nth-child(3) {
+    background: rgba(52,53,65);
+    // border: 1px solid #000;
+  }
 `
 
 

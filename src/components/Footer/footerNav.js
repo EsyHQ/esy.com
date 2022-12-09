@@ -40,14 +40,14 @@ const FooterNav = () => {
                         
 
 
-                        <FooterListItem>
+                        {/* <FooterListItem>
                           <FooterListItemTitle>Developers</FooterListItemTitle>
                           <FooterSubNav>
                               <FooterSubNavList>
                               <FooterSubNavListItem><Link to="/docs">Docs</Link></FooterSubNavListItem>
                               </FooterSubNavList>
                           </FooterSubNav>
-                        </FooterListItem>
+                        </FooterListItem> */}
 
                         <FooterListItem>
                         <FooterListItemTitle>Organization</FooterListItemTitle>

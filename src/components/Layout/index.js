@@ -46,6 +46,7 @@ const MainElement = styled.main`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: #000;
   // background: #151718;
 
   padding-top: 100px;
