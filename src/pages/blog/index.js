@@ -107,13 +107,13 @@ const BlogIndexPage = ({ data }) => {
                         const [ firstSentence, secondSentence ] = excerpt.split('.')
 
                         if (index === 0) {
-                            return <ThemeProvider  theme={mainTheme}><Grid item xs={12}><PostCard theme={mainTheme} postData={edge} firstSentence={firstSentence} secondSentence={secondSentence}  /></Grid></ThemeProvider>
+                            return <ThemeProvider key={index} theme={mainTheme}><Grid item xs={12}><PostCard theme={mainTheme} postData={edge} firstSentence={firstSentence} secondSentence={secondSentence}  /></Grid></ThemeProvider>
                         } else if (index > 0 && index < 3) {
-                            return <ThemeProvider theme={midTheme}><Grid item xs={12} sm={6}><PostCard theme={midTheme} postData={edge} firstSentence={firstSentence} secondSentence={secondSentence} /></Grid></ThemeProvider>
+                            return <ThemeProvider key={index} theme={midTheme}><Grid item xs={12} sm={6}><PostCard theme={midTheme} postData={edge} firstSentence={firstSentence} secondSentence={secondSentence} /></Grid></ThemeProvider>
                         } else if (index > 2 && index < 6 ) {
-                            return <ThemeProvider  theme={midTheme}><Grid item xs={12} sm={6}><PostCard theme={midTheme} postData={edge} firstSentence={firstSentence} secondSentence={secondSentence} /></Grid></ThemeProvider>
+                            return <ThemeProvider  key={index} theme={midTheme}><Grid item xs={12} sm={6}><PostCard theme={midTheme} postData={edge} firstSentence={firstSentence} secondSentence={secondSentence} /></Grid></ThemeProvider>
                         } else {
-                            return <ThemeProvider  theme={midTheme}><Grid item xs={12} sm={6}><PostCard theme={midTheme} postData={edge} firstSentence={firstSentence} secondSentence={secondSentence} /></Grid></ThemeProvider>
+                            return <ThemeProvider  key={index} theme={midTheme}><Grid item xs={12} sm={6}><PostCard theme={midTheme} postData={edge} firstSentence={firstSentence} secondSentence={secondSentence} /></Grid></ThemeProvider>
                         }
                         })}
                 </Grid>
