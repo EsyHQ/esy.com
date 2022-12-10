@@ -24,50 +24,20 @@ const EmailForm = () => {
     }
 
 
-    // const addEmailToContactList = async (email) => {
-    //     if (validator.isEmail(email)) {
-    //         let url = ''
-            
-    //         // etlify/functions/trigger-launch-email?email=${email}`)
-    //         // let url = (`http://localhost:9999/netlify/functions/trigger-launch-email`)
-
-    //         try {
-    //             const response = await axios.get(url)
-    //             const { statusCode, body } = response
-
-    //             // Display loader - 
-
-    //             if (statusCode === 200) {
-    //                 // Remove loader
-    //                 // Show success banner and confirm email notification.
-    //                 console.log('fetch was successful', statusCode)
-    //             } 
-
-    //         } catch(error) {
-    //             console.log(error, 'error')
-    //         }
-    //     }
-    // }
-      
-
-    // const handleEmailInput = event => {
-    //     event.preventDefault()
-
-    //     const emailInput = event.target.value
-
-    //     setIsEmailValid(validator.isEmail(emailInput))
-    //     setEmail(emailInput)
-    // } 
 
 
     const handleWriteClick = () => {
         navigate("/write")
     }
 
+    const handleSignupClick = () => {
+        navigate("/signup")
+    }
+
 
     return (<FormElement noValidate onSubmit={handleFormSubmit}>
                 <ButtonWrapper className="button-wrapper">
-                    <Button classNames="active" isBoxShadow={true}  ctaText="Sign Up" />
+                    <Button handleButtonClick={handleSignupClick} classNames="active" isBoxShadow={true}  ctaText="Sign Up" />
                     <Button handleButtonClick={handleWriteClick} isBoxShadow={true}  ctaText="Write" />
                 </ButtonWrapper>
             </FormElement>)
@@ -118,21 +88,4 @@ const FormElement = styled.form`
         flex-direction: column;
     }
 `
-
-
-const InputElement = styled.input`
-    background: inherit;
-    color: #fff;
-    border: none;
-    border-bottom: 1px solid #fff;
-    width: 250px;
-    outline: none;
-    font-size: 16px;
-    padding: 6px 0px;
-
-    @media(max-width: 600px) {
-        margi
-    }
-`
-
 

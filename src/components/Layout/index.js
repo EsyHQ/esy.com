@@ -11,16 +11,17 @@ import Footer from "src/components/Footer";
 import '../../styles/_globalstyles.scss'
 
 
-const Layout = ({ children, hasFooter = true }) => {
+const Layout = ({ children, hasHeaderNav = true, 
+  hasFooter = true, hasFooterStart = true }) => {
 
   return (<Grid container spaces={3}>
             <CssBaseline />
             <LayoutWrapper>
-              <Header />
+              <Header hasHeaderNav={hasHeaderNav} />
               <Helmet></Helmet>
 
               <MainElement>{children}</MainElement>
-              {hasFooter && <Footer />}
+              {hasFooter && <Footer hasFooterStart={hasFooterStart} />}
             </LayoutWrapper>
           </Grid>)
 }

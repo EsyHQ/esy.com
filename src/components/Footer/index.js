@@ -6,10 +6,10 @@ import FooterEnd from './footerEnd'
 
 
 
-const Footer = () => {
+const Footer = ({ hasFooterStart }) => {
 
     return (<FooterElement>
-              <FooterStart />
+              {hasFooterStart && <FooterStart />}
               <FooterEnd />
             </FooterElement>)
 }

@@ -10,6 +10,8 @@ const Button = ({ isBoxShadow, handleButtonClick, ctaText, classNames}) => {
 
 export default Button
 
+
+
 const ButtonWrapper = styled.div`
   font-size: 16px;
   width: 100%;
@@ -27,10 +29,12 @@ const ButtonWrapper = styled.div`
   z-index: 1000;
 
   &.active {
-    background-color: #bf3a30;
-    background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
-    box-shadow: ${({ isBoxShadow }) => (isBoxShadow ? "0 1px 28px rgb(255 152 0 / 66%)" : "")};
+    // background-color: #bf3a30;
+    // background-image: linear-gradient(315deg, #bf3a30 0%, #864ba2 74%);
+    // box-shadow: ${({ isBoxShadow }) => (isBoxShadow ? "0 1px 28px rgb(255 152 0 / 66%)" : "")};
     border: none;
+    background: #864ba2;
+
   }
 
   @media(max-width: 600px) {

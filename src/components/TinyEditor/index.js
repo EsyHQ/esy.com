@@ -31,7 +31,7 @@ const TinyEditor = () => {
                     'bold italic backcolor | alignleft aligncenter ' +
                     'alignright alignjustify | bullist numlist outdent indent | ' +
                     'removeformat',
-                    content_css: 'default',
+                    content_css: ['default', "/styles/tinyEditor.css"],
                     content_style: 'body { "Roboto","Helvetica","Arial",sans-serif; font-size:14px }, textarea { resize: none}'
                     }}
                   />

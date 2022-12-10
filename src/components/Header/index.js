@@ -7,7 +7,7 @@ import HeaderNav from "./headerNav"
 
 
 
-const Header = () => {
+const Header = ({ hasHeaderNav }) => {
   const [ activeNav, setActiveNav ] = useState(0)
 
   const setHeaderNavState = (pathname) => {
@@ -34,7 +34,7 @@ const Header = () => {
               <Link to="/"><Logo /></Link>
             </HeaderLogo>
 
-            <HeaderNav activeNav={activeNav} />
+            {hasHeaderNav && <HeaderNav activeNav={activeNav} />}
           </HeaderWrapper>)
 }
 

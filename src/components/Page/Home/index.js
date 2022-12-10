@@ -2,70 +2,28 @@ import * as React from 'react'
 import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
 
-import { navigate } from 'gatsby'
-
-import Layout from "../../Layout/container"
-
-import bgImg from 'src/images/pen-writer.jpg'
+import Layout from "src/components/Layout/container"
 import Button from 'src/components/Input/Button'
 import EmailForm from 'src/components/Form/emailForm'
 
-
-import QuillImage from 'src/images/purple-quill.png'
-import QuillImage2 from 'src/images/purple-quill-sharp.png'
-import QuillImage3 from 'src/images/purple-quill-3.png'
-import QuillImage4 from 'src/images/purple-quill-4.png'
+import bgImg from 'src/images/pen-writer.jpg'
 
 
 
+const IndexPage = () => {
 
+  return (<Layout>
+            <Helmet><title>Esy</title></Helmet>
 
-const IndexPage = ({ fetchAccounts, activeAccount }) => {
-
-
-  // const handleConnect = (event) => {
-  //   event.preventDefault()
-    
-  //   fetchAccounts && fetchAccounts()
-  // }
-
-
-  // React.useEffect(() => {
-  //   if (activeAccount.isConnected) {
-  //     navigate('/profile')
-  //   } 
-  // })
-
-  return (
-    <Layout>
-      <Helmet><title>Esy</title></Helmet>
-
-      <SectionWrapper>
-        <HeroWrapper>
-            <HeroSummary>
-              <HeroParagraph>The Smart Journal for Writing AI Powered Essays</HeroParagraph>
-              <EmailForm />
-            </HeroSummary>
-        </HeroWrapper>
-
-        {/* <PageContent>
-            <SectionElement>
-              <SectionImage><img src={QuillImage2} /></SectionImage>
-              <SectionContent>
-                  <ParagraphElement>Esy is for Essay.</ParagraphElement>
-                            
-                  <ParagraphElement>
-                      Esy is a digital journaling platform that offers users a suite of analytical tools for writing 
-                      AI assisted essays and discovering powerful insights about their personal writing habits.
-                  </ParagraphElement>
-              </SectionContent>
-            </SectionElement>
-          </PageContent> */}
-      </SectionWrapper>
-      {/* <SectionWrapper></SectionWrapper>
-      <SectionWrapper></SectionWrapper> */}
-    </Layout>
-  )
+            <SectionWrapper>
+              <HeroWrapper>
+                  <HeroSummary>
+                    <HeroParagraph>The Smart Journal for Writing AI Powered Essays</HeroParagraph>
+                    <EmailForm />
+                  </HeroSummary>
+              </HeroWrapper>
+            </SectionWrapper>
+          </Layout>)
 }
  
 
@@ -75,22 +33,6 @@ export default IndexPage
 
 
 const HeroParagraph = styled.p`
-`
-
-
-const MainSection = styled.main`
-  // display: flex;
-  flex: 1;
-  margin: 0 auto;
-  color: #fff;
-  min-height: 100vh;
-  width: 100%;
-  justify-content: center;
-  font-family: 'sans-serif';
-  height: 100%;
-  background: #fff;
-  flex-direction: column;
-  color: #000;
 `
 
 const EditorSection = styled.div`
@@ -107,11 +49,12 @@ const SectionWrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  // height: 100%:
+
 
   &:nth-child(3) {
-    background: rgba(52,53,65);
-    // border: 1px solid #000;
+    // background: rgba(52,53,65);
+    // background: linear-gradient(-225deg, rgb(81, 5, 36) 0%, rgb(101, 28, 111) 100%);
+    padding: 10%;
   }
 `
 
@@ -125,9 +68,7 @@ const HeroWrapper = styled.div`
   padding: 0 50px;
   background: #000;
   position: relative;
-
   
-
   ::before {
     content: "";
     background-image:  url(${bgImg});
