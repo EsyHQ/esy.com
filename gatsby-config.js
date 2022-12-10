@@ -8,6 +8,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://www.Esy.com",
     title: "Esy",
+    author: "@lemuhuru",
   },
   plugins: [
     "gatsby-plugin-styled-components",

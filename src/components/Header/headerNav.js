@@ -36,7 +36,8 @@ const HeaderNavContainer = styled.div`
     font-family: 'Spartan',sans-serif;
     font-weight: 500;
     max-width: 400px;
-` 
+`
+
 const DesktopNav = styled.nav`
   display: flex;
   width: 100%;
@@ -55,7 +56,6 @@ const MobileNav = styled.nav`
 `
 
 const NavItem = styled.div`
-  // width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,6 +64,7 @@ const NavItem = styled.div`
   &:last-child {
     width: 100%;
   }
+
   &:not(:last-child) {
     // margin-right: 50px;
   }

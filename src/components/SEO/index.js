@@ -45,13 +45,21 @@
                  content: title,
                },
                {
+                property: `og:type`,
+                content: "article",
+               },
+              //  {
+              //   property: `og:image`,
+              //   content: og_image,
+              //  },
+               {
                  property: `og:description`,
                  content: metaDescription,
                },
                {
-                 property: `og:type`,
-                 content: `website`,
-               },
+                name: `twitter:card`,
+                content: `summary`,
+               }, 
                {
                  name: `twitter:card`,
                  content: `summary`,
