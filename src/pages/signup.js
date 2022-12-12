@@ -24,7 +24,7 @@ const SignupPage = () => {
                                 </FormHeader>
                                 <FormFooter>
                                     <FormInput placeholder="Enter email" />
-                                    <FormButton>Sign Up</FormButton>
+                                    <FormButton>Sign up</FormButton>
                                 </FormFooter>
                             </FormElement>
                         </FormWrapper>
@@ -128,5 +128,6 @@ const FormButton = styled.div`
     z-index: 1000;
 
     background: #864ba2;
+    background: #8b3dff;
     border: none;
 `

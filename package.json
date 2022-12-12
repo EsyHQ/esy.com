@@ -22,6 +22,7 @@
     "@metamask/detect-provider": "github:metamask/detect-provider",
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.8.6",
+    "@segment/analytics-next": "^1.48.0",
     "@sendgrid/client": "^7.7.0",
     "@sendgrid/helpers": "^7.7.0",
     "@sendgrid/mail": "^7.7.0",

@@ -5,6 +5,9 @@ import { Link } from "gatsby"
 import UserIcon from 'src/svg/user-icon.svg'
 import AppIcon from 'src/svg/hamburger.svg'
 
+import DropDown from "./dropdown"
+import EmailForm from "../Form/emailForm"
+
 
 const HeaderNav = ({ activeNav }) => { 
 
@@ -12,8 +15,9 @@ const HeaderNav = ({ activeNav }) => {
               <DesktopNav>
                 <NavItem className={activeNav === 1 ? 'active' : ""}><Link to="/blog">Blog</Link></NavItem>
                 <NavItem className={activeNav === 2 ? 'active' : ""}><Link to="/journals">Journals</Link></NavItem>
-                <NavItem className={activeNav === 3 ? 'active' : ""}><a href="/write">Write</a></NavItem>
-                <NavItem><UserIcon /></NavItem>
+                {/* <NavItem className="user-icon"><UserIcon /></NavItem> */}
+                <NavItem><EmailForm /></NavItem>
+                {/* <DropDown></DropDown> */}
               </DesktopNav>
               <MobileNav>
                 <NavItem><AppIcon /></NavItem>
@@ -35,7 +39,7 @@ const HeaderNavContainer = styled.div`
     align-items: center;
     font-family: 'Spartan',sans-serif;
     font-weight: 500;
-    max-width: 400px;
+    max-width: 490px;
 `
 
 const DesktopNav = styled.nav`
@@ -65,6 +69,10 @@ const NavItem = styled.div`
     width: 100%;
   }
 
+  &.user-icon {
+    width: 100%;
+  }
+
   &:not(:last-child) {
     // margin-right: 50px;
   }
@@ -74,6 +82,7 @@ const NavItem = styled.div`
 
     &:hover {
       color: #864ba2;
+      color: #8b3dff;
     }
   }
 
@@ -87,6 +96,7 @@ const NavItem = styled.div`
     content: '';
     height: 5px;
     background: #864ba2;
+    background: #8b3dff;
     position: absolute;
     bottom: -10px;
     left: 0;
@@ -95,6 +105,16 @@ const NavItem = styled.div`
 
     @media(max-width: 576px) {
       bottom: -15px;
+    }
+  }
+
+  form {
+    margin: 0;
+
+    >div {
+      width: 100%;
+      max-width: 100%;
+      flex-direction: row-reverse;
     }
   }
 `

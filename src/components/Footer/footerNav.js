@@ -127,6 +127,7 @@ const FooterSubNavListItem = styled.li`
 
     &:hover {
         color: #864ba2;
+        color: #8b3dff;
     }
   }
 `

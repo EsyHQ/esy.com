@@ -5,7 +5,7 @@ import Layout from 'src/components/Layout'
 import OrigamiImage from 'src/images/origami-quill.png'
 
 
-const ThankYouPage = () => {
+const WelcomePage = () => {
 
     return (<Layout hasHeaderNav={false} hasFooterStart={false}>
                 <SectionWrapper>
@@ -17,7 +17,7 @@ const ThankYouPage = () => {
 }
 
 
-export default ThankYouPage
+export default WelcomePage
 
 
 

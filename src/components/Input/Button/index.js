@@ -34,7 +34,11 @@ const ButtonWrapper = styled.div`
     // box-shadow: ${({ isBoxShadow }) => (isBoxShadow ? "0 1px 28px rgb(255 152 0 / 66%)" : "")};
     border: none;
     background: #864ba2;
+    background: #8b3dff; // canva theme.
+  }
 
+  &:hover {
+    transition: background-color .1s linear,border-color .1s linear,color .1s linear;
   }
 
   @media(max-width: 600px) {
