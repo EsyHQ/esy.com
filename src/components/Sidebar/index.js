@@ -20,7 +20,7 @@ import BarChartIcon from 'src/svg/bar-chart.svg'
 const Sidebar = () => {
 
     return (<SidebarSection>
-                <SomeDiv>
+                <SidebarInner>
                     <SectionHeader>
                         <SectionLogo>
                             <Link to="/author/home"><Logo /></Link>
@@ -64,8 +64,8 @@ const Sidebar = () => {
                         {/* <SectionCategory>Star Journals</SectionCategory> */}
                         
                     </SectionBody>
-                </SomeDiv>
-                <Link to="/author/settings">
+                </SidebarInner>
+                <Link to="/author/admin">
                     <SectionFooter>
                         <UserIcon />
 
@@ -80,8 +80,8 @@ const Sidebar = () => {
 
 export default Sidebar
 
-const SomeDiv = styled.div`
-    padding: 25px;
+const SidebarInner = styled.div`
+    // padding: 25px;
 `
 
 
@@ -96,8 +96,13 @@ const SidebarSection = styled.section`
     position: relative;
     justify-content: space-between;
     align-items: space-between;
+
+    a.active {
+        background: rgb(21, 23, 24);d
+    }
 `
 const SectionHeader = styled.div`
+    padding: 25px;
     width: 100%;
 
     .sidebar-header-btn {
@@ -111,6 +116,10 @@ const SectionFooter = styled.div`
     font-size: 23px;
     border-top: 1px solid rgb(39, 39, 39);
     padding: 20px 25px;
+
+    &:hover {
+        background: rgb(21, 23, 24);
+    }
 
     svg {
         max-width: 50px;
@@ -156,11 +165,17 @@ const ListElement = styled.ul`
 const ListItem = styled.li`
     font-size: 23px;
     margin-bottom: 15px;
+   
 
     a {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 0 25px;
+
+        &:hover {
+            background: rgb(21, 23, 24);
+        }
     }
 
     svg {
