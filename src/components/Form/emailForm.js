@@ -27,7 +27,7 @@ const EmailForm = () => {
 
 
     const handleWriteClick = () => {
-        navigate("/write")
+        navigate("/author/compose")
     }
 
     const handleSignupClick = () => {

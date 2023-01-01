@@ -5,25 +5,18 @@ import Grid from '@material-ui/core/Grid';
 import CssBaseline from '@mui/material/CssBaseline';
 
 
-import Header from "src/components/Header"
-import MobileHeader from 'src/components/Header/mobileHeader'
-import Footer from "src/components/Footer";
-
-import '../../styles/_globalstyles.scss'
+import Sidebar from 'src/components/Sidebar'
+import 'src/styles/_globalstyles.scss'
 
 
-const Layout = ({ children, hasHeader = true, hasHeaderNav = true, 
-  hasFooter = true, hasFooterStart = true }) => {
+const Layout = ({ children }) => {
 
   return (<Grid container spaces={3}>
             <CssBaseline />
             <LayoutWrapper>
-              {hasHeader && <Header hasHeaderNav={hasHeaderNav} />}
-              <MobileHeader />
               <Helmet></Helmet>
-
+              <Sidebar />
               <MainElement>{children}</MainElement>
-              {hasFooter && <Footer hasFooterStart={hasFooterStart} />}
             </LayoutWrapper>
           </Grid>)
 }
@@ -35,8 +28,6 @@ export default Layout
 const LayoutWrapper = styled.div`
     width: 100%;
     display: flex;
-    flex-direction: column;
-    // margin: 0 auto;
     min-height: 100vh;
     background: #fff;
     color: #000;

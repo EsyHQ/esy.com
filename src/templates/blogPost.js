@@ -1,5 +1,5 @@
 
-import React from "react"
+import React, { useState, useEffect } from "react"
 import styled from 'styled-components'
 import { StaticQuery, graphql } from "gatsby"
 import moment from 'moment'
@@ -13,8 +13,13 @@ import Layout from 'src/components/Layout'
 import ReadingTime from 'src/components/ReadingTime'
 
 import SEO from 'src/components/SEO'
+import ReadingProgressBar from 'src/components/ReadingProgressBar'
+
+
 
 export default function Template(props) {
+  const [width, setWidth] = useState(0)
+
   const { data, pageContext } = props
   const { nextPostSlug, prevPostSlug } = pageContext
   const { ghostPost } = data // data.markdownRemark holds your post data
@@ -69,13 +74,28 @@ export default function Template(props) {
 
 
 
-  return (
+useEffect(() => {
+  const scrollHeight = () => {
+    const el = document.documentElement
+    let scrollTop = el.scrollTop || document.body.scrollTop
+    let scrollHeight = el.scrollHeight || document.body.scrollHeight
+    const percent = (scrollTop / (scrollHeight)) * 100
+    setWidth(percent)
+}
+    window.addEventListener("scroll", scrollHeight, { capture: true })
+    return () => window.removeEventListener("scroll", scrollHeight )
+})
+
+
+return (
     <Layout className="blog-layout">
       <SEO
         title="Blog"
         meta={blogPostMeta}
       />
       <BlogPostWrapper>
+      <ReadingProgressBar width={width} />
+
         <BlogPostInner>
           <PrePostContainer>
             <PostTitle>{title}</PostTitle>

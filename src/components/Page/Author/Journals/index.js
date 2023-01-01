@@ -1,28 +1,21 @@
 import React from "react"
 import styled from "styled-components"
 
-import { Helmet } from "react-helmet"
+import Layout from "src/components/Author/Layout"
 
-import Layout from "src/components/Layout/container"
-// import Editor from "src/components/Editor"
-import TinyEditor from 'src/components/TinyEditor'
-import LexicalEditor from 'src/components/LexicalEditor'
-import Sidebar from "src/components/Sidebar"
 
-const WritePage = ({ fetchAccounts, activeAccount, location }) => {
+
+const ComposePage = () => {
 
     return (<PageWrapper>
-              <Layout location={location} hasHeader={false} hasFooter={false}>
-                  <Helmet><title>Write</title></Helmet>
+              <Layout pageTitle="Compose">
                   <SectionWrapper>
-                    <Sidebar />
-                    <LexicalEditor />
                   </SectionWrapper>
               </Layout>
             </PageWrapper>)
 }
 
-export default WritePage
+export default ComposePage
 
 
 const PageWrapper = styled.div`
@@ -61,6 +54,7 @@ const SectionWrapper = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
+  background: #fff;
 `
 
 const SidebarContainer = styled.div`

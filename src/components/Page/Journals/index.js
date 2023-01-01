@@ -6,8 +6,6 @@ import { Helmet } from "react-helmet"
 import Layout from "src/components/Layout/container"
 
 
-
-
 const JournalsPage = ({ fetchAccounts, activeAccount, location }) => {
 
     return (<Layout location={location} hasFooter={false}>
@@ -48,6 +46,7 @@ const SectionWrapper = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
+  color: #fff;
 
   &:first-child {
     // max-width: 95%;
