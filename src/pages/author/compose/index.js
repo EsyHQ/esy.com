@@ -1,5 +1,5 @@
 import React from 'react'
-import ComposePage from 'src/components/Page/Author/compose'
+import ComposePage from 'src/components/Page/Author/Compose'
 
 
 
