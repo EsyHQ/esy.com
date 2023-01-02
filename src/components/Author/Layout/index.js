@@ -27,6 +27,7 @@ export default Layout
 
 const LayoutWrapper = styled.div`
     width: 100%;
+    height: 100%;
     display: flex;
     min-height: 100vh;
     background: #fff;
