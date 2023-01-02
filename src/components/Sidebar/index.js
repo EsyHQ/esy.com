@@ -3,19 +3,17 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 import Logo from 'src/components/Logo'
-// import Button from 'src/components/Input/Button'
-import AlertIcon from 'src/svg/notification.svg'
 import ExpandIcon from 'src/svg/expanded-arrows.svg'
 import HomeIcon from 'src/svg/home.svg'
 import EssayIcon from 'src/svg/writing.svg'
 import LockIcon from 'src/svg/lock.svg'
 import JournalIcon from 'src/svg/journal.svg'
 import NextIcon from 'src/svg/next.svg'
-import UserIcon from 'src/svg/user-icon.svg'
 import ShuttleIcon from 'src/svg/shuttle.svg'
 import BarChartIcon from 'src/svg/bar-chart.svg'
 
-
+import DataSection from './dataWidget'
+import SidebarFooter from './footer'
 
 const Sidebar = () => {
 
@@ -61,28 +59,18 @@ const Sidebar = () => {
                                 </ListItem>
                             </ListElement>
                         </SidebarNav>
-                        {/* <SectionCategory>Star Journals</SectionCategory> */}
-                        
                     </SectionBody>
                 </SidebarInner>
-                <Link to="/author/admin">
-                    <SectionFooter>
-                        <UserIcon />
 
-                        <UserSection>
-                            <UserSectionName>Lemuel Uhuru</UserSectionName>
-                        </UserSection>
-                        <AlertIcon />
-                    </SectionFooter>
-                </Link>
+                <SectionAdmin>
+                    <Link to="/author/analytics"><DataSection /></Link>
+                    <Link to="/author/admin"><SidebarFooter /></Link>
+                </SectionAdmin>
             </SidebarSection>)
 }
 
 export default Sidebar
 
-const SidebarInner = styled.div`
-    // padding: 25px;
-`
 
 
 const SidebarSection = styled.section`
@@ -97,6 +85,10 @@ const SidebarSection = styled.section`
     justify-content: space-between;
     align-items: space-between;
 
+    a::hover {
+        background: rgb(21, 23, 24);
+    }
+
     a.active {
         background: rgb(21, 23, 24);d
     }
@@ -109,36 +101,9 @@ const SectionHeader = styled.div`
         margin-top: 20px;
     }
 `
-const SectionFooter = styled.div`
-    width: 100%;
-    display: flex;
-    align-items: center;
-    font-size: 23px;
-    border-top: 1px solid rgb(39, 39, 39);
-    padding: 20px 25px;
 
-    &:hover {
-        background: rgb(21, 23, 24);
-    }
-
-    svg {
-        max-width: 50px;
-        max-height: 30px;
-        fill: #fff;
-    }
-
-    svg:first-child {
-        margin-right: 20px;
-    }
-`
 const SectionCategory = styled.div``
-const UserSection = styled.div`
-    width: 100%;
-`
-const UserSectionName = styled.div`
-    width: 100%;
-    // text-align: center;
-`
+
 const SectionLogo = styled.div`
     display: flex;
     align-items: center;
@@ -163,7 +128,7 @@ const ListElement = styled.ul`
     padding: 0;
 `
 const ListItem = styled.li`
-    font-size: 23px;
+    font-size: 21px;
     margin-bottom: 15px;
    
 
@@ -237,5 +202,16 @@ const Button = styled.div`
   }
 `
 
+const SectionAdmin = styled.div`
+    width: 100%;
+    border-top: 1px solid rgb(39, 39, 39);
 
+    a:hover {
+        background: rgb(21, 23, 24);
+    }
+`
+
+
+const SidebarInner = styled.div`
+`
 
