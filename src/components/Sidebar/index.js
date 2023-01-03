@@ -77,7 +77,7 @@ const SidebarSection = styled.section`
     width: 100%;
     height: 100%;
     background: #000;
-    max-width: 400px;
+    max-width: 350px;
     color: #fff;
     display: flex;
     flex-direction: column;

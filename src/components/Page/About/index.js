@@ -101,7 +101,7 @@ const ParagraphElement = styled.p``
 
 const SectionImage = styled.div`
     width: 100%;
-    max-width: 350px;
+    max-width: 400px;
     display: flex;
     align-items: center;
 
