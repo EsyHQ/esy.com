@@ -30,6 +30,7 @@ const FooterNav = () => {
                         <FooterListItemTitle>Resources</FooterListItemTitle>
                         <FooterSubNav>
                             <FooterSubNavList>
+                            <FooterSubNavListItem><a href="https://edu.esy.com">Edu</a></FooterSubNavListItem>
                             <FooterSubNavListItem><Link to="/blog">Blog</Link></FooterSubNavListItem>
                             <FooterSubNavListItem><Link to="/edu">Journals</Link></FooterSubNavListItem>
                             {/* <FooterSubNavListItem><Link to="/edu">Edu</Link></FooterSubNavListItem>
