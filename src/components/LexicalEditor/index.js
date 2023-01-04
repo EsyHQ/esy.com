@@ -114,7 +114,7 @@ const LexicalEditor = () => {
                 <OnChangePlugin onChange={onChange} />
                 <HistoryPlugin />
                 <AutoFocusPlugin />
-                <TreeViewPlugin />
+                {/* <TreeViewPlugin /> */}
               </EditorContainer>
             </LexicalComposer>
          </ComponentWrapper>)
