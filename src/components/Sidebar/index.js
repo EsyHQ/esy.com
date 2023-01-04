@@ -133,16 +133,15 @@ const ListElement = styled.ul`
 const ListItem = styled.li`
     font-size: 21px;
     margin-bottom: 15px;
-   
 
     a {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 25px;
+        padding: 8px 25px;
 
         &:hover {
-            background: rgb(21, 23, 24);
+            background: #27293d;
         }
     }
 
