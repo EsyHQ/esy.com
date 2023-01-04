@@ -23,7 +23,7 @@ export default function initialEditorText() {
     $createTextNode("bold").toggleFormat("bold"),
     $createTextNode(", "),
     $createTextNode("italic").toggleFormat("italic"),
-    $createTextNode(" and so on.")
+    $createTextNode(", and so on.")
   );
   root.append(paragraph);
 }

@@ -77,6 +77,8 @@ const SidebarSection = styled.section`
     width: 100%;
     height: 100%;
     background: #000;
+    background: rgba(12,10,29); // - Purple theme, will need to set this as an object.
+    border-right: 1px solid rgb(39,39,39);
     max-width: 350px;
     color: #fff;
     display: flex;
@@ -84,6 +86,7 @@ const SidebarSection = styled.section`
     position: relative;
     justify-content: space-between;
     align-items: space-between;
+    
 
     a::hover {
         background: rgb(21, 23, 24);
