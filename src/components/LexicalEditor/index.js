@@ -134,6 +134,7 @@ const ComponentWrapper = styled.div`
 
   .editor-content {
     outline: none;
+    font-family: Poppins, sans-serif;
   }
 `
 
