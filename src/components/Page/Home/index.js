@@ -67,15 +67,16 @@ const HeroWrapper = styled.div`
   flex: 1;
   padding: 0 50px;
   background: #000;
+  background: rgb(12, 10, 29);
   position: relative;
-  min-height: 600px;
+  // min-height: 600px;
   
   ::before {
     content: "";
     background-image:  url(${bgImg});
     transform: scaleX(-1);
     background-repeat: no-repeat;
-    opacity: 0.06;
+    opacity: 0.02;
     background-size: cover; 
     position: absolute;
     top: 0;
