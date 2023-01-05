@@ -82,9 +82,12 @@ const AboutPageContainer = styled.div`
     padding: 5%;
     display: flex;
     flex-direction: column;
-    // align-items: center;
     max-with: 1200px;
     font-size: 23px;
+
+    p {
+        font-family: Poppins, sans-serif; 
+    }
 `
 
 const PageTitle = styled.div`
@@ -96,7 +99,9 @@ const PageContent = styled.div`
 
 `
 
-const ParagraphElement = styled.p``
+const ParagraphElement = styled.p`
+    font-family: Poppins, sans-serif; 
+`
 
 
 const SectionImage = styled.div`
@@ -145,7 +150,7 @@ const SectionContent = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 650px;
     margin: 0 50px;
     width: 100%;
 `
