@@ -112,9 +112,6 @@ return (
           </PrePostContainer>
           
         <Post>
-          {/* <ImageWrapper>
-            <img src={feature_image} />
-          </ImageWrapper> */}
             <div
               className="blog-post-content"
               dangerouslySetInnerHTML={{ __html: html }}
@@ -166,24 +163,18 @@ const BlogPostWrapper = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 2% 5%;
-  background: #151718;
+  background: rgba(12,10,29);
 
   img {
     border-radius: 6px;
   }
 
-  // .blogPost__ImageWrapper-kMyoBq {
-  //   border-radius: 6px;
-  //   border: 1px solid rgba(0,0,0,0.22);
-  //   box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.3);
-  // }
 
   .blog-post-content {
 
     > figure {
 
       img {
-        // display: none; 
         width: 100%;
         height: 100%;
         
@@ -203,18 +194,17 @@ const BlogPostWrapper = styled.div`
       font-size: 20px;
       margin-bottom: 30px;
       line-height: 32px;
+      font-family: Poppins, sans-serif; 
+      font-weight: 400;
     }
 
     strong {
       font-weight: 700;
       color: #fff;
-      font-family: "Roboto", sans-serif, "Helvetica","Arial";
+      font-family: Poppins, sans-serif;    
+
     }
 
-    img {
-      // max-width: 800px;
-      // width: 100%;
-    }
 
     h2, h3 { 
       margin-top: 50px;
@@ -224,7 +214,8 @@ const BlogPostWrapper = styled.div`
 
     h2 {
       color: rgb(255, 255, 255);
-      font-family: "Roboto", sans-serif, "Helvetica","Arial";
+      font-family: Poppins, sans-serif;  
+
       font-size: 34px;
       font-weight: bold;
       letter-spacing: 0px;
@@ -232,7 +223,7 @@ const BlogPostWrapper = styled.div`
 
     h3 {
       color: rgb(255, 255, 255);
-      font-family: "Roboto", sans-serif, "Helvetica","Arial";
+      font-family: Poppins, sans-serif;  
       font-size: 26px;
       font-weight: bold;
       letter-spacing: 0px;
@@ -241,7 +232,7 @@ const BlogPostWrapper = styled.div`
     blockquote {
       margin: 50px 0;
       color: rgba(255, 255, 255, 0.8);
-      font-family: Qanelas-Medium;
+      font-family: Poppins, sans-serif;  
       font-size: 24px;
       font-weight: 500;
       letter-spacing: 0.75px;
@@ -257,10 +248,6 @@ const BlogPostWrapper = styled.div`
       margin: 100px auto;
       padding: 0 10%;
   }
-
-      img {
-        // max-height: 330px;
-        }
     }
   }
 
@@ -271,9 +258,8 @@ const BlogPostWrapper = styled.div`
   
   h1 {
     color: rgb(255, 255, 255);
-    font-family: "Roboto", sans-serif, "Helvetica","Arial";
-    font-size: 46px;
-    font-weight: bold;
+    font-family: Poppins, sans-serif;    
+    font-weight: 600;
     letter-spacing: 0px;
     border-bottom: 1px solid rgb(64, 70, 72);
     padding-bottom: 20px;
@@ -287,7 +273,6 @@ const BlogPostWrapper = styled.div`
 `
 
 const BlogPostInner = styled.div`
-  // max-width: 800px;
   width: 100%;
   padding: 0 10%;
   max-width: 1800px;
@@ -307,7 +292,6 @@ const ImageWrapper = styled.div`
 `
 
 const PrePostContainer = styled.div`
-  // padding: 0 10%;
   width: 100%;
   margin: 0 auto;
 
@@ -342,11 +326,8 @@ const FeatureImage = styled.div`
   background: #151718;
   text-align: center;
 
-  // width: 80%;
-  // margin: 0 auto;
   img {
     width: 100%;
 
-    // max-width: 1400px;
   }
 `

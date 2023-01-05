@@ -61,6 +61,7 @@ const PreviousPost = styled.div`
     text-transform: uppercase;
     color: rgb(255, 255, 255);
     font-family: "Roboto", sans-serif, "Helvetica","Arial";
+    font-family: Poppins, sans-serif;    
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 0px;
