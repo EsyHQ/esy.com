@@ -76,7 +76,7 @@ const HeroWrapper = styled.div`
     background-image:  url(${bgImg});
     transform: scaleX(-1);
     background-repeat: no-repeat;
-    opacity: 0.06;
+    opacity: 0.02;
     background-size: cover; 
     position: absolute;
     top: 0;
