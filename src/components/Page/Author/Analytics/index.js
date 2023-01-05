@@ -28,42 +28,11 @@ const PageWrapper = styled.div`
   }
 `
 
-const WritePageContainer = styled.div`
-    // display: flex;
-    flex: 1;
-    margin: 0 auto;
-    color: #fff; 
-    min-height: 100vh;
-    width: 100%;
-    justify-content: center;
-    font-family: 'sans-serif';
-    height: 100%;
-    background: #fff;
-    flex-direction: column;
-    color: #000;
-`
-
-const EditorSection = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: left;
-`
 
 const SectionWrapper = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: rgba(12,10,29); 
 `
-
-const SidebarContainer = styled.div`
-  background: #000;
-  width: 100%;
-`
-const SidebarNav = styled.nav``
-
-const SidebarList = styled.ul``
-
-const SidebarListItem = styled.li``
