@@ -23,7 +23,6 @@ const IndexPage = () => {
                   </HeroSummary>
               </HeroWrapper>
             </SectionWrapper>
-            <SectionElement></SectionElement>
           </Layout>)
 }
  

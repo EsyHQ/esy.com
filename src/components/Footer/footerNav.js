@@ -122,7 +122,8 @@ const FooterSubNavListItem = styled.li`
   margin-top: 10px;
 
   a {
-    font-family: "Roboto", sans-serif, "Helvetica","Arial" !important;
+    // font-family: "Roboto", sans-serif, "Helvetica","Arial" !important;
+    font-family: "Poppins", sans-serif!important;  
     display: inline !important;
     font-weight: 400 !important;
 
