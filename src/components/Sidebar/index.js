@@ -11,6 +11,7 @@ import JournalIcon from 'src/svg/journal.svg'
 import NextIcon from 'src/svg/next.svg'
 import ShuttleIcon from 'src/svg/shuttle.svg'
 import BarChartIcon from 'src/svg/bar-chart.svg'
+import BinocularsIcon from 'src/svg/binoculars.svg'
 
 import DataSection from './dataWidget'
 import SidebarFooter from './footer'
@@ -40,6 +41,15 @@ const Sidebar = () => {
                                     </Link>
 
                                 </ListItem>
+                                <ListItem>
+                                    <Link to="/author/explore">
+                                        <ListItemCategory>
+                                            <BinocularsIcon /><span>Explore</span>
+                                        </ListItemCategory>
+                                        <NextIcon />
+                                    </Link>
+                                </ListItem>
+
                                 <ListItem>
                                     <Link to="/author/essays">
                                         <ListItemCategory>
