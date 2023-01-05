@@ -67,8 +67,9 @@ const HeroWrapper = styled.div`
   flex: 1;
   padding: 0 50px;
   background: #000;
+  background: rgb(12, 10, 29);
   position: relative;
-  min-height: 600px;
+  // min-height: 600px;
   
   ::before {
     content: "";
