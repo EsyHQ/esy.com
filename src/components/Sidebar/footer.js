@@ -10,7 +10,7 @@ const SidebarFooter = () => {
                         <UserIcon />
 
                         <UserSection>
-                            <UserSectionName>Lemuel Uhuru</UserSectionName>
+                            <UserSectionName>Guest</UserSectionName>
                         </UserSection>
 
                         <AlertIcon />
