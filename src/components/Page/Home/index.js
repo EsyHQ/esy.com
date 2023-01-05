@@ -23,6 +23,7 @@ const IndexPage = () => {
                   </HeroSummary>
               </HeroWrapper>
             </SectionWrapper>
+            <SectionElement></SectionElement>
           </Layout>)
 }
  
@@ -68,6 +69,7 @@ const HeroWrapper = styled.div`
   padding: 0 50px;
   background: #000;
   position: relative;
+  min-height: 600px;
   
   ::before {
     content: "";
@@ -193,10 +195,12 @@ const SectionImage = styled.div`
 `
 
 const SectionElement = styled.div`
+    height: 100%;
+    width: 100%;
     color: #fff;
+    background: rgba(12,10,29);
     display: flex;
     justify-content: center;
-    margin-bottom: 100px;
 `
 
 const SectionContent = styled.div`

@@ -42,11 +42,11 @@ const EditorSection = styled.div`
 
 const SectionWrapper = styled.div`
   display: flex;
-  // flex-direction: column;
   align-items: center;
   width: 100%;
   height: 100%;
   color: #fff;
+  background: rgba(12,10,29);
 
   &:first-child {
     // max-width: 95%;

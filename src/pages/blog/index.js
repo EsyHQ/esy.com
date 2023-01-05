@@ -127,7 +127,7 @@ export default BlogIndexPage
 const BlogWrapper = styled.section`
     height: 100%;
     width: 100%;
-    background: #151718;
+    background: rgba(12,10,29);
     padding: 40px 5%;
     display: flex;
     flex-direction: row;

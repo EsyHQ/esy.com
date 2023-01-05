@@ -77,8 +77,8 @@ const AboutPageContainer = styled.div`
     width: 100%;
     height: 100%;
     color: #fff;
-    background: #151718;
-    background: #000;
+    background: rgba(12,10,29);
+
     padding: 5%;
     display: flex;
     flex-direction: column;
