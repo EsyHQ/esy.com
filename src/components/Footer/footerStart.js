@@ -77,8 +77,9 @@ const CompanyLogo = styled.div`
 const CompanyDesc = styled.div`
   font-size: 18px;
   color: #fff;
-  max-width: 600px;
+  max-width: 650px;
   margin-top: 50px;
+  font-family: Poppins, sans-serif; 
 
   @media(max-width: 900px) {
     font-size: 16px;
