@@ -35,14 +35,6 @@ export default IndexPage
 const HeroParagraph = styled.p`
 `
 
-const EditorSection = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: left;
-`
-
-
 const SectionWrapper = styled.div`
   flex: 1;
   flex-direction: column;
@@ -52,13 +44,9 @@ const SectionWrapper = styled.div`
 
 
   &:nth-child(3) {
-    // background: rgba(52,53,65);
-    // background: linear-gradient(-225deg, rgb(81, 5, 36) 0%, rgb(101, 28, 111) 100%);
     padding: 10%;
   }
 `
-
-
 
 const HeroWrapper = styled.div`
   width: 100%;
@@ -97,10 +85,7 @@ const HeroWrapper = styled.div`
   @media(max-width: 600px) {
     padding: 0 25px;
   }
-
-
 `
-
 
 const HeroSummary = styled.div`
   display: flex;
@@ -167,46 +152,4 @@ const HeroSummary = styled.div`
     align-items: center;
     font-weight: 600;
   }
-`
-
-
-
-
-
-
-const PageContent = styled.div`
-    width: 100%;
-    background: #000;
-    margin: 0;
-    padding-top: 100px;
-`
-
-const ParagraphElement = styled.p``
-
-
-const SectionImage = styled.div`
-    width: 100%;
-    max-width: 400px;
-
-    img {
-        width: 100%;
-        border-radius: 20%;
-    }
-`
-
-const SectionElement = styled.div`
-    height: 100%;
-    width: 100%;
-    color: #fff;
-    background: rgba(12,10,29);
-    display: flex;
-    justify-content: center;
-`
-
-const SectionContent = styled.div`
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 0 50px;
 `
