@@ -21,7 +21,7 @@ const MachineLearningPage = () => {
                                 <SectionTitle>Machine Learning</SectionTitle>
                                 <SectionAnalytics>
                                     <ListElement>
-                                        <ListItem>Total Essays: 0</ListItem>
+                                        <ListItem>Total Essays: 1</ListItem>
                                         <ListItem>Avg Tone: Educational</ListItem>
                                         <ListItem>Avg Reading Time: 5 Minutes</ListItem>
                                     </ListElement>
