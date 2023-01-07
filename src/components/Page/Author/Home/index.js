@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 import Layout from "src/components/Author/Layout"
 
-
+import SunIcon from 'src/svg/sun.svg'
 
 const HomePage = () => {
 
@@ -11,22 +11,22 @@ const HomePage = () => {
               <Layout pageTitle="Home">
                   <SectionWrapper>
                       <SectionHeader>
-                          <SectionTitle>Good Morning<span></span></SectionTitle>
-                          <SectionAnalytics>
+                          <SectionTitle>Good Morning<span></span><SunIcon /></SectionTitle>
+                          {/* <SectionAnalytics>
                             <GreetingCard></GreetingCard>
                             <GreetingCard></GreetingCard>
-                          </SectionAnalytics>
+                          </SectionAnalytics> */}
                       </SectionHeader>
                      
 
-                      <SectionBody>
+                      {/* <SectionBody>
                         <SectionInner>
                           <ListElement>
                             <ListItem><EssayCard></EssayCard></ListItem>
                             <ListItem><EssayCard></EssayCard></ListItem>
                           </ListElement>
                         </SectionInner>
-                      </SectionBody>
+                      </SectionBody> */}
                   </SectionWrapper>
               </Layout>
             </PageWrapper>)
@@ -76,6 +76,15 @@ const SectionTitle = styled.h1`
   font-family: 'Poppins', sans-serif;
   color: #fff;
   text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  svg {
+    max-width: 40px;
+    max-height: 40px;
+    margin-left: 20px;
+  }
 `
 
 const SectionAnalytics = styled.section`
