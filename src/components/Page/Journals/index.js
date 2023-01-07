@@ -18,14 +18,14 @@ const JournalsPage = ({ location }) => {
                       <ListWrapper>
                         <ListElement>
                           <Link to="/journals/crypto"><ListItem>Crypto</ListItem></Link>
-                          <Link to="/journals/economics"><ListItem>Economics</ListItem></Link>
+                          {/* <Link to="/journals/economics"><ListItem>Economics</ListItem></Link>
                           <Link to="/journals/foreign-policy"><ListItem>Foreign Policy</ListItem></Link>
                           <Link to="/journals/geo"><ListItem>Geo</ListItem></Link>
                           <Link to="/journals/history"><ListItem>History</ListItem></Link>
-                          <Link to="/journals/history"><ListItem>Human Rights</ListItem></Link>
+                          <Link to="/journals/history"><ListItem>Human Rights</ListItem></Link> */}
                           <Link to="/journals/machine-learning"><ListItem>Machine Learning</ListItem></Link>
-                          <Link to="/journals/sports"><ListItem>Sports</ListItem></Link>
-                          <Link to="/journals/sports"><ListItem>Tech</ListItem></Link>
+                          {/* <Link to="/journals/sports"><ListItem>Sports</ListItem></Link>
+                          <Link to="/journals/sports"><ListItem>Tech</ListItem></Link> */}
                         </ListElement>
                         {/* <ListElement>
                           <ListItem>Machine Learning</ListItem>
@@ -102,8 +102,5 @@ const ListItem = styled.li`
   &:hover {
     background: #27293d;
     color: #8b3dff;
-  }
-
-  a {
   }
 `

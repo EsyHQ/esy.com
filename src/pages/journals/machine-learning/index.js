@@ -5,11 +5,11 @@ import { Link } from 'gatsby'
 
 import Layout from "src/components/Layout"
 
-import image from 'src/images/btc-journal.png'
+import image from 'src/images/ml-purple-journal.png'
 
 
 
-const CryptoPage = () => {
+const MachineLearningPage = () => {
     return (<PageWrapper>
                 <Layout pageTitle="Compose">
                     <SectionWrapper>
@@ -18,10 +18,10 @@ const CryptoPage = () => {
                                 <img src={image} />
                             </SectionImage>
                             <StartWrapper>
-                                <SectionTitle>Crypto</SectionTitle>
+                                <SectionTitle>Machine Learning</SectionTitle>
                                 <SectionAnalytics>
                                     <ListElement>
-                                        <ListItem>Total Essays: 1</ListItem>
+                                        <ListItem>Total Essays: 0</ListItem>
                                         <ListItem>Avg Tone: Educational</ListItem>
                                         <ListItem>Avg Reading Time: 5 Minutes</ListItem>
                                     </ListElement>
@@ -36,7 +36,7 @@ const CryptoPage = () => {
                         </SectionDivider>
                         <SectionBody>
                             <ListElement>
-                                <Link to=""><ListItem>Launching a $10,000 Bank Roll for DYDX</ListItem></Link>
+                                <Link to=""><ListItem>What is Machine Learning?</ListItem></Link>
                                 <ListItem></ListItem>
                             </ListElement>
                         </SectionBody>
@@ -46,7 +46,9 @@ const CryptoPage = () => {
 }
 
 
-export default CryptoPage
+export default MachineLearningPage
+
+
 
 const SectionHeader = styled.div`
     display: flex;
