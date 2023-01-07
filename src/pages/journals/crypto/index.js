@@ -50,6 +50,8 @@ export default CryptoPage
 
 const SectionHeader = styled.div`
     display: flex;
+    margin: 0 auto;
+    max-width: 900px;
     border: 8px solid #27293d;
 
     li {
