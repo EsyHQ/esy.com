@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 
@@ -16,7 +16,40 @@ import BinocularsIcon from 'src/svg/binoculars.svg'
 import DataSection from './dataWidget'
 import SidebarFooter from './footer'
 
+
+
 const Sidebar = () => {
+  const [ activeNav, setActiveNav ] = useState(null)
+
+    const setHeaderNavState = (pathname) => {
+        console.log('pathname', pathname)
+        if (pathname === '/author/home') {
+          setActiveNav(0)
+        } else if (pathname.includes('/author/explore')) {
+            setActiveNav(1)
+        } else if (pathname.includes('/author/essays')) {
+            setActiveNav(2)
+        } else if (pathname.includes('/author/journals')) {
+            setActiveNav(3)
+        } else if (pathname.includes('/author/analytics')) {
+            setActiveNav(4)
+        } else if (pathname.includes('/author/admin')) {
+            setActiveNav(5)
+        } 
+      }
+
+
+    useEffect(() => {
+        const pathname = window && window.location && window.location.pathname
+        
+        // if (pathname.includes('/compose') && activeNav === 0) {
+        //     setActiveNav(null)
+        // }
+
+        setHeaderNavState(pathname)
+    })
+
+
 
     return (<SidebarSection>
                 <SidebarInner>
@@ -33,7 +66,10 @@ const Sidebar = () => {
                         <SidebarNav>
                             <ListElement>
                                 <ListItem>
-                                    <Link to="/author/home">
+                                    <Link 
+                                        to="/author/home"
+                                        className={activeNav === 0 ? 'active' : ""}
+                                    >
                                         <ListItemCategory>
                                             <HomeIcon/><span>Home</span>
                                         </ListItemCategory>
@@ -42,7 +78,10 @@ const Sidebar = () => {
 
                                 </ListItem>
                                 <ListItem>
-                                    <Link to="/author/explore">
+                                    <Link 
+                                        to="/author/explore"
+                                        className={activeNav === 1 ? 'active' : ""}
+                                    >
                                         <ListItemCategory>
                                             <BinocularsIcon /><span>Explore</span>
                                         </ListItemCategory>
@@ -51,7 +90,10 @@ const Sidebar = () => {
                                 </ListItem>
 
                                 <ListItem>
-                                    <Link to="/author/essays">
+                                    <Link 
+                                        to="/author/essays"
+                                        className={activeNav === 2 ? 'active' : ""}
+                                    >
                                         <ListItemCategory>
                                             <EssayIcon /><span>Essays</span>
                                         </ListItemCategory>
@@ -60,7 +102,10 @@ const Sidebar = () => {
                                 </ListItem>
 
                                 <ListItem>
-                                    <Link to="/author/journals">
+                                    <Link 
+                                        to="/author/journals" 
+                                        className={activeNav === 3 ? 'active' : ""}
+                                    >
                                         <ListItemCategory>
                                             <JournalIcon /><span>Journals</span>
                                         </ListItemCategory>
@@ -73,8 +118,18 @@ const Sidebar = () => {
                 </SidebarInner>
 
                 <SectionAdmin>
-                    <Link to="/author/analytics"><DataSection /></Link>
-                    <Link to="/author/admin"><SidebarFooter /></Link>
+                    <Link 
+                        to="/author/analytics"
+                        className={activeNav === 4 ? 'active' : ""}
+                    >
+                        <DataSection />
+                    </Link>
+                    <Link 
+                        to="/author/admin"
+                        className={activeNav === 5 ? 'active' : ""}
+                    >
+                        <SidebarFooter />
+                    </Link>
                 </SectionAdmin>
             </SidebarSection>)
 }
@@ -96,14 +151,13 @@ const SidebarSection = styled.section`
     position: relative;
     justify-content: space-between;
     align-items: space-between;
-    
 
     a::hover {
         background: rgb(21, 23, 24);
     }
 
     a.active {
-        background: rgb(21, 23, 24);d
+        background: #27293d !important;
     }
 `
 const SectionHeader = styled.div`
@@ -114,8 +168,6 @@ const SectionHeader = styled.div`
         margin-top: 20px;
     }
 `
-
-const SectionCategory = styled.div``
 
 const SectionLogo = styled.div`
     display: flex;
@@ -218,8 +270,16 @@ const SectionAdmin = styled.div`
     width: 100%;
     border-top: 1px solid rgb(39, 39, 39);
 
+    a.active {
+        >div {
+            background: #27293d;
+        }
+    }
     a:hover {
+        height: 100%;
+        width: 100%;
         background: rgb(21, 23, 24);
+        background: #fff !important;
     }
 `
 
