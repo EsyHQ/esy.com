@@ -167,7 +167,7 @@ const ComponentHeader = styled.div`
   }
 `
 const ComponentBody = styled.div`
-padding: 100px;
+  padding: 50px 100px;
 
 `
 
