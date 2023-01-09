@@ -4,40 +4,32 @@ import { Link } from 'gatsby'
 import { Helmet } from "react-helmet"
 
 import Layout from "src/components/Layout/container"
-
+import JournalCard from "./journalCard"
 
 const JournalsPage = ({ location }) => {
+  const journals = [ "Crypto", "Economics", "Foreign Policy", "Geo", "History", "Human Rights", "Machine Learning", "Sports", "Tech" ]
 
     return (<PageWrapper>
               <Layout location={location}>
                   <Helmet><title>Journals</title></Helmet>
                   <PageInner>
-                    {/* <SectionHero>
-                    </SectionHero> */}
                     <SectionWrapper>
+                      <SectionHero>
+                        {/* Read, Contribute, and Explore Essays using Journals */}
+                      </SectionHero>
                       <ListWrapper>
                         <ListElement>
                           <Link to="/journals/crypto"><ListItem>Crypto</ListItem></Link>
-                          {/* <Link to="/journals/economics"><ListItem>Economics</ListItem></Link>
-                          <Link to="/journals/foreign-policy"><ListItem>Foreign Policy</ListItem></Link>
-                          <Link to="/journals/geo"><ListItem>Geo</ListItem></Link>
-                          <Link to="/journals/history"><ListItem>History</ListItem></Link>
-                          <Link to="/journals/history"><ListItem>Human Rights</ListItem></Link> */}
                           <Link to="/journals/machine-learning"><ListItem>Machine Learning</ListItem></Link>
-                          {/* <Link to="/journals/sports"><ListItem>Sports</ListItem></Link>
-                          <Link to="/journals/sports"><ListItem>Tech</ListItem></Link> */}
                         </ListElement>
-                        {/* <ListElement>
-                          <ListItem>Machine Learning</ListItem>
-                          <ListItem></ListItem>
-                        </ListElement> */}
                       </ListWrapper>
-                      
                     </SectionWrapper>
                   </PageInner>
               </Layout>
             </PageWrapper>)
 }
+
+
 
 export default JournalsPage
 
@@ -57,21 +49,17 @@ const PageWrapper = styled.div`
 const PageInner = styled.div`
   width: 100%;
   height: 100%;
-  // margin: 100px;
   padding: 100px;
   background: rgba(12,10,29);
 `
 
-const SectionHero = styled.section`
-   width: 100%;
-   height: 100%;
-   max-height: 100px;
-  //  background: #27293d;
-`
-
 const SectionWrapper = styled.section`
   width: 100%;
+  font-family: Poppins, sans-serif;
 `
+
+const SectionHero = styled.div``
+
 
 const ListWrapper = styled.div`
   width: 100%;
@@ -89,8 +77,8 @@ const ListElement = styled.ul`
   width: 100%;
   list-style-type: none;
   padding: 0;
-  // max-width: 800px;
 `
+
 const ListItem = styled.li`
   text-align: center;
   font-size: 21px;
@@ -98,6 +86,10 @@ const ListItem = styled.li`
   border-radius: 3px;
   margin-bottom: 20px;
   width: 100%;
+
+  a {
+    font-family: Poppins, sans-serif;
+  }
 
   &:hover {
     background: #27293d;

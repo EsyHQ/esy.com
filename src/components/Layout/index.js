@@ -19,7 +19,7 @@ const Layout = ({ children, hasHeader = true, hasHeaderNav = true,
             <CssBaseline />
             <LayoutWrapper>
               {hasHeader && <Header hasHeaderNav={hasHeaderNav} />}
-              <MobileHeader />
+              {/* <MobileHeader /> */}
               <Helmet></Helmet>
 
               <MainElement>{children}</MainElement>

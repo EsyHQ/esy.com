@@ -48,11 +48,16 @@ const CryptoPage = () => {
 
 export default CryptoPage
 
+
+
+
 const SectionHeader = styled.div`
     display: flex;
     margin: 0 auto;
     max-width: 900px;
-    border: 8px solid #27293d;
+    border: 3px solid #27293d;
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0px 20px 20px 0px rgb(0 0 0 / 30%);
 
     li {
         font-style: italic;
@@ -88,7 +93,7 @@ const SectionWrapper = styled.section`
 
 const SectionTitle = styled.div`
     font-size: 32px;
-    font-weight: 500;
+    font-weight: 600;
 `
 const SectionAnalytics = styled.div``
 const SectionImage = styled.div`
@@ -116,6 +121,10 @@ const SectionBody = styled.div`
     list-style-type: none;
     padding: 0;
     
+    ul {
+      margin: 0 auto;
+    }
+
     li {
         text-align: center;
         font-size: 21px;
@@ -133,6 +142,7 @@ const SectionBody = styled.div`
 const ListElement = styled.ul`
     list-style-type: none;
     padding: 0;
+    max-width: 900px;
 `
 const ListItem = styled.li`
     font-size: 16px;
