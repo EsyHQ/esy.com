@@ -19,7 +19,8 @@ import TreeViewPlugin from './Plugins/TreeViewPlugin'
 import 'src/styles/editor/index.scss'
  
 import initialEditorState from './initialEditorState'
-
+import { Publish } from '@mui/icons-material'
+import SendIcon from 'src/svg/send.svg'
 
 const theme = {
   ltr: 'ltr',
@@ -104,19 +105,26 @@ const LexicalEditor = () => {
   }
 
   return (<ComponentWrapper>
-            <LexicalComposer initialConfig={initialConfig}>
-              <EditorContainer>
-                <RichTextPlugin
-                  contentEditable={<ContentEditable className="editor-content" />}
-                  placeholder={"Enter some text..."}
-                  ErrorBoundary={LexicalErrorBoundary}
-                />
-                <OnChangePlugin onChange={onChange} />
-                <HistoryPlugin />
-                <AutoFocusPlugin />
-                {/* <TreeViewPlugin /> */}
-              </EditorContainer>
-            </LexicalComposer>
+            <ComponentHeader>
+            <PublishButton><SendIcon /></PublishButton>
+            </ComponentHeader>
+
+            <ComponentBody>
+              <LexicalComposer initialConfig={initialConfig}>
+                <EditorContainer>
+                  <RichTextPlugin
+                    contentEditable={<ContentEditable className="editor-content" />}
+                    placeholder={"Enter some text..."}
+                    ErrorBoundary={LexicalErrorBoundary}
+                  />
+                  <OnChangePlugin onChange={onChange} />
+                  <HistoryPlugin />
+                  <AutoFocusPlugin />
+                  {/* <TreeViewPlugin /> */}
+                </EditorContainer>
+              </LexicalComposer>
+            </ComponentBody>
+           
          </ComponentWrapper>)
 }
 
@@ -129,8 +137,10 @@ const ComponentWrapper = styled.div`
   width: 100%;
   height: 100%;
   background: #fff;
-  padding: 100px;
   overflow: scroll;
+  position: relative;
+  // display: flex;
+  // flex-direction: row-reverse;
 
   .editor-content {
     outline: none;
@@ -141,3 +151,43 @@ const ComponentWrapper = styled.div`
 
 const EditorContainer = styled.div`
 `
+
+const ComponentHeader = styled.div`
+  display: flex;
+  margin: 25px;
+  justify-content: flex-end;
+
+  svg {
+    fill: rgb(139, 61, 255);
+    stroke: #fff;
+    stroke-width: 10px;
+    max-width: 30px;
+    font-weight: 700;
+    width: 100%;
+  }
+`
+const ComponentBody = styled.div`
+padding: 100px;
+
+`
+
+const PublishButton = styled.div`
+  font-size: 18px;
+  width: 100%;
+  color: #fff;
+  height: 40px;
+  border-radius: 3px;
+  background: rgb(139, 61, 255);
+  max-width: 50px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: rgb(0 0 0 / 10%) 0px 20px 20px 0px;
+  }
+
+
+  svg {
+    width: 100%;
+    max-width: 20px;
+    fill: #fff;
+  }`
