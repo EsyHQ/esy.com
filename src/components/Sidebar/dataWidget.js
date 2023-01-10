@@ -8,7 +8,8 @@ import ProgressBar from '../ProgressBar'
 
 
 
-const DataSection = () => {
+const DataSection = ({ wordGoal = 1000 }) => {
+
     return (<ComponentWrapper>
                 <SectionHeader>
                     <SectionTitleWrapper>
@@ -18,7 +19,7 @@ const DataSection = () => {
                     </SectionTitleWrapper>
 
                     <SectionScoreWrapper>
-                        <SectionScore>0<span>/</span>1000</SectionScore>
+                        <SectionScore><span className="numerator">0</span><span className="divider">/</span>{wordGoal}</SectionScore>
                         <NextIcon />
                     </SectionScoreWrapper>
                 </SectionHeader>
@@ -39,7 +40,7 @@ const SectionTitleWrapper = styled.div`
 
     svg {
         margin-right: 10px;
-        fill: rgb(139,61,255) !important;
+        // fill: rgb(139,61,255) !important;
     }
 `
 
@@ -83,7 +84,16 @@ const SectionWrapper = styled.div`
 `
 
 const SectionScore = styled.div`
-        span {
+        display: flex;
+        align-items: center;
+        
+        .divider {
             margin: 0 5px;
+            font-size: 14px;
+        }
+
+        .numerator {
+            color: rgb(139,61,255);
+            font-size: 19px;
         }
 `
