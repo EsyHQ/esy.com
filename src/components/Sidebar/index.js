@@ -145,7 +145,7 @@ const SidebarSection = styled.section`
     background: #000;
     background: rgba(12,10,29); // - Purple theme, will need to set this as an object.
     border-right: 1px solid rgb(39,39,39);
-    max-width: 350px;
+    max-width: 300px;
     color: #fff;
     display: flex;
     flex-direction: column;
