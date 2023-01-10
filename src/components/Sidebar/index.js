@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 
 import Logo from 'src/components/Logo'
 import ExpandIcon from 'src/svg/expanded-arrows.svg'
+import TwoArrows from 'src/svg/two-inverse-arrows.svg'
 import HomeIcon from 'src/svg/home.svg'
 import EssayIcon from 'src/svg/writing.svg'
 import LockIcon from 'src/svg/lock.svg'
@@ -88,7 +89,7 @@ const Sidebar = () => {
                                         <NextIcon />
                                     </Link>
                                 </ListItem>
-                                <ListItem>
+                                {/* <ListItem>
                                     <Link 
                                         to="/author/explore"
                                         className={activeNav === 1 ? 'active' : ""}
@@ -98,7 +99,7 @@ const Sidebar = () => {
                                         </ListItemCategory>
                                         <NextIcon />
                                     </Link>
-                                </ListItem>
+                                </ListItem> */}
 
                                 
 
@@ -152,6 +153,7 @@ const SidebarSection = styled.section`
     position: relative;
     justify-content: space-between;
     align-items: space-between;
+    font-size: 18px;
 
     a::hover {
         background: rgb(21, 23, 24);
@@ -159,6 +161,10 @@ const SidebarSection = styled.section`
 
     a.active {
         background: #27293d !important;
+
+        svg {
+            fill: rgb(139,61,255);
+        }
     }
 `
 const SectionHeader = styled.div`
@@ -179,8 +185,10 @@ const SectionLogo = styled.div`
 `
 const CollapsibleWidget = styled.div`
     svg {
-        max-width: 30px;
-        max-height: 30px;
+        max-width: 25px;
+        max-height: 25px;
+        margin-top: 10px;
+        cursor: pointer;
         fill: #fff;
     }
 `
@@ -194,7 +202,7 @@ const ListElement = styled.ul`
     padding: 0;
 `
 const ListItem = styled.li`
-    font-size: 21px;
+    font-size: 18px;
     margin-bottom: 15px;
 
     a {
@@ -224,7 +232,7 @@ const ListItemCategory = styled.div`
 `
 const ListItemSecondary = styled.div``
 const Button = styled.div`
-  font-size: 21px;
+  font-size: 18px;
   width: 100%;
   color: #fff;
   height: 40px;

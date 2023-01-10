@@ -6,6 +6,8 @@ import NextIcon from 'src/svg/next.svg'
 
 import ProgressBar from '../ProgressBar'
 
+
+
 const DataSection = () => {
     return (<ComponentWrapper>
                 <SectionHeader>
@@ -58,7 +60,7 @@ const ComponentWrapper = styled.div`
         flex-direction: column;
         color: #fff;
         padding: 25px;
-        font-size: 21px;
+        font-size: 18px;
 
         svg {
             max-width: 20px;

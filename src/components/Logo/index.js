@@ -24,7 +24,7 @@ const LogoContainer = styled.div`
     line-height: 1.15;
 
     img {
-        max-width: 65px;
+        max-width: 60px;
         margin: 0;
     }
 

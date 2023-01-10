@@ -25,13 +25,13 @@ const SectionFooter = styled.div`
     width: 100%;
     display: flex;
     align-items: center;
-    font-size: 21px;
+    font-size: 18px;
     border-top: 1px solid rgb(39, 39, 39);
     padding: 20px 25px;
 
     svg {
-        max-width: 50px;
-        max-height: 30px;
+        // max-width: 20px;
+        max-height: 20px;
         fill: #fff;
     }
 
