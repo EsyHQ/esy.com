@@ -4,6 +4,7 @@ import styled from "styled-components"
 import Layout from "src/components/Author/Layout"
 
 import SunIcon from 'src/svg/sun.svg'
+import EssayIcon from 'src/svg/writing.svg'
 
 
 
@@ -13,15 +14,37 @@ const HomePage = () => {
               <Layout pageTitle="Home">
                   <SectionWrapper>
                       <SectionHeader>
-                          <SectionTitle>Good Morning, Lem<span></span></SectionTitle>
+                          <SectionTitle>Good Morning<SunIcon /></SectionTitle>
                           <SectionAnalytics>
                             <ChartWrapper>
                                 <ChartInner>
                                    <ChartScore>100</ChartScore>
                                 </ChartInner>
                               </ChartWrapper>
+                              <ChartWrapper>
+                                <ChartInner>
+                                   <ChartScore>100</ChartScore>
+                                </ChartInner>
+                              </ChartWrapper>
+                              <ChartWrapper>
+                                <ChartInner>
+                                   <ChartScore>100</ChartScore>
+                                </ChartInner>
+                              </ChartWrapper>
                           </SectionAnalytics>
                       </SectionHeader>
+
+                      <SectionBody>
+                        <BodyTitle><EssayIcon /><span>Essays</span></BodyTitle>
+                        <SectionInnerBody>
+                          <EssayContainer>
+                          </EssayContainer>
+                          <EssayContainer>  <Title>What is Machine Learning</Title></EssayContainer>
+                          <EssayContainer></EssayContainer>
+                        </SectionInnerBody>
+                        
+                      </SectionBody>
+                      
                   </SectionWrapper>
               </Layout>
             </PageWrapper>)
@@ -29,6 +52,38 @@ const HomePage = () => {
 
 export default HomePage
 
+
+const BodyTitle = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 18px;
+
+  svg {
+    max-width: 20px;
+    max-height: 20px;
+    fill: #fff;
+  }
+
+  span {
+    margin-left: 10px;
+  }
+`
+
+
+const SectionInnerBody = styled.div`
+  margin-top: 50px;
+`
+
+
+const Title = styled.div`
+  color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
 
 
 const ChartTitle = styled.div`
@@ -104,6 +159,7 @@ const PageWrapper = styled.div`
 `
 
 const SectionWrapper = styled.section`
+  padding: 25px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -111,13 +167,20 @@ const SectionWrapper = styled.section`
   color: #fff;
   background: #fff;
   background: rgba(12,10,29); Purple theme, will need to set this as an object.
+
+  > svg {
+    width: 100%;
+    max-width: 20px;
+    max-height: 20px;
+    fill: #fff;
+  }
 `
 
 
 
 const SectionHeader = styled.section`
   width: 100%;
-  padding: 25px; 
+  // padding: 25px; 
 `
 
 const SectionTitle = styled.h1`
@@ -140,34 +203,105 @@ const SectionTitle = styled.h1`
 `
 
 const SectionAnalytics = styled.section`
-  display: flex;
-  justify-content: space-between;
-  margin-top: 100px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  /* margin-top: 100px; */
-  background: rgba(12,10,29);
-  padding: 20px;
-  border-radius: 6px;
-  box-shadow: rgb(0 0 0 / 30%) 0px 20px 20px 0px;
-  background: rgba(12,10,29);
-  // max-width: 1200px;
-  // border: 3px solid rgb(39, 41, 61);
-  border-top: 2px solid rgb(39,41,61);
-  margin: 50px auto;
-  justify-content: center;
+margin-top: 65px;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: justify;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: justify;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+-webkit-box-pack: justify;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+background: rgba(12,10,29);
+padding: 20px;
+border-radius: 4PX;
+box-shadow: rgb(0 0 0 / 30%) 0px 20px 20px 0px;
+background: rgba(12,10,29);
+border: 4px solid rgb(39,41,61);
+-webkit-box-pack: space-around;
+-webkit-justify-content: space-around;
+-ms-flex-pack: space-around;
+justify-content: space-around;
+width: 100%;    margin-top: 65px;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: justify;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-pack: justify;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+-webkit-box-pack: justify;
+-webkit-justify-content: space-between;
+-ms-flex-pack: justify;
+justify-content: space-between;
+background: rgba(12,10,29);
+padding: 20px;
+border-radius: 4PX;
+box-shadow: rgb(0 0 0 / 30%) 0px 20px 20px 0px;
+background: rgba(12,10,29);
+border: 4px solid rgb(39,41,61);
+-webkit-box-pack: space-around;
+-webkit-justify-content: space-around;
+-ms-flex-pack: space-around;
+justify-content: space-around;
+width: 100%;
 `
 
 const SectionBody = styled.section`
+  margin-top: 100px;
+`
+
+const EssayContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  // margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  /* margin-top: 100px; */
+  background: rgba(12,10,29);
+  padding: 40px;
+  // border-radius: 6px;
+ 
+  background: rgba(12,10,29);
+  // max-width: 1200px;
+  // border: 3px solid rgb(39, 41, 61);
+  border-top: 1px solid rgb(39,41,61);
+  // margin: 50px auto;
+  justify-content: center;
   width: 100%;
-  height: 100%;
-  padding: 20px 0;
+  // height: 100%;
+  // background: #fff;
+  align-items: center;
+
+  &:hover {
+    // border-top: 3px solid rgb(39, 41, 61);
+    // box-shadow: rgb(0 0 0 / 30%) 0px 20px 20px 0px;
+  }
 `
 const SectionEssays = styled.section``
 
