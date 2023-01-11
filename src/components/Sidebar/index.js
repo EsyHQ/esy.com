@@ -84,31 +84,6 @@ const Sidebar = () => {
                                         <NextIcon />
                                     </Link>
                                 </ListItem>
-                                {/* <ListItem>
-                                    <Link 
-                                        to="/author/explore"
-                                        className={activeNav === 1 ? 'active' : ""}
-                                    >
-                                        <ListItemCategory>
-                                            <BinocularsIcon /><span>Explore</span>
-                                        </ListItemCategory>
-                                        <NextIcon />
-                                    </Link>
-                                </ListItem> */}
-
-                                
-
-                                {/* <ListItem>
-                                    <Link 
-                                        to="/author/journals" 
-                                        className={activeNav === 3 ? 'active' : ""}
-                                    >
-                                        <ListItemCategory>
-                                            <JournalIcon /><span>Journals</span>
-                                        </ListItemCategory>
-                                        <NextIcon />
-                                    </Link>
-                                </ListItem> */}
                             </ListElement>
                         </SidebarNav>
                     </SectionBody>

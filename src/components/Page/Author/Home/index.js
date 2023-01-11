@@ -13,7 +13,7 @@ const HomePage = () => {
               <Layout pageTitle="Home">
                   <SectionWrapper>
                       <SectionHeader>
-                          <SectionTitle>Good Morning<span></span><SunIcon /></SectionTitle>
+                          <SectionTitle>Good Morning, Lem<span></span></SectionTitle>
                           <SectionAnalytics>
                             <ChartWrapper>
                                 <ChartInner>
@@ -130,6 +130,7 @@ const SectionTitle = styled.h1`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  font-style: italic;
 
   svg {
     max-width: 40px;
