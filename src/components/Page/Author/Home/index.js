@@ -5,7 +5,7 @@ import Layout from "src/components/Author/Layout"
 
 import SunIcon from 'src/svg/sun.svg'
 import EssayIcon from 'src/svg/writing.svg'
-
+import DeleteIcon from 'src/svg/delete.svg'
 
 
 const HomePage = () => {
@@ -14,7 +14,7 @@ const HomePage = () => {
               <Layout pageTitle="Home">
                   <SectionWrapper>
                       <SectionHeader>
-                          <SectionTitle>Good Morning<SunIcon /></SectionTitle>
+                          <SectionTitle>Good Morning</SectionTitle>
                           <SectionAnalytics>
                             <ChartWrapper>
                                 <ChartInner>
@@ -38,8 +38,9 @@ const HomePage = () => {
                         <BodyTitle><EssayIcon /><span>Essays</span></BodyTitle>
                         <SectionInnerBody>
                           <EssayContainer>
+                            <Title>What is DeFi technology?</Title><DeleteIcon />
                           </EssayContainer>
-                          <EssayContainer>  <Title>What is Machine Learning</Title></EssayContainer>
+                          <EssayContainer>  <Title>What is Machine Learning?</Title><DeleteIcon /></EssayContainer>
                           <EssayContainer></EssayContainer>
                         </SectionInnerBody>
                         
@@ -58,11 +59,13 @@ const BodyTitle = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-size: 18px;
+  font-size: 21px;
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
 
   svg {
-    max-width: 20px;
-    max-height: 20px;
+    max-width: 25px;
+    max-height: 25px;
     fill: #fff;
   }
 
@@ -82,7 +85,10 @@ const Title = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  // justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: Poppins, sans-serif;
 `
 
 
@@ -186,7 +192,7 @@ const SectionHeader = styled.section`
 const SectionTitle = styled.h1`
   font-size: 28px;
   font-size: 23px;
-  font-weight: 600;
+  font-weight: 700;
   font-family: 'Poppins', sans-serif;
   color: #fff;
   text-align: right;
@@ -297,6 +303,14 @@ const EssayContainer = styled.div`
   // height: 100%;
   // background: #fff;
   align-items: center;
+
+  font-size: 18px;
+
+  svg {
+    max-width: 20px;
+    max-height: 20px;
+    fill: #fff;
+  }
 
   &:hover {
     // border-top: 3px solid rgb(39, 41, 61);
