@@ -42,11 +42,6 @@ const Sidebar = () => {
 
     useEffect(() => {
         const pathname = window && window.location && window.location.pathname
-        
-        // if (pathname.includes('/compose') && activeNav === 0) {
-        //     setActiveNav(null)
-        // }
-
         setHeaderNavState(pathname)
     })
 
@@ -60,7 +55,7 @@ const Sidebar = () => {
                             <CollapsibleWidget><ExpandIcon /></CollapsibleWidget>
                         </SectionLogo>
 
-                        <Link to="/author/compose"><Button className="sidebar-header-btn"><ShuttleIcon />New</Button></Link> {/* Should open modal to select New Essay or  Journal */}
+                        <Link to="/author/compose"><Button className="sidebar-header-btn">New</Button></Link> {/* Should open modal to select New Essay or  Journal */}
                     </SectionHeader>
 
                     <SectionBody>

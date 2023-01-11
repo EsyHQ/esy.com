@@ -13,32 +13,15 @@ const HomePage = () => {
               <Layout pageTitle="Home">
                   <SectionWrapper>
                       <SectionHeader>
-                          <SectionTitle>Good Morning<span></span></SectionTitle>
+                          <SectionTitle>Good Morning<span></span><SunIcon /></SectionTitle>
                           <SectionAnalytics>
                             <ChartWrapper>
-                                
                                 <ChartInner>
-                                   {/* <ChartTitle>WPM</ChartTitle> */}
                                    <ChartScore>100</ChartScore>
-                                  {/*
-                         
-                                  <ChartScoreDivider><span>/</span><span>500</span></ChartScoreDivider> */}
                                 </ChartInner>
-                                  
                               </ChartWrapper>
-                            {/* <ChartWrapper></ChartWrapper> */}
                           </SectionAnalytics>
                       </SectionHeader>
-                     
-
-                      {/* <SectionBody>
-                        <SectionInner>
-                          <ListElement>
-                            <ListItem><EssayCard></EssayCard></ListItem>
-                            <ListItem><EssayCard></EssayCard></ListItem>
-                          </ListElement>
-                        </SectionInner>
-                      </SectionBody> */}
                   </SectionWrapper>
               </Layout>
             </PageWrapper>)
@@ -186,8 +169,8 @@ const SectionBody = styled.section`
   padding: 20px 0;
 `
 const SectionEssays = styled.section``
- // do same but border bottom and top for essay rows - 
 
+ // do same but border bottom and top for essay rows - 
 const GreetingCard = styled.div`
   width: 100%;
   max-width: 600px;
