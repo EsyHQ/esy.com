@@ -4,15 +4,13 @@ import { Link } from 'gatsby'
 
 import Logo from 'src/components/Logo'
 import ExpandIcon from 'src/svg/expanded-arrows.svg'
-import TwoArrows from 'src/svg/two-inverse-arrows.svg'
 import HomeIcon from 'src/svg/home.svg'
 import EssayIcon from 'src/svg/writing.svg'
-import LockIcon from 'src/svg/lock.svg'
-import JournalIcon from 'src/svg/journal.svg'
 import NextIcon from 'src/svg/next.svg'
 import ShuttleIcon from 'src/svg/shuttle.svg'
+import ProgressBar from '../ProgressBar'
+import UserIcon from 'src/svg/user-icon.svg'
 import BarChartIcon from 'src/svg/bar-chart.svg'
-import BinocularsIcon from 'src/svg/binoculars.svg'
 
 import DataSection from './dataWidget'
 import SidebarFooter from './footer'
@@ -72,7 +70,7 @@ const Sidebar = () => {
                                         className={activeNav === 0 ? 'active' : ""}
                                     >
                                         <ListItemCategory>
-                                            <HomeIcon/><span>Home</span>
+                                            <HomeIcon/>
                                         </ListItemCategory>
                                         <NextIcon />
                                     </Link>
@@ -84,36 +82,10 @@ const Sidebar = () => {
                                         className={activeNav === 2 ? 'active' : ""}
                                     >
                                         <ListItemCategory>
-                                            <EssayIcon /><span>Essays</span>
+                                            <EssayIcon />
                                         </ListItemCategory>
-                                        <NextIcon />
                                     </Link>
                                 </ListItem>
-                                {/* <ListItem>
-                                    <Link 
-                                        to="/author/explore"
-                                        className={activeNav === 1 ? 'active' : ""}
-                                    >
-                                        <ListItemCategory>
-                                            <BinocularsIcon /><span>Explore</span>
-                                        </ListItemCategory>
-                                        <NextIcon />
-                                    </Link>
-                                </ListItem> */}
-
-                                
-
-                                {/* <ListItem>
-                                    <Link 
-                                        to="/author/journals" 
-                                        className={activeNav === 3 ? 'active' : ""}
-                                    >
-                                        <ListItemCategory>
-                                            <JournalIcon /><span>Journals</span>
-                                        </ListItemCategory>
-                                        <NextIcon />
-                                    </Link>
-                                </ListItem> */}
                             </ListElement>
                         </SidebarNav>
                     </SectionBody>
@@ -124,13 +96,13 @@ const Sidebar = () => {
                         to="/author/analytics"
                         className={activeNav === 4 ? 'active' : ""}
                     >
-                        <DataSection />
+                        <ProgressBar />
                     </Link>
                     <Link 
                         to="/author/admin"
                         className={activeNav === 5 ? 'active' : ""}
                     >
-                        <SidebarFooter />
+                        <UserIcon />
                     </Link>
                 </SectionAdmin>
             </SidebarSection>)
@@ -146,7 +118,7 @@ const SidebarSection = styled.section`
     background: #000;
     background: rgba(12,10,29); // - Purple theme, will need to set this as an object.
     border-right: 1px solid rgb(39,39,39);
-    max-width: 300px;
+    max-width: 100px;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -185,9 +157,9 @@ const SectionLogo = styled.div`
 `
 const CollapsibleWidget = styled.div`
     svg {
-        max-width: 20px;
-        max-height: 20px;
-        margin-top: 15px;
+        max-width: 25px;
+        max-height: 25px;
+        margin-top: 10px;
         cursor: pointer;
         fill: #fff;
     }

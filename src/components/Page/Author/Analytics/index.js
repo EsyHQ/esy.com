@@ -10,7 +10,6 @@ const AnalyticsPage = () => {
     return (<PageWrapper>
               <Layout pageTitle="Compose">
                   <SectionWrapper>
-                    Analytics
                   </SectionWrapper>
               </Layout>
             </PageWrapper>)

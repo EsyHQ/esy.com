@@ -8,14 +8,13 @@ import ProgressBar from '../ProgressBar'
 
 
 
-const DataSection = ({ wordGoal = 1000 }) => {
+const DataSection = ({ wordGoal = 500 }) => {
 
     return (<ComponentWrapper>
                 <SectionHeader>
                     <SectionTitleWrapper>
                         <BarChartIcon />
                         <SectionTitle>Progress</SectionTitle>
-                        {/* <SectionTitle>Analytics</SectionTitle> */}
                     </SectionTitleWrapper>
 
                     <SectionScoreWrapper>
@@ -40,7 +39,6 @@ const SectionTitleWrapper = styled.div`
 
     svg {
         margin-right: 10px;
-        // fill: rgb(139,61,255) !important;
     }
 `
 
@@ -79,9 +77,6 @@ const SectionHeader = styled.div`
 const SectionTitle = styled.div``
 
 
-const SectionWrapper = styled.div`
-        display: flex;
-`
 
 const SectionScore = styled.div`
         display: flex;

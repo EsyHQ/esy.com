@@ -1,9 +1,11 @@
 import React from 'react'
-import AnalyticsPageContainer from 'src/components/Page/Author/Analytics'
+import AnalyticsPage from 'src/components/Page/Author/Analytics'
 
-const AnalyticsPage = ({ location }) => {
-    return <AnalyticsPageContainer location={location} />
+
+
+const AnalyticsPageContainer = ({ location }) => {
+    return <AnalyticsPage location={location} />
 }
 
-export default AnalyticsPage
+export default AnalyticsPageContainer
 

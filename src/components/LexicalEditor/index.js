@@ -21,6 +21,9 @@ import 'src/styles/editor/index.scss'
 import initialEditorState from './initialEditorState'
 import { Publish } from '@mui/icons-material'
 import SendIcon from 'src/svg/send.svg'
+import BrainIcon from 'src/svg/brain.svg'
+
+
 
 const theme = {
   ltr: 'ltr',
@@ -107,6 +110,8 @@ const LexicalEditor = () => {
   return (<ComponentWrapper>
             <ComponentHeader>
             <PublishButton><SendIcon /></PublishButton>
+            {/* <PublishButton><BrainIcon /></PublishButton> */}
+
             </ComponentHeader>
 
             <ComponentBody>
@@ -150,12 +155,17 @@ const ComponentWrapper = styled.div`
 
 
 const EditorContainer = styled.div`
+  h1 {
+    
+  }
 `
 
 const ComponentHeader = styled.div`
   display: flex;
+  flex-direction: column;
   margin: 25px;
   justify-content: flex-end;
+  align-items: flex-end;
 
   svg {
     fill: rgb(139, 61, 255);
@@ -165,6 +175,7 @@ const ComponentHeader = styled.div`
     font-weight: 700;
     width: 100%;
   }
+
 `
 const ComponentBody = styled.div`
   padding: 50px 100px;
@@ -172,6 +183,7 @@ const ComponentBody = styled.div`
 `
 
 const PublishButton = styled.div`
+  margin: 10px 0;
   font-size: 18px;
   width: 100%;
   color: #fff;
