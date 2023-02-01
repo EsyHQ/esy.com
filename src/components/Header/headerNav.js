@@ -13,8 +13,8 @@ const HeaderNav = ({ activeNav }) => {
 
   return (<HeaderNavContainer>
               <DesktopNav>
-                <NavItem className={activeNav === 1 ? 'active' : ""}><Link to="/blog">Blog</Link></NavItem> 
-                <NavItem className={activeNav === 2 ? 'active' : ""}><Link to="/journals">Journals</Link></NavItem> 
+                {/* <NavItem className={activeNav === 1 ? 'active' : ""}><Link to="/blog">Blog</Link></NavItem>  */}
+                {/* <NavItem className={activeNav === 2 ? 'active' : ""}><Link to="/journals">Journals</Link></NavItem>  */}
                 <NavItem><EmailForm /></NavItem>
               </DesktopNav>
 
@@ -61,10 +61,10 @@ const MobileNav = styled.nav`
 
 const NavItem = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   position: relative;
-  margin: 0 20px;
+  // margin: 0 20px;
   // width: 100%;
   &:last-child {
     width: 100%;
@@ -112,10 +112,17 @@ const NavItem = styled.div`
   form {
     margin: 0;
 
+  
+
     >div {
       width: 100%;
-      max-width: 100%;
+      max-width: 285px;
       flex-direction: row-reverse;
+      align-self: flex-end;
+
+      div:first-child {
+        // margin-right: 20px;
+      }
     }
   }
 `

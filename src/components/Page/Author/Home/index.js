@@ -14,7 +14,7 @@ const HomePage = () => {
               <Layout pageTitle="Home">
                   <SectionWrapper>
                       <SectionHeader>
-                          <SectionTitle>Good Morning</SectionTitle>
+                          <SectionTitle>Good Morning, Lem</SectionTitle>
                           <SectionAnalytics>
                             <ChartWrapper>
                                 <ChartInner>
@@ -97,7 +97,7 @@ const ChartTitle = styled.div`
   color: #fff;
 `
 const ChartScore = styled.div`
-  font-weight: 600;
+  font-weight: 400;
   color: #fff;
   font-size: 26px;
 `
@@ -192,7 +192,7 @@ const SectionHeader = styled.section`
 const SectionTitle = styled.h1`
   font-size: 28px;
   font-size: 23px;
-  font-weight: 700;
+  font-weight: 600;
   font-family: 'Poppins', sans-serif;
   color: #fff;
   text-align: right;
@@ -210,70 +210,25 @@ const SectionTitle = styled.h1`
 
 const SectionAnalytics = styled.section`
 margin-top: 65px;
-display: -webkit-box;
-display: -webkit-flex;
-display: -ms-flexbox;
 display: flex;
--webkit-box-pack: justify;
--webkit-justify-content: space-between;
--ms-flex-pack: justify;
-justify-content: space-between;
-display: -webkit-box;
-display: -webkit-flex;
-display: -ms-flexbox;
-display: -webkit-box;
-display: -webkit-flex;
-display: -ms-flexbox;
-display: flex;
--webkit-box-pack: justify;
--webkit-justify-content: space-between;
--ms-flex-pack: justify;
--webkit-box-pack: justify;
--webkit-justify-content: space-between;
--ms-flex-pack: justify;
-justify-content: space-between;
 background: rgba(12,10,29);
 padding: 20px;
 border-radius: 4PX;
 box-shadow: rgb(0 0 0 / 30%) 0px 20px 20px 0px;
 background: rgba(12,10,29);
 border: 4px solid rgb(39,41,61);
--webkit-box-pack: space-around;
--webkit-justify-content: space-around;
--ms-flex-pack: space-around;
-justify-content: space-around;
-width: 100%;    margin-top: 65px;
+width: 100%;   
+margin-top: 65px;
 display: -webkit-box;
 display: -webkit-flex;
 display: -ms-flexbox;
 display: flex;
--webkit-box-pack: justify;
--webkit-justify-content: space-between;
--ms-flex-pack: justify;
-justify-content: space-between;
-display: -webkit-box;
-display: -webkit-flex;
-display: -ms-flexbox;
-display: -webkit-box;
-display: -webkit-flex;
-display: -ms-flexbox;
-display: flex;
--webkit-box-pack: justify;
--webkit-justify-content: space-between;
--ms-flex-pack: justify;
--webkit-box-pack: justify;
--webkit-justify-content: space-between;
--ms-flex-pack: justify;
-justify-content: space-between;
 background: rgba(12,10,29);
 padding: 20px;
 border-radius: 4PX;
 box-shadow: rgb(0 0 0 / 30%) 0px 20px 20px 0px;
 background: rgba(12,10,29);
 border: 4px solid rgb(39,41,61);
--webkit-box-pack: space-around;
--webkit-justify-content: space-around;
--ms-flex-pack: space-around;
 justify-content: space-around;
 width: 100%;
 `

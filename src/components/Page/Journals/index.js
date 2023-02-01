@@ -1,37 +1,43 @@
-import React from "react"
+import React, { useEffect } from "react"
 import styled from "styled-components"
 import { Link } from 'gatsby'
 import { Helmet } from "react-helmet"
 
 import Layout from "src/components/Layout/container"
 import JournalCard from "./journalCard"
+import axios from "axios"
 
 const JournalsPage = ({ location }) => {
-  const journals = [ "Crypto", "Economics", "Foreign Policy", "Geo", "History", "Human Rights", "Machine Learning", "Sports", "Tech" ]
+  
+  function fetchJournals() {
+    // axios.get()
+  }
 
-    return (<PageWrapper>
-              <Layout location={location}>
-                  <Helmet><title>Journals</title></Helmet>
-                  <PageInner>
-                    <SectionWrapper>
-                      <SectionHero>
-                        {/* Read, Contribute, and Explore Essays using Journals */}
-                      </SectionHero>
-                      <ListWrapper>
-                        <ListElement>
-                          <Link to="/journals/crypto"><ListItem>Crypto</ListItem></Link>
-                          <Link to="/journals/machine-learning"><ListItem>Machine Learning</ListItem></Link>
-                        </ListElement>
-                      </ListWrapper>
-                    </SectionWrapper>
-                  </PageInner>
-              </Layout>
-            </PageWrapper>)
+
+  return (<PageWrapper>
+            <Layout location={location}>
+                <Helmet><title>Journals</title></Helmet>
+                <PageInner>
+                  <SectionWrapper>
+                    <SectionHero>
+                      {/* Read, Contribute, and Explore Essays using Journals */}
+                    </SectionHero>
+                    <ListWrapper>
+                      <ListElement>
+                        <Link to="/@crypto"><ListItem>Crypto</ListItem></Link>
+                        <Link to="/@datascience"><ListItem>Data Science</ListItem></Link>
+                      </ListElement>
+                    </ListWrapper>
+                  </SectionWrapper>
+                </PageInner>
+            </Layout>
+          </PageWrapper>)
 }
 
 
 
 export default JournalsPage
+
 
 
 const PageWrapper = styled.div`

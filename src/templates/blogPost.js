@@ -263,6 +263,7 @@ const BlogPostWrapper = styled.div`
     letter-spacing: 0px;
     border-bottom: 1px solid rgb(64, 70, 72);
     padding-bottom: 20px;
+    font-size: 42px;
 
     @media(max-width: 600px) {
       font-size: 28px;

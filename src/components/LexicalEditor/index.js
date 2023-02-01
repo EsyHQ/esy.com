@@ -15,86 +15,19 @@ import { onError, onChange } from 'src/modules/editor'
 import CodeHighlightPlugin from "./Plugins/CodeHighlightPlugin"
 import AutoFocusPlugin from './Plugins/AutoFocusPlugin'
 import TreeViewPlugin from './Plugins/TreeViewPlugin'
+import UpdateLocalStoragePlugin from './Plugins/UpdateLocalStoragePlugin'
 
 import 'src/styles/editor/index.scss'
  
-import initialEditorState from './initialEditorState'
 import { Publish } from '@mui/icons-material'
 import SendIcon from 'src/svg/send.svg'
 import BrainIcon from 'src/svg/brain.svg'
 
+import theme from './theme'
 
 
-const theme = {
-  ltr: 'ltr',
-  rtl: 'rtl',
-  placeholder: 'editor-placeholder',
-  paragraph: 'editor-paragraph',
-  quote: 'editor-quote',
-  heading: {
-    h1: 'editor-heading-h1',
-    h2: 'editor-heading-h2',
-    h3: 'editor-heading-h3',
-    h4: 'editor-heading-h4',
-    h5: 'editor-heading-h5',
-    h6: 'editor-heading-h6',
-  },
-  list: {
-    nested: {
-      listitem: 'editor-nested-listitem',
-    },
-    ol: 'editor-list-ol',
-    ul: 'editor-list-ul',
-    listitem: 'editor-listitem',
-  },
-  image: 'editor-image',
-  link: 'editor-link',
-  text: {
-    bold: 'editor-text-bold',
-    italic: 'editor-text-italic',
-    overflowed: 'editor-text-overflowed',
-    hashtag: 'editor-text-hashtag',
-    underline: 'editor-text-underline',
-    strikethrough: 'editor-text-strikethrough',
-    underlineStrikethrough: 'editor-text-underlineStrikethrough',
-    code: 'editor-text-code',
-  },
-  code: 'editor-code',
-  codeHighlight: {
-    atrule: 'editor-tokenAttr',
-    attr: 'editor-tokenAttr',
-    boolean: 'editor-tokenProperty',
-    builtin: 'editor-tokenSelector',
-    cdata: 'editor-tokenComment',
-    char: 'editor-tokenSelector',
-    class: 'editor-tokenFunction',
-    'class-name': 'editor-tokenFunction',
-    comment: 'editor-tokenComment',
-    constant: 'editor-tokenProperty',
-    deleted: 'editor-tokenProperty',
-    doctype: 'editor-tokenComment',
-    entity: 'editor-tokenOperator',
-    function: 'editor-tokenFunction',
-    important: 'editor-tokenVariable',
-    inserted: 'editor-tokenSelector',
-    keyword: 'editor-tokenAttr',
-    namespace: 'editor-tokenVariable',
-    number: 'editor-tokenProperty',
-    operator: 'editor-tokenOperator',
-    prolog: 'editor-tokenComment',
-    property: 'editor-tokenProperty',
-    punctuation: 'editor-tokenPunctuation',
-    regex: 'editor-tokenVariable',
-    selector: 'editor-tokenSelector',
-    string: 'editor-tokenSelector',
-    symbol: 'editor-tokenProperty',
-    tag: 'editor-tokenProperty',
-    url: 'editor-tokenOperator',
-    variable: 'editor-tokenVariable',
-  }
-}
 
-const LexicalEditor = () => {
+const LexicalEditor = ({ initialEditorState, setEssayState, handleEditorKeyUp }) => {
     
   const initialConfig = {
     editorState: initialEditorState,
@@ -118,7 +51,7 @@ const LexicalEditor = () => {
               <LexicalComposer initialConfig={initialConfig}>
                 <EditorContainer>
                   <RichTextPlugin
-                    contentEditable={<ContentEditable className="editor-content" />}
+                    contentEditable={<ContentEditable onKeyUp={handleEditorKeyUp} className="editor-content" />}
                     placeholder={"Enter some text..."}
                     ErrorBoundary={LexicalErrorBoundary}
                   />
@@ -126,6 +59,7 @@ const LexicalEditor = () => {
                   <HistoryPlugin />
                   <AutoFocusPlugin />
                   {/* <TreeViewPlugin /> */}
+                  <UpdateLocalStoragePlugin setEssayState={setEssayState} handleEditorKeyUp={handleEditorKeyUp} />
                 </EditorContainer>
               </LexicalComposer>
             </ComponentBody>
@@ -156,7 +90,7 @@ const ComponentWrapper = styled.div`
 
 const EditorContainer = styled.div`
   h1 {
-    
+    font-size: 42px;
   }
 `
 
@@ -183,6 +117,9 @@ const ComponentBody = styled.div`
 `
 
 const PublishButton = styled.div`
+  position: fixed;
+  top: 30px;
+  right: 30px;
   margin: 10px 0;
   font-size: 18px;
   width: 100%;
@@ -195,6 +132,12 @@ const PublishButton = styled.div`
   justify-content: center;
   cursor: pointer;
   box-shadow: rgb(0 0 0 / 10%) 0px 20px 20px 0px;
+  border: 1px solid rgb(139, 61, 255);
+
+  &:active {
+    background: rgb(114,23,250);
+    box-shadow: inset 0px 0px 5px #b9b9b9;
+    outline: none;
   }
 
 

@@ -6,7 +6,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.Esy.com",
+    siteUrl: "https://www.esy.com",
     title: "Esy",
     author: "@lemuhuru",
   },
@@ -96,6 +96,13 @@ module.exports = {
         path: "./src/pages/",
       },
       __key: "pages",
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/src/content`,
+      },
     },
   ],
 };

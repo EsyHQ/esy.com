@@ -8,7 +8,7 @@ import ProgressBar from '../ProgressBar'
 
 
 
-const DataSection = ({ wordGoal = 500 }) => {
+const DataSection = ({ wordGoal = 1000 }) => {
 
     return (<ComponentWrapper>
                 <SectionHeader>
