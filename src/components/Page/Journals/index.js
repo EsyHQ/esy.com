@@ -26,6 +26,7 @@ const JournalsPage = ({ location }) => {
                       <ListElement>
                         <Link to="/@crypto"><ListItem>Crypto</ListItem></Link>
                         <Link to="/@datascience"><ListItem>Data Science</ListItem></Link>
+                        <Link to="/@geo"><ListItem>Geo</ListItem></Link>
                       </ListElement>
                     </ListWrapper>
                   </SectionWrapper>
