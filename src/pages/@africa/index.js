@@ -4,7 +4,6 @@ import { graphql, Link } from 'gatsby'
 import Layout from "src/components/Layout"
 import image from 'src/images/btc-journal.png'
 
-
 const getEssaysByTagName = (edges, tagName) => {
     return edges.filter(edge => {
         const { frontmatter } = edge.node
@@ -12,12 +11,12 @@ const getEssaysByTagName = (edges, tagName) => {
     })
 }
 
-
 const IndexPage = (props) => {
     const { data, location } = props
     const { edges } = data && data.allMarkdownRemark
-    const essays = getEssaysByTagName(edges, '@geo')
+    const essays = getEssaysByTagName(edges, '@crypto')
     const totalPosts = essays.length
+
 
 
     return (<PageWrapper>
@@ -28,7 +27,7 @@ const IndexPage = (props) => {
                                 <img src={image} />
                             </SectionImage>
                             <StartWrapper>
-                                <SectionTitle>@History</SectionTitle>
+                                <SectionTitle>@Africa</SectionTitle>
                                 <SectionAnalytics>
                                     <ListElement>
                                         <ListItem>Total Essays: {totalPosts}</ListItem>
@@ -51,7 +50,7 @@ const IndexPage = (props) => {
                                     console.log(frontmatter, 'frontmatter')
                                     const { title, slug, tags } = frontmatter
                                     const path = location.pathname + slug
-                                    if (tags.includes('@geo')) {
+                                    if (tags.includes('@crypto')) {
                                         return <ListItem key={index}><Link to={path}>{title}</Link></ListItem>
                                     }
                                 })}
@@ -64,7 +63,7 @@ const IndexPage = (props) => {
 export default IndexPage
 
 export const pageQuery = graphql`
-  query HistoryIndexQuery {
+  query AfricaIndexQuery {
     allMarkdownRemark {
         edges {
           node {
