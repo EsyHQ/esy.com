@@ -1,6 +1,7 @@
 
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
+
 
 import { LexicalComposer } from '@lexical/react/LexicalComposer'
 import { RichTextPlugin } from '@lexical/react/LexicalRichTextPlugin'
@@ -9,26 +10,30 @@ import { HistoryPlugin } from '@lexical/react/LexicalHistoryPlugin'
 import { OnChangePlugin } from '@lexical/react/LexicalOnChangePlugin'
 import LexicalErrorBoundary from '@lexical/react/LexicalErrorBoundary'
 import { HeadingNode, QuoteNode } from "@lexical/rich-text"
-import { CodeHighlightNode, CodeNode } from "@lexical/code";
+import { useLexicalComposerContext } from "@lexical/react/LexicalComposerContext"
+import { CodeHighlightNode, CodeNode } from "@lexical/code"
 
-import { onError, onChange } from 'src/modules/editor'
+import { useBeforeunload } from 'react-beforeunload'
+import { v4 as uuidv4 } from 'uuid'
+
+import { onError, onChange, onKeyUp } from 'src/modules/editor'
+
 import CodeHighlightPlugin from "./Plugins/CodeHighlightPlugin"
 import AutoFocusPlugin from './Plugins/AutoFocusPlugin'
 import TreeViewPlugin from './Plugins/TreeViewPlugin'
-import UpdateLocalStoragePlugin from './Plugins/UpdateLocalStoragePlugin'
-
-import 'src/styles/editor/index.scss'
- 
-import { Publish } from '@mui/icons-material'
-import SendIcon from 'src/svg/send.svg'
-import BrainIcon from 'src/svg/brain.svg'
-
+import OnKeyUpPlugin from './Plugins/OnKeyUpPlugin'
 import theme from './theme'
 
+import SendIcon from 'src/svg/send.svg'
 
 
-const LexicalEditor = ({ initialEditorState, setEssayState, handleEditorKeyUp }) => {
-    
+import 'src/styles/editor/index.scss'
+
+
+
+const LexicalEditor = ({ initialEditorState }) => {
+  const [ editorState, setEditorState ] = useState(null)
+
   const initialConfig = {
     editorState: initialEditorState,
     namespace: 'MyEditor',
@@ -39,27 +44,34 @@ const LexicalEditor = ({ initialEditorState, setEssayState, handleEditorKeyUp })
       QuoteNode,
     ]
   }
+  
+
+  
+  useBeforeunload((event) => {
+    event.preventDefault()
+
+    return 'Sure, you want to leave?'
+  })
+
 
   return (<ComponentWrapper>
             <ComponentHeader>
             <PublishButton><SendIcon /></PublishButton>
-            {/* <PublishButton><BrainIcon /></PublishButton> */}
-
             </ComponentHeader>
 
             <ComponentBody>
               <LexicalComposer initialConfig={initialConfig}>
                 <EditorContainer>
                   <RichTextPlugin
-                    contentEditable={<ContentEditable onKeyUp={handleEditorKeyUp} className="editor-content" />}
+                    contentEditable={<ContentEditable className="editor-content" />}
                     placeholder={"Enter some text..."}
                     ErrorBoundary={LexicalErrorBoundary}
                   />
                   <OnChangePlugin onChange={onChange} />
+                  <OnKeyUpPlugin />
                   <HistoryPlugin />
                   <AutoFocusPlugin />
-                  {/* <TreeViewPlugin /> */}
-                  <UpdateLocalStoragePlugin setEssayState={setEssayState} handleEditorKeyUp={handleEditorKeyUp} />
+                  <TreeViewPlugin />
                 </EditorContainer>
               </LexicalComposer>
             </ComponentBody>
