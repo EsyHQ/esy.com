@@ -85,44 +85,44 @@ const thumbnailTheme = {
 }
 
 
-const BlogIndexPage = ({ data }) => {
+const AIIndexPage = ({ data }) => {
     const { edges } = data.allGhostPost
     const totalPosts = edges.length
     
 
     return (<Layout>
-                <SEO title="Blog" />
+                <SEO title="AI" />
                 <BlogWrapper>
-                <Grid 
-                    container 
-                    spacing={6}
-                    direction="row"
-                    // justify="center"
-                >
-                    {edges.map((edge, index) => {
-                        const { title, excerpt, feature_image, primary_tag, published_at, slug, reading_time } = edge.node
-                    
-                        const formattedPublishedDate = moment(published_at).local().format('MMM DD YYYY').split(' ')
-                        const primaryTag = primary_tag && primary_tag.name || "Sports"
-                        const [ firstSentence, secondSentence ] = excerpt.split('.')
+                    <Grid 
+                        container 
+                        spacing={6}
+                        direction="row"
+                        // justify="center"
+                    >
+                        {edges.map((edge, index) => {
+                            const { title, excerpt, feature_image, primary_tag, published_at, slug, reading_time } = edge.node
+                        
+                            const formattedPublishedDate = moment(published_at).local().format('MMM DD YYYY').split(' ')
+                            const primaryTag = primary_tag && primary_tag.name || "Sports"
+                            const [ firstSentence, secondSentence ] = excerpt.split('.')
 
-                        if (index === 0) {
-                            return <ThemeProvider key={index} theme={mainTheme}><Grid item xs={12}><PostCard theme={mainTheme} postData={edge} firstSentence={firstSentence} secondSentence={secondSentence}  /></Grid></ThemeProvider>
-                        } else if (index > 0 && index < 3) {
-                            return <ThemeProvider key={index} theme={midTheme}><Grid item xs={12} sm={6}><PostCard theme={midTheme} postData={edge} firstSentence={firstSentence} secondSentence={secondSentence} /></Grid></ThemeProvider>
-                        } else if (index > 2 && index < 6 ) {
-                            return <ThemeProvider  key={index} theme={midTheme}><Grid item xs={12} sm={6}><PostCard theme={midTheme} postData={edge} firstSentence={firstSentence} secondSentence={secondSentence} /></Grid></ThemeProvider>
-                        } else {
-                            return <ThemeProvider  key={index} theme={midTheme}><Grid item xs={12} sm={6}><PostCard theme={midTheme} postData={edge} firstSentence={firstSentence} secondSentence={secondSentence} /></Grid></ThemeProvider>
-                        }
-                        })}
-                </Grid>
+                            if (index === 0) {
+                                return <ThemeProvider key={index} theme={mainTheme}><Grid item xs={12}><PostCard theme={mainTheme} postData={edge} firstSentence={firstSentence} secondSentence={secondSentence}  /></Grid></ThemeProvider>
+                            } else if (index > 0 && index < 3) {
+                                return <ThemeProvider key={index} theme={midTheme}><Grid item xs={12} sm={6}><PostCard theme={midTheme} postData={edge} firstSentence={firstSentence} secondSentence={secondSentence} /></Grid></ThemeProvider>
+                            } else if (index > 2 && index < 6 ) {
+                                return <ThemeProvider  key={index} theme={midTheme}><Grid item xs={12} sm={6}><PostCard theme={midTheme} postData={edge} firstSentence={firstSentence} secondSentence={secondSentence} /></Grid></ThemeProvider>
+                            } else {
+                                return <ThemeProvider  key={index} theme={midTheme}><Grid item xs={12} sm={6}><PostCard theme={midTheme} postData={edge} firstSentence={firstSentence} secondSentence={secondSentence} /></Grid></ThemeProvider>
+                            }
+                            })}
+                    </Grid>
                 </BlogWrapper>
             </Layout>)
 }
 
 
-export default BlogIndexPage
+export default AIIndexPage
 
 const BlogWrapper = styled.section`
     height: 100%;
@@ -142,8 +142,8 @@ const BlogWrapper = styled.section`
 `
 
 export const pageQuery = graphql`
-    query BlogIndexQuery  {
-        allGhostPost (sort: {order: DESC, fields: published_at}, filter: {tags: {elemMatch: {name: {in: "blog"}}}}) {
+    query AIIndexQuery  {
+        allGhostPost (sort: {order: DESC, fields: published_at}, filter: {tags: {elemMatch: {name: {in: "ai-journal"}}}}) {
                 edges {
                     node {
                         title

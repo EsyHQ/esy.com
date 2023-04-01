@@ -26,18 +26,24 @@ const FooterNav = () => {
 
     return (<FooterNavContainer>
                     <FooterList>
+                        {/* <FooterListItem>
+                          <FooterListItemTitle>Journals</FooterListItemTitle>
+                          <FooterSubNav>
+                              <FooterSubNavList>
+                                <FooterSubNavListItem><Link to="/@ai">@AI</Link></FooterSubNavListItem>
+                                <FooterSubNavListItem><Link to="/@ai">@Trader</Link></FooterSubNavListItem>
+                              </FooterSubNavList>
+                          </FooterSubNav>
+                        </FooterListItem> */}
+
                         <FooterListItem>
-                        <FooterListItemTitle>Resources</FooterListItemTitle>
-                        <FooterSubNav>
-                            <FooterSubNavList>
-                              {/* <FooterSubNavListItem><a href="https://edu.esy.com">Edu</a></FooterSubNavListItem> */}
-                              <FooterSubNavListItem><Link to="/blog">Blog</Link></FooterSubNavListItem>
-                              {/* <FooterSubNavListItem><Link to="/what-is-are">What Is</Link></FooterSubNavListItem> */}
-                              {/* <FooterSubNavListItem><Link to="/how-to">How To</Link></FooterSubNavListItem> */}
-                              {/* <FooterSubNavListItem><Link to="/how-to">History</Link></FooterSubNavListItem> */}
-                              <FooterSubNavListItem><Link to="/journals">Journals</Link></FooterSubNavListItem>
-                            </FooterSubNavList>
-                        </FooterSubNav>
+                          <FooterListItemTitle>Resources</FooterListItemTitle>
+                          <FooterSubNav>
+                              <FooterSubNavList>
+                                <FooterSubNavListItem><Link to="/blog">Blog</Link></FooterSubNavListItem>
+                                <FooterSubNavListItem><Link to="/@ai">AI Journal</Link></FooterSubNavListItem>
+                              </FooterSubNavList>
+                          </FooterSubNav>
                         </FooterListItem>
                         
 

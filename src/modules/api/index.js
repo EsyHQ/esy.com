@@ -2,7 +2,7 @@ export const updateEssayById = (id, editorState) => {
     const essays = fetchAllEssays()
     essays[id]["content"] = editorState // Should merge this.
 
-    // saveEditorStateToLocalStorage(essays)
+    // saveEditorSt3  ateToLocalStorage(essays)
   }
 
 
@@ -21,3 +21,8 @@ export const fetchAllEssays = () => {
 
     return parsedEssays
   }
+
+
+export const fetchLocalStorage = (key) => {
+  return window && window.localStorage.getItem(key)
+}
