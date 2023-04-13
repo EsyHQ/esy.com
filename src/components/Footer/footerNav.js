@@ -26,22 +26,22 @@ const FooterNav = () => {
 
     return (<FooterNavContainer>
                     <FooterList>
-                        {/* <FooterListItem>
+                        <FooterListItem>
                           <FooterListItemTitle>Journals</FooterListItemTitle>
                           <FooterSubNav>
                               <FooterSubNavList>
                                 <FooterSubNavListItem><Link to="/@ai">@AI</Link></FooterSubNavListItem>
-                                <FooterSubNavListItem><Link to="/@ai">@Trader</Link></FooterSubNavListItem>
+                                <FooterSubNavListItem><Link to="/@ai">@Prompt</Link></FooterSubNavListItem>
                               </FooterSubNavList>
                           </FooterSubNav>
-                        </FooterListItem> */}
+                        </FooterListItem>
 
                         <FooterListItem>
                           <FooterListItemTitle>Resources</FooterListItemTitle>
                           <FooterSubNav>
                               <FooterSubNavList>
                                 <FooterSubNavListItem><Link to="/blog">Blog</Link></FooterSubNavListItem>
-                                <FooterSubNavListItem><Link to="/@ai">AI Journal</Link></FooterSubNavListItem>
+                                <FooterSubNavListItem><Link to="/learn">Learn</Link></FooterSubNavListItem>
                               </FooterSubNavList>
                           </FooterSubNav>
                         </FooterListItem>
