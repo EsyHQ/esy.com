@@ -94,7 +94,7 @@ return (
         meta={blogPostMeta}
       />
       <BlogPostWrapper>
-      <ReadingProgressBar width={width} />
+      {/* <ReadingProgressBar width={width} /> */}
 
         <BlogPostInner>
           <PrePostContainer>

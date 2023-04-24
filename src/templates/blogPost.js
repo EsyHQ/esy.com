@@ -94,7 +94,7 @@ return (
         meta={blogPostMeta}
       />
       <BlogPostWrapper>
-      <ReadingProgressBar width={width} />
+      {/* <ReadingProgressBar width={width} /> */}
 
         <BlogPostInner>
           <PrePostContainer>
@@ -199,11 +199,11 @@ const BlogPostWrapper = styled.div`
     }
 
     p {
-      font-size: 23px;
+      font-size: 21px;
       margin-bottom: 30px;
-      line-height: 35px;
+      line-height: 32px;
       font-family: Poppins, sans-serif; 
-      font-weight: 400;
+      font-weight: 500;
 
       @media(max-width: 600px) {
         font-size: 20px;
