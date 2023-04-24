@@ -191,9 +191,9 @@ const BlogPostWrapper = styled.div`
     }
 
     p {
-      font-size: 20px;
+      font-size: 23px;
       margin-bottom: 30px;
-      line-height: 32px;
+      line-height: 35px;
       font-family: Poppins, sans-serif; 
       font-weight: 400;
     }
@@ -231,7 +231,7 @@ const BlogPostWrapper = styled.div`
 
     blockquote {
       margin: 50px 0;
-      color: rgba(255, 255, 255, 0.8);
+      color: rgba(255, 255, 255);
       font-family: Poppins, sans-serif;  
       font-size: 24px;
       font-weight: 500;

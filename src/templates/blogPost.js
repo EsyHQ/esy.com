@@ -172,6 +172,14 @@ const BlogPostWrapper = styled.div`
 
   .blog-post-content {
 
+    a {
+      color: rgb(209, 78, 255);
+      font-family: Poppins,sans-serif!important;
+      :hover {
+        text-decoration: underline;
+      }
+    }
+
     > figure {
 
       img {
@@ -191,11 +199,15 @@ const BlogPostWrapper = styled.div`
     }
 
     p {
-      font-size: 20px;
+      font-size: 23px;
       margin-bottom: 30px;
-      line-height: 32px;
+      line-height: 35px;
       font-family: Poppins, sans-serif; 
       font-weight: 400;
+
+      @media(max-width: 600px) {
+        font-size: 20px;
+      }
     }
 
     strong {
