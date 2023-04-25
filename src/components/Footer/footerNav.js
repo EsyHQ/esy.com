@@ -26,15 +26,15 @@ const FooterNav = () => {
 
     return (<FooterNavContainer>
                     <FooterList>
-                        <FooterListItem>
+                        {/* <FooterListItem>
                           <FooterListItemTitle>Journals</FooterListItemTitle>
                           <FooterSubNav>
                               <FooterSubNavList>
                                 <FooterSubNavListItem><Link to="/@ai">@AI</Link></FooterSubNavListItem>
-                                <FooterSubNavListItem><Link to="/@ai">@Prompt</Link></FooterSubNavListItem>
+                                <FooterSubNavListItem><Link to="/@prompt">@Prompt</Link></FooterSubNavListItem>
                               </FooterSubNavList>
                           </FooterSubNav>
-                        </FooterListItem>
+                        </FooterListItem> */}
 
                         <FooterListItem>
                           <FooterListItemTitle>Resources</FooterListItemTitle>

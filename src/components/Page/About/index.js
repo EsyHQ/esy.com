@@ -112,7 +112,7 @@ const SectionImage = styled.div`
 
     img {
         width: 100%;
-        border-radius: 20%;
+        border-radius: 3%;
     }
 
 
