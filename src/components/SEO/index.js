@@ -28,7 +28,8 @@
  
    const metaDescription = description || site.siteMetadata.description
    const metaTitle = title || site.siteMetadata.title
- 
+
+
    return (<Helmet
              htmlAttributes={{
                lang,
@@ -47,6 +48,10 @@
                {
                 property: `og:type`,
                 content: "article",
+               },
+               {
+                property: `og:url`,
+                content: "",
                },
               //  {
               //   property: `og:image`,

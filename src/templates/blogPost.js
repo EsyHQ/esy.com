@@ -25,7 +25,7 @@ export default function Template(props) {
   const { ghostPost } = data // data.markdownRemark holds your post data
   const { 
     title, html, published_at, feature_image, primary_tag, reading_time, 
-    og_title, og_image, og_url, twitter_image, twitter_title, meta_title, meta_description
+    og_title, og_image, og_url, twitter_image, twitter_title, meta_title, meta_description, excerpt, slug
   } = ghostPost
   const formattedPublishedDate = moment(published_at).local().format('MMM DD YYYY').split(' ')
 
@@ -44,47 +44,31 @@ export default function Template(props) {
     },
     {
      property: `og:image`,
-     content: og_image,
+     content: feature_image,
     },
     {
      property: `og:url`,
-     content:  og_url,
+     content:  `https://www.esy.com/blog/${slug}`,
     },
     {
       property: `og:description`,
-      content: meta_description,
-    },
-    {
-      name: `twitter:card`,
-      content: `summary`,
-    },
-    // {
-    //   name: `twitter:creator`,
-    //   content: site.siteMetadata.author,
-    // },
-    {
-      name: `twitter:title`,
-      content: title,
-    },
-    {
-      name: `twitter:description`,
-      content: meta_description,
+      content: excerpt,
     },
   ]
 
 
 
-useEffect(() => {
-  const scrollHeight = () => {
-    const el = document.documentElement
-    let scrollTop = el.scrollTop || document.body.scrollTop
-    let scrollHeight = el.scrollHeight || document.body.scrollHeight
-    const percent = (scrollTop / (scrollHeight)) * 100
-    setWidth(percent)
-}
-    window.addEventListener("scroll", scrollHeight, { capture: true })
-    return () => window.removeEventListener("scroll", scrollHeight )
-})
+// useEffect(() => {
+//   const scrollHeight = () => {
+//     const el = document.documentElement
+//     let scrollTop = el.scrollTop || document.body.scrollTop
+//     let scrollHeight = el.scrollHeight || document.body.scrollHeight
+//     const percent = (scrollTop / (scrollHeight)) * 100
+//     setWidth(percent)
+// }
+//     window.addEventListener("scroll", scrollHeight, { capture: true })
+//     return () => window.removeEventListener("scroll", scrollHeight )
+// })
 
 
 return (
