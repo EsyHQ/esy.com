@@ -2,60 +2,23 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from "gatsby"
 
-// const navItems = [
-//   { 
-//     category: 'Resources',
-//     links: [
-//       { 
-//         title: 'Blog',
-//         url: '/blog'
-//       },
-
-//       {
-//         title: 'Journals',
-//         url: '/journals'
-//       }
-
-//     ]
-//   }
-// ]
- 
 
 
 const FooterNav = () => {
 
     return (<FooterNavContainer>
                     <FooterList>
-                        {/* <FooterListItem>
-                          <FooterListItemTitle>Journals</FooterListItemTitle>
-                          <FooterSubNav>
-                              <FooterSubNavList>
-                                <FooterSubNavListItem><Link to="/@ai">@AI</Link></FooterSubNavListItem>
-                                <FooterSubNavListItem><Link to="/@prompt">@Prompt</Link></FooterSubNavListItem>
-                              </FooterSubNavList>
-                          </FooterSubNav>
-                        </FooterListItem> */}
 
-                        <FooterListItem>
+                        <FooterListItem>  
                           <FooterListItemTitle>Resources</FooterListItemTitle>
                           <FooterSubNav>
                               <FooterSubNavList>
-                                <FooterSubNavListItem><Link to="/blog">Blog</Link></FooterSubNavListItem>
-                                <FooterSubNavListItem><Link to="/learn">Learn</Link></FooterSubNavListItem>
+                                <FooterSubNavListItem><Link to="/blog">@Blog</Link></FooterSubNavListItem>
+                                <FooterSubNavListItem><Link to="/@prompt">@Journal</Link></FooterSubNavListItem>
                               </FooterSubNavList>
                           </FooterSubNav>
                         </FooterListItem>
-                        
 
-
-                        {/* <FooterListItem>
-                          <FooterListItemTitle>Developers</FooterListItemTitle>
-                          <FooterSubNav>
-                              <FooterSubNavList>
-                              <FooterSubNavListItem><Link to="/docs">Docs</Link></FooterSubNavListItem>
-                              </FooterSubNavList>
-                          </FooterSubNav>
-                        </FooterListItem> */}
 
                         <FooterListItem>
                         <FooterListItemTitle>Organization</FooterListItemTitle>

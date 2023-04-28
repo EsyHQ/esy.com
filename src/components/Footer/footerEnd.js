@@ -21,9 +21,10 @@ const FooterEnd = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         >
-                        &copy;{''}
+                        &copy;{' '}
                         {/* 2022 Esy Research Technologies */}
-                        2023 Esy Technologies, LLC.
+                        {/* 2023 Esy Technologies, LLC. */}
+                        2023 Esy Technologies
                         </a>
                     </Trademark>
 

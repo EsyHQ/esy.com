@@ -1,7 +1,7 @@
 
-import React, { useState, useEffect } from "react"
+import React from "react"
 import styled from 'styled-components'
-import { StaticQuery, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import moment from 'moment'
 
 import Post from 'src/components/common/Post'
@@ -12,74 +12,20 @@ import PostPagination from 'src/components/common/Post/postPagination'
 import Layout from 'src/components/Layout'
 import ReadingTime from 'src/components/ReadingTime'
 
-import SEO from 'src/components/SEO'
-import ReadingProgressBar from 'src/components/ReadingProgressBar'
 
-
-
-export default function Template(props) {
-  const [width, setWidth] = useState(0)
+function BlogTemplate(props) {
 
   const { data, pageContext } = props
   const { nextPostSlug, prevPostSlug } = pageContext
-  const { ghostPost } = data // data.markdownRemark holds your post data
-  const { 
-    title, html, published_at, feature_image, primary_tag, reading_time, 
-    og_title, og_image, og_url, twitter_image, twitter_title, meta_title, meta_description, excerpt, slug
-  } = ghostPost
+  const { ghostPost } = data 
+  const { title, html, published_at, feature_image, reading_time } = ghostPost
   const formattedPublishedDate = moment(published_at).local().format('MMM DD YYYY').split(' ')
 
-  const blogPostMeta =[
-    {
-      name: `description`,
-      content: meta_description,
-    },
-    {
-      property: `og:title`,
-      content: title,
-    },
-    {
-     property: `og:type`,
-     content: "article",
-    },
-    {
-     property: `og:image`,
-     content: feature_image,
-    },
-    {
-     property: `og:url`,
-     content:  `https://www.esy.com/blog/${slug}`,
-    },
-    {
-      property: `og:description`,
-      content: excerpt,
-    },
-  ]
-
-
-
-// useEffect(() => {
-//   const scrollHeight = () => {
-//     const el = document.documentElement
-//     let scrollTop = el.scrollTop || document.body.scrollTop
-//     let scrollHeight = el.scrollHeight || document.body.scrollHeight
-//     const percent = (scrollTop / (scrollHeight)) * 100
-//     setWidth(percent)
-// }
-//     window.addEventListener("scroll", scrollHeight, { capture: true })
-//     return () => window.removeEventListener("scroll", scrollHeight )
-// })
-
-
+  console.log('blog page')
+  
 return (
     <Layout className="blog-layout">
-      <SEO
-        title="Blog"
-        meta={blogPostMeta}
-      />
       <BlogPostWrapper>
-      {/* <ReadingProgressBar width={width} /> */}
-
         <BlogPostInner>
           <PrePostContainer>
             <PostTitle>{title}</PostTitle>
@@ -109,6 +55,12 @@ return (
     </Layout>
   )
 }
+
+
+export default BlogTemplate 
+
+export { Head } from './blogPostHead'
+
 
 
 export const pageQuery = graphql`

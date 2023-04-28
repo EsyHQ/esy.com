@@ -1,15 +1,12 @@
 import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 import { graphql } from 'gatsby'
-import { Link } from 'gatsby'
 import moment from 'moment'
 import Grid from '@material-ui/core/Grid';
 
 
 import Layout from "src/components/Layout"
 import SEO from "src/components/SEO"
-import ReadingTime from "src/components/ReadingTime"
-import PostDate from 'src/components/common/Post/postDate'
 import PostCard from 'src/components/common/Post/postCard'
 
 
@@ -52,7 +49,7 @@ const midTheme = {
         maxWidth: '625px',
         maxHeight: '227px',
         objectFit: 'cover',
-        objectPosition: '0 20%',
+        // objectPosition: '0 20%',
     },
     postCardTitle: {
         margin: '20px 0 0 0'
@@ -91,7 +88,7 @@ const BlogIndexPage = ({ data }) => {
     
 
     return (<Layout>
-                <SEO title="Blog" />
+                {/* <SEO title="Blog" /> */}
                 <BlogWrapper>
                 <Grid 
                     container 
@@ -123,6 +120,16 @@ const BlogIndexPage = ({ data }) => {
 
 
 export default BlogIndexPage
+
+
+export const Head = () => {
+    console.log('from blog index head')
+    return ( <>
+       <title>Hello World</title>
+       <meta name="description" content="Hello World" />
+     </>)
+}
+    
 
 const BlogWrapper = styled.section`
     height: 100%;

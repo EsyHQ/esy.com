@@ -6,9 +6,13 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
+    title: "Esy: The Smart Journal",
+    description: `Esy is a digital journaling platform that offers users a suite of analytical tools for 
+    discovering powerful insights about their personal writing habits.`,
+    twitterUsername: `@esyjournal`,
+    image: `/static/color-nobg.png`,
     siteUrl: "https://www.esy.com",
-    title: "Esy",
-    author: "@lemuhuru",
+    type: "website",
   },
   plugins: [
     "gatsby-plugin-styled-components",
