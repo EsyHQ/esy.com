@@ -7,8 +7,8 @@ const SEO = ({ meta, pathname, children }) => {
   const seo = {
     title: meta.title || defaultTitle,
     description: meta.description || defaultDescription,
-    image: `${siteUrl}${image}`,
-    url: `${siteUrl}${pathname || ``}`,
+    image: meta.image || `${siteUrl}${image}`,
+    url: meta.url || `${siteUrl}${pathname || ``}`,
     twitterUsername,
     type: meta.type || defaultType
   }
