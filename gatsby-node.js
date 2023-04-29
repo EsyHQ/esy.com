@@ -6,7 +6,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     const { createPage } = actions
 
     const blogPostTemplate = require.resolve(`./src/templates/blogPost.js`)
-    const aiJournalTemplate = require.resolve(`./src/templates/aiJournal.js`)
 
     const result = await graphql(`
         {
@@ -46,18 +45,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                 nextPostSlug: next,
             }, // additional data can be passed via context
         })
-
-        createPage({
-          path: `/@ai/${node.slug}`,
-          pathPrefix: `/@ai`,
-          component: aiJournalTemplate,
-          context: {
-              title: node.title,
-              slug: node.slug,
-              prevPostSlug: previous,
-              nextPostSlug: next,
-          }, // additional data can be passed via context
-      })
     })
 }
 
