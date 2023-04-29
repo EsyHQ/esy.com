@@ -26,9 +26,14 @@ const AboutPage = () => {
                                 <SectionContent>
                                     <ParagraphElement>Esy is for Essay.</ParagraphElement>
                         
-                                    <ParagraphElement>
+                                    {/* <ParagraphElement>
                                         Esy is a digital journaling platform that offers users a suite of analytical tools for writing 
                                         AI assisted essays and discovering powerful insights about their personal writing habits.
+                                    </ParagraphElement> */}
+
+                                    <ParagraphElement>
+                                        Esy is a digital journaling platform that offers users a suite of analytical tools for writing 
+                                        rich and engaging essays while discovering powerful insights about their personal writing habits.
                                     </ParagraphElement>
                                 </SectionContent>
                                 

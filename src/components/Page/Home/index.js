@@ -18,7 +18,8 @@ const IndexPage = () => {
             <SectionWrapper>
               <HeroWrapper>
                   <HeroSummary>
-                    <HeroParagraph>The Smart Journal for Writing AI Powered Essays</HeroParagraph>
+                    {/* <HeroParagraph>The Smart Journal for Writing AI Powered Essays</HeroParagraph> */}
+                    <HeroParagraph>The Smart Journal for Essayist</HeroParagraph>
                     <EmailForm />
                   </HeroSummary>
               </HeroWrapper>
@@ -92,7 +93,8 @@ const HeroSummary = styled.div`
   flex-direction: column;
   color: #fff;
   font-size: 36px;
-  max-width: 550px;
+  // max-width: 550px;
+  max-width: 400px;
   text-align: center;
   align-items: flex-start;
   line-height: 1.6;
