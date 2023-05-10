@@ -10,7 +10,7 @@ const HeaderMenu = ({ handleDisconnect, activeAccount }) => {
     return (
         <NavElement role="navigation">
             <ListElement>
-                <ListItem><Link to="/author/compose">Write</Link></ListItem>
+                <ListItem><Link to="/author/compose">Writ</Link></ListItem>
                 <ListItem><AccountMenu activeAccount={activeAccount} handleDisconnect={handleDisconnect} /></ListItem>
             </ListElement>
         </NavElement>
