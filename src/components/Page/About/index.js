@@ -33,7 +33,7 @@ const AboutPage = () => {
 
                                     <ParagraphElement>
                                         Esy is a digital journaling platform that offers users a suite of analytical tools for writing 
-                                        rich and engaging essays while discovering powerful insights about their personal writing habits.
+                                        rich and expressive essays while discovering powerful insights about their personal writing habits.
                                     </ParagraphElement>
                                 </SectionContent>
                                 

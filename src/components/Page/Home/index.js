@@ -18,9 +18,7 @@ const IndexPage = () => {
             <SectionWrapper>
               <HeroWrapper>
                   <HeroSummary>
-                    {/* <HeroParagraph>The Smart Journal for Writing AI Powered Essays</HeroParagraph> */}
                     <HeroParagraph>The Smart Journal for Essayist</HeroParagraph>
-                    <EmailForm />
                   </HeroSummary>
               </HeroWrapper>
             </SectionWrapper>
