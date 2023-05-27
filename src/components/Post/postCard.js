@@ -10,8 +10,8 @@ import moment from 'moment'
 const PostCard = props => {
     const { postData, theme, firstSentence, secondSentence } = props
     const edge = postData
-    const { title, excerpt, feature_image, primary_tag, published_at, slug, reading_time } = edge.node
-    const formattedPublishedDate = moment(published_at).local().format('MMM DD YYYY').split(' ')
+    const { title, excerpt, feature_image, primary_tag, date, slug, reading_time } = edge.node.frontmatter
+    const formattedPublishedDate = moment(date).local().format('MMM DD YYYY').split(' ')
     const primaryTag = primary_tag && primary_tag.name || "blog"
     
     console.log('slug from postCard', slug)

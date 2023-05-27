@@ -22,9 +22,22 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-root-import",
     "gatsby-plugin-sass",
-    "gatsby-transformer-remark",
+    // "gatsby-transformer-remark",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 50,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
@@ -55,6 +68,13 @@ module.exports = {
       options: {
           endpoint: 'https://esy.us20.list-manage.com/subscribe/post?u=3b51c8da7ed629b563d12cc11&amp;id=83cab3c485', // string; add your MC list endpoint here; see instructions below
           timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/src/content`,
       },
     },
     {
@@ -97,7 +117,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "pages",
-        path: "./src/pages/",
+        path: `${__dirname}/src/pages/`,
       },
       __key: "pages",
     },
