@@ -11,9 +11,9 @@ import moment from 'moment'
 const PostCard = props => {
     const { postData = {}, theme, firstSentence, secondSentence } = props
 
-    const frontmatter = postData?.node?.frontmatter
-    const gatsbyImageData = frontmatter?.featuredImage?.childImageSharp?.gatsbyImageData
-    const { title = "", excerpt = "", tags = [], journal_name = "", published_at = "", slug = "", reading_time = 0 } = frontmatter || {}
+    const frontmatter = postData?.node?.frontmatter || {}
+    const gatsbyImageData = frontmatter?.featuredImage?.childImageSharp?.gatsbyImageData || {}
+    const { title = "", excerpt = "", tags = [], journal_name = "", published_at = "", slug = "", reading_time = 0 } = frontmatter 
 
     let featuredImage = getImage(gatsbyImageData)
     
