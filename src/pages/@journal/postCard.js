@@ -13,11 +13,11 @@ const PostCard = props => {
 
     const frontmatter = postData?.node?.frontmatter || {}
     const gatsbyImageData = frontmatter?.featuredImage?.childImageSharp?.gatsbyImageData || {}
-    const { title = "", excerpt = "", tags = [], journal_name = "", published_at = "", slug = "", reading_time = 0 } = frontmatter 
+    const { title = "", excerpt = "", tags = [], journal_name = "", published_at = "", slug = "", reading_time = 0, date } = frontmatter 
 
     let featuredImage = getImage(gatsbyImageData)
     
-    const formattedPublishedDate = moment(published_at).local().format('MMM DD YYYY').split(' ')
+    const formattedPublishedDate = moment(date).local().format('MMM DD YYYY').split(' ')
     const primaryTag = journal_name || "blog"
     
     console.log('primaryTag', primaryTag)
@@ -48,7 +48,7 @@ const PostCard = props => {
                                 {theme?.type === 'midTheme' && <PostCardExcerpt><p>{firstSentence}.</p></PostCardExcerpt>}
                                 {theme?.type === 'thumbnailTheme' && <PostCardExcerpt><p>{firstSentence.substring(0,100)}...</p></PostCardExcerpt>}
 
-                                <ReadingTime time={reading_time} />
+                                {/* <ReadingTime time={reading_time} /> */}
                             </PostCardContent>
                     </PostCardWrapper>
                 </Link>
