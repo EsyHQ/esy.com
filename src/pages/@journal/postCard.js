@@ -9,15 +9,20 @@ import moment from 'moment'
 
 
 const PostCard = props => {
-    const { postData, theme, firstSentence, secondSentence } = props
-    const edge = postData
-    const { title, excerpt, tags, journal_name, published_at, slug, reading_time } = edge.node.frontmatter
-    let featuredImage = getImage(edge.node.frontmatter.featuredImage?.childImageSharp?.gatsbyImageData)
+    const { postData = {}, theme, firstSentence, secondSentence } = props
+
+    const frontmatter = postData?.node?.frontmatter
+    const gatsbyImageData = frontmatter?.featuredImage?.childImageSharp?.gatsbyImageData
+    const { title = "", excerpt = "", tags = [], journal_name = "", published_at = "", slug = "", reading_time = 0 } = frontmatter || {}
+
+    let featuredImage = getImage(gatsbyImageData)
     
     const formattedPublishedDate = moment(published_at).local().format('MMM DD YYYY').split(' ')
     const primaryTag = journal_name || "blog"
+    
     console.log('primaryTag', primaryTag)
     console.log('journal_name', journal_name)
+
     const tagMap = {
         "blog": { path: "/blog"},
         "@journal": { path: "/@journal"},
@@ -39,9 +44,9 @@ const PostCard = props => {
                                     <span className="divider">•</span>
                                     <PostDate publishedPostDate={formattedPublishedDate} />
                                 </PostCardMeta>
-                                {theme.type === 'mainTheme' && <PostCardExcerpt><p>{firstSentence}.</p></PostCardExcerpt>}
-                                {theme.type === 'midTheme' && <PostCardExcerpt><p>{firstSentence}.</p></PostCardExcerpt>}
-                                {theme.type === 'thumbnailTheme' && <PostCardExcerpt><p>{firstSentence.substring(0,100)}...</p></PostCardExcerpt>}
+                                {theme?.type === 'mainTheme' && <PostCardExcerpt><p>{firstSentence}.</p></PostCardExcerpt>}
+                                {theme?.type === 'midTheme' && <PostCardExcerpt><p>{firstSentence}.</p></PostCardExcerpt>}
+                                {theme?.type === 'thumbnailTheme' && <PostCardExcerpt><p>{firstSentence.substring(0,100)}...</p></PostCardExcerpt>}
 
                                 <ReadingTime time={reading_time} />
                             </PostCardContent>
@@ -64,7 +69,7 @@ const PostCardContainer = styled.div`
     }
 
 
-    max-width: ${({ theme }) => theme.container.maxWidth };
+    max-width: ${({ theme }) => theme?.container?.maxWidth };
     @media(max-width: 600px) {
         max-width: 100% ;
     }
@@ -73,7 +78,7 @@ const PostCardWrapper = styled.div`
     display: flex;
     // justify-content: space-between;
 
-    flex-flow: ${({theme}) => theme.container.flexFlow};
+    flex-flow: ${({theme}) => theme?.container?.flexFlow};
     @media(max-width: 768px) {
         flex-flow: row wrap;
     }
@@ -83,10 +88,10 @@ const PostCardTitle = styled.h1`
         color: rgba(255, 255, 255, 1);
         // font-family: "Roboto", sans-serif, "Helvetica","Arial";
         font-weight: bold;
-        font-size: ${({ theme }) => theme.title.fontSize };
+        font-size: ${({ theme }) => theme?.title?.fontSize };
         font-weight: bold;
         letter-spacing: 0px;
-        margin: ${({ theme }) => theme.postCardTitle.margin };
+        margin: ${({ theme }) => theme?.postCardTitle?.margin };
 
 
         @media(max-width: 600px) {
@@ -102,7 +107,7 @@ const PostCardContent = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: ${({theme}) => theme.postCardContent.padding};
+    padding: ${({theme}) => theme?.postCardContent?.padding};
     @media(max-width: 768px) {
             padding: 0;
     }
@@ -121,22 +126,22 @@ const PostCardExcerpt = styled.p`
 
 
 const FeaturedImageWrapper = styled.div`
-    background: #000 url('${props => props.featuredImg}') cover no-repeat;
+    background: #000 url('${props => props?.featuredImg}') cover no-repeat;
     width: 100%;
     
     img {
         width: 100%;
-        max-width: ${props => props.theme.featuredImg.maxWidth};
-        max-height: ${({ theme }) => theme.featuredImg.maxHeight};
+        max-width: ${props => props?.theme?.featuredImg?.maxWidth};
+        max-height: ${({ theme }) => theme?.featuredImg?.maxHeight};
         min-height: 195px;
         @media(max-width: 600px) {
             max-width: 100%;
             max-height: 100%;
         }
 
-        ${props =>  props.theme.type === 'midTheme' && css`
-            object-position: ${props.theme.featuredImg.objectPosition};
-            object-fit: ${props.theme.featuredImg.objectFit};
+        ${props =>  props?.theme?.type === 'midTheme' && css`
+            object-position: ${props?.theme.featuredImg.objectPosition};
+            object-fit: ${props?.theme?.featuredImg?.objectFit};
         `
         }
 `

@@ -97,7 +97,7 @@ const JournalIndexPage = ({ data }) => {
                     direction="row"
                 >
                     {edges.map((edge, index) => {
-                        const { excerpt } = edge.node.frontmatter
+                        const { excerpt } = edge?.node?.frontmatter
                         const [ firstSentence, secondSentence ] = excerpt.split('.')
 
                         if (index === 0) {
