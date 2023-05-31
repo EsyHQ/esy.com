@@ -32,7 +32,7 @@ return (
             <PostTitle>{frontmatter.title}</PostTitle>
             <PostMeta>
                 <PrimaryMeta>
-                    <PrimaryPostTag postTag={"announcements"} />
+                    <PrimaryPostTag postTag={"@Journal"} />
                     <span className="divider">•</span>
                     <PostDate publishedPostDate={formattedPublishedDate} />
                 </PrimaryMeta>
