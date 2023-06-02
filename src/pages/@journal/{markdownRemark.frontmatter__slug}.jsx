@@ -14,10 +14,8 @@ import ReadingTime from 'src/components/ReadingTime'
 
 
 export default function JournalPostTemplate({ data, pageContext: { nextPostSlug, prevPostSlug }}) {
-  // const { ghostPost } = data 
-  // const { title, html, published_at, feature_image, reading_time } = ghostPost
-
-  const { markdownRemark: {frontmatter, html } } = data 
+  
+  const { markdownRemark: { frontmatter, html } } = data 
   const { title, journal_name, date } = frontmatter
 
   const formattedPublishedDate = moment(date).local().format('MMM DD YYYY').split(' ')

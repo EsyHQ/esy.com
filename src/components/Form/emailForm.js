@@ -27,7 +27,7 @@ const EmailForm = () => {
 
 
     const handleWriteClick = () => {
-        const writeURL = "https://journal.esy.com/new"
+        const writeURL = "https://journal.esy.com/compose"
         navigate(writeURL)
     }
 
