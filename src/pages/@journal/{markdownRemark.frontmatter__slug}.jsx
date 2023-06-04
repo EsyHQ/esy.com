@@ -100,6 +100,22 @@ const BlogPostWrapper = styled.div`
 
   .blog-post-content {
 
+    li {
+
+      ::marker {
+        color: rgb(209, 78, 255);
+        font-weight: bold;
+      }
+
+      p {
+        margin-left: 6px;
+      }
+    }
+
+    
+
+
+
     h2 {
       font-weight: 500 !important;
     }
@@ -151,6 +167,7 @@ const BlogPostWrapper = styled.div`
       }
     }
 
+
     strong {
       font-weight: 700;
       color: #fff;
@@ -200,7 +217,6 @@ const BlogPostWrapper = styled.div`
       max-width: 900px;
       margin: 100px auto;
       padding: 0 10%;
-  }
     }
   }
 
@@ -285,35 +301,3 @@ const FeatureImage = styled.div`
 
   }
 `
-
-
-// export default function JournalPostTemplate({ data }) {
-//   const { markdownRemark } = data 
-//   const { frontmatter, html } = markdownRemark
-
-//   return (
-//     <div>
-//       <div>
-//         <h1>{frontmatter.title}</h1>
-//         <h2>{frontmatter.date}</h2>
-//         <div
-//           dangerouslySetInnerHTML={{ __html: html }}
-//         />
-//       </div>
-//     </div>
-//   )
-// }
-
-
-// export const pageQuery = graphql`
-//   query($id: String!) {
-//     markdownRemark(id: { eq: $id }) {
-//       html
-//       frontmatter {
-//         date(formatString: "MMMM DD, YYYY")
-//         slug
-//         title
-//       }
-//     }
-//   }
-// `

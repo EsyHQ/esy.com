@@ -23,6 +23,7 @@ const FooterNav = () => {
                           <FooterSubNav>
                               <FooterSubNavList>
                                 <FooterSubNavListItem><Link to="/@journal">@Journal</Link></FooterSubNavListItem>
+                                {/* <FooterSubNavListItem><Link to="/@journal">@BuildInPublic</Link></FooterSubNavListItem> */}
                               </FooterSubNavList>
                           </FooterSubNav>
                         </FooterListItem>

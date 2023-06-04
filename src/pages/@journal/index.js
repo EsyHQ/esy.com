@@ -84,6 +84,7 @@ const thumbnailTheme = {
 
 const JournalIndexPage = ({ data }) => {
     const { edges } = data.allMarkdownRemark
+
     const totalPosts = edges.length
 
     
@@ -99,6 +100,7 @@ const JournalIndexPage = ({ data }) => {
                     {edges.map((edge, index) => {
                         const { excerpt } = edge?.node?.frontmatter
                         const [ firstSentence, secondSentence ] = excerpt.split('.')
+                        const theme = index === 0 ? mainTheme : midTheme
 
                         if (index === 0) {
                             return <ThemeProvider key={index} theme={mainTheme}><Grid item xs={12}><PostCard theme={mainTheme} postData={edge} firstSentence={firstSentence} secondSentence={secondSentence}  /></Grid></ThemeProvider>
@@ -122,7 +124,7 @@ export default JournalIndexPage
 
 export const pageQuery = graphql`
     query BlogIndexQuery  {
-        allMarkdownRemark {
+        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
                 edges {
                     node {
                         frontmatter {

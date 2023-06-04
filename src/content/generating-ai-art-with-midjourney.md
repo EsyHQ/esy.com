@@ -1,6 +1,6 @@
 ---
 slug: "/generating-ai-art-with-midjourney"
-date: "2023-05-27"
+date: "2023-05-01"
 title: "Generating AI Art with MidJourney"
 journal_name: "@journal"
 tags: [ "@ai", "machine-learning" ]
