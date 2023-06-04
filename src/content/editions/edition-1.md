@@ -25,7 +25,7 @@ Over the past few weeks, media sites have been inundated with news that recent a
  
 ***Key Insights***
 
-It all started in late March, when the [Future of Life Institute][FutureLife] released a petition calling for a six month moratorium on the development of AI models that exceed the capabilities of GPT-4. It was signed by highly notable figures across a myriad of professions and industry, including the Godfather of AI ***Geoffrey Hinton***, ***Elon Musk***, ***Steve Wozniac***, ***Emad Mostaque*** of [Stability AI][StabilityAI], ***Andrew Yang*** and thousands of professionals from esteemed institutions. 
+It all started in late March, when the [Future of Life Institute][FutureLife] released a petition calling for a six month moratorium on the development of AI models that exceed the capabilities of GPT-4. It was signed by highly notable figures across a myriad of professions and industry, including the Godfather of AI ***Geoffrey Hinton***, ***Elon Musk***, ***Steve Wozniac***, ***Emad Mostaque*** of [Stability.AI][StabilityAI], ***Andrew Yang*** and thousands of professionals from esteemed institutions. 
 
 
 In early June, [Safe.AI][SafeAI] followed up with a petition of their own, signed by hundreds of heavy weigths in the field of AI, Academia, and Industry. In the statement, they cite:
@@ -46,7 +46,7 @@ Not much, just for the big players in AI to chill out for a couple of months unt
  Not all AI Scientist agreed that existing AI systems posed an existential threat and even if they did, would a six month moratorium really mitigate the risk? How would we enforce it? Would it enable America's adversaries to catch up in the "Arms Race" of a lifetime? These are the questions raised by critics.
  
   
-A few shakers in the industry, most notably Andrew Ng, founder of [DeepLearning.AI][DeepLearningAI] and Dr. Yan Lecun, Chief AI Scientist for Meta, shared the mutual view that Artificial General Intelligence (AGI) is far beyond our current systems. 
+A few shakers in the industry, most notably Andrew Ng, founder of [DeepLearning.AI][DeepLearningAI] and Dr. Yann Lecun, Chief AI Scientist for Meta, shared the mutual view that Artificial General Intelligence (AGI) is far beyond our current systems. 
 
 Andrew Ng in a recent [transcript][LessWrongTranscript] with Lecun, argues that concerns over super intelligent AI systems is less valid than more realistic and legitamate issues. "I feel like while AI today has some risks of harm. Bias, fairness, concentration of power, those are real issues.", he stated. 
 
