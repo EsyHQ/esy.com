@@ -110,7 +110,7 @@ Note that, Petro China, the first company to ever reach 1 Trillion is not displa
  
 ***Key Insights***
 
-* The [trillionaire club][ForbesTClub] worldwide is less than 10.
+* The [trillionaire club][BenzingaNvidia] worldwide is less than 10.
 
 * Nvidia has become the 9th company to ever top $1 Trillion in market value, according to [Bloomberg][BloombergNvidia]. 
 
@@ -134,3 +134,4 @@ Note that, Petro China, the first company to ever reach 1 Trillion is not displa
 [BloombergNvidia]: https://www.bloomberg.com/news/articles/2023-05-28/nvidia-ceo-says-those-without-ai-expertise-will-be-left-behind
 [ForbesTClub]: https://www.forbes.com/sites/katherinehamilton/2023/05/25/nvidia-nears-1-trillion-market-capitalization-possibly-joining-these-other-companies/?sh=422f17ba2e1e
 [VC]: https://www.visualcapitalist.com/nvidia-joins-the-trillion-dollar-club/
+[BenzingaNvidia]: https://www.benzinga.com/news/23/05/32630114/nvidia-becomes-ninth-company-to-hit-1-trillion-market-cap-who-could-be-next-to-join-elusive-club
