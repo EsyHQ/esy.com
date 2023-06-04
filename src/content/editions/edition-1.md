@@ -99,14 +99,18 @@ Professionals must understand that LLM's like ChatGPT are not "intelligent" or "
 
 
 ## Nvidia Moons, Briefly Hits 1 Trillion
-Over the past few weeks, media sites have been inundated with news that recent advances in AI may pose serious threats to our democracy, intellectual property, and in the worst scenario ‘risk of extinction’. 
+Propelled by AI-hype, excitement over Generative AI, and the need for evermore powerful GPUs to fuel the energy needs of LLMs, Nvidia's market cap briefly hits one trillion.
 
  
 ***Key Insights***
 
-It started in late March when the [Future of Life Institute][FutureLife] released a petition signed by, now over 30,000
+* The [trillionaire club][ForbesTClub] worldwide is less than 10.
 
-***Our Take***
+* Nvidia has become the 9th company to ever top $1 Trillion in market value, according to [Bloomberg][BloombergNvidia]. 
+
+
+
+<!-- ***Our Take*** -->
 
 
 [FutureLife]: https://futureoflife.org/open-letter/pause-giant-ai-experiments/
@@ -120,3 +124,6 @@ It started in late March when the [Future of Life Institute][FutureLife] release
 
 [TortLaw]: https://www.law.cornell.edu/wex/tort
 [ShowCause]: https://www.law.cornell.edu/wex/order_to_show_cause
+
+[BloombergNvidia]: https://www.bloomberg.com/news/articles/2023-05-28/nvidia-ceo-says-those-without-ai-expertise-will-be-left-behind
+[ForbesTClub]: https://www.forbes.com/sites/katherinehamilton/2023/05/25/nvidia-nears-1-trillion-market-capitalization-possibly-joining-these-other-companies/?sh=422f17ba2e1e
