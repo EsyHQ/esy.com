@@ -98,8 +98,14 @@ Professionals must understand that LLM's like ChatGPT are not "intelligent" or "
 
 
 
-## Nvidia Moons, Briefly Hits 1 Trillion
+## Nvidia Moons 🚀, Briefly Hits 1 Trillion
 Propelled by AI-hype, excitement over Generative AI, and the need for evermore powerful GPUs to fuel the energy needs of LLMs, Nvidia's market cap briefly hits one trillion.
+
+Check how it has stacked against other members of the club: 
+
+![VisualCapitalist.com Chart](https://www.visualcapitalist.com/wp-content/uploads/2023/05/nvidia-1-trillion-market-cap-club-MAIN.jpg)
+
+Note that, Petro China, the first company to ever reach 1 Trillion is not displayed in this chart illustrated by the [Visual Capitalist][VC]. 
 
  
 ***Key Insights***
@@ -127,3 +133,4 @@ Propelled by AI-hype, excitement over Generative AI, and the need for evermore p
 
 [BloombergNvidia]: https://www.bloomberg.com/news/articles/2023-05-28/nvidia-ceo-says-those-without-ai-expertise-will-be-left-behind
 [ForbesTClub]: https://www.forbes.com/sites/katherinehamilton/2023/05/25/nvidia-nears-1-trillion-market-capitalization-possibly-joining-these-other-companies/?sh=422f17ba2e1e
+[VC]: https://www.visualcapitalist.com/nvidia-joins-the-trillion-dollar-club/
