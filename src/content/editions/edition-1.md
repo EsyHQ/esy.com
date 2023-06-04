@@ -75,13 +75,13 @@ In a comical and yet bizarre set of events, a Lawyer from NYC risks potential sa
 
 * Avianca Airlines filed to have the case dismissed.
 
-* An attorney conducting research on the case at Levidow & Oberman used ChatGPT to form a briefing objecting to the dismissal, citing multiple fabricated cases as evidence of precedent in their attempt to move forward with the case.
+* An attorney conducting research on the case at ***Levidow & Oberman*** used ChatGPT to form a briefing objecting to the dismissal, citing multiple cases as evidence of precedent in their attempt to move forward with the case.
 
-* Attorneys of Avaianca claimed they could not find the cases in any legal database.
+* Attorneys of Avianca Airlines claimed they could not find the cases in any legal database.
 
 * Judge ordered Mata's attorneys to provide copies of the cases. 
 
-* Mata's Attorneys provided affidavits admitting to the use of ChatGPT for research but no intent to deceive or fabricate. Still, they again presented copies of the bogus cases.
+* Mata's Attorneys provided affidavits admitting to the use of ChatGPT for research but no intent to deceive or fabricate. Still, re-presenting copies of the bogus cases.
 
 * Judge Kevin Castel issues ["show cause"][ShowCause] order requiring Mata's attorneys to present a valid reason for why they should not be sanctioned by the court.
 
