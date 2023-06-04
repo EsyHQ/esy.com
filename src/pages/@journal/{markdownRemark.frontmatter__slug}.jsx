@@ -100,6 +100,10 @@ const BlogPostWrapper = styled.div`
 
   .blog-post-content {
 
+    h2 {
+      font-weight: 500 !important;
+    }
+
     img {
       display: flex;
       max-width: 700px;
@@ -139,7 +143,8 @@ const BlogPostWrapper = styled.div`
       margin-bottom: 30px;
       line-height: 32px;
       font-family: Poppins, sans-serif; 
-      font-weight: 500;
+      font-weight: 400;
+      color: #f2f4fb;
 
       @media(max-width: 600px) {
         font-size: 20px;
@@ -185,7 +190,7 @@ const BlogPostWrapper = styled.div`
       font-weight: 500;
       letter-spacing: 0.75px;
       position: relative;
-      border-left: 10px solid rgb(250, 70, 22);
+      border-left: 10px solid rgb(209, 78, 255);
       padding: 2% 4%;
     }
 

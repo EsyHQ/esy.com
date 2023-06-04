@@ -18,12 +18,21 @@ const FooterNav = () => {
                           </FooterSubNav>
                         </FooterListItem> */}
                       
+                      <FooterListItem>  
+                          <FooterListItemTitle>Journals</FooterListItemTitle>
+                          <FooterSubNav>
+                              <FooterSubNavList>
+                                <FooterSubNavListItem><Link to="/@journal">@Journal</Link></FooterSubNavListItem>
+                              </FooterSubNavList>
+                          </FooterSubNav>
+                        </FooterListItem>
 
                         <FooterListItem>  
                           <FooterListItemTitle>Resources</FooterListItemTitle>
                           <FooterSubNav>
                               <FooterSubNavList>
-                                <FooterSubNavListItem><Link to="/@journal">Journal</Link></FooterSubNavListItem>
+                                <FooterSubNavListItem><Link to="/essays">Essays</Link></FooterSubNavListItem>
+                                {/* <FooterSubNavListItem><Link to="/@journal">Journal</Link></FooterSubNavListItem> */}
                                 <FooterSubNavListItem><Link to="/glossary">Glossary</Link></FooterSubNavListItem>
                               </FooterSubNavList>
                           </FooterSubNav>
@@ -34,7 +43,7 @@ const FooterNav = () => {
                         <FooterListItemTitle>Organization</FooterListItemTitle>
                         <FooterSubNav>
                             <FooterSubNavList>
-                              <FooterSubNavListItem><Link to="/blog">Blog</Link></FooterSubNavListItem>
+                              {/* <FooterSubNavListItem><Link to="/blog">Blog</Link></FooterSubNavListItem> */}
                               <FooterSubNavListItem><Link to="/about">About Us</Link></FooterSubNavListItem>
                               <FooterSubNavListItem><a href="mailto: support@esy.com">Contact Us</a></FooterSubNavListItem>
                             </FooterSubNavList>

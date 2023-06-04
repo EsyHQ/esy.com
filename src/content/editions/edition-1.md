@@ -1,0 +1,107 @@
+---
+slug: "/edition-one"
+date: "2023-06-03"
+title: "AI Doomers, ChatGPT in Law, Nvidia Moons"
+journal_name: "@journal"
+tags: [ "@ai", "machine-learning" ]
+featuredImage: ../mdImages/doomer.png
+excerpt: "AI Doomsday evangelism is on the rise as AI pioneers and Industry leaders desperately seek governmental regulation."
+---
+
+*Dear Sapiens,*
+
+*AI Doomsday evangelism is on the rise as AI pioneers and Industry leaders desperately seek governmental regulation over fears that AI poses "an existential crisis" on the level of Nuclear Weapons. As a lover of all things tech and AI, I admit to being biased on this subject.*
+
+*However, even those casually interested in these new, novel Generative AI technologies must find themselves scratching their heads. Are nonembodied chatbots and photo generators really the precursors to a “Terminator” like, cataclysmic event that will bring about the sudden extinction of us Sapiens? Are our tech oligarchs who stand to profit billions if not trillions, as [altruistic][SBF] as they want us to believe?*
+
+
+# News
+
+![Doomer Flee AI](https://blog.esy.com/content/images/2023/06/doomer-flee-ai.png)
+
+## Doomers Sound the Alarm, Regulate or Go Extinct
+Over the past few weeks, media sites have been inundated with news that recent advances in AI may pose serious threats to our democracy, intellectual property, consensus on factual information, and in the worst scenario ‘risk of extinction’. 
+
+ 
+***Key Insights***
+
+It all started in late March, when the [Future of Life Institute][FutureLife] released a petition calling for a six month moratorium on the development of AI models that exceed the capabilities of GPT-4. It was signed by highly notable figures across a myriad of professions and industry, including the Godfather of AI ***Geoffrey Hinton***, ***Elon Musk***, ***Steve Wozniac***, ***Emad Mostaque*** of [Stability AI][StabilityAI], ***Andrew Yang*** and thousands of professionals from esteemed institutions. 
+
+
+In early June, [Safe.AI][SafeAI] followed up with a petition of their own, signed by hundreds of heavy weigths in the field of AI, Academia, and Industry. In the statement, they cite:
+
+>Mitigating the risk of extinction from AI should be a global priority alongside other societal-scale risks such as pandemics and nuclear war.
+
+<!-- 
+***What do they want?*** 
+
+Not much, just for the big players in AI to chill out for a couple of months until they can collaborate on how to make AI Systems safer: 
+
+>we call on all AI labs to immediately pause for at least 6 months the training of AI systems more powerful than GPT-4 -->
+
+
+
+***Public Reception***
+
+ Not all AI Scientist agreed that existing AI systems posed an existential threat and even if they did, would a six month moratorium really mitigate the risk? How would we enforce it? Would it enable America's adversaries to catch up in the "Arms Race" of a lifetime? These are the questions raised by critics.
+ 
+  
+A few shakers in the industry, most notably Andrew Ng, founder of [DeepLearning.AI][DeepLearningAI] and Dr. Yan Lecun, Chief AI Scientist for Meta, shared the mutual view that Artificial General Intelligence (AGI) is far beyond our current systems. 
+
+Andrew Ng in a recent [transcript][LessWrongTranscript] with Lecun, argues that concerns over super intelligent AI systems is less valid than more realistic and legitamate issues. "I feel like while AI today has some risks of harm. Bias, fairness, concentration of power, those are real issues.", he stated. 
+
+Lecun, mostly agreed adding: 
+
+>And until we have some sort of blueprint of a system that has at least a chance of reaching human intelligence, discussions on how to properly make them safe and all that is premature, because how can you, I don't know, design seatbelts for a car if the car doesn't exist?
+
+
+***Our Take***
+
+Given the revolutionary advances in AI, we understand why the public, institutions, and organizations of all types are concerned about how this technology could be used by bad actors to negatively impact society. 
+
+Although, we agree that regulation will be required to mitigate these risks, it's critical that experts take a responsible and realistic approach to AI Saftey, refrain from exaggerating the threat of existing AI systems by using terms like 'extinction', and recommend viable solutions to real problems such as those raised by Andrew Ng. 
+
+
+
+<!-- ![Doomer Flee AI](https://cdn.midjourney.com/ad1e0b3a-6bd8-40cd-9271-377ffa0740d2/grid_0.png)
+
+## ChatGPT Hallucinates Legal Cases, Lawyer Busted
+Over the past few weeks, media sites have been inundated with news that recent advances in AI may pose serious threats to our democracy, intellectual property, and in the worst scenario ‘risk of extinction’. 
+
+ 
+***Key Insights***
+
+It started in late March when the [Future of Life Institute][FutureLife] released a petition signed by highly notable figures across a range of professions and industry, including Elon Musk, Steve Wozniac, Emad Mostaqeq, Andrew Yang and thousands of professionals from esteemed institutions. 
+
+>we call on all AI labs to immediately pause for at least 6 months the training of AI systems more powerful than GPT-4
+
+***Our Take***
+
+
+
+
+![Doomer Flee AI](https://cdn.midjourney.com/07d5b6a5-c5ee-49ab-a281-a6d083e80b5a/0_0.png)
+
+
+
+
+## Nvidia Moons, Briefly Hits 1 Trillion
+Over the past few weeks, media sites have been inundated with news that recent advances in AI may pose serious threats to our democracy, intellectual property, and in the worst scenario ‘risk of extinction’. 
+
+ 
+***Key Insights***
+
+It started in late March when the [Future of Life Institute][FutureLife] released a petition signed by, now over 30,000
+
+***Our Take*** -->
+
+
+[FutureLife]: https://futureoflife.org/open-letter/pause-giant-ai-experiments/
+[StabilityAI]: https://stability.ai/
+[SBF]: https://www.newyorker.com/news/annals-of-inquiry/sam-bankman-fried-effective-altruism-and-the-question-of-complicity
+[SafeAI]: https://www.safe.ai/statement-on-ai-risk#open-letter
+[DeepLearningAI]: https://www.deeplearning.ai/
+[LessWrongTranscript]: https://www.lesswrong.com/posts/fKfNTkdqsckdMusTb/ng-and-lecun-on-the-6-month-pause-transcript
+[ChatGPTLawNYT]: https://www.nytimes.com/2023/05/27/nyregion/avianca-airline-lawsuit-chatgpt.html
+[ChatGPTLawBBC]: https://www.bbc.com/news/world-us-canada-65735769
+[ChatGPTLawRegister]: https://www.theregister.com/2023/05/31/texas_ai_law_court/

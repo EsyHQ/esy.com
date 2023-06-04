@@ -77,13 +77,13 @@ module.exports = {
         path: `${__dirname}/src/content`,
       },
     },
-    {
-      resolve: `gatsby-source-ghost`,
-      options: {
-        apiUrl: `https://blog.esy.com`,
-        contentApiKey: `${process.env.CONTENT_API_KEY}`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-ghost`,
+    //   options: {
+    //     apiUrl: `https://blog.esy.com`,
+    //     contentApiKey: `${process.env.CONTENT_API_KEY}`,
+    //   },
+    // },
     {
       resolve: "gatsby-plugin-manifest",
       options: {
