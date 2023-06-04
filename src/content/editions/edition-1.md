@@ -90,7 +90,7 @@ In a comical and yet bizarre set of events, a Lawyer from NYC risks potential sa
 
 On the surface, this report is a bit comical, you'd think that two professional attorneys from a competitive metropolitan like NYC would have rigorous fact checking standards. According to the [New York Times][ChatGPTLawNYT] article, they failed to conduct independent verification two times while using ChatGPT for legal research. 
 
-Professionals must understand that LLM's like ChatGPT are not "intelligent" or "aware" but rather very capable calculators for natural language. In their attempt to make predictions and produce a quality response, they are likely to make errors and even "hallucinate" false information in an eloquent and convincing way. Therefore, any information used for professional purposes should be independely verified. 
+Professionals must understand that LLM's like ChatGPT are not "intelligent" or "aware" but rather advanced calculators for natural language. In their attempt to predict a quality response, they are likely to make errors and even "hallucinate" false information in an eloquent and matter-of-fact way. Therefore, any information used for professional purposes should be independely verified. 
 
 
 ![Doomer Flee AI](https://cdn.midjourney.com/07d5b6a5-c5ee-49ab-a281-a6d083e80b5a/0_0.png)
