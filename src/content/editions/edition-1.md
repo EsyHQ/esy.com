@@ -116,7 +116,7 @@ Note that, Petro China, the first company to ever reach 1 Trillion is not displa
 
 
 
-<!-- ***Our Take*** -->
+***Our Take***
 
 
 [FutureLife]: https://futureoflife.org/open-letter/pause-giant-ai-experiments/

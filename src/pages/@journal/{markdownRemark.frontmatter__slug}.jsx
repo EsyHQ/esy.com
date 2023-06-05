@@ -59,17 +59,21 @@ return (
 
 export const Head = ({ data, location }) => {
   const siteUrl = data?.site?.siteMetadata?.siteUrl
-  const url = `${siteUrl}${location.pathname}`
-  const { title, journal_name, date, excerpt } = data?.markdownRemark?.frontmatter
+  const domain = "https://www.esy.com"
+  const url = `${domain}${location.pathname}`
+  const { title, journal_name, date, excerpt, featuredImage: { publicURL } } = data?.markdownRemark?.frontmatter
 
   const meta = { 
     title,
     description: excerpt,
     url,
     type: 'article',
-    twitterUsername: '@LemUhuru',
-    image: data?.markdownRemark?.frontmatter?.featuredImage?.childImageSharp?.gatsbyImageData?.images?.fallback?.src
+    twitterUsername: '@esyjournal',
+    image: `${domain}${publicURL}`,
   }
+
+  console.log(meta, 'meta in the head') 
+  console.log(data, 'data in the head')
 
   return <SEO meta={meta} />
 }
@@ -88,6 +92,7 @@ export const pageQuery = graphql`
             childImageSharp {
                 gatsbyImageData(width: 1400)
             }
+            publicURL
         }
       }
     }

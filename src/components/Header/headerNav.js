@@ -15,7 +15,7 @@ const HeaderNav = ({ activeNav }) => {
               <DesktopNav>
                 {/* <NavItem className={activeNav === 1 ? 'active' : ""}><Link to="/blog">Blog</Link></NavItem>  */}
                 {/* <NavItem className={activeNav === 2 ? 'active' : ""}><Link to="/journals">Journals</Link></NavItem>  */}
-                <NavItem><EmailForm /></NavItem>
+                {/* <NavItem><EmailForm /></NavItem> */}
               </DesktopNav>
 
               <MobileNav>

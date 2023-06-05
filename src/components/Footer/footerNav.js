@@ -23,13 +23,14 @@ const FooterNav = () => {
                           <FooterSubNav>
                               <FooterSubNavList>
                                 <FooterSubNavListItem><Link to="/@journal">@Journal</Link></FooterSubNavListItem>
+                                <FooterSubNavListItem><Link to="/@chatgpt">@ChatGPT</Link></FooterSubNavListItem>
                                 {/* <FooterSubNavListItem><Link to="/@journal">@BuildInPublic</Link></FooterSubNavListItem> */}
                               </FooterSubNavList>
                           </FooterSubNav>
                         </FooterListItem>
 
                         <FooterListItem>  
-                          <FooterListItemTitle>Resources</FooterListItemTitle>
+                          <FooterListItemTitle>Education</FooterListItemTitle>
                           <FooterSubNav>
                               <FooterSubNavList>
                                 <FooterSubNavListItem><Link to="/essays">Essays</Link></FooterSubNavListItem>
@@ -44,7 +45,7 @@ const FooterNav = () => {
                         <FooterListItemTitle>Organization</FooterListItemTitle>
                         <FooterSubNav>
                             <FooterSubNavList>
-                              {/* <FooterSubNavListItem><Link to="/blog">Blog</Link></FooterSubNavListItem> */}
+                              <FooterSubNavListItem><Link to="/blog">Blog</Link></FooterSubNavListItem>
                               <FooterSubNavListItem><Link to="/about">About Us</Link></FooterSubNavListItem>
                               <FooterSubNavListItem><a href="mailto: support@esy.com">Contact Us</a></FooterSubNavListItem>
                             </FooterSubNavList>

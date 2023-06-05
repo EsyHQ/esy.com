@@ -11,7 +11,7 @@ module.exports = {
     discovering powerful insights about their personal writing habits.`,
     twitterUsername: `@esyjournal`,
     image: `/static/color-nobg.png`,
-    siteUrl: "https://www.esy.com",
+    siteURL: "https://www.esy.com",
     type: "website",
   },
   plugins: [
@@ -22,7 +22,7 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-root-import",
     "gatsby-plugin-sass",
-    // "gatsby-transformer-remark",
+    "gatsby-transformer-remark",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
@@ -45,14 +45,7 @@ module.exports = {
         trackingIds: [
           `${process.env.GOOGLE_ANALYTICS_TRACKING_ID}`,
         ],
-        // This object gets passed directly to the gtag config command
-        // This config will be shared across all trackingIds
-        // gtagConfig: {
-        //   optimize_id: "OPT_CONTAINER_ID",
-        //   anonymize_ip: true,
-        //   cookie_expires: 0,
-        // },
-        // This object is used for configuration specific to this plugin
+        
         pluginConfig: {
           // Puts tracking script in the head instead of the body
           head: true,
@@ -77,26 +70,12 @@ module.exports = {
         path: `${__dirname}/src/content`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-ghost`,
-    //   options: {
-    //     apiUrl: `https://blog.esy.com`,
-    //     contentApiKey: `${process.env.CONTENT_API_KEY}`,
-    //   },
-    // },
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon:`${__dirname}/src/images/icon.png`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `markdown-pages`,
-    //     path: `${__dirname}/src/markdown`,
-    //   },
-    // },
     {
       resolve: "gatsby-source-filesystem",
       options: {

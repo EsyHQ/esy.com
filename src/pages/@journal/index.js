@@ -122,7 +122,7 @@ export default JournalIndexPage
 
 
 
-export const pageQuery = graphql`
+export const indexQuery = graphql`
     query BlogIndexQuery  {
         allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
                 edges {
