@@ -11,7 +11,7 @@ module.exports = {
     discovering powerful insights about their personal writing habits.`,
     twitterUsername: `@esyjournal`,
     image: `/static/color-nobg.png`,
-    siteURL: "https://www.esy.com",
+    siteUrl: "https://www.esy.com",
     type: "website",
   },
   plugins: [
