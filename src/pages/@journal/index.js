@@ -83,14 +83,13 @@ const thumbnailTheme = {
 
 
 const JournalIndexPage = ({ data }) => {
-    const { edges } = data.allMarkdownRemark
+    const { edges } = data?.allMarkdownRemark
 
     const totalPosts = edges.length
 
     
 
     return (<Layout>
-                {/* <SEO title="Blog" /> */}
                 <BlogWrapper>
                 <Grid 
                     container 
@@ -123,7 +122,7 @@ export default JournalIndexPage
 
 
 export const indexQuery = graphql`
-    query BlogIndexQuery  {
+    query JournalIndexQuery  {
         allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
                 edges {
                     node {
