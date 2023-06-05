@@ -12,6 +12,7 @@ import PostPagination from 'src/components/common/Post/postPagination'
 import Layout from 'src/components/Layout'
 import ReadingTime from 'src/components/ReadingTime'
 
+import SEO from "src/components/SEO"
 
 export default function JournalPostTemplate({ data, pageContext: { nextPostSlug, prevPostSlug }}) {
   
@@ -56,6 +57,28 @@ return (
   )
 }
 
+export const Head = ({ data, location }) => {
+  const siteUrl = data?.site?.siteMetadata?.siteUrl
+  const url = `${siteUrl}${location.pathname}`
+  const { title, journal_name, date, excerpt } = data?.markdownRemark?.frontmatter
+  console.log(data, 'data in head')
+
+  const meta = { 
+    title,
+    description: excerpt,
+    url,
+    type: 'article',
+    twitterUsername: '@LemUhuru',
+    image: data?.markdownRemark?.frontmatter?.featuredImage?.childImageSharp?.gatsbyImageData?.images?.fallback?.src
+  }
+
+  console.log(meta, 'meta in head')
+
+  console.log(location, 'location in head')
+
+  return <SEO meta={meta} />
+}
+
 export const pageQuery = graphql`
   query($id: String!) {
     markdownRemark(id: { eq: $id }) {
@@ -65,6 +88,7 @@ export const pageQuery = graphql`
         slug
         title
         journal_name
+        excerpt
         featuredImage {
             childImageSharp {
                 gatsbyImageData(width: 1400)
@@ -111,10 +135,6 @@ const BlogPostWrapper = styled.div`
         margin-left: 6px;
       }
     }
-
-    
-
-
 
     h2 {
       font-weight: 500 !important;
