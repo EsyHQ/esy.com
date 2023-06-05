@@ -61,7 +61,6 @@ export const Head = ({ data, location }) => {
   const siteUrl = data?.site?.siteMetadata?.siteUrl
   const url = `${siteUrl}${location.pathname}`
   const { title, journal_name, date, excerpt } = data?.markdownRemark?.frontmatter
-  console.log(data, 'data in head')
 
   const meta = { 
     title,
@@ -71,10 +70,6 @@ export const Head = ({ data, location }) => {
     twitterUsername: '@LemUhuru',
     image: data?.markdownRemark?.frontmatter?.featuredImage?.childImageSharp?.gatsbyImageData?.images?.fallback?.src
   }
-
-  console.log(meta, 'meta in head')
-
-  console.log(location, 'location in head')
 
   return <SEO meta={meta} />
 }
