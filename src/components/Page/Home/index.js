@@ -13,7 +13,7 @@ import bgImg from 'src/images/pen-writer.jpg'
 const IndexPage = () => {
 
   return (<Layout>
-            <Helmet><title>Esy</title></Helmet>
+            {/* <Helmet><title>Esy</title></Helmet> */}
 
             <SectionWrapper>
               <HeroWrapper>

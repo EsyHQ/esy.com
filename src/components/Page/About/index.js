@@ -78,6 +78,7 @@ const AboutPage = () => {
 export default AboutPage
 
 
+
 const AboutPageContainer = styled.div`
     width: 100%;
     height: 100%;

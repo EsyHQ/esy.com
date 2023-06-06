@@ -92,7 +92,6 @@ const JournalIndexPage = ({ data }) => {
                 <BlogWrapper>
                 <Grid 
                     container 
-                    // rowSpacing={{ sm: 0, md: 6}}
                     direction="row"
                     spacing={{ xs: 0, sm: 3, md: 6, }}
                 >
@@ -151,7 +150,7 @@ export const indexQuery = graphql`
 export const Head = () => {
     console.log('from blog index head')
     return ( <>
-       <title>Hello World</title>
+       <title>Journal | esy</title>
        <meta name="description" content="Hello World" />
      </>)
 }

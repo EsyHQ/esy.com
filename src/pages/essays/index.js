@@ -150,10 +150,10 @@ export const indexQuery = graphql`
 `
 
 
-export const Head = () => {
+export const Head = ({ data }) => {
     console.log('from blog index head')
     return ( <>
-       <title>Hello World</title>
+       <title>Essays | esy</title>
        <meta name="description" content="Hello World" />
      </>)
 }
