@@ -13,6 +13,6 @@ export default HomePage
 export const Head = () => {
     console.log('from blog index head')
     return ( <>
-       <title>The Smart Journal</title>
+       <title>esy - The Smart Journal</title>
      </>)
 }
