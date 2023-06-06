@@ -14,7 +14,7 @@ import ReadingTime from 'src/components/ReadingTime'
 
 import SEO from "src/components/SEO"
 
-export default function JournalPostTemplate({ data, pageContext: { nextPostSlug, prevPostSlug }}) {
+export default function BlogPostTemplate({ data, pageContext: { nextPostSlug, prevPostSlug }}) {
   
   const { markdownRemark: { frontmatter, html } } = data 
   const { title, journal_name, date } = frontmatter
@@ -57,26 +57,26 @@ return (
   )
 }
 
-export const Head = ({ data, location }) => {
-  const siteUrl= data?.site?.siteMetadata?.siteUrl
-  const domain = "https://www.esy.com"
-  const url = `${domain}${location.pathname}`
-  const { title, journal_name, date, excerpt, featuredImage: { publicURL } } = data?.markdownRemark?.frontmatter
+// export const Head = ({ data, location }) => {
+//   const siteUrl= data?.site?.siteMetadata?.siteUrl
+//   const domain = "https://www.esy.com"
+//   const url = `${domain}${location.pathname}`
+//   const { title, journal_name, date, excerpt, featuredImage: { publicURL } } = data?.markdownRemark?.frontmatter
 
-  const meta = { 
-    title,
-    description: excerpt,
-    url,
-    type: 'article',
-    twitterUsername: '@esyjournal',
-    image: `${domain}${publicURL}`,
-  }
+//   const meta = { 
+//     title,
+//     description: excerpt,
+//     url,
+//     type: 'article',
+//     twitterUsername: '@esyjournal',
+//     image: `${domain}${publicURL}`,
+//   }
 
-  console.log(meta, 'meta in the head') 
-  console.log(data, 'data in the head')
+//   console.log(meta, 'meta in the head') 
+//   console.log(data, 'data in the head')
 
-  return <SEO meta={meta} />
-}
+//   return <SEO meta={meta} />
+// }
 
 export const pageQuery = graphql`
   query($id: String!) {
