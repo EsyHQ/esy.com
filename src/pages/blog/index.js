@@ -123,7 +123,10 @@ export default JournalIndexPage
 
 export const indexQuery = graphql`
     query JournalIndexQuery  {
-        allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+        allMarkdownRemark(
+            sort: { fields: [frontmatter___date], order: DESC }
+            filter: { frontmatter: { journal_name: { eq: "blog" } } }
+            ) {
                 edges {
                     node {
                         frontmatter {
