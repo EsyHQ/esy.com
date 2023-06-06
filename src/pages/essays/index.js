@@ -2,7 +2,9 @@ import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 import { graphql } from 'gatsby'
 import moment from 'moment'
-import Grid from '@material-ui/core/Grid';
+// import Grid from '@material-ui/core/Grid';
+import { Grid } from '@mui/material'
+
 
 
 import Layout from "src/components/Layout"
@@ -93,8 +95,8 @@ const EssayIndexPage = ({ data }) => {
                 <BlogWrapper>
                 <Grid 
                     container 
-                    spacing={6}
                     direction="row"
+                    spacing={{ xs: 0, sm: 3, md: 6, }}
                 >
                     {edges.map((edge, index) => {
                         const { excerpt } = edge?.node?.frontmatter

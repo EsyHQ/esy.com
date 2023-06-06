@@ -1,7 +1,8 @@
 import React, { useEffect } from "react"
 import styled from 'styled-components'
 import Helmet from 'react-helmet'
-import Grid from '@material-ui/core/Grid';
+// import Grid from '@material-ui/core/Grid';
+import { Grid } from '@mui/material'
 import CssBaseline from '@mui/material/CssBaseline';
 
 

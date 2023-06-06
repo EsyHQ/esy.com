@@ -50,7 +50,6 @@ const FooterEndContainer = styled.div`
 
     display: flex;
     align-items: center;
-    // justify-content: space-between;
     width: 100%;
     padding: 25px 50px;
     background: #000;
@@ -58,6 +57,10 @@ const FooterEndContainer = styled.div`
     a {
         opacity: 0.5;
         font-size: 14px !important;
+
+        @media(max-width: 600px) {
+          font-size: 12px !important;
+        }
     }
 
     @media(max-width: 600px) {
@@ -104,11 +107,10 @@ const LegalLinks = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  // margin-right: 50px;
 
   a {
     :not(:last-child) {
-      margin-right: 20px;
+      margin-right: 12px;
     }
   }
 `

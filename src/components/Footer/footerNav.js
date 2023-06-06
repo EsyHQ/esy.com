@@ -86,6 +86,7 @@ const FooterListItem = styled.li`
   display: flex;
   flex-direction: column;
   margin: 0 20px;
+  font-size: 16px;
   
   :last-child {
     margin-right: 0;
@@ -93,6 +94,10 @@ const FooterListItem = styled.li`
 
   @media(max-width: 1200px) {
     margin-left: 0;
+  }
+
+  @media(max-width: 600px) {
+    font-size: 14px;
   }
 `
 const FooterListItemTitle = styled.span`
