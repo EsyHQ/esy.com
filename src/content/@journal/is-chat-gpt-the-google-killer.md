@@ -4,7 +4,7 @@ date: "2023-05-22"
 title: "Is ChatGPT the Google Killer?"
 journal_name: "@journal"
 tags: [ "@ai", "machine-learning" ]
-featuredImage: mdImages/google-killer-beta.png
+featuredImage: ../mdImages/google-killer-beta.png
 excerpt: "After more than two decades, or more specifically, twenty-four years since Google launched on September 4, 1998, it has relentlessly dominated the Search Industry"
 ---
 

@@ -10,12 +10,13 @@
     "node": ">=18.0.0"
   },  
   "scripts": {
-    "develop": "gatsby develop",
+    "develop": "gatsby develop -p 5000",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
+    "clean": "gatsby clean",
     "deploy": "gatsby clean && gatsby build && gatsby serve",
-    "clean": "gatsby clean"
+    "clean:develop": "gatsby clean && gatsby develop -p 5000"
   },
   "dependencies": {
     "@emotion/react": "^11.11.0",

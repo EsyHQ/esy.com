@@ -18,7 +18,7 @@ const IndexPage = () => {
             <SectionWrapper>
               <HeroWrapper>
                   <HeroSummary>
-                    <HeroParagraph>The Smart Journal for Essayist</HeroParagraph>
+                    <HeroParagraph>The Smart Journal<br/>for Essayist</HeroParagraph>
                   </HeroSummary>
               </HeroWrapper>
             </SectionWrapper>
@@ -40,6 +40,7 @@ const SectionWrapper = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 100vh;
 
 
   &:nth-child(3) {
@@ -56,6 +57,7 @@ const HeroWrapper = styled.div`
   background: #000;
   background: rgb(12, 10, 29);
   position: relative;
+  height: 75vh;
   // min-height: 600px;
   
   ::before {
@@ -102,6 +104,8 @@ const HeroSummary = styled.div`
   p:first-child {
     text-align: left;
   }
+
+
 
   @media(max-width: 1200px) {
     max-width: 500px;

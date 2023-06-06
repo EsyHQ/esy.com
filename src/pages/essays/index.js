@@ -82,7 +82,7 @@ const thumbnailTheme = {
 }
 
 
-const JournalIndexPage = ({ data }) => {
+const EssayIndexPage = ({ data }) => {
     const { edges } = data?.allMarkdownRemark
 
     const totalPosts = edges.length
@@ -117,15 +117,15 @@ const JournalIndexPage = ({ data }) => {
 }
 
 
-export default JournalIndexPage
+export default EssayIndexPage
 
 
 
 export const indexQuery = graphql`
-    query JournalIndexQuery  {
+    query EssaylIndexQuery  {
         allMarkdownRemark(
             sort: { fields: [frontmatter___date], order: DESC }
-            filter: { frontmatter: { journal_name: { eq: "@journal" } } }
+            filter: { frontmatter: { journal_name: { eq: "essays" } } }
             ) {
                 edges {
                     node {

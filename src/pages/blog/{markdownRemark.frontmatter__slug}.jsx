@@ -58,7 +58,7 @@ return (
 }
 
 export const Head = ({ data, location }) => {
-  const siteUrl = data?.site?.siteMetadata?.siteUrl
+  const siteUrl= data?.site?.siteMetadata?.siteUrl
   const domain = "https://www.esy.com"
   const url = `${domain}${location.pathname}`
   const { title, journal_name, date, excerpt, featuredImage: { publicURL } } = data?.markdownRemark?.frontmatter

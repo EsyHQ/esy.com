@@ -22,8 +22,9 @@ const FooterNav = () => {
                           <FooterListItemTitle>Journals</FooterListItemTitle>
                           <FooterSubNav>
                               <FooterSubNavList>
-                                <FooterSubNavListItem><Link to="/@journal">@Journal</Link></FooterSubNavListItem>
-                                <FooterSubNavListItem><Link to="/@chatgpt">@ChatGPT</Link></FooterSubNavListItem>
+                                <FooterSubNavListItem><Link to="/@journal">esy Journal</Link></FooterSubNavListItem>
+                                {/* <FooterSubNavListItem><Link to="/@chatgpt">ChatGPT</Link></FooterSubNavListItem> */}
+                                {/* <FooterSubNavListItem><Link to="/@learn-english">Learn English</Link></FooterSubNavListItem> */}
                                 {/* <FooterSubNavListItem><Link to="/@journal">@BuildInPublic</Link></FooterSubNavListItem> */}
                               </FooterSubNavList>
                           </FooterSubNav>
@@ -34,8 +35,8 @@ const FooterNav = () => {
                           <FooterSubNav>
                               <FooterSubNavList>
                                 <FooterSubNavListItem><Link to="/essays">Essays</Link></FooterSubNavListItem>
-                                {/* <FooterSubNavListItem><Link to="/@journal">Journal</Link></FooterSubNavListItem> */}
-                                <FooterSubNavListItem><Link to="/glossary">Glossary</Link></FooterSubNavListItem>
+                                {/* <FooterSubNavListItem><Link to="/glossary">Glossary</Link></FooterSubNavListItem> */}
+                                {/* <FooterSubNavListItem><Link to="/prompt-engineering-guides">Prompt Guides</Link></FooterSubNavListItem> */}
                               </FooterSubNavList>
                           </FooterSubNav>
                         </FooterListItem>
