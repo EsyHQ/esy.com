@@ -73,7 +73,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon:`${__dirname}/src/images/favicon/favicon.png`,
+        icon:`${__dirname}/src/images/favicon/favicon-32x32.png`,
       },
     },
     {
