@@ -10,7 +10,7 @@ module.exports = {
     description: `Esy is a digital journaling platform that offers users a suite of analytical tools for 
     discovering powerful insights about their personal writing habits.`,
     twitterUsername: `@esyjournal`,
-    image: `/static/color-nobg.png`,
+    image: `https://esy-dot-com.s3.us-east-2.amazonaws.com/esy-1500x500.jpeg`,
     siteUrl: "https://www.esy.com",
     type: "website",
   },

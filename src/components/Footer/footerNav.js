@@ -34,7 +34,7 @@ const FooterNav = () => {
                           <FooterListItemTitle>Education</FooterListItemTitle>
                           <FooterSubNav>
                               <FooterSubNavList>
-                                <FooterSubNavListItem><Link to="/essays">Essays</Link></FooterSubNavListItem>
+                                <FooterSubNavListItem><Link to="/essays">essays</Link></FooterSubNavListItem>
                                 {/* <FooterSubNavListItem><Link to="/glossary">Glossary</Link></FooterSubNavListItem> */}
                                 {/* <FooterSubNavListItem><Link to="/prompt-engineering-guides">Prompt Guides</Link></FooterSubNavListItem> */}
                               </FooterSubNavList>
