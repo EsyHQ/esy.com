@@ -2,10 +2,8 @@ import React from 'react'
 import styled, { css } from 'styled-components'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import {Link} from 'gatsby'
-import ReadingTime from 'src/components/ReadingTime'
 import PostDate from 'src/components/common/Post/postDate'
 import moment from 'moment'
-
 
 
 const PostCard = props => {
@@ -26,11 +24,10 @@ const PostCard = props => {
     const tagMap = {
         "blog": { path: "/blog"},
         "@journal": { path: "/@journal"},
-        "ai-journal": { path: "/@ai"}
+        "ai-journal": { path: "/@ai"},
+        "essays": { path: "/essays"},
     }
     const postPath = `${tagMap[primaryTag].path}${slug}` 
-
-    console.log('postPath', postPath)
 
     return (
             <PostCardContainer>
