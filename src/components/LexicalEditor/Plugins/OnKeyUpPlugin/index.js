@@ -8,7 +8,6 @@ const OnKeyUpPlugin = () => {
     const [editor]= useLexicalComposerContext()
    
     const handleEditorKeyUp = () => {
-        console.log('Hey')
     }
     
     useLayoutEffect(() => {

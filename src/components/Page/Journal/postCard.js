@@ -18,9 +18,6 @@ const PostCard = props => {
     const formattedPublishedDate = moment(date).local().format('MMM DD YYYY').split(' ')
     const primaryTag = journal_name || "blog"
     
-    console.log('primaryTag', primaryTag)
-    console.log('journal_name', journal_name)
-
     const tagMap = {
         "blog": { path: "/blog"},
         "@journal": { path: "/@journal"},

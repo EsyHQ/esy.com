@@ -12,7 +12,6 @@ const AutoFocusPlugin = () => {
     useEffect(() => {
       // Focus the editor when the effect fires!
       editor.focus()
-      console.log(editor.getEditorState().toJSON(), 'editorState')
     }, [editor])
   
     return null

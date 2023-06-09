@@ -11,7 +11,6 @@ export default AboutPage
 
 
 export const Head = () => {
-    console.log('from blog index head')
     return ( <>
        <title>About | esy</title>
        <meta name="description" content="Hello World" />

@@ -12,7 +12,6 @@ const SEO = ({ meta, pathname, children }) => {
     type: meta.type || defaultType
   }
 
-  console.log(seo, 'seooooo')
 
   return (
     <>

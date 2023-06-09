@@ -14,8 +14,6 @@ const PostCard = props => {
     const formattedPublishedDate = moment(date).local().format('MMM DD YYYY').split(' ')
     const primaryTag = primary_tag && primary_tag.name || "blog"
     
-    console.log('slug from postCard', slug)
-
     const tagMap = {
         "blog": { path: "/blog"},
         "AI-JOURNAL": { path: "/@ai"}

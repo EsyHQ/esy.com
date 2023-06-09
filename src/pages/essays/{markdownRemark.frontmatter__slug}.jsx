@@ -72,9 +72,6 @@ export const Head = ({ data, location }) => {
     image: `${domain}${publicURL}`,
   }
 
-  console.log(meta, 'meta in the head') 
-  console.log(data, 'data in the head')
-
   return <SEO meta={meta} />
 }
 

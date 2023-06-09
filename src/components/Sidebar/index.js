@@ -23,7 +23,6 @@ const Sidebar = () => {
   const [ activeNav, setActiveNav ] = useState(null)
 
     const setHeaderNavState = (pathname) => {
-        console.log('pathname', pathname)
         if (pathname === '/author/home') {
           setActiveNav(0)
         } else if (pathname.includes('/author/explore')) {

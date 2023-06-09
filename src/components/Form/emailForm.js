@@ -18,8 +18,6 @@ const EmailForm = () => {
     const handleFormSubmit = (event) => {
         event.preventDefault()
 
-        console.log(event, 'event')
-
         // addEmailToContactList(email)
     }
 

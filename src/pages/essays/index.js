@@ -149,7 +149,6 @@ export const indexQuery = graphql`
 
 
 export const Head = ({ data }) => {
-    console.log('from blog index head')
     return ( <>
        <title>Essays | esy</title>
        <meta name="description" content="Hello World" />
