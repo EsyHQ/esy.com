@@ -7,7 +7,7 @@ const SEO = ({ meta, pathname, children }) => {
   const seo = {
     title: meta.title || defaultTitle,
     description: meta.description || defaultDescription,
-    image: meta.image || `${siteUrl}${image}`,
+    image: meta.image || `${image}`,
     url: meta.url || `${siteUrl}${pathname || ``}`,
     type: meta.type || defaultType
   }

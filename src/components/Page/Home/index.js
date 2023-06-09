@@ -3,8 +3,6 @@ import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
 
 import Layout from "src/components/Layout/container"
-import Button from 'src/components/Input/Button'
-import EmailForm from 'src/components/Form/emailForm'
 
 import bgImg from 'src/images/pen-writer.jpg'
 
