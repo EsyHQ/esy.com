@@ -77,6 +77,14 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.esy.com',
+        sitemap: 'https://www.esy.com/sitemap-0.xml',
+        policy: [{userAgent: '*', allow: '/'}]
+      }
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
