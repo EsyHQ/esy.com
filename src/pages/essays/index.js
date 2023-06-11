@@ -7,79 +7,11 @@ import { Grid } from '@mui/material'
 
 import Layout from "src/components/Layout"
 import SEO from "src/components/SEO" 
+import PostList from 'src/components/Post/postList'
+
 import PostCard from './postCard'
 
-
-const mainTheme = {
-    type: 'mainTheme',
-
-    container: {
-        maxWidth: '1300px',
-        flexFlow: 'row nowrap',
-    },
-
-    title: {
-        fontSize: '32px',
-    },
-
-    featuredImg: {
-        maxWidth: '742px',
-        maxHeight: '415px'
-    },
-    postCardTitle: {
-        margin: '0 0 10px 0'
-    },
-      postCardContent: {
-        padding: '0 2%',
-    }
-}
-
-
-const midTheme = {
-    type: 'midTheme',
-    container: {
-        maxWidth: '625px',
-        maxHeight: '300px',
-        flexFlow: 'row wrap',
-    },
-    title: {
-        fontSize: '22px',
-    },
-    featuredImg: {
-        maxWidth: '625px',
-        maxHeight: '227px',
-        objectFit: 'cover',
-        // objectPosition: '0 20%',
-    },
-    postCardTitle: {
-        margin: '20px 0 0 0'
-    },
-    postCardContent: {
-        padding: '0',
-    },
-}
-
-const thumbnailTheme = {
-    type: 'thumbnailTheme',
-    container: {
-        maxWidth: '400px',
-        flexFlow: 'row wrap',
-    },
-    title: {
-        fontSize: '22px',
-    },
-    featuredImg: {
-        maxWidth: '400px',
-        maxHeight: '195px'
-    },
-    postCardTitle: {
-        margin: '20px 0 0 0'
-    },
-      postCardContent: {
-        padding: '0',
-    }
-
-}
+import { mainTheme, midTheme } from 'src/theme'
 
 
 const EssayIndexPage = ({ data }) => {
@@ -90,29 +22,9 @@ const EssayIndexPage = ({ data }) => {
     
 
     return (<Layout>
-                <BlogWrapper>
-                <Grid 
-                    container 
-                    direction="row"
-                    spacing={{ xs: 0, sm: 3, md: 6, }}
-                >
-                    {edges.map((edge, index) => {
-                        const { excerpt } = edge?.node?.frontmatter
-                        const [ firstSentence, secondSentence ] = excerpt.split('.')
-                        const theme = index === 0 ? mainTheme : midTheme
-
-                        if (index === 0) {
-                            return <ThemeProvider key={index} theme={mainTheme}><Grid item xs={12}><PostCard theme={mainTheme} postData={edge} firstSentence={firstSentence} secondSentence={secondSentence}  /></Grid></ThemeProvider>
-                        } else if (index > 0 && index < 3) {
-                            return <ThemeProvider key={index} theme={midTheme}><Grid item xs={12} sm={6}><PostCard theme={midTheme} postData={edge} firstSentence={firstSentence} secondSentence={secondSentence} /></Grid></ThemeProvider>
-                        } else if (index > 2 && index < 6 ) {
-                            return <ThemeProvider  key={index} theme={midTheme}><Grid item xs={12} sm={6}><PostCard  theme={midTheme} postData={edge} firstSentence={firstSentence} secondSentence={secondSentence} /></Grid></ThemeProvider>
-                        } else {
-                            return <ThemeProvider  key={index} theme={midTheme}><Grid item xs={12} sm={6}><PostCard theme={midTheme} postData={edge} firstSentence={firstSentence} secondSentence={secondSentence} /></Grid></ThemeProvider>
-                        }
-                        })}
-                </Grid>
-                </BlogWrapper>
+                <PageWrapper>
+                     <PostList posts={edges} />
+                </PageWrapper>
             </Layout>)
 }
 
@@ -156,7 +68,7 @@ export const Head = ({ data }) => {
 }
     
 
-const BlogWrapper = styled.section`
+const PageWrapper = styled.section`
     height: 100%;
     width: 100%;
     background: rgba(12,10,29);
@@ -176,4 +88,3 @@ const BlogWrapper = styled.section`
         box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.3);
     }
 `
-

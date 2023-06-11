@@ -23,6 +23,7 @@ const FooterNav = () => {
                           <FooterSubNav>
                               <FooterSubNavList>
                                 <FooterSubNavListItem><Link to="/@journal">esy Journal</Link></FooterSubNavListItem>
+                                {/* <FooterSubNavListItem><Link to="/@geo">esy Geo</Link></FooterSubNavListItem> */}
                                 {/* <FooterSubNavListItem><Link to="/@chatgpt">ChatGPT</Link></FooterSubNavListItem> */}
                                 {/* <FooterSubNavListItem><Link to="/@learn-english">Learn English</Link></FooterSubNavListItem> */}
                                 {/* <FooterSubNavListItem><Link to="/@journal">@BuildInPublic</Link></FooterSubNavListItem> */}

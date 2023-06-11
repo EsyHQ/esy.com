@@ -54,7 +54,7 @@ const MainElement = styled.main`
   background: #000;
   // background: #151718;
 
-  padding-top: 100px;
+  padding-top: 80px;
 
   @media(max-width: 600px) {
 

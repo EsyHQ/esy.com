@@ -1,19 +1,7 @@
-import React from 'react'
+import { graphql } from 'gatsby'
 
-import HomePageComponent from 'src/components/Page/Home/'
-import SEO from '../components/SEO'
-
-
-
-
-export default function HomePage({ data }) {
-    return <HomePageComponent data={data} />
-}
-
-
-
-export const homePageQuery = graphql`
-    query HomePageQuery  {
+export const essayIndexQuery = graphql`
+    query EssaylIndexQuery  {
         allMarkdownRemark(
             sort: { fields: [frontmatter___date], order: DESC }
             filter: { frontmatter: { journal_name: { eq: "essays" } } }
@@ -37,15 +25,3 @@ export const homePageQuery = graphql`
             }
       }
 `
-
-
-
-export const Head = () => {
-    const meta = {
-        title: 'esy - The Smart Journal',
-        description: 'Esy is a digital journaling platform that offers users a suite of analytical tools for writing rich and expressive essays.',
-    }
-
-    return <SEO meta={meta} />
-}
-
