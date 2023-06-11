@@ -1,7 +1,7 @@
 import React from 'react'
-
+import { graphql } from 'gatsby'
 import HomePageComponent from 'src/components/Page/Home/'
-import SEO from '../components/SEO'
+import SEO from 'src/components/SEO'
 
 
 
