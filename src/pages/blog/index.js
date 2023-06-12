@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import { BlogWrapper } from '../../components/Page/Journal/styles'
 import Layout from "src/components/Layout"
 import PostList from 'src/components/Post/postList'
-import SEO from 'src/components/Seo'
+import SEO from 'src/components/SEO'
 import { useSiteMetadata } from 'src/hooks/use-site-metadata'
 
 
