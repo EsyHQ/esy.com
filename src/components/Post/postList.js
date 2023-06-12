@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Grid, ThemeProvider } from "@mui/material"
+import { Grid } from "@mui/material"
 
 // Custom Imports
 import { mainTheme, midTheme } from "src/theme"
@@ -27,9 +27,7 @@ export default function PostList({ posts }) {
         );
       });
            
-    return (
-        // <ThemeProvider theme={mainTheme}>
-            <PostListWrapper>
+    return (<PostListWrapper>
                 <Grid 
                     container 
                     direction="row"
@@ -37,9 +35,7 @@ export default function PostList({ posts }) {
                 >
                     {renderPosts}
                 </Grid>
-            </PostListWrapper>
-        // </ThemeProvider>
-    )
+            </PostListWrapper>)
 }
 
 

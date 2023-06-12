@@ -1,6 +1,8 @@
 import React from "react"
 import { useSiteMetadata } from "src/hooks/use-site-metadata"
 
+
+
 const SEO = ({ meta, pathname, children }) => {
   const { title: defaultTitle, description: defaultDescription, image, siteUrl, twitterUsername, type: defaultType } = useSiteMetadata()
 
@@ -9,7 +11,8 @@ const SEO = ({ meta, pathname, children }) => {
     description: meta.description || defaultDescription,
     image: meta.image || `${image}`,
     url: meta.url || `${siteUrl}${pathname || ``}`,
-    type: meta.type || defaultType
+    type: meta.type || defaultType,
+    twitterUsername: meta.twitterUsername || twitterUsername,
   }
 
 

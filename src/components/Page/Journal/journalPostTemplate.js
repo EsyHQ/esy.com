@@ -63,17 +63,17 @@ export const Head = ({ data, location }) => {
   const siteUrl = data?.site?.siteMetadata?.siteUrl
   const domain = "https://www.esy.com"
   const url = `${domain}${location.pathname}`
-  const { title, journal_name, date, excerpt, featuredImage: { publicURL } } = data?.markdownRemark?.frontmatter
-
+  const { title, journal_name, date, excerpt, featuredImagePath } = data?.markdownRemark?.frontmatter
+  const assetURL = "https://assets.esy.com"
   const meta = { 
     title,
     description: excerpt,
     url,
     type: 'article',
     twitterUsername: '@esyjournal',
-    image: `${domain}${publicURL}`,
+    image: `${assetURL}${featuredImagePath}`,
   }
-
+  
   return <SEO meta={meta} />
 }
 

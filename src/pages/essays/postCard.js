@@ -1,8 +1,7 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-import {Link} from 'gatsby'
-import ReadingTime from 'src/components/ReadingTime'
+import { Link } from 'gatsby'
 import PostDate from 'src/components/common/Post/postDate'
 import moment from 'moment'
 

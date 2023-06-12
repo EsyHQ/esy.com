@@ -5,6 +5,7 @@ title: "AI Doomers, ChatGPT in Law, Nvidia Moons"
 journal_name: "@journal"
 tags: [ "@ai", "machine-learning" ]
 featuredImage: ../../mdImages/doomer.png
+featuredImagePath: "/doomer.png"
 excerpt: "AI Doomsday evangelism is on the rise as AI pioneers and Industry leaders desperately seek governmental regulation."
 ---
 

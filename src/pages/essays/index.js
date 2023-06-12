@@ -9,7 +9,7 @@ import Layout from "src/components/Layout"
 import SEO from "src/components/SEO" 
 import PostList from 'src/components/Post/postList'
 
-import PostCard from './postCard'
+import PostCard from 'src/components/Post/postCard'
 
 import { mainTheme, midTheme } from 'src/theme'
 
@@ -18,7 +18,6 @@ const EssayIndexPage = ({ data }) => {
     const { edges } = data?.allMarkdownRemark
 
     const totalPosts = edges.length
-
     
 
     return (<Layout>

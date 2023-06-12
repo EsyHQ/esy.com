@@ -57,26 +57,23 @@ return (
   )
 }
 
-// export const Head = ({ data, location }) => {
-//   const siteUrl= data?.site?.siteMetadata?.siteUrl
-//   const domain = "https://www.esy.com"
-//   const url = `${domain}${location.pathname}`
-//   const { title, journal_name, date, excerpt, featuredImage: { publicURL } } = data?.markdownRemark?.frontmatter
+export const Head = ({ data, location }) => {
+  const siteUrl= data?.site?.siteMetadata?.siteUrl
+  const domain = "https://www.esy.com"
+  const url = `${domain}${location.pathname}`
+  const { title, journal_name, date, excerpt, featuredImagePath } = data?.markdownRemark?.frontmatter
 
-//   const meta = { 
-//     title,
-//     description: excerpt,
-//     url,
-//     type: 'article',
-//     twitterUsername: '@esyjournal',
-//     image: `${domain}${publicURL}`,
-//   }
+  const meta = { 
+    title,
+    description: excerpt,
+    url,
+    type: 'article',
+    twitterUsername: '@esyjournal',
+    image: `${domain}${featuredImagePath}`,
+  }
 
-//   console.log(meta, 'meta in the head') 
-//   console.log(data, 'data in the head')
-
-//   return <SEO meta={meta} />
-// }
+  return <SEO meta={meta} />
+}
 
 export const pageQuery = graphql`
   query($id: String!) {
@@ -94,6 +91,7 @@ export const pageQuery = graphql`
             }
             publicURL
         }
+        featuredImagePath
       }
     }
   }

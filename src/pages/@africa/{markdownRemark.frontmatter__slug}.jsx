@@ -2,7 +2,9 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import JournalPostTemplate from 'src/components/Page/Journal/journalPostTemplate'
 
-export default function JournalPostPage({ data }) {
+
+
+export default function AfricaPostPage({ data }) {
   return <JournalPostTemplate data={data} />
 }
 
@@ -23,11 +25,7 @@ export const journalPostQuery = graphql`
             }
             publicURL
         }
-        featuredImagePath
       }
     }
   }
 `
-
-
-

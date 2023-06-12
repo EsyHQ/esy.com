@@ -1,6 +1,5 @@
 import * as React from 'react'
 import Layout from "src/components/Layout/container"
-import EssaySection from './essaySection'
 
 
 import { 
@@ -19,7 +18,6 @@ export default function IndexPage({ data }) {
                     <HeroParagraph>The Smart Journal<br/>for Essayist</HeroParagraph>
                   </HeroSummary>
               </HeroWrapper>
-              {/* <EssaySection data={data} /> */}
             </SectionWrapper>
           </Layout>)
 }
