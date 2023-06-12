@@ -12,7 +12,7 @@ import Layout from 'src/components/Layout'
 
 import SEO from "src/components/SEO"
 
-import { BlogPostWrapper, BlogPostInner, PrePostContainer, PostTitle, PostMeta, PrimaryMeta, FeatureImage } from 'src/components/common/Post/blogPostStyles'
+import { BlogPostWrapper, BlogPostInner, PrePostContainer, PostTitle, PostMeta, PrimaryMeta, FeatureImage } from 'src/theme/essays'
 
 
 
