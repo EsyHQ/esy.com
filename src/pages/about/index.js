@@ -1,6 +1,6 @@
 import React from 'react'
 import AboutPageIndex from 'src/components/Page/About'
-import SEO from 'src/components/Seo'
+import SEO from 'src/components/SEO'
 import { useSiteMetadata } from 'src/hooks/use-site-metadata'
 
 
