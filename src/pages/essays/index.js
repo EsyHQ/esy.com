@@ -3,7 +3,7 @@ import styled, { ThemeProvider } from 'styled-components'
 import { graphql } from 'gatsby'
 
 import Layout from "src/components/Layout"
-import SEO from 'src/components/Seo'
+import SEO from 'src/components/SEO'
 import { useSiteMetadata } from 'src/hooks/use-site-metadata'
 import PostList from 'src/components/Post/postList'
 
