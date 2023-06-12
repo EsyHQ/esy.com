@@ -1,17 +1,12 @@
 import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 import { graphql } from 'gatsby'
-import { Grid } from '@mui/material'
-
-
 
 import Layout from "src/components/Layout"
-import SEO from "src/components/SEO" 
+import SEO from 'src/components/Seo'
+import { useSiteMetadata } from 'src/hooks/use-site-metadata'
 import PostList from 'src/components/Post/postList'
 
-import PostCard from 'src/components/Post/postCard'
-
-import { mainTheme, midTheme } from 'src/theme'
 
 
 const EssayIndexPage = ({ data }) => {
@@ -59,11 +54,19 @@ export const indexQuery = graphql`
 `
 
 
-export const Head = ({ data }) => {
-    return ( <>
-       <title>Essays | esy</title>
-       <meta name="description" content="Hello World" />
-     </>)
+export const Head = () => { 
+    const { description, image, siteUrl, type, twitterUsername } = useSiteMetadata()
+
+    const meta = {
+        title: "Essays | esy",
+        description,
+        image,
+        url: `${siteUrl}/essays`,
+        type,
+        twitterUsername,
+    }
+    
+    return <SEO meta={meta} />
 }
     
 

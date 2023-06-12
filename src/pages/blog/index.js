@@ -59,5 +59,5 @@ export const Head = () => {
         twitterUsername,
     }
     
-    return (<SEO meta={meta} />)
+    return <SEO meta={meta} />
 }

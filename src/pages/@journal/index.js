@@ -5,13 +5,9 @@ import SEO from 'src/components/SEO'
 import { useSiteMetadata } from 'src/hooks/use-site-metadata'
 
 
-
-
-
 export default function JournalIndexPage({ data }) {
   return <JournalIndexComponent data={data} />
 }
-
 
 
 export const journalIndexQuery = graphql`
