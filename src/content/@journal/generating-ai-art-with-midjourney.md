@@ -5,7 +5,7 @@ title: "Generating AI Art with MidJourney"
 journal_name: "@journal"
 tags: [ "@ai", "machine-learning" ]
 featuredImage: ../mdImages/ape-mj-portrait.png
-featuredImagePath: "/ape-mj-portrait.png"
+featuredImagePath: "/ape-mj-portrait.webp"
 excerpt: "I've been having a blast lately, you know, the kind where you stay up all night for hours obsessing over a brand new toy and it's all due to MidJourney..."
 ---
 
