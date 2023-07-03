@@ -36,7 +36,7 @@ const EmailForm = () => {
 
     return (<FormElement noValidate onSubmit={handleFormSubmit}>
                 <ButtonWrapper className="button-wrapper">
-                    <Button handleButtonClick={handleSignupClick} classNames="active" isBoxShadow={true}  ctaText="Sign up" />
+                    <Button handleButtonClick={handleSignupClick} classNames="active" isBoxShadow={true}  ctaText="Join" />
                     <Button handleButtonClick={handleWriteClick} isBoxShadow={true}  ctaText="Write" />
                 </ButtonWrapper>
             </FormElement>)
