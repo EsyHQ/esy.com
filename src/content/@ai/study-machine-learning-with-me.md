@@ -9,7 +9,7 @@ featuredImagePath: "/desktop-.jpeg"
 excerpt: "I’ve been itching to jump into the Ai space for years but never seemed to have the time, now I’m going full blast."
 ---
 
-Welcome to the @Ai Journal,
+Welcome to the [@Ai][@AiJournal] Journal,
 
 
 I’m Lem, founder of [esy.com][ESYDOTCOM] and a professional software developer for 7 years now.
@@ -43,3 +43,4 @@ Later
 
 
 [ESYDOTCOM]: https://www.esy.com
+[@AiJournal]: (https://www.esy.com/@ai)
