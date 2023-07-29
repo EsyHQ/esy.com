@@ -6,7 +6,7 @@ journal_name: "@ai"
 tags: [ "@ai", "machine-learning" ]
 featuredImage: ../mdImages/desktop-.jpeg
 featuredImagePath: "/desktop-.jpeg"
-excerpt: "After more than two decades, or more specifically, twenty-four years since Google launched on September 4, 1998, it has relentlessly dominated the Search Industry"
+excerpt: "I’ve been itching to jump into the Ai space for years but never seemed to have the time, now I’m going full blast."
 ---
 
 Welcome to the @Ai Journal,
