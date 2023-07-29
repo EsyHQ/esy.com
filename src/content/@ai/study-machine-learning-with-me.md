@@ -43,4 +43,4 @@ Later
 
 
 [ESYDOTCOM]: https://www.esy.com
-[@AiJournal]: (https://www.esy.com/@ai)
+[@AiJournal]: https://www.esy.com/@ai
