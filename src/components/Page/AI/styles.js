@@ -23,8 +23,6 @@ const BlogWrapper = styled.section`
 `
 
 
-
-
 const BlogPostWrapper = styled.div`
   margin-top: 50px;
   margin: 0 auto;
@@ -115,7 +113,6 @@ const BlogPostWrapper = styled.div`
 
     strong {
       font-weight: 700;
-      color: #fff;
       font-family: Poppins, sans-serif;    
 
     }
@@ -125,19 +122,17 @@ const BlogPostWrapper = styled.div`
       margin-top: 50px;
       margin-bottom: 20px;
       text-align: left;
+      color: rgb(209, 78, 255);
     }
 
     h2 {
-      color: rgb(255, 255, 255);
       font-family: Poppins, sans-serif;  
-
       font-size: 34px;
       font-weight: bold;
       letter-spacing: 0px;
     }
 
     h3 {
-      color: rgb(255, 255, 255);
       font-family: Poppins, sans-serif;  
       font-size: 26px;
       font-weight: bold;

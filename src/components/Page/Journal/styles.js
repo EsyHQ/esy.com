@@ -16,6 +16,7 @@ const BlogWrapper = styled.section`
     }
     
     img {
+        with: 100%;
         border-radius: 6px;
         border: 1px solid rgba(0,0,0,0.22);
         box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.3);
@@ -63,6 +64,7 @@ const BlogPostWrapper = styled.div`
 
     h2 {
       font-weight: 500 !important;
+      color: rgb(209, 78, 255);
     }
 
     img {
@@ -115,9 +117,8 @@ const BlogPostWrapper = styled.div`
 
     strong {
       font-weight: 700;
-      color: #fff;
       font-family: Poppins, sans-serif;    
-
+      color: rgb(209, 78, 255);
     }
 
 
@@ -137,11 +138,11 @@ const BlogPostWrapper = styled.div`
     }
 
     h3 {
-      color: rgb(255, 255, 255);
       font-family: Poppins, sans-serif;  
       font-size: 26px;
       font-weight: bold;
       letter-spacing: 0px;
+      color: rgb(209, 78, 255);
     }
 
     blockquote {

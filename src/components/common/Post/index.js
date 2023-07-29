@@ -32,19 +32,19 @@ const PostWrapper = styled.section`
             font-weight: 600;
         }
 
-        &:last-child {
-            a {
-                // color: rgb(250,70,22);
-                color: #d14eff;
-                opacity: 0.7;
+        // &:last-child {
+        //     a {
+        //         // color: rgb(250,70,22);
+        //         color: #d14eff;
+        //         opacity: 0.7;
 
-                :hover {
-                    opacity: 1;
-                }
+        //         :hover {
+        //             opacity: 1;
+        //         }
 
-                text-decoration: none;
-            }
-        }
+        //         text-decoration: none;
+        //     }
+        // }
     }
 
     h2 {

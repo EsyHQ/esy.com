@@ -1,0 +1,23 @@
+---
+slug: "/the-future-of-programming"
+date: "2023-07-04"
+title: "The Future of Programming"
+journal_name: "@ai"
+tags: [ "@ai", "machine-learning" ]
+featuredImage: ../mdImages/desktop-.jpeg
+featuredImagePath: "/desktop-.jpeg"
+excerpt: "After more than two decades, or more specifically, twenty-four years since Google launched on September 4, 1998, it has relentlessly dominated the Search Industry"
+---
+
+
+After a bad customer service experience in a retail shop, I began complaining to my wife that at some point in the 'not too distant' future, we will have ergonomically capable machines capable of performing tasks for humans and they're going to take away jobs that a lot of disgruntled employees don't want. Gasp... I know, I shouldn't have said that right? Well, I don't know about you but these days it appears some customer service reps dont want to work or go beyond their 'job description'. As a former customer service rep, I did it all, Mcdonalds, Rite-Aid, Bank Teller, American Eagle, BJ's WholeSales, Black Limousine Reservationist, I did it all in my teens and early 20s and never once displayed so much as a sign of annoyance with a customer, except the one time a jittery nicotine addict grew absurdly frustrated with me for not being able to locate her favorite cigarrete brand within a glass sealed compartment located behind my register. 
+
+That was the only time out of multiple years working customer service did I have to tell them screaming nicotine head to backoff and relax! She was growing hysterical and having a breakdown over my 18 year old non-smoking self not know where her special brand was but aside from that one time, I was generally very patient. 
+
+I remained so, despite being cursed out on my 3rd day working at Mcdonalds. It wasn't my fault though, at least not entirely. You see I was hired as the English speaking cashier to interface customers while the predominantly Spanish speaking personell would flip the burgers and serve meals, the computer software animation used to simulate 'how to work at mcdonalds' showed me 'the cashier' simply communciating with the customer and taking orders, while my colleague 'the buger flipper' or cook, preparing the meal for serving, in the simulation they'd place the food in an area for pick up, where the server grabs it and hands it to the customer. 
+
+Well, no one informed me that this wasn't the standard algorithm, just the one we did my first 2 days on the job, so you can probably guess what happened...
+
+I came into work for the third day, grabbed my embarrassing Mcdondalds hat and started taking orders, I was so impressed with how fast I was doing them too, as It was difficult working the machine the first two days given the insane amount of options on the display. We were super busy today and I must have ran up like 15 orders when I heard "Where the FUCK is my burger?" before noticing a tall and lean older man complaining that he had not received his order for some time, afte rhe complained, it seemed like there was dozens of people, (the mob?) in front of me joining the chorus "Yeah! We've been waiting a long time!", "yeah!, what's going on? I already ordered!". Long story short, while I was registering the orders and taking funds, no one was serving the food. The manager was called to the front, had to calm everyone down while we all went into damage-control. I was lectured and told to take a break, it was a pretty long one, as after work I rode the train a few miles, spoke with the manager at Rite-Aid and put in my resignation at Mcdonalds the next day. 
+
+[FBMessengerBots]: https://venturebeat.com/business/facebook-opens-its-messenger-platform-to-chatbots/
