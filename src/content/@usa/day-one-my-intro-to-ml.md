@@ -2,8 +2,8 @@
 slug: "/day-one-my-intro-to-ml"
 date: "2023-07-29"
 title: "Day One: My Intro to ML"
-journal_name: "@ai"
-tags: [ "@ai", "machine-learning" ]
+journal_name: "@usa"
+tags: [ "@usa" ]
 featuredImage: ../mdImages/desktop-.jpeg
 featuredImagePath: "/ape-mj-portrait.webp"
 excerpt: "I've been having a blast lately, you know, the kind where you stay up all night for hours obsessing over a brand new toy and it's all due to MidJourney..."
@@ -14,7 +14,7 @@ Welcome to the [Ai Journal](https://www.esy.com/@ai),
 
 Yesterday, I discussed my intent behind this journal, which is to record my non-linear approach and journey for studying Ai/ML. I picked up five books that I intend to complete by years end.
 
-### The list:
+### The list
 - The Kaggle Book
 - Machine Learning with PyTorch and Scikit-Learn
 - Hands-on ML w/ Scikit-Learn, Keras, & Tensorflow

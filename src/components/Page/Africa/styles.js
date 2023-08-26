@@ -11,19 +11,23 @@ const BlogWrapper = styled.section`
     flex-flow: row wrap;
     justify-content: space-between;
 
+    .gatsby-resp-image-wrapper {
+        margin: 0 auto;
+        cursor: none;
+    }
+
     .gatsby-image-wrapper-constrained {
         width: 100%;
     }
     
     img {
-        with: 100%;
         border-radius: 6px;
         border: 1px solid rgba(0,0,0,0.22);
         box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.3);
     }
+
+    
 `
-
-
 
 
 const BlogPostWrapper = styled.div`
@@ -46,14 +50,17 @@ const BlogPostWrapper = styled.div`
   img {
     border-radius: 6px;
   }
+  
 
 
   .blog-post-content {
+    ul {
+      margin: 30px 0;
+    }
 
     li {
-      color: rgb(255, 255, 255);
-      font-family: Poppins, sans-serif;
-      margin: 20px 0;
+      color: #fff !important;
+      margin: 10px 0;
 
       ::marker {
         color: rgb(209, 78, 255);
@@ -67,7 +74,6 @@ const BlogPostWrapper = styled.div`
 
     h2 {
       font-weight: 500 !important;
-      color: rgb(209, 78, 255);
     }
 
     img {
@@ -121,7 +127,7 @@ const BlogPostWrapper = styled.div`
     strong {
       font-weight: 700;
       font-family: Poppins, sans-serif;    
-      color: rgb(209, 78, 255);
+
     }
 
 
@@ -129,12 +135,11 @@ const BlogPostWrapper = styled.div`
       margin-top: 50px;
       margin-bottom: 20px;
       text-align: left;
+      color: rgb(209, 78, 255);
     }
 
     h2 {
-      color: rgb(255, 255, 255);
       font-family: Poppins, sans-serif;  
-
       font-size: 34px;
       font-weight: bold;
       letter-spacing: 0px;
@@ -145,7 +150,6 @@ const BlogPostWrapper = styled.div`
       font-size: 26px;
       font-weight: bold;
       letter-spacing: 0px;
-      color: rgb(209, 78, 255);
     }
 
     blockquote {
@@ -250,7 +254,6 @@ const FeatureImage = styled.div`
 
   }
 `
-
 
 
 export {

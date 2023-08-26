@@ -9,22 +9,28 @@ const FooterNav = () => {
     return (<FooterNavContainer>
                     <FooterList>
 
-                      {/* <FooterListItem>  
-                          <FooterListItemTitle>Edu</FooterListItemTitle>
+                      <FooterListItem>  
+                          <FooterListItemTitle>Products</FooterListItemTitle>
                           <FooterSubNav>
                               <FooterSubNavList>
-                                <FooterSubNavListItem><Link to="/glossary">Glossary</Link></FooterSubNavListItem>
+                                <FooterSubNavListItem><a href="https://chat.esy.com">Chat</a></FooterSubNavListItem>
+                                <FooterSubNavListItem><a href="https://journal.esy.com">Journal</a></FooterSubNavListItem>
+                                
+                                {/* <FooterSubNavListItem><a href="https://journal.esy.com">Trade NFTs</a></FooterSubNavListItem> */}
                               </FooterSubNavList>
                           </FooterSubNav>
-                        </FooterListItem> */}
+                        </FooterListItem>
                       
                       <FooterListItem>  
                           <FooterListItemTitle>Journals</FooterListItemTitle>
                           <FooterSubNav>
                               <FooterSubNavList>
                                 <FooterSubNavListItem><Link to="/@journal">@journal</Link></FooterSubNavListItem>
+                                <FooterSubNavListItem><Link to="/@africa">@africa</Link></FooterSubNavListItem>
                                 <FooterSubNavListItem><Link to="/@ai">@ai</Link></FooterSubNavListItem>
-                                {/* <FooterSubNavListItem><Link to="/@journal">esy Africa</Link></FooterSubNavListItem> */}
+                                {/* <FooterSubNavListItem><Link to="/@hora-miami">@HoraMiami</Link></FooterSubNavListItem> */}
+                                {/* <FooterSubNavListItem><Link to="/@nyc">@nyc</Link></FooterSubNavListItem> */}
+                                {/* <FooterSubNavListItem><Link to="/@usa">@usa</Link></FooterSubNavListItem> */}
                                 {/* <FooterSubNavListItem><Link to="/@geo">esy Geo</Link></FooterSubNavListItem> */}
                                 {/* <FooterSubNavListItem><Link to="/@chatgpt">ChatGPT</Link></FooterSubNavListItem> */}
                                 {/* <FooterSubNavListItem><Link to="/@learn-english">Learn English</Link></FooterSubNavListItem> */}

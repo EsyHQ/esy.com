@@ -21,8 +21,16 @@ const PostCard = props => {
     const tagMap = {
         "blog": { path: "/blog"},
         "@journal": { path: "/@journal"},
+        "@ai": { path: "/@ai"},
         "ai-journal": { path: "/@ai"},
         "essays": { path: "/essays"},
+        "@africa": { path: "/@africa"},
+        "@crime": { path: "/@crime"},
+        "@nyc": { path: "/@nyc"},
+        "@miami": { path: "/@miami"},
+        "@fentanyl": { path: "/@fentanyl"},
+        "@geo": { path: "/@geo"},
+        "@usa": { path: "/@usa"},
     }
     const postPath = `${tagMap[primaryTag].path}${slug}` 
 

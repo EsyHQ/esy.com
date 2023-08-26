@@ -27,10 +27,11 @@ const PostCard = props => {
         "@africa": { path: "/@africa"},
         "@crime": { path: "/@crime"},
         "@nyc": { path: "/@nyc"},
-        "@miami": { path: "/@miami"},
-        "@fentanyl": { path: "/@fentanyl"},
-        "@geo": { path: "/@geo"},
-        "@usa": { path: "/@usa"},
+        "@miami": { path: "/miami"},
+        "@fentanyl": { path: "/fentanyl"},
+        "@geo": { path: "/geo"},
+        "@usa": { path: "/usa"},
+
     }
     const postPath = `${tagMap[primaryTag].path}${slug}` 
 

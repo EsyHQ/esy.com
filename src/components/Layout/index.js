@@ -37,7 +37,6 @@ const LayoutWrapper = styled.div`
     width: 100%;
     display: flex;
     flex-direction: column;
-    // margin: 0 auto;
     min-height: 100vh;
     background: #fff;
     color: #000;
@@ -52,8 +51,6 @@ const MainElement = styled.main`
   justify-content: center;
   align-items: center;
   background: #000;
-  // background: #151718;
-
   padding-top: 80px;
 
   @media(max-width: 600px) {
