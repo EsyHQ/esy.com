@@ -13,7 +13,7 @@ excerpt: "The crisis unfolding in West Africa continues to escalate, with claims
 Welcome to [The African Journal][TAJ],
 
 
-The crisis unfolding in West Africa continues to escalate, with claims via Algerian state radio suggesting that France, seemingly well positioned for an invasion of Niger, has requested access to Algerian airspace. The North African nation which borders Niger has allegedly denied the French request, sternly rejecting any form of military involvement in the country favor of diplomacy. 
+The crisis unfolding in West Africa continues to escalate, with claims via Algerian state radio suggesting that France, seemingly well positioned for an invasion of Niger, has requested access to Algerian airspace. The North African nation which borders Niger has allegedly denied the French request, sternly rejecting any form of external military involvement in the country in favor of diplomacy. 
 
 
 ### France Response
@@ -24,7 +24,7 @@ According to a report by the [Middle Eastern Monitor][MEMO], and Reuters, the Fr
 ### Recap
  
 - The Nigerian Army staged a coup on July 26th, removing former President of Niger Mohamed Bazoum from power
-- The Economic Community of West African States (ECOWAS) has threatened military intervention if Bazoum is not reinstated within 7 days.
+- The Economic Community of West African States (ECOWAS) has threatened military intervention if Bazoum was not reinstated within 7 days. The time has since expired. 
 - ECOWAS imposed severe economic and travel sanctions against Niger leading to a 90% loss in electricity it was receiving from Nigeria.
 - The health care system in Niger has been dramatically impacted as representatives from the UN Childrens Fund stated that they've experienced an astronomical 1900% jump in energy prices to maintain power generators for vaccines. 
 - The Nigerian senate voted against a request by President Tinubu of Nigeria to allocate resources for a military invasion of Niger to restore Bazoum to power
