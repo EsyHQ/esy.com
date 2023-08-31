@@ -1,6 +1,6 @@
 ---
 slug: "/is-niger-still-a-french-colony"
-date: "2023-08-29"
+date: "2023-08-30"
 title: "Is Niger, a French colony?"
 journal_name: "@africa"
 tags: [ "@africa", "niger" ]
