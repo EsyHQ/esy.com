@@ -124,6 +124,10 @@ const BlogPostWrapper = styled.div`
       color: rgb(209, 78, 255);
     }
 
+    em {
+      color: rgb(209, 78, 255);
+    }
+
 
     h2, h3 { 
       margin-top: 50px;
