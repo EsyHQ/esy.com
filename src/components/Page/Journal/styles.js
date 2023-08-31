@@ -14,6 +14,8 @@ const BlogWrapper = styled.section`
     .gatsby-image-wrapper-constrained {
         width: 100%;
     }
+
+  
     
     img {
         with: 100%;
@@ -36,6 +38,10 @@ const BlogPostWrapper = styled.div`
   padding: 2% 5%;
   background: rgba(12,10,29);
 
+  p span.gatsby-resp-image-wrapper {
+    max-width: 100% !important;
+  }
+  
   .inline-images {
     text-align: center;
     max-width: 900px;
@@ -72,10 +78,10 @@ const BlogPostWrapper = styled.div`
 
     img {
       display: flex;
-      max-width: 700px;
+      max-width: 100%;
       width: 100%;
       margin: 0 auto;
-      text-align: center;
+      // text-align: center;
     }
 
     a {

@@ -34,7 +34,7 @@ France continues to defy the military juntas demands to exit the country. That's
 ### How do common Nigeriens feel about France violating their national sovereignity and borders?
 The coup staged on July 26th, to unseat President <ins>Mohamed Bazoum</ins> has been widely supported by the Nigerien people as reported by multiple networks in the U.S, Europe, Asia, and the Middle East. News footage taken from Niger has captured interviews with common people demanding that France leave, a growing sentiment within the entire West African region and others signing up to volunteerily assist the military. A 25,000 person sports stadium has been filled in previous weeks to showcase citizen support for the junta. 
 
-
+$$
 ### Historical Context
 Sixty-three years after Niger recorded it's historical indepedence from former colonial master France, relations between the two nations have only grown more bitter. The economic conditions of the people remain dire, and France continues to exploit Niger's resources absent any meaningful protest from its Western allies in the EU and North America.  
 <!-- ### Recap -->

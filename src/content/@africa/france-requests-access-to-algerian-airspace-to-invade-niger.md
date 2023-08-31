@@ -17,7 +17,8 @@ The crisis unfolding in West Africa continues to escalate, with claims via Alger
 
 
 ### France Response
-![France Army in Niger](../mdImages/Opération_Barkhane.jpg)
+![France Army in Niger](../mdImages/french-army-near-paris.jpeg)
+Image: GulfToday (Original Source: Reuters)
 
 According to a report by the [Middle Eastern Monitor][MEMO], and Reuters, the France Army denies the allegations.
 

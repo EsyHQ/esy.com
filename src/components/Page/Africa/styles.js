@@ -14,6 +14,7 @@ const BlogWrapper = styled.section`
     .gatsby-resp-image-wrapper {
         margin: 0 auto;
         cursor: none;
+        max-width: 100%;
     }
 
     .gatsby-image-wrapper-constrained {
