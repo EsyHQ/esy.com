@@ -45,7 +45,7 @@ Sixty-three years after Niger recorded it's historical indepedence from former c
 
 1. What is the difference between colonialism and neo-colonialism?
 2. If a military junta takes control of a nation, should the nations partners respect the juntas authority?
-3. Should France intervene militarily to assist with the restoration of <ins>Mahomad Bazoum</ins> as President? Why?
+3. Should France intervene militarily to assist with the restoration of <ins>Mohamed Bazoum</ins> as President? Why?
 
 <!-- ### Essay Prompts -->
 
