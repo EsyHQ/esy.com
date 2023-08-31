@@ -1,8 +1,8 @@
----
+<!-- ---
 slug: "/president-ali-bongo-of-gabon-seen-as-france-lapdog-ousted-in-coup"
 date: "2023-08-31"
 title: "President Ali Bongo of Gabon, Seen as France's Lapdog, Ousted in Coup"
-journal_name: "@africa"
+journal_name: "qafrica"
 tags: [ "@africa" ]
 featuredImage: ../mdImages/africa-europe-map.png
 featuredImagePath: "../mdImages/africa-europe-map.png"
@@ -40,4 +40,4 @@ Keep that number in mind whenever we discuss how
  I generally try to refrain from personal attacks in my journals, however, when discussing Ali Bongo of Gabon, can you really be too obscene?
 
 
-[TAJ]: https://www.esy.com/@africa
+[TAJ]: https://www.esy.com/@africa -->
