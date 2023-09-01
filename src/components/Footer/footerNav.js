@@ -26,7 +26,7 @@ const FooterNav = () => {
                           <FooterSubNav>
                               <FooterSubNavList>
                                 <FooterSubNavListItem><Link to="/@journal">@journal</Link></FooterSubNavListItem>
-                                <FooterSubNavListItem><Link to="/@africa">@africa</Link></FooterSubNavListItem>
+                                {/* <FooterSubNavListItem><Link to="/@africa">@africa</Link></FooterSubNavListItem> */}
                                 <FooterSubNavListItem><Link to="/@ai">@ai</Link></FooterSubNavListItem>
                                 {/* <FooterSubNavListItem><Link to="/@hora-miami">@HoraMiami</Link></FooterSubNavListItem> */}
                                 {/* <FooterSubNavListItem><Link to="/@nyc">@nyc</Link></FooterSubNavListItem> */}
