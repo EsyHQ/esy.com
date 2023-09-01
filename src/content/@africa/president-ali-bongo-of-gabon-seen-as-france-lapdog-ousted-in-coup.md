@@ -6,7 +6,7 @@ journal_name: "@africa"
 tags: [ "@africa" ]
 featuredImage: ../mdImages/gabon-france-macron-ali-bongo-GettyImages-1247590579.png
 featuredImagePath: "/gabon-france-macron-ali-bongo-GettyImages-1247590579.png"
-excerpt: "Ali Bongo, the French controlled puppet and Emmanuel Macrons lapdog has finally been ousted as President of Gabon, ending his 14 year rule over the country this Monday, when the military junta staged a successful coup."
+excerpt: "Ali Bongo, the French-controlled puppet and Emmanuel Macron's tiny lapdog, has finally been ousted as the President of Gabon, ending his 14-year rule over the country this Monday when the military junta staged a successful coup."
 ---
 
 

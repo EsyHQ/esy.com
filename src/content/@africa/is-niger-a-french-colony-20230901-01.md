@@ -1,5 +1,5 @@
 ---
-slug: "/is-niger-still-a-french-colony"
+slug: "/is-niger-still-a-french-colony-20230901-01"
 date: "2023-08-30"
 title: "Is Niger, a French colony?"
 journal_name: "@africa"
