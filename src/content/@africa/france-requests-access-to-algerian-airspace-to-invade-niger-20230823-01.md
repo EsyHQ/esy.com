@@ -1,5 +1,5 @@
 ---
-slug: "/france-allegedly-requested-access-to-algerian-airspace-to-invade-niger"
+slug: "/france-allegedly-requested-access-to-algerian-airspace-to-invade-niger-20230823-01"
 date: "2023-08-23"
 title: "France Allegedly Requested Access to Algerian Airspace to Invade Niger"
 journal_name: "@africa"

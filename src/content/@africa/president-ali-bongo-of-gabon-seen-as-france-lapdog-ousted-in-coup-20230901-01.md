@@ -1,5 +1,5 @@
 ---
-slug: "/president-ali-bongo-of-gabon-seen-as-france-lapdog-ousted-in-coup"
+slug: "/president-ali-bongo-of-gabon-seen-as-france-lapdog-ousted-in-coup-20230901-01"
 date: "2023-09-01"
 title: "President Ali Bongo of Gabon, Seen as France's Lapdog, Ousted in Coup"
 journal_name: "@africa"
