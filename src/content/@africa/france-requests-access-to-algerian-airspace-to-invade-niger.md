@@ -5,7 +5,7 @@ title: "France Allegedly Requested Access to Algerian Airspace to Invade Niger"
 journal_name: "@africa"
 tags: [ "@africa" ]
 featuredImage: ../mdImages/africa-europe-map.png
-featuredImagePath: "../mdImages/africa-europe-map.png"
+featuredImagePath: "/africa-europe-map.png"
 excerpt: "The crisis unfolding in West Africa continues to escalate, with claims via Algerian state radio suggesting that France, seemingly well positioned for an invasion of Niger, haqs requested access to Algerian airspace."
 ---
 

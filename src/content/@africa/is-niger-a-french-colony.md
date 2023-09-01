@@ -5,7 +5,7 @@ title: "Is Niger, a French colony?"
 journal_name: "@africa"
 tags: [ "@africa", "niger" ]
 featuredImage: ../mdImages/macron-africa-map.png
-featuredImagePath: "../mdImages/macron-africa-map.png"
+featuredImagePath: "/macron-africa-map.png"
 excerpt: "France continues to defy the military juntas demands to exit the country. That's the story reported this past Monday, where multiple news networks has indicated that France refuses to call back it's Ambassador and to demobilize it's 1500 member military force stationed in Niger on the grounds that it does not recognize the juntas authority."
 ---
 
