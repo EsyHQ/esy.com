@@ -45,10 +45,10 @@ export const journalIndexQuery = graphql`
     const { description, image, siteUrl, type, twitterUsername } = useSiteMetadata()
 
     const meta = {
-        title: "Journal | esy",
+        title: "Africa | esy",
         description,
         image,
-        url: `${siteUrl}/@journal`,
+        url: `${siteUrl}/@africa`,
         type,
         twitterUsername,
     }
