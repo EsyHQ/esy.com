@@ -1,6 +1,9 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import JournalIndexComponent from 'src/components/Page/Journal/index.js'
+import SEO from 'src/components/SEO'
+import { useSiteMetadata } from 'src/hooks/use-site-metadata'
+
 
 
 
@@ -35,3 +38,20 @@ export const journalIndexQuery = graphql`
     }
   }
   `
+
+
+
+  export const Head = () => { 
+    const { description, image, siteUrl, type, twitterUsername } = useSiteMetadata()
+
+    const meta = {
+        title: "Journal | esy",
+        description,
+        image,
+        url: `${siteUrl}/@journal`,
+        type,
+        twitterUsername,
+    }
+    
+    return (<SEO meta={meta} />)
+}
