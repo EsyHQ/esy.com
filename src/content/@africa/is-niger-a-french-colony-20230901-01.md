@@ -26,8 +26,6 @@ But, and there is always one obvious but..
 France continues to defy the military juntas demands to exit the country. That's the story reported this past Monday, where multiple news networks has indicated that France refuses to call back it's Ambassador and to demobilize it's 1500 member military force stationed in Niger on the grounds that it does not recognize the juntas authority.  
 
 
-
-
 <!-- Is France violating the territorial sovereignity of Niger by refusing to leave the country under the military orders of those have assumed power? does it matter what the Nigeriens themselves think? -->
 
 
