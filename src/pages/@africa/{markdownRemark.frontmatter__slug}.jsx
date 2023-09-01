@@ -10,7 +10,6 @@ export default function AfricaPostPage({ data }) {
   return <JournalPostTemplate data={data} />
 }
 
-
 export const journalPostQuery = graphql`
   query($id: String!) {
     markdownRemark(id: { eq: $id }) {
@@ -27,6 +26,7 @@ export const journalPostQuery = graphql`
             }
             publicURL
         }
+        featuredImagePath
       }
     }
   }
