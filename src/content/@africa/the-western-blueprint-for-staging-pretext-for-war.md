@@ -1,0 +1,1 @@
+<!-- Here we want to use a plethora of documented sources and extract patterns over decades of years of Western military activity including those in Latin America, Cuba, etc -->

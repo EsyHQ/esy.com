@@ -119,6 +119,8 @@ const BlogPostWrapper = styled.div`
       font-weight: 400;
       color: #f2f4fb;
 
+      text-align: justify; // Consider whether to keep
+
       @media(max-width: 600px) {
         font-size: 20px;
       }
