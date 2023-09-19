@@ -1,0 +1,9 @@
+[[redirects]]
+  from = "https://journal.esy.com/*"
+  to = "https://journal.esy.com/:splat"
+  status = 200
+
+[[redirects]]
+  from = "https://*.esy.com/*"
+  to = "https://esy.com/"
+  status = 301
