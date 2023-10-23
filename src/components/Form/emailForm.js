@@ -25,12 +25,12 @@ const EmailForm = () => {
 
 
     const handleWriteClick = () => {
-        const writeURL = "https://journal.esy.com/compose"
+        const writeURL = "https://workspace.esy.com/compose"
         navigate(writeURL)
     }
 
     const handleSignupClick = () => {
-        navigate("https://journal.esy.com/signup")
+        navigate("https://workspace.esy.com/signup")
     }
 
 

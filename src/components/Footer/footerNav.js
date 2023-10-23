@@ -6,63 +6,44 @@ import { Link } from "gatsby"
 
 const FooterNav = () => {
 
-    return (<FooterNavContainer>
-                    <FooterList>
+  return (<FooterNavContainer>
+    <FooterList>
 
-                      <FooterListItem>  
-                          <FooterListItemTitle>Products</FooterListItemTitle>
-                          <FooterSubNav>
-                              <FooterSubNavList>
-                                <FooterSubNavListItem><a href="https://chat.esy.com">Chat</a></FooterSubNavListItem>
-                                <FooterSubNavListItem><a href="https://journal.esy.com">Journal</a></FooterSubNavListItem>
-                                
-                                {/* <FooterSubNavListItem><a href="https://journal.esy.com">Trade NFTs</a></FooterSubNavListItem> */}
-                              </FooterSubNavList>
-                          </FooterSubNav>
-                        </FooterListItem>
-                      
-                      <FooterListItem>  
-                          <FooterListItemTitle>Journals</FooterListItemTitle>
-                          <FooterSubNav>
-                              <FooterSubNavList>
-                                <FooterSubNavListItem><Link to="/@journal">@journal</Link></FooterSubNavListItem>
-                                {/* <FooterSubNavListItem><Link to="/@africa">@africa</Link></FooterSubNavListItem> */}
-                                <FooterSubNavListItem><Link to="/@ai">@ai</Link></FooterSubNavListItem>
-                                {/* <FooterSubNavListItem><Link to="/@hora-miami">@HoraMiami</Link></FooterSubNavListItem> */}
-                                {/* <FooterSubNavListItem><Link to="/@nyc">@nyc</Link></FooterSubNavListItem> */}
-                                {/* <FooterSubNavListItem><Link to="/@usa">@usa</Link></FooterSubNavListItem> */}
-                                {/* <FooterSubNavListItem><Link to="/@geo">esy Geo</Link></FooterSubNavListItem> */}
-                                {/* <FooterSubNavListItem><Link to="/@chatgpt">ChatGPT</Link></FooterSubNavListItem> */}
-                                {/* <FooterSubNavListItem><Link to="/@learn-english">Learn English</Link></FooterSubNavListItem> */}
-                                {/* <FooterSubNavListItem><Link to="/@journal">@BuildInPublic</Link></FooterSubNavListItem> */}
-                              </FooterSubNavList>
-                          </FooterSubNav>
-                        </FooterListItem>
+      <FooterListItem>
+        <FooterListItemTitle>Products</FooterListItemTitle>
+        <FooterSubNav>
+          <FooterSubNavList>
+            <FooterSubNavListItem><a href="https://workspace.esy.com">Workspace</a></FooterSubNavListItem>
 
-                        <FooterListItem>  
-                          <FooterListItemTitle>Education</FooterListItemTitle>
-                          <FooterSubNav>
-                              <FooterSubNavList>
-                                <FooterSubNavListItem><Link to="/essays">essays</Link></FooterSubNavListItem>
-                                {/* <FooterSubNavListItem><Link to="/glossary">Glossary</Link></FooterSubNavListItem> */}
-                                {/* <FooterSubNavListItem><Link to="/prompt-engineering-guides">Prompt Guides</Link></FooterSubNavListItem> */}
-                              </FooterSubNavList>
-                          </FooterSubNav>
-                        </FooterListItem>
+            {/* <FooterSubNavListItem><a href="https://journal.esy.com">Trade NFTs</a></FooterSubNavListItem> */}
+          </FooterSubNavList>
+        </FooterSubNav>
+      </FooterListItem>
+
+      <FooterListItem>
+        <FooterListItemTitle>Education</FooterListItemTitle>
+        <FooterSubNav>
+          <FooterSubNavList>
+            <FooterSubNavListItem><Link to="/essays">essays</Link></FooterSubNavListItem>
+            {/* <FooterSubNavListItem><Link to="/glossary">Glossary</Link></FooterSubNavListItem> */}
+            {/* <FooterSubNavListItem><Link to="/prompt-engineering-guides">Prompt Guides</Link></FooterSubNavListItem> */}
+          </FooterSubNavList>
+        </FooterSubNav>
+      </FooterListItem>
 
 
-                        <FooterListItem>
-                        <FooterListItemTitle>Organization</FooterListItemTitle>
-                        <FooterSubNav>
-                            <FooterSubNavList>
-                              <FooterSubNavListItem><Link to="/blog">Blog</Link></FooterSubNavListItem>
-                              <FooterSubNavListItem><Link to="/about">About Us</Link></FooterSubNavListItem>
-                              <FooterSubNavListItem><a href="mailto: support@esy.com">Contact Us</a></FooterSubNavListItem>
-                            </FooterSubNavList>
-                        </FooterSubNav>
-                        </FooterListItem>
-                    </FooterList>
-             </FooterNavContainer>)
+      <FooterListItem>
+        <FooterListItemTitle>Organization</FooterListItemTitle>
+        <FooterSubNav>
+          <FooterSubNavList>
+            <FooterSubNavListItem><Link to="/blog">Blog</Link></FooterSubNavListItem>
+            <FooterSubNavListItem><Link to="/about">About Us</Link></FooterSubNavListItem>
+            <FooterSubNavListItem><a href="mailto: support@esy.com">Contact Us</a></FooterSubNavListItem>
+          </FooterSubNavList>
+        </FooterSubNav>
+      </FooterListItem>
+    </FooterList>
+  </FooterNavContainer>)
 }
 
 
@@ -78,7 +59,7 @@ const FooterNavContainer = styled.div`
   }
 `
 
-const FooterList = styled.ul `
+const FooterList = styled.ul`
   
   @media(max-width: 1200px) {
     width: 100%;
