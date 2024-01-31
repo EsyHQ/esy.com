@@ -25,7 +25,7 @@ const FooterEnd = () => {
                         {/* 2022 Esy Research Technologies */}
                         {/* 2023 Esy Technologies, LLC. */}
                         {/* 2023 Esy Technologies */}
-                        2023  esy
+                        2023  esy.com
                         </a>
                     </Trademark>
 

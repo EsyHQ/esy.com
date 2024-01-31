@@ -13,20 +13,17 @@ const FooterNav = () => {
         <FooterListItemTitle>Products</FooterListItemTitle>
         <FooterSubNav>
           <FooterSubNavList>
-            <FooterSubNavListItem><a href="https://workspace.esy.com">Workspace</a></FooterSubNavListItem>
-
-            {/* <FooterSubNavListItem><a href="https://journal.esy.com">Trade NFTs</a></FooterSubNavListItem> */}
+            <FooterSubNavListItem><a href="https://workspace.esy.com">workspace</a></FooterSubNavListItem>
           </FooterSubNavList>
         </FooterSubNav>
       </FooterListItem>
 
       <FooterListItem>
-        <FooterListItemTitle>Education</FooterListItemTitle>
+        <FooterListItemTitle>Resources</FooterListItemTitle>
         <FooterSubNav>
           <FooterSubNavList>
             <FooterSubNavListItem><Link to="/essays">essays</Link></FooterSubNavListItem>
-            {/* <FooterSubNavListItem><Link to="/glossary">Glossary</Link></FooterSubNavListItem> */}
-            {/* <FooterSubNavListItem><Link to="/prompt-engineering-guides">Prompt Guides</Link></FooterSubNavListItem> */}
+            <FooterSubNavListItem><a href="http://journal.esy.com">esy Journal</a></FooterSubNavListItem>
           </FooterSubNavList>
         </FooterSubNav>
       </FooterListItem>
@@ -36,10 +33,9 @@ const FooterNav = () => {
         <FooterListItemTitle>Organization</FooterListItemTitle>
         <FooterSubNav>
           <FooterSubNavList>
-            <FooterSubNavListItem><Link to="/blog">Blog</Link></FooterSubNavListItem>
-            <FooterSubNavListItem><a href="http://journal.esy.com">Journal</a></FooterSubNavListItem>
-            <FooterSubNavListItem><Link to="/about">About Us</Link></FooterSubNavListItem>
-            <FooterSubNavListItem><a href="mailto: support@esy.com">Contact Us</a></FooterSubNavListItem>
+            <FooterSubNavListItem><Link to="/blog">blog</Link></FooterSubNavListItem>
+            <FooterSubNavListItem><Link to="/about">about us</Link></FooterSubNavListItem>
+            <FooterSubNavListItem><a href="mailto: support@esy.com">contact us</a></FooterSubNavListItem>
           </FooterSubNavList>
         </FooterSubNav>
       </FooterListItem>
