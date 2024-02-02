@@ -19,10 +19,11 @@ const FooterNav = () => {
       </FooterListItem>
 
       <FooterListItem>
-        <FooterListItemTitle>Resources</FooterListItemTitle>
+        <FooterListItemTitle>Education</FooterListItemTitle>
         <FooterSubNav>
           <FooterSubNavList>
             <FooterSubNavListItem><Link to="/essays">essays</Link></FooterSubNavListItem>
+            <FooterSubNavListItem><Link to="/videos">esy Videos</Link></FooterSubNavListItem>
             <FooterSubNavListItem><a href="http://journal.esy.com">esy Journal</a></FooterSubNavListItem>
           </FooterSubNavList>
         </FooterSubNav>
