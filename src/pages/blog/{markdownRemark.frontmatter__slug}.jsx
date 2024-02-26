@@ -107,7 +107,8 @@ const BlogPostWrapper = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 2% 5%;
-  background: rgba(12,10,29);
+  // background: rgba(12,10,29);
+  background: #fff;
 
   .inline-images {
     text-align: center;
@@ -122,6 +123,7 @@ const BlogPostWrapper = styled.div`
 
 
   .blog-post-content {
+    color: #000;
 
     li {
 
@@ -179,7 +181,8 @@ const BlogPostWrapper = styled.div`
       line-height: 32px;
       font-family: Poppins, sans-serif; 
       font-weight: 400;
-      color: #f2f4fb;
+      // color: #f2f4fb;
+      color: rgb(0, 0, 0);
 
       @media(max-width: 600px) {
         font-size: 20px;
@@ -189,11 +192,15 @@ const BlogPostWrapper = styled.div`
 
     strong {
       font-weight: 700;
-      color: #fff;
+      
+      color: rgb(0, 0, 0);
       font-family: Poppins, sans-serif;    
 
     }
 
+    h1 {
+      color: rgb(0, 0, 0);
+    }
 
     h2, h3 { 
       margin-top: 50px;
@@ -202,7 +209,7 @@ const BlogPostWrapper = styled.div`
     }
 
     h2 {
-      color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
       font-family: Poppins, sans-serif;  
 
       font-size: 34px;
@@ -211,7 +218,7 @@ const BlogPostWrapper = styled.div`
     }
 
     h3 {
-      color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
       font-family: Poppins, sans-serif;  
       font-size: 26px;
       font-weight: bold;
@@ -220,7 +227,8 @@ const BlogPostWrapper = styled.div`
 
     blockquote {
       margin: 50px 0;
-      color: rgba(255, 255, 255, 0.8);
+      // color: rgba(255, 255, 255, 0.8);
+      color: rgb(0, 0, 0);
       font-family: Poppins, sans-serif;  
       font-size: 24px;
       font-weight: 500;
@@ -245,7 +253,7 @@ const BlogPostWrapper = styled.div`
   }
   
   h1 {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-family: Poppins, sans-serif;    
     font-weight: 600;
     letter-spacing: 0px;
@@ -258,6 +266,10 @@ const BlogPostWrapper = styled.div`
       // text-align: center;
       padding-top: 5%;
     }
+  }
+
+  span {
+    color: rgb(0, 0, 0);
   }
 `
 
@@ -305,7 +317,8 @@ const PrimaryMeta = styled.div`
   align-items: center;
   .divider {
     margin: 0 5px;
-    color: rgba(255,255,255, 0.5)
+    // color: rgba(255,255,255, 0.5)
+    color: rgb(0, 0, 0);
   }
 `
 

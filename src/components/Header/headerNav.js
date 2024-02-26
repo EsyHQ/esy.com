@@ -39,7 +39,6 @@ const HeaderNavContainer = styled.div`
     font-family: 'Spartan',sans-serif;
     font-weight: 500;
     max-width: 490px;
-    // max-width: 325px;
 `
 
 const DesktopNav = styled.nav`

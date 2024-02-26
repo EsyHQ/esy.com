@@ -47,7 +47,8 @@ const HeaderWrapper = styled.header`
   justify-content: space-between;
   padding: 5px 50px;
   width: 100%;
-  background: #000;
+  background: rgb(12, 10, 29);
+
   align-items: center;
   border-bottom: 1px solid #272727;
   height: 80px;
