@@ -25,7 +25,7 @@ const EmailForm = () => {
 
 
     const handleWriteClick = () => {
-        const writeURL = "https://workspace.esy.com/compose"
+        const writeURL = "/"
         navigate(writeURL)
     }
 
