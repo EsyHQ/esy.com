@@ -37,7 +37,7 @@ const PostPaginationWrapper = styled.div`
     display: flex;
     padding: 3% 0;
     justify-content: space-between;
-    border-top: 1px solid rgba(104, 104, 104, 0.3);
+    // border-top: 1px solid rgba(104, 104, 104, 0.3);
     svg {
         fill: #fff;
         width: 16px;

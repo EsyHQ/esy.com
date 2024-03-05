@@ -107,8 +107,7 @@ const BlogPostWrapper = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 2% 5%;
-  // background: rgba(12,10,29);
-  background: #fff;
+  background: #000;
 
   .inline-images {
     text-align: center;
@@ -123,7 +122,7 @@ const BlogPostWrapper = styled.div`
 
 
   .blog-post-content {
-    color: #000;
+    color: rgb(245, 245, 245);
 
     li {
 
@@ -176,13 +175,12 @@ const BlogPostWrapper = styled.div`
     }
 
     p {
-      font-size: 21px;
+      font-size: 16px;
       margin-bottom: 30px;
       line-height: 32px;
       font-family: Poppins, sans-serif; 
       font-weight: 400;
-      // color: #f2f4fb;
-      color: rgb(0, 0, 0);
+      color: rgb(245, 245, 245);
 
       @media(max-width: 600px) {
         font-size: 20px;
@@ -192,14 +190,13 @@ const BlogPostWrapper = styled.div`
 
     strong {
       font-weight: 700;
-      
-      color: rgb(0, 0, 0);
+      color: rgb(245, 245, 245);
       font-family: Poppins, sans-serif;    
 
     }
 
     h1 {
-      color: rgb(0, 0, 0);
+      color: rgb(245, 245, 245);
     }
 
     h2, h3 { 
@@ -253,23 +250,21 @@ const BlogPostWrapper = styled.div`
   }
   
   h1 {
-    color: rgb(0, 0, 0);
+    color: rgb(245, 245, 245);
     font-family: Poppins, sans-serif;    
     font-weight: 600;
     letter-spacing: 0px;
-    border-bottom: 1px solid rgb(64, 70, 72);
     padding-bottom: 20px;
     font-size: 42px;
 
     @media(max-width: 600px) {
       font-size: 28px;
-      // text-align: center;
       padding-top: 5%;
     }
   }
 
   span {
-    color: rgb(0, 0, 0);
+    color: rgb(245, 245, 245);
   }
 `
 
@@ -294,7 +289,7 @@ const ImageWrapper = styled.div`
 
 const PrePostContainer = styled.div`
   width: 100%;
-  margin: 0 auto;
+  margin-top: 50px;
 
   @media(max-width: 1600px) {
     padding: 0;
@@ -317,7 +312,6 @@ const PrimaryMeta = styled.div`
   align-items: center;
   .divider {
     margin: 0 5px;
-    // color: rgba(255,255,255, 0.5)
     color: rgb(0, 0, 0);
   }
 `
@@ -325,8 +319,11 @@ const PrimaryMeta = styled.div`
 
 const FeatureImage = styled.div`
   width: 100%;
+  // margin-bottom: 150px;
   background: #151718;
   text-align: center;
+  padding: 0 100px 100px 100px;
+  background: #000;
 
   img {
     width: 100%;

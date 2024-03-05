@@ -23,7 +23,7 @@ const FooterNav = () => {
         <FooterSubNav>
           <FooterSubNavList>
             <FooterSubNavListItem><Link to="/essays">essays</Link></FooterSubNavListItem>
-            <FooterSubNavListItem><Link to="/glossary">glossary</Link></FooterSubNavListItem>
+            {/* <FooterSubNavListItem><Link to="/glossary">glossary</Link></FooterSubNavListItem> */}
             <FooterSubNavListItem><a href="http://journal.esy.com">esy Journal</a></FooterSubNavListItem>
           </FooterSubNavList>
         </FooterSubNav>
