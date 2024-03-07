@@ -13,9 +13,9 @@ const HeaderNav = ({ activeNav }) => {
 
   return (<HeaderNavContainer>
               <DesktopNav>
-                {/* <NavItem className={activeNav === 1 ? 'active' : ""}><Link to="/blog">Blog</Link></NavItem>  */}
-                {/* <NavItem className={activeNav === 2 ? 'active' : ""}><Link to="/journals">Journals</Link></NavItem>  */}
-                <NavItem><EmailForm /></NavItem>
+                <NavItem className={activeNav === 1 ? 'active' : ""}><Link to="/essays">Essays</Link></NavItem> 
+                <NavItem className={activeNav === 2 ? 'active' : ""}><Link to="/blog">Blog</Link></NavItem> 
+                {/* <NavItem><EmailForm /></NavItem> */}
               </DesktopNav>
 
               <MobileNav>
@@ -39,10 +39,13 @@ const HeaderNavContainer = styled.div`
     font-family: 'Spartan',sans-serif;
     font-weight: 500;
     max-width: 490px;
+    max-width: 125px;
+
 `
 
 const DesktopNav = styled.nav`
   display: flex;
+  justify-content: space-between;
   width: 100%;
 
   @media(max-width: 900px) {
@@ -66,7 +69,7 @@ const NavItem = styled.div`
   // margin: 0 20px;
   // width: 100%;
   &:last-child {
-    width: 100%;
+    // width: 100%;
   }
 
   &.user-icon {
@@ -94,9 +97,8 @@ const NavItem = styled.div`
 
   &.active:after, &:not(:last-child):hover:after {
     content: '';
-    height: 5px;
-    background: #864ba2;
-    background: #8b3dff;
+    height: 2px;
+    background: rgb(139, 61, 255);
     position: absolute;
     bottom: -10px;
     left: 0;

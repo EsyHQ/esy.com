@@ -9,14 +9,14 @@ const FooterNav = () => {
   return (<FooterNavContainer>
     <FooterList>
 
-      <FooterListItem>
+      {/* <FooterListItem>
         <FooterListItemTitle>Products</FooterListItemTitle>
         <FooterSubNav>
           <FooterSubNavList>
             <FooterSubNavListItem><a href="https://workspace.esy.com">workspace</a></FooterSubNavListItem>
           </FooterSubNavList>
         </FooterSubNav>
-      </FooterListItem>
+      </FooterListItem> */}
 
       <FooterListItem>
         <FooterListItemTitle>Education</FooterListItemTitle>

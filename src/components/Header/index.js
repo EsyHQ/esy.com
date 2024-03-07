@@ -13,13 +13,11 @@ const Header = ({ hasHeaderNav }) => {
   const setHeaderNavState = (pathname) => {
     if (pathname === '/') {
       setActiveNav(0)
-    } else if (pathname.includes('blog')) {
+    } else if (pathname.includes('essays')) {
         setActiveNav(1)
-    } else if (pathname.includes('journals')) {
+    } else if (pathname.includes('blog')) {
         setActiveNav(2)
-    } else if (pathname.includes('write')) {
-        setActiveNav(3)
-    }
+    } 
   }
 
   useEffect(() => {
@@ -34,7 +32,7 @@ const Header = ({ hasHeaderNav }) => {
               <Link to="/"><Logo /></Link>
             </HeaderLogo>
 
-            {/* {hasHeaderNav && <HeaderNav activeNav={activeNav} />} */}
+            {hasHeaderNav && <HeaderNav activeNav={activeNav} />}
           </HeaderWrapper>)
 }
 
