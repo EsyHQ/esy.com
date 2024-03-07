@@ -34,7 +34,7 @@ const Header = ({ hasHeaderNav }) => {
               <Link to="/"><Logo /></Link>
             </HeaderLogo>
 
-            {hasHeaderNav && <HeaderNav activeNav={activeNav} />}
+            {/* {hasHeaderNav && <HeaderNav activeNav={activeNav} />} */}
           </HeaderWrapper>)
 }
 

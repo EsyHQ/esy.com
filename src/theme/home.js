@@ -29,9 +29,10 @@ const HeroWrapper = styled.div`
   padding: 0 50px;
   background: #000;
   background: rgb(12, 10, 29);
-  position: relative;
+  // position: relative;
+  position: absolute; 
   // height: 75vh;
-  height: 90vh;
+  height: 100vh;
   // min-height: 600px;
   
   ::before {
