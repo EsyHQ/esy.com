@@ -108,6 +108,7 @@ const BlogPostWrapper = styled.div`
   flex-direction: column;
   padding: 2% 5%;
   background: #000;
+  padding-top: 150px;
 
   .inline-images {
     text-align: center;

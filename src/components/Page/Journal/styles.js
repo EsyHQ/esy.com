@@ -10,6 +10,7 @@ const BlogWrapper = styled.section`
     flex-direction: row;
     flex-flow: row wrap;
     justify-content: space-between;
+    padding-top: 150px;
 
     .gatsby-image-wrapper-constrained {
         width: 100%;

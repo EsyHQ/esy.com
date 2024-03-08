@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { BlogWrapper } from '../../components/Page/Journal/styles'
+import { BlogWrapper } from 'src/components/Page/Journal/styles'
 import Layout from "src/components/Layout"
 import PostList from 'src/components/Post/postList'
 import SEO from 'src/components/SEO'
@@ -23,7 +23,7 @@ export const indexQuery = graphql`
     query BlogIndexQuery  {
         allMarkdownRemark(
             sort: { fields: [frontmatter___date], order: DESC }
-            filter: { frontmatter: { journal_name: { eq: "blog" } } }
+            filter: { frontmatter: { journal_name: { eq: "learn" } } }
             ) {
                 edges {
                     node {

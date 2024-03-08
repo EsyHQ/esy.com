@@ -15,7 +15,7 @@ const Header = ({ hasHeaderNav }) => {
       setActiveNav(0)
     } else if (pathname.includes('essays')) {
         setActiveNav(1)
-    } else if (pathname.includes('blog')) {
+    } else if (pathname.includes('learn')) {
         setActiveNav(2)
     } 
   }

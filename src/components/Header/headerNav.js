@@ -14,7 +14,9 @@ const HeaderNav = ({ activeNav }) => {
   return (<HeaderNavContainer>
               <DesktopNav>
                 <NavItem className={activeNav === 1 ? 'active' : ""}><Link to="/essays">Essays</Link></NavItem> 
+                <NavItem className={activeNav === 2 ? 'active' : ""}><Link to="/learn">Learn</Link></NavItem> 
                 <NavItem><a target="_blank" href="https://journal.esy.com">Journal</a></NavItem> 
+
               </DesktopNav>
               <MobileNav>
                 <NavItem><AppIcon /></NavItem>
@@ -37,7 +39,7 @@ const HeaderNavContainer = styled.div`
     font-family: 'Spartan',sans-serif;
     font-weight: 500;
     max-width: 490px;
-    max-width: 150px;
+    max-width: 225px;
 
 `
 

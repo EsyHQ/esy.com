@@ -2,7 +2,7 @@
 slug: "/esy-is-for-essay"
 date: "2023-01-01"
 title: "Esy is for Essay"
-journal_name: "blog"
+journal_name: "learn"
 tags: [ "@ai", "machine-learning" ]
 featuredImage: ../mdImages/esy-bg-img.jpeg
 featuredImagePath: "/purple-quills.png"

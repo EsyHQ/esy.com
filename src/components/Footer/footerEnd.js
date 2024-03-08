@@ -25,7 +25,7 @@ const FooterEnd = () => {
                         {/* 2022 Esy Research Technologies */}
                         {/* 2023 Esy Technologies, LLC. */}
                         {/* 2023 Esy Technologies */}
-                        2034  esy.com
+                      2024  esy Journal.
                         </a>
                     </Trademark>
 
@@ -56,7 +56,7 @@ const FooterEndContainer = styled.div`
 
     a {
         opacity: 0.5;
-        font-size: 14px !important;
+        font-size: 12px !important;
 
         @media(max-width: 600px) {
           font-size: 12px !important;
