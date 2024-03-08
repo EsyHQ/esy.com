@@ -87,6 +87,7 @@ export const pageQuery = graphql`
         title
         journal_name
         excerpt
+        featuredImagePath
         featuredImage {
             childImageSharp {
                 gatsbyImageData(width: 1400)

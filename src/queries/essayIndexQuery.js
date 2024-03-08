@@ -14,12 +14,12 @@ export const essayIndexQuery = graphql`
                             slug
                             journal_name
                             excerpt
+                            featuredImagePath
                             featuredImage {
                                 childImageSharp {
                                     gatsbyImageData(width: 800)
                                 }
                             }
-                            featuredImagePath
                         }
                     }
                 }

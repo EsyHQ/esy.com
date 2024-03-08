@@ -59,6 +59,7 @@ export const Head = ({ data, location }) => {
   const assetsUrl = "https://assets.esy.com"
   const url = `${domain}${location.pathname}`
   const { title, journal_name, date, excerpt, featuredImagePath } = data?.markdownRemark?.frontmatter
+  const defaultImage = `${assetsUrl}/images/esy-bg-img.jpeg`
 
   const meta = { 
     title,
@@ -66,7 +67,7 @@ export const Head = ({ data, location }) => {
     url,
     type: 'article',
     twitterUsername: '@esyjournal',
-    image: `${assetsUrl}${featuredImagePath}`,
+    image: featuredImagePath ? `${assetsUrl}${featuredImagePath}` : defaultImage,
   }
 
   return <SEO meta={meta} />
@@ -84,6 +85,7 @@ export const pageQuery = graphql`
         title
         journal_name
         excerpt
+        featuredImagePath
         featuredImage {
             childImageSharp {
                 gatsbyImageData(width: 1400)

@@ -1,6 +1,6 @@
 import * as React from "react"
 import styled from "styled-components"
-import Layout from "src/components/Layout/container"
+import Layout from "src/components/Layout"
 import SEO from "src/components/SEO"
 import { useSiteMetadata } from "src/hooks/use-site-metadata"
 
