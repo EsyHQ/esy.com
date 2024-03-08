@@ -14,3 +14,18 @@ exports.onCreateWebpackConfig = ({ stage, actions }) => {
         },
     })
 }
+
+exports.createSchemaCustomization = ({ actions }) => {
+    const { createTypes } = actions;
+    const typeDefs = `
+      type MarkdownRemarkFrontmatter {
+        featuredImagePath: String
+        featuredImage: File @fileByRelativePath
+      }
+      type MarkdownRemark implements Node {
+        frontmatter: MarkdownRemarkFrontmatter
+      }
+    `;
+    createTypes(typeDefs);
+  };
+  

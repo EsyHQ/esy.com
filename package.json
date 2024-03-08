@@ -24,7 +24,6 @@
     "@lexical/react": "^0.10.0",
     "@mdx-js/mdx": "^2.3.0",
     "@mdx-js/react": "^2.3.0",
-    "@metamask/detect-provider": "github:metamask/detect-provider",
     "@mui/material": "^5.13.4",
     "@segment/analytics-next": "^1.51.7",
     "@sendgrid/client": "^7.7.0",
