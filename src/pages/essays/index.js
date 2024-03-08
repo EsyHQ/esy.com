@@ -28,7 +28,7 @@ export default EssayIndexPage
 
 
 export const indexQuery = graphql`
-    query EssaylIndexQuery  {
+    query EssayIndexQuery  {
         allMarkdownRemark(
             sort: { fields: [frontmatter___date], order: DESC }
             filter: { frontmatter: { journal_name: { eq: "essays" } } }
