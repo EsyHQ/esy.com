@@ -5,7 +5,7 @@ title: "Esy is for Essay"
 journal_name: "learn"
 tags: [ "@ai", "machine-learning" ]
 featuredImage: ../mdImages/esy-bg-img.jpeg
-featuredImagePath: "/purple-quills.png"
+featuredImagePath: "/esy-bg-img.jpeg"
 excerpt: "I've been having a blast lately, you know, the kind where you stay up all night for hours obsessing over a brand new toy and it's all due to MidJourney..."
 ---
 
