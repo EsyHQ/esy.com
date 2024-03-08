@@ -1,7 +1,7 @@
 import { graphql } from 'gatsby'
 
 export const essayIndexQuery = graphql`
-    query EssaylIndexQuery  {
+    query EssayIndexQuery  {
         allMarkdownRemark(
             sort: { fields: [frontmatter___date], order: DESC }
             filter: { frontmatter: { journal_name: { eq: "essays" } } }
