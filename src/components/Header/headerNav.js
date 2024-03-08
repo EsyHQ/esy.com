@@ -14,11 +14,8 @@ const HeaderNav = ({ activeNav }) => {
   return (<HeaderNavContainer>
               <DesktopNav>
                 <NavItem className={activeNav === 1 ? 'active' : ""}><Link to="/essays">Essays</Link></NavItem> 
-                <NavItem><a href="https://journal.esy.com">Journal</a></NavItem> 
-                {/* <NavItem className={activeNav === 2 ? 'active' : ""}><Link to="/blog">Journal</Link></NavItem>  */}
-                {/* <NavItem><EmailForm /></NavItem> */}
+                <NavItem><a target="_blank" href="https://journal.esy.com">Journal</a></NavItem> 
               </DesktopNav>
-
               <MobileNav>
                 <NavItem><AppIcon /></NavItem>
               </MobileNav>
