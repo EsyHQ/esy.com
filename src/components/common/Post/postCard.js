@@ -12,9 +12,9 @@ const PostCard = props => {
     const edge = postData
     const { title, excerpt, feature_image, primary_tag, published_at, slug, reading_time } = edge.node
     const formattedPublishedDate = moment(published_at).local().format('MMM DD YYYY').split(' ')
-    const primaryTag = primary_tag && primary_tag.name || "blog"
+    const primaryTag = primary_tag && primary_tag.name || "learn"
     const tagMap = {
-        "blog": { path: "/blog"},
+        "learn": { path: "/learn"},
         "ai-journal": { path: "/@ai"}
     }
     const postPath = `${tagMap[primaryTag].path}/${slug}` 

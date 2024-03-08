@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import { BlogWrapper } from 'src/components/Page/Journal/styles'
+import { BlogWrapper } from 'src/components/Page/Learn/styles'
 import Layout from "src/components/Layout"
 import PostList from 'src/components/Post/postList'
 import SEO from 'src/components/SEO'

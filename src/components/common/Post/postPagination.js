@@ -14,14 +14,14 @@ const PostPagination = ({ nextPostSlug, prevPostSlug }) => {
     return (
         <PostPaginationWrapper>
             <Link 
-                to={`/blog/${nextPostSlug ? nextPostSlug.slug : '/'}`}
+                to={`/learn/${nextPostSlug ? nextPostSlug.slug : '/'}`}
                 className={`button ${disabledNext}`}
                 >
                 <PreviousPost><ArrowIcon />Prev</PreviousPost>
             </Link>
 
             <Link 
-                to={`/blog/${prevPostSlug ? prevPostSlug.slug : '/'}`}
+                to={`/learn/${prevPostSlug ? prevPostSlug.slug : '/'}`}
                 className={`button ${disabledPrev}`}
             >
                 <NextPost>Next<ArrowIcon /></NextPost></Link>
