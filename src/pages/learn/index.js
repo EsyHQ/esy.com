@@ -38,6 +38,8 @@ export const indexQuery = graphql`
                                     gatsbyImageData(width: 800)
                                 }
                             }
+
+                            featuredImagePath
                         }
                     }
                 }
@@ -51,10 +53,10 @@ export const Head = () => {
     const { description, image, siteUrl, type, twitterUsername } = useSiteMetadata()
 
     const meta = {
-        title: "Blog | esy",
+        title: "Learn | esy",
         description,
         image,
-        url: `${siteUrl}/blog`,
+        url: `${siteUrl}/learn`,
         type,
         twitterUsername,
     }

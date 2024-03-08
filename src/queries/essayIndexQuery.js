@@ -19,6 +19,7 @@ export const essayIndexQuery = graphql`
                                     gatsbyImageData(width: 800)
                                 }
                             }
+                            featuredImagePath
                         }
                     }
                 }

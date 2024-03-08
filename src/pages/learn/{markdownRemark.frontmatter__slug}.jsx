@@ -63,6 +63,7 @@ export const Head = ({ data, location }) => {
   const url = `${domain}${location.pathname}`
   const assetsUrl = "https://assets.esy.com"
   const { title, journal_name, date, excerpt, featuredImagePath } = data?.markdownRemark?.frontmatter
+  const defaultImage = `${assetsUrl}/images/esy-bg-img.jpeg`
 
   const meta = { 
     title,
@@ -70,7 +71,7 @@ export const Head = ({ data, location }) => {
     url,
     type: 'article',
     twitterUsername: '@esyjournal',
-    image: `${assetsUrl}${featuredImagePath}`,
+    image: featuredImagePath ? `${assetsUrl}${featuredImagePath}` : defaultImage,
   }
 
   return <SEO meta={meta} />
