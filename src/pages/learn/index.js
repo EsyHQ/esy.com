@@ -1912,7 +1912,7 @@ export default function BlogIndexPage({ data }) {
 <section class=" border-gray-100 bg-primary dark:bg-gray-800 dark:border-gray-700">
   <div class="max-w-screen-xl px-4 py-8 mx-auto sm:py-16 lg:py-24">
     <div class="max-w-2xl mx-auto text-center">
-      <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-white">Stay in touch
+      <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl dark:text-white">Stay in touch
       </h2>
       <p class="max-w-xl mx-auto mb-6 text-gray-500 md:text-lg dark:text-gray-400">
         Stay up to date with the roadmap
@@ -1944,7 +1944,7 @@ export default function BlogIndexPage({ data }) {
         </div>
 
         <div class="text-sm text-left text-gray-500 dark:text-gray-300">We care about the protection of
-          your data. Read our <a href="#" class="text-gray-900 underline dark:text-white hover:no-underline">Privacy
+          your data. Read our <a href="#" class="text-white underline dark:text-white hover:no-underline">Privacy
             Policy</a>.
         </div>
       </form>
