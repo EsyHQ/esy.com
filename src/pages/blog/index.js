@@ -1,69 +1,3 @@
-// import React from 'react'
-// import { graphql } from 'gatsby'
-// import { BlogWrapper } from 'src/components/Page/Learn/styles'
-// import Layout from "src/components/Layout"
-// import PostList from 'src/components/Post/postList'
-// import SEO from 'src/components/SEO'
-// import { useSiteMetadata } from 'src/hooks/use-site-metadata'
-
-
-// export default function LearnIndexPage({ data }) {
-//     const { edges } = data?.allMarkdownRemark
-
-//     return (<Layout>
-//         <BlogWrapper>
-//             <PostList posts={edges} />
-//         </BlogWrapper>
-//     </Layout>)
-// }
-
-
-// export const indexQuery = graphql`
-//     query BlogIndexQuery  {
-//         allMarkdownRemark(
-//             sort: { fields: [frontmatter___date], order: DESC }
-//             filter: { frontmatter: { journal_name: { eq: "learn" } } }
-//             ) {
-//                 edges {
-//                     node {
-//                         frontmatter {
-//                             date
-//                             title
-//                             slug
-//                             journal_name
-//                             excerpt
-//                             featuredImagePath
-//                             featuredImage {
-//                                 childImageSharp {
-//                                     gatsbyImageData(width: 800)
-//                                 }
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
-//       }
-// `
-
-
-
-// export const Head = () => {
-//     const { description, image, siteUrl, type, twitterUsername } = useSiteMetadata()
-
-//     const meta = {
-//         title: "Learn | esy",
-//         description,
-//         image,
-//         url: `${siteUrl}/learn`,
-//         type,
-//         twitterUsername,
-//     }
-
-//     return <SEO meta={meta} />
-// }
-
-
-
 import React from 'react'
 import { graphql } from 'gatsby'
 import { BlogWrapper } from 'src/components/Page/Learn/styles'
@@ -71,42 +5,6 @@ import Layout from "src/components/Layout"
 import PostList from 'src/components/Post/postList'
 import SEO from 'src/components/SEO'
 import { useSiteMetadata } from 'src/hooks/use-site-metadata'
-
-// Blog thumbnail images
-import BlogThumbnail1 from 'src/images/blog/blog-thumbnail-1.png';
-import BlogThumbnail2 from 'src/images/blog/blog-thumbnail-2.png';
-import BlogThumbnail3 from 'src/images/blog/blog-thumbnail-3.png';
-import BlogThumbnail4 from 'src/images/blog/blog-thumbnail-4.png';
-import BlogThumbnail5 from 'src/images/blog/blog-thumbnail-5.png';
-import BlogThumbnail6 from 'src/images/blog/blog-thumbnail-6.png';
-import BlogThumbnail7 from 'src/images/blog/blog-thumbnail-7.png';
-import BlogThumbnail8 from 'src/images/blog/blog-thumbnail-8.png';
-import BlogThumbnail9 from 'src/images/blog/blog-thumbnail-9.png';
-import BlogThumbnail10 from 'src/images/blog/blog-thumbnail-10.png';
-
-// Blog post images
-import BlogImage1 from 'src/images/blog/image-1.jpg';
-import BlogImage2 from 'src/images/blog/image-2.jpg';
-import BlogImage3 from 'src/images/blog/image-3.jpg';
-
-// User avatar images
-import UserBonnieGreen from 'src/images/users/bonnie-green.png';
-import UserHeleneEngels from 'src/images/users/helene-engels.png';
-import UserJeseLeos from 'src/images/users/jese-leos.png';
-import UserJosephMcfall from 'src/images/users/joseph-mcfall.png';
-import UserLanaByrd from 'src/images/users/lana-byrd.png';
-import UserLeslieLivingston from 'src/images/users/leslie-livingston.png';
-import UserMichaelGough from 'src/images/users/michael-gough.png';
-import UserNeilSims from 'src/images/users/neil-sims.png';
-import UserRobertBrown from 'src/images/users/robert-brown.png';
-import UserRobertaCasas from 'src/images/users/roberta-casas.png';
-import UserThomasLean from 'src/images/users/thomas-lean.png';
-
-
-// Hero images 
-import HeroImage1 from 'src/images/hero/blog-image.png'
-import HeroImage2 from 'src/images/esy-bg-img.jpeg'
-
 
 
 export default function BlogIndexPage({ data }) {
@@ -117,7 +15,7 @@ export default function BlogIndexPage({ data }) {
 <header>
     <nav id="mainNavbar" data-sticky="false" class="dark:bg-transparent bg-transparent border-gray-200 py-2.5 fixed w-full z-30 top-0 start-0 data-[sticky=true]:bg-white data-[sticky=true]:border-b dark:data-[sticky=true]:bg-gray-800 dark:data-[sticky=true]:border-gray-700">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4">
-            <a href="/" class="flex items-center">
+            <a href="http://localhost:1313/" class="flex items-center">
                 <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
                 <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
             </a>
@@ -145,25 +43,25 @@ export default function BlogIndexPage({ data }) {
             <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1 bg-white dark:bg-gray-800 lg:bg-transparent lg:dark:bg-transparent mt-2 lg:mt-0" id="mobile-menu-2">
                 <ul class="flex flex-col rounded-lg font-medium lg:flex-row lg:space-x-8">
                     <li>
-                        <a href="/" class="block py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Home</a>
+                        <a href="http://localhost:1313/" class="block py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" aria-current="page">Home</a>
                     </li>
                     <li>
-                        <a href="/services/services-1/" class="block py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                        <a href="http://localhost:1313/services/services-1/" class="block py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Services</a>
                     </li>
                     <li>
-                        <a href="/about/about-1/" class="block py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                        <a href="http://localhost:1313/about/about-1/" class="block py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">About</a>
                     </li>
                     <li>
-                        <a href="/pricing/pricing-1/" class="block py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
+                        <a href="http://localhost:1313/pricing/pricing-1/" class="block py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
                     </li>
                     <li>
-                        <a href="/team/team-1/" class="block py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Team</a>
+                        <a href="http://localhost:1313/team/team-1/" class="block py-2 pr-4 pl-3 text-gray-900 border-b border-gray-100 hover:bg-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Team</a>
                     </li>
                     <li>
-                        <a href="/blog/homepage/" class="block py-2 pr-4 pl-3 text-gray-900 hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
+                        <a href="http://localhost:1313/blog/homepage/" class="block py-2 pr-4 pl-3 text-gray-900 hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Blog</a>
                     </li>
                     <li>
-                        <a href="/contact/contact-1/" class="block py-2 pr-4 pl-3 text-gray-900 hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                        <a href="http://localhost:1313/contact/contact-1/" class="block py-2 pr-4 pl-3 text-gray-900 hover:bg-gray-100 lg:hover:bg-transparent lg:hover:text-primary-700 lg:p-0 dark:text-white lg:dark:hover:text-primary-500 dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -197,34 +95,34 @@ export default function BlogIndexPage({ data }) {
             </button>
             <ul id="dropdown-landings" class="hidden py-2 space-y-2">
                   <li>
-                     <a href="/landing/agency/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Agency</a>
+                     <a href="http://localhost:1313/landing/agency/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Agency</a>
                   </li>
                   <li>
-                     <a href="/landing/mobile-application/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Mobile app</a>
+                     <a href="http://localhost:1313/landing/mobile-application/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Mobile app</a>
                   </li>
                   <li>
-                    <a href="/landing/digital-product/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Digital product</a>
+                    <a href="http://localhost:1313/landing/digital-product/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Digital product</a>
                   </li>
                   <li>
-                    <a href="/landing/saas/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">SaaS product</a>
+                    <a href="http://localhost:1313/landing/saas/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">SaaS product</a>
                   </li>
                   <li>
-                    <a href="/landing/open-source/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Open-source</a>
+                    <a href="http://localhost:1313/landing/open-source/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Open-source</a>
                  </li>
                  <li>
-                    <a href="/landing/pre-launch/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Pre-launch page</a>
+                    <a href="http://localhost:1313/landing/pre-launch/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Pre-launch page</a>
                  </li>
                  <li>
-                    <a href="/landing/physical-product/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Physical product</a>
+                    <a href="http://localhost:1313/landing/physical-product/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Physical product</a>
                  </li>
                   <li>
-                     <a href="/landing/crypto/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Crypto exchange</a>
+                     <a href="http://localhost:1313/landing/crypto/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Crypto exchange</a>
                   </li>
                   <li>
-                     <a href="/landing/event/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Event schedule</a>
+                     <a href="http://localhost:1313/landing/event/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Event schedule</a>
                   </li>
                   <li>
-                     <a href="/landing/ngo/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">NGO presentation</a>
+                     <a href="http://localhost:1313/landing/ngo/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">NGO presentation</a>
                   </li>
             </ul>
          </li>
@@ -240,13 +138,13 @@ export default function BlogIndexPage({ data }) {
             </button>
             <ul id="dropdown-about" class="hidden py-2 space-y-2">
                   <li>
-                     <a href="/about/about-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">About feature list</a>
+                     <a href="http://localhost:1313/about/about-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">About feature list</a>
                   </li>
                   <li>
-                     <a href="/about/about-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">About with video</a>
+                     <a href="http://localhost:1313/about/about-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">About with video</a>
                   </li>
                   <li>
-                     <a href="/about/about-3/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">About with statistics</a>
+                     <a href="http://localhost:1313/about/about-3/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">About with statistics</a>
                   </li>
             </ul>
          </li>
@@ -263,16 +161,16 @@ export default function BlogIndexPage({ data }) {
             </button>
             <ul id="dropdown-services" class="hidden py-2 space-y-2">
                   <li>
-                     <a href="/services/services-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Services feature icons</a>
+                     <a href="http://localhost:1313/services/services-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Services feature icons</a>
                   </li>
                   <li>
-                     <a href="/services/services-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Services with images</a>
+                     <a href="http://localhost:1313/services/services-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Services with images</a>
                   </li>
                   <li>
-                     <a href="/services/services-3/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Services image cards</a>
+                     <a href="http://localhost:1313/services/services-3/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Services image cards</a>
                   </li>
                   <li>
-                     <a href="/services/services-4/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Services statistics</a>
+                     <a href="http://localhost:1313/services/services-4/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Services statistics</a>
                   </li>
             </ul>
          </li>
@@ -288,16 +186,16 @@ export default function BlogIndexPage({ data }) {
             </button>
             <ul id="dropdown-team" class="hidden py-2 space-y-2">
                   <li>
-                     <a href="/team/team-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Team hover cards</a>
+                     <a href="http://localhost:1313/team/team-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Team hover cards</a>
                   </li>
                   <li>
-                     <a href="/team/team-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Team profile cards</a>
+                     <a href="http://localhost:1313/team/team-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Team profile cards</a>
                   </li>
                   <li>
-                     <a href="/team/team-3/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Team masonry grid</a>
+                     <a href="http://localhost:1313/team/team-3/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Team masonry grid</a>
                   </li>
                   <li>
-                     <a href="/team/team-4/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Team outline cards</a>
+                     <a href="http://localhost:1313/team/team-4/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Team outline cards</a>
                   </li>
             </ul>
          </li>
@@ -314,16 +212,16 @@ export default function BlogIndexPage({ data }) {
             </button>
             <ul id="dropdown-pricing" class="hidden py-2 space-y-2">
                   <li>
-                     <a href="/pricing/pricing-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Pricing single plan</a>
+                     <a href="http://localhost:1313/pricing/pricing-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Pricing single plan</a>
                   </li>
                   <li>
-                     <a href="/pricing/pricing-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Pricing three plans</a>
+                     <a href="http://localhost:1313/pricing/pricing-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Pricing three plans</a>
                   </li>
                   <li>
-                     <a href="/pricing/pricing-3/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Pricing price toggle</a>
+                     <a href="http://localhost:1313/pricing/pricing-3/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Pricing price toggle</a>
                   </li>
                   <li>
-                     <a href="/pricing/pricing-4/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Pricing comparison</a>
+                     <a href="http://localhost:1313/pricing/pricing-4/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Pricing comparison</a>
                   </li>
             </ul>
          </li>
@@ -340,16 +238,16 @@ export default function BlogIndexPage({ data }) {
             </button>
             <ul id="dropdown-contact" class="hidden py-2 space-y-2">
                   <li>
-                     <a href="/contact/contact-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Contact with search</a>
+                     <a href="http://localhost:1313/contact/contact-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Contact with search</a>
                   </li>
                   <li>
-                     <a href="/contact/contact-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Contact with FAQ</a>
+                     <a href="http://localhost:1313/contact/contact-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Contact with FAQ</a>
                   </li>
                   <li>
-                     <a href="/contact/contact-3/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Contact with image</a>
+                     <a href="http://localhost:1313/contact/contact-3/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Contact with image</a>
                   </li>
                   <li>
-                     <a href="/contact/contact-4/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Contact with options</a>
+                     <a href="http://localhost:1313/contact/contact-4/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Contact with options</a>
                   </li>
             </ul>
          </li>
@@ -366,10 +264,10 @@ export default function BlogIndexPage({ data }) {
             </button>
             <ul id="dropdown-blog" class="hidden py-2 space-y-2">
                   <li>
-                     <a href="/blog/homepage/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Main page</a>
+                     <a href="http://localhost:1313/blog/homepage/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Main page</a>
                   </li>
                   <li>
-                     <a href="/blog/article/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Article page</a>
+                     <a href="http://localhost:1313/blog/article/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Article page</a>
                   </li>
             </ul>
          </li>
@@ -385,10 +283,10 @@ export default function BlogIndexPage({ data }) {
             </button>
             <ul id="dropdown-testimonials" class="hidden py-2 space-y-2">
                   <li>
-                     <a href="/testimonials/testimonials-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Testimonial statistics</a>
+                     <a href="http://localhost:1313/testimonials/testimonials-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Testimonial statistics</a>
                   </li>
                   <li>
-                     <a href="/testimonials/testimonials-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Testimonial cards</a>
+                     <a href="http://localhost:1313/testimonials/testimonials-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Testimonial cards</a>
                   </li>
             </ul>
          </li>
@@ -405,7 +303,7 @@ export default function BlogIndexPage({ data }) {
             </button>
             <ul id="dropdown-portfolio" class="hidden py-2 space-y-2">
                   <li>
-                     <a href="/portfolio/project-showcase/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Project Showcase</a>
+                     <a href="http://localhost:1313/portfolio/project-showcase/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Project Showcase</a>
                   </li>
             </ul>
          </li>
@@ -421,22 +319,22 @@ export default function BlogIndexPage({ data }) {
             </button>
             <ul id="dropdown-auth" class="hidden py-2 space-y-2">
                   <li>
-                     <a href="/authentication/login-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Login feature list</a>
+                     <a href="http://localhost:1313/authentication/login-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Login feature list</a>
                   </li>
                   <li>
-                     <a href="/authentication/login-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Login illustration</a>
+                     <a href="http://localhost:1313/authentication/login-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Login illustration</a>
                   </li>
                   <li>
-                     <a href="/authentication/login-3/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Login background</a>
+                     <a href="http://localhost:1313/authentication/login-3/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Login background</a>
                   </li>
                   <li>
-                     <a href="/authentication/register-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Register feature list</a>
+                     <a href="http://localhost:1313/authentication/register-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Register feature list</a>
                   </li>
                   <li>
-                     <a href="/authentication/register-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Register illustration</a>
+                     <a href="http://localhost:1313/authentication/register-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Register illustration</a>
                   </li>
                   <li>
-                     <a href="/authentication/register-3/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Register background</a>
+                     <a href="http://localhost:1313/authentication/register-3/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Register background</a>
                   </li>
             </ul>
          </li>
@@ -452,13 +350,13 @@ export default function BlogIndexPage({ data }) {
             </button>
             <ul id="dropdown-forgot" class="hidden py-2 space-y-2">
                   <li>
-                     <a href="/authentication/forgot-password-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Feature list</a>
+                     <a href="http://localhost:1313/authentication/forgot-password-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Feature list</a>
                   </li>
                   <li>
-                     <a href="/authentication/forgot-password-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Illustration</a>
+                     <a href="http://localhost:1313/authentication/forgot-password-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Illustration</a>
                   </li>
                   <li>
-                     <a href="/authentication/forgot-password-3/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Background image</a>
+                     <a href="http://localhost:1313/authentication/forgot-password-3/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Background image</a>
                   </li>
             </ul>
          </li>
@@ -476,13 +374,13 @@ export default function BlogIndexPage({ data }) {
             </button>
             <ul id="dropdown-reset" class="hidden py-2 space-y-2">
                <li>
-                  <a href="/authentication/reset-password-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Feature list</a>
+                  <a href="http://localhost:1313/authentication/reset-password-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Feature list</a>
                </li>
                <li>
-                  <a href="/authentication/reset-password-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Illustration</a>
+                  <a href="http://localhost:1313/authentication/reset-password-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Illustration</a>
                </li>
                <li>
-                  <a href="/authentication/reset-password-3/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Background image</a>
+                  <a href="http://localhost:1313/authentication/reset-password-3/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Background image</a>
                </li>
             </ul>
          </li>
@@ -498,19 +396,19 @@ export default function BlogIndexPage({ data }) {
             </button>
             <ul id="dropdown-status" class="hidden py-2 space-y-2">
                   <li>
-                     <a href="/status/404-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">404 with search</a>
+                     <a href="http://localhost:1313/status/404-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">404 with search</a>
                   </li>
                   <li>
-                     <a href="/status/404-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">404 with illustration</a>
+                     <a href="http://localhost:1313/status/404-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">404 with illustration</a>
                   </li>
                   <li>
-                     <a href="/status/404-3/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">404 with home button</a>
+                     <a href="http://localhost:1313/status/404-3/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">404 with home button</a>
                   </li>
                   <li>
-                     <a href="/status/500-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">500 with illustration</a>
+                     <a href="http://localhost:1313/status/500-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">500 with illustration</a>
                   </li>
                   <li>
-                     <a href="/status/500-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">500 with background</a>
+                     <a href="http://localhost:1313/status/500-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">500 with background</a>
                   </li>
             </ul>
          </li>
@@ -527,10 +425,10 @@ export default function BlogIndexPage({ data }) {
             </button>
             <ul id="dropdown-legal" class="hidden py-2 space-y-2">
                   <li>
-                     <a href="/legal/terms-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Page with sidebar</a>
+                     <a href="http://localhost:1313/legal/terms-1/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Page with sidebar</a>
                   </li>
                   <li>
-                     <a href="/legal/terms-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Page with contact</a>
+                     <a href="http://localhost:1313/legal/terms-2/" class="flex items-center w-full p-2 pl-11 text-gray-900 transition duration-75 rounded-lg group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Page with contact</a>
                   </li>
             </ul>
          </li>
@@ -574,7 +472,7 @@ export default function BlogIndexPage({ data }) {
     <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-20">
       <article>
         <a href="#" title="">
-          <img class="object-cover w-full rounded-lg" src={HeroImage2} alt="blog image" />
+          <img class="object-cover w-full rounded-lg" src="http://localhost:1313//images/hero/blog-image.png" alt="blog image" />
         </a>
 
         <div class="mt-5 space-y-4">
@@ -589,7 +487,7 @@ export default function BlogIndexPage({ data }) {
             Programming
           </span>
 
-          <h2 class="text-2xl font-bold leading-tight tracking-tight text-white dark:text-white hover:underline">
+          <h2 class="text-2xl font-bold leading-tight tracking-tight text-gray-900 dark:text-white hover:underline">
             <a href="#" title="">
               Releasing code in large corporations is slow - and there is a good reason for it
             </a>
@@ -598,7 +496,7 @@ export default function BlogIndexPage({ data }) {
           <div class="flex items-center gap-3">
             <img class="w-8 h-8 rounded-full"
               src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gough.png" alt="" />
-            <div class="text-lg font-medium leading-tight text-white dark:text-white">
+            <div class="text-lg font-medium leading-tight text-gray-900 dark:text-white">
               <div>
                 Micheal Gough
               </div>
@@ -615,7 +513,7 @@ export default function BlogIndexPage({ data }) {
           </p>
 
           <a href="#" title=""
-            class="inline-flex items-center text-base font-semibold leading-tight text-white hover:underline dark:text-primary-500">
+            class="inline-flex items-center text-base font-semibold leading-tight text-primary-700 hover:underline dark:text-primary-500">
             Read more
             <svg aria-hidden="true" class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg">
@@ -641,7 +539,7 @@ export default function BlogIndexPage({ data }) {
               Tutorial
             </span>
 
-            <h2 class="text-2xl font-bold leading-tight tracking-tight text-white dark:text-white hover:underline">
+            <h2 class="text-2xl font-bold leading-tight tracking-tight text-gray-900 dark:text-white hover:underline">
               <a href="#" title="">
                 How to rank higher on Google (6 easy steps)
               </a>
@@ -654,7 +552,7 @@ export default function BlogIndexPage({ data }) {
             </p>
 
             <a href="#" title=""
-              class="inline-flex items-center text-base font-semibold leading-tight text-white hover:underline dark:text-primary-500">
+              class="inline-flex items-center text-base font-semibold leading-tight text-primary-700 hover:underline dark:text-primary-500">
               Read more
               <svg aria-hidden="true" class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg">
@@ -679,7 +577,7 @@ export default function BlogIndexPage({ data }) {
               Interview
             </span>
 
-            <h2 class="text-2xl font-bold leading-tight tracking-tight text-white dark:text-white hover:underline">
+            <h2 class="text-2xl font-bold leading-tight tracking-tight text-gray-900 dark:text-white hover:underline">
               <a href="#" title="">
                 How to schedule your tweets to send later
               </a>
@@ -691,7 +589,7 @@ export default function BlogIndexPage({ data }) {
             </p>
 
             <a href="#" title=""
-              class="inline-flex items-center text-base font-semibold leading-tight text-white hover:underline dark:text-primary-500">
+              class="inline-flex items-center text-base font-semibold leading-tight text-primary-700 hover:underline dark:text-primary-500">
               Read more
               <svg aria-hidden="true" class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg">
@@ -716,7 +614,7 @@ export default function BlogIndexPage({ data }) {
               Marketing
             </span>
 
-            <h2 class="text-2xl font-bold leading-tight tracking-tight text-white dark:text-white hover:underline">
+            <h2 class="text-2xl font-bold leading-tight tracking-tight text-gray-900 dark:text-white hover:underline">
               <a href="#" class="hover:underline" title="">
                 12 SEO best practices that everyone should follow
               </a>
@@ -727,7 +625,7 @@ export default function BlogIndexPage({ data }) {
             </p>
 
             <a href="#" title=""
-              class="inline-flex items-center text-base font-semibold leading-tight text-white hover:underline dark:text-primary-500">
+              class="inline-flex items-center text-base font-semibold leading-tight text-primary-700 hover:underline dark:text-primary-500">
               Read more
               <svg aria-hidden="true" class="w-4 h-4 ml-2" fill="currentColor" viewBox="0 0 20 20"
                 xmlns="http://www.w3.org/2000/svg">
@@ -850,7 +748,7 @@ export default function BlogIndexPage({ data }) {
         <div class="mt-8 space-y-12 sm:mt-12">
           <div class="flex flex-col items-start gap-8 xl:flex-row">
             <div class="relative aspect-[16/9] sm:aspect-[2/1] w-full xl:aspect-[4/3] xl:w-80 lg:shrink-0">
-              <img src={BlogThumbnail1} alt=""
+              <img src="http://localhost:1313//images/blog/blog-thumbnail-1.png" alt=""
                 class="absolute inset-0 object-cover w-full h-full bg-gray-200 rounded-lg" />
             </div>
 
@@ -874,7 +772,7 @@ export default function BlogIndexPage({ data }) {
 
               <div class="flex items-center gap-3">
                 <img class="w-8 h-8 rounded-full"
-                  src={UserMichaelGough} alt="" />
+                  src="http://localhost:1313//images/users/michael-gough.png" alt="" />
                 <div class="text-lg font-medium leading-tight text-gray-900 dark:text-white">
                   <div>
                     Micheal Gough
@@ -930,7 +828,7 @@ export default function BlogIndexPage({ data }) {
 
           <div class="flex flex-col items-start gap-8 xl:flex-row">
             <div class="relative aspect-[16/9] sm:aspect-[2/1] w-full xl:aspect-[4/3] xl:w-80 lg:shrink-0">
-              <img src={BlogThumbnail2} alt=""
+              <img src="http://localhost:1313//images/blog/blog-thumbnail-2.png" alt=""
                 class="absolute inset-0 object-cover w-full h-full bg-gray-200 rounded-lg" />
             </div>
 
@@ -954,7 +852,7 @@ export default function BlogIndexPage({ data }) {
 
               <div class="flex items-center gap-3">
                 <img class="w-8 h-8 rounded-full"
-                  src={UserThomasLean} alt="" />
+                  src="http://localhost:1313//images/users/thomas-lean.png" alt="" />
                 <div class="text-lg font-medium leading-tight text-gray-900 dark:text-white">
                   <div>
                     Thomas Lean
@@ -1010,7 +908,7 @@ export default function BlogIndexPage({ data }) {
 
           <div class="flex flex-col items-start gap-8 xl:flex-row">
             <div class="relative aspect-[16/9] sm:aspect-[2/1] w-full xl:aspect-[4/3] xl:w-80 lg:shrink-0">
-              <img src={BlogThumbnail3} alt=""
+              <img src="http://localhost:1313//images/blog/blog-thumbnail-3.png" alt=""
                 class="absolute inset-0 object-cover w-full h-full bg-gray-200 rounded-lg" />
             </div>
 
@@ -1033,7 +931,7 @@ export default function BlogIndexPage({ data }) {
 
               <div class="flex items-center gap-3">
                 <img class="w-8 h-8 rounded-full"
-                  src={UserBonnieGreen} alt="" />
+                  src="http://localhost:1313//images/users/bonnie-green.png" alt="" />
                 <div class="text-lg font-medium leading-tight text-gray-900 dark:text-white">
                   <div>
                     Bonnie Green
@@ -1089,7 +987,7 @@ export default function BlogIndexPage({ data }) {
 
           <div class="flex flex-col items-start gap-8 xl:flex-row">
             <div class="relative aspect-[16/9] sm:aspect-[2/1] w-full xl:aspect-[4/3] xl:w-80 lg:shrink-0">
-              <img src={BlogThumbnail4} alt=""
+              <img src="http://localhost:1313//images/blog/blog-thumbnail-4.png" alt=""
                 class="absolute inset-0 object-cover w-full h-full bg-gray-200 rounded-lg" />
             </div>
 
@@ -1113,7 +1011,7 @@ export default function BlogIndexPage({ data }) {
 
               <div class="flex items-center gap-3">
                 <img class="w-8 h-8 rounded-full"
-                  src={UserHeleneEngels} alt="" />
+                  src="http://localhost:1313//images/users/helene-engels.png" alt="" />
                 <div class="text-lg font-medium leading-tight text-gray-900 dark:text-white">
                   <div>
                     Helen Engels
@@ -1169,7 +1067,7 @@ export default function BlogIndexPage({ data }) {
 
           <div class="flex flex-col items-start gap-8 xl:flex-row">
             <div class="relative aspect-[16/9] sm:aspect-[2/1] w-full xl:aspect-[4/3] xl:w-80 lg:shrink-0">
-              <img src={BlogThumbnail5} alt=""
+              <img src="http://localhost:1313//images/blog/blog-thumbnail-5.png" alt=""
                 class="absolute inset-0 object-cover w-full h-full bg-gray-200 rounded-lg" />
             </div>
 
@@ -1193,7 +1091,7 @@ export default function BlogIndexPage({ data }) {
 
               <div class="flex items-center gap-3">
                 <img class="w-8 h-8 rounded-full"
-                  src={UserLanaByrd} alt="" />
+                  src="http://localhost:1313//images/users/lana-byrd.png" alt="" />
                 <div class="text-lg font-medium leading-tight text-gray-900 dark:text-white">
                   <div>
                     Karen Nelson
@@ -1249,7 +1147,7 @@ export default function BlogIndexPage({ data }) {
 
           <div class="flex flex-col items-start gap-8 xl:flex-row">
             <div class="relative aspect-[16/9] sm:aspect-[2/1] w-full xl:aspect-[4/3] xl:w-80 lg:shrink-0">
-              <img src={BlogThumbnail6} alt=""
+              <img src="http://localhost:1313//images/blog/blog-thumbnail-6.png" alt=""
                 class="absolute inset-0 object-cover w-full h-full bg-gray-200 rounded-lg" />
             </div>
 
@@ -1273,7 +1171,7 @@ export default function BlogIndexPage({ data }) {
 
               <div class="flex items-center gap-3">
                 <img class="w-8 h-8 rounded-full"
-                  src={UserMichaelGough} alt="" />
+                  src="http://localhost:1313//images/users/michael-gough.png" alt="" />
                 <div class="text-lg font-medium leading-tight text-gray-900 dark:text-white">
                   <div>
                     Micheal Gough
@@ -1329,7 +1227,7 @@ export default function BlogIndexPage({ data }) {
 
           <div class="flex flex-col items-start gap-8 xl:flex-row">
             <div class="relative aspect-[16/9] sm:aspect-[2/1] w-full xl:aspect-[4/3] xl:w-80 lg:shrink-0">
-              <img src={BlogThumbnail7} alt=""
+              <img src="http://localhost:1313//images/blog/blog-thumbnail-7.png" alt=""
                 class="absolute inset-0 object-cover w-full h-full bg-gray-200 rounded-lg" />
             </div>
 
@@ -1353,7 +1251,7 @@ export default function BlogIndexPage({ data }) {
 
               <div class="flex items-center gap-3">
                 <img class="w-8 h-8 rounded-full"
-                  src={UserJosephMcfall} alt="" />
+                  src="http://localhost:1313//images/users/joseph-mcfall.png" alt="" />
                 <div class="text-lg font-medium leading-tight text-gray-900 dark:text-white">
                   <div>
                     Joseph McFall
@@ -1409,7 +1307,7 @@ export default function BlogIndexPage({ data }) {
 
           <div class="flex flex-col items-start gap-8 xl:flex-row">
             <div class="relative aspect-[16/9] sm:aspect-[2/1] w-full xl:aspect-[4/3] xl:w-80 lg:shrink-0">
-              <img src={BlogThumbnail8} alt=""
+              <img src="http://localhost:1313//images/blog/blog-thumbnail-8.png" alt=""
                 class="absolute inset-0 object-cover w-full h-full bg-gray-200 rounded-lg" />
             </div>
 
@@ -1432,7 +1330,7 @@ export default function BlogIndexPage({ data }) {
 
               <div class="flex items-center gap-3">
                 <img class="w-8 h-8 rounded-full"
-                  src={UserLeslieLivingston} alt="" />
+                  src="http://localhost:1313//images/users/leslie-livingston.png" alt="" />
                 <div class="text-lg font-medium leading-tight text-gray-900 dark:text-white">
                   <div>
                     Karen Nelson
@@ -1488,7 +1386,7 @@ export default function BlogIndexPage({ data }) {
 
           <div class="flex flex-col items-start gap-8 xl:flex-row">
             <div class="relative aspect-[16/9] sm:aspect-[2/1] w-full xl:aspect-[4/3] xl:w-80 lg:shrink-0">
-              <img src={BlogThumbnail9} alt=""
+              <img src="http://localhost:1313//images/blog/blog-thumbnail-9.png" alt=""
                 class="absolute inset-0 object-cover w-full h-full bg-gray-200 rounded-lg" />
             </div>
 
@@ -1512,7 +1410,7 @@ export default function BlogIndexPage({ data }) {
 
               <div class="flex items-center gap-3">
                 <img class="w-8 h-8 rounded-full"
-                  src={UserRobertBrown} alt="" />
+                  src="http://localhost:1313//images/users/robert-brown.png" alt="" />
                 <div class="text-lg font-medium leading-tight text-gray-900 dark:text-white">
                   <div>
                     Robert Brown
@@ -1568,7 +1466,7 @@ export default function BlogIndexPage({ data }) {
 
           <div class="flex flex-col items-start gap-8 xl:flex-row">
             <div class="relative aspect-[16/9] sm:aspect-[2/1] w-full xl:aspect-[4/3] xl:w-80 lg:shrink-0">
-              <img src={BlogThumbnail10} alt=""
+              <img src="http://localhost:1313//images/blog/blog-thumbnail-10.png" alt=""
                 class="absolute inset-0 object-cover w-full h-full bg-gray-200 rounded-lg" />
             </div>
 
@@ -1592,7 +1490,7 @@ export default function BlogIndexPage({ data }) {
 
               <div class="flex items-center gap-3">
                 <img class="w-8 h-8 rounded-full"
-                  src={UserLanaByrd} alt="" />
+                  src="http://localhost:1313//images/users/lana-byrd.png" alt="" />
                 <div class="text-lg font-medium leading-tight text-gray-900 dark:text-white">
                   <div>
                     Lana Byrd
@@ -1768,7 +1666,7 @@ export default function BlogIndexPage({ data }) {
             <ul class="space-y-4">
               <li class="flex items-start gap-2.5">
                 <img class="object-cover w-6 h-6 rounded-full shrink-0"
-                  src={UserBonnieGreen} alt="" />
+                  src="http://localhost:1313//images/users/bonnie-green.png" alt="" />
                 <div class="flex-1 min-w-0">
                   <p class="text-base font-semibold text-gray-900 truncate dark:text-white">
                     Bonnie Green
@@ -1785,7 +1683,7 @@ export default function BlogIndexPage({ data }) {
               </li>
 
               <li class="flex items-start gap-2.5">
-                <img class="object-cover w-6 h-6 rounded-full shrink-0" src={UserJeseLeos}
+                <img class="object-cover w-6 h-6 rounded-full shrink-0" src="http://localhost:1313//images/users/jese-leos.png"
                   alt="" />
                 <div class="flex-1 min-w-0">
                   <p class="text-base font-semibold text-gray-900 truncate dark:text-white">
@@ -1804,7 +1702,7 @@ export default function BlogIndexPage({ data }) {
 
               <li class="flex items-start gap-2.5">
                 <img class="object-cover w-6 h-6 rounded-full shrink-0"
-                  src={UserThomasLean} alt="" />
+                  src="http://localhost:1313//images/users/thomas-lean.png" alt="" />
                 <div class="flex-1 min-w-0">
                   <p class="text-base font-semibold text-gray-900 truncate dark:text-white">
                     Thomas Lean
@@ -1858,7 +1756,7 @@ export default function BlogIndexPage({ data }) {
 
               <li>
                 <a href="#" title=""
-                  class="flex items-center gap-2.5 text-gray-500  font-semibold hover:underline text-gray-900 dark:text-white">
+                  class="flex items-center gap-2.5 text-base font-semibold hover:underline text-gray-900 dark:text-white">
                   <svg class="w-6 h-6 fill-[#111928]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                     fill="currentColor">
                     <path
@@ -1893,10 +1791,10 @@ export default function BlogIndexPage({ data }) {
         </div>
 
         <div>
-          <img class="object-cover w-full rounded-lg dark:hidden" src="/images/placeholder-image.png"
+          <img class="object-cover w-full rounded-lg dark:hidden" src="http://localhost:1313//images/placeholder-image.png"
             alt="" />
           <img class="hidden object-cover w-full rounded-lg dark:block"
-            src="/images/placeholder-image-dark.png" alt="" />
+            src="http://localhost:1313//images/placeholder-image-dark.png" alt="" />
           <p class="mt-3 text-base font-normal text-gray-500 dark:text-gray-400">
             Students and Teachers, save up to 60% on Adobe Creative Cloud.
           </p>
@@ -1909,7 +1807,7 @@ export default function BlogIndexPage({ data }) {
   </div>
 </section>
 
-<section class=" border-gray-100 bg-primary dark:bg-gray-800 dark:border-gray-700">
+<section class="border-t border-b border-gray-100 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
   <div class="max-w-screen-xl px-4 py-8 mx-auto sm:py-16 lg:py-24">
     <div class="max-w-2xl mx-auto text-center">
       <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl dark:text-white">Stay in touch
