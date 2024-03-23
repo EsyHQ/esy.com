@@ -8,6 +8,27 @@ module.exports = {
       colors: {
         'primary': 'rgb(12, 10, 29)',
       },
+      categoryStyles: {
+        'artificial-intelligence': {
+          backgroundColor: '#dbeafe',
+          color: '#1e40af',
+          '&:hover': {
+            backgroundColor: '#bfdbfe',
+          },
+        },
+        programming: {
+          // ... (programming styles)
+        },
+        tutorial: {
+          // ... (tutorial styles)
+        },
+        interview: {
+          // ... (interview styles)
+        },
+        marketing: {
+          // ... (marketing styles)
+        },
+      },
     },
   },
   plugins: [

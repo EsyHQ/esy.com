@@ -1,17 +1,19 @@
 
+
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 
 
 module.exports = {
   siteMetadata: {
+    pathPrefix: "/",
     title: "Esy: The Smart Journal",
     description: `Esy is a digital journaling platform that offers users a suite of analytical tools for 
     discovering powerful insights about their personal writing habits.`,
     twitterUsername: `@esyjournal`,
-    image: `https://assets.esy.com/esy-1500x500.jpeg`,
-    siteUrl: "https://www.esy.com",
+    image: "images/esyjournal-brand-bg.jpeg",
+    siteUrl: process.env.GATSBY_SITE_URL,
     type: "website",
   },
   plugins: [
