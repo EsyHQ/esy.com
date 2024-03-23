@@ -42,6 +42,11 @@ export const indexQuery = graphql`
                             title
                             slug
                             author
+                            authorImage {
+                                childImageSharp {
+                                    gatsbyImageData(width: 100)
+                                }
+                            }
                             category
                             journal_name
                             excerpt

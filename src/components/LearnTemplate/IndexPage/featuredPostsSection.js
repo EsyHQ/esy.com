@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { graphql, useStaticQuery } from 'gatsby'
 import { getCategoryColorTheme } from '../utils';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+
 
 const FeaturedPostsSection = () => {
   const data = useStaticQuery(graphql`
@@ -20,7 +22,7 @@ const FeaturedPostsSection = () => {
               author
               authorImage {
                 childImageSharp {
-                  gatsbyImageData(width: 800)
+                  gatsbyImageData(width: 100)
                 }
               }
               category
@@ -84,7 +86,7 @@ const FeaturedPostsSection = () => {
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-20">
           <article>
             <Link to={`/${mainFeaturedPost.frontmatter.slug}`} title={mainFeaturedPost.frontmatter.title}>
-              <img className="object-cover w-full rounded-lg" src={mainFeaturedPost.frontmatter.featuredImagePath} alt={mainFeaturedPost.frontmatter.title} />
+              <GatsbyImage image={getImage(mainFeaturedPost.frontmatter.featuredImage)} alt={mainFeaturedPost.frontmatter.title} className="object-cover w-full rounded-lg" />
             </Link>
 
             <div className="mt-5 space-y-4">
@@ -99,7 +101,7 @@ const FeaturedPostsSection = () => {
               </h2>
 
               <div className="flex items-center gap-3">
-                <img className="w-8 h-8 rounded-full" src={mainFeaturedPost.frontmatter.authorImage} alt={mainFeaturedPost.frontmatter.author} />
+                <GatsbyImage image={getImage(mainFeaturedPost.frontmatter.authorImage)} alt={mainFeaturedPost.frontmatter.author} className="w-8 h-8 rounded-full" />
                 <div className="text-lg font-medium leading-tight text-white dark:text-white">
                   <div>{mainFeaturedPost.frontmatter.author}</div>
                   <div className="text-sm font-normal text-gray-500 dark:text-gray-400">
