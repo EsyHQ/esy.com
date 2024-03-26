@@ -1,5 +1,5 @@
 ---
-slug: "/what-is-generative-ai"
+slug: "/learn/what-is-generative-ai"
 date: "2024-03-14"
 title: "What is Generative Ai?"
 author: "Lem Uhuru"
