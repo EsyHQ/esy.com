@@ -1,5 +1,5 @@
 ---
-slug: "/what-is-prompt-engineering"
+slug: "/learn/what-is-prompt-engineering"
 date: "2024-03-14"
 title: "What is Prompt Engineering?"
 author: "Lem Uhuru"

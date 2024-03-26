@@ -8,8 +8,7 @@ import { useSiteMetadata } from 'src/hooks/use-site-metadata'
 import SEO from 'src/components/SEO'
 import Layout from "src/components/Layout"
 import PostsList from 'src/components/LearnTemplate/IndexPage/postsList'
-import CategorySection from 'src/components/LearnTemplate/categorySection'
-import FeaturedPostsSection from 'src/components/LearnTemplate/IndexPage/featuredPostsSection'
+import HeroSection from 'src/components/LearnTemplate/IndexPage/hero'
 import NewsletterSection from 'src/components/LearnTemplate/newsletterSection'
 
 
@@ -19,8 +18,7 @@ export default function LearnIndexPage({ data }) {
 
     return (<Layout>
               <main class="w-full antialiased">
-                <FeaturedPostsSection posts={edges} />
-                <CategorySection />
+                <HeroSection posts={edges} />
                 <PostsList posts={edges} />
                 <NewsletterSection />
               </main>
