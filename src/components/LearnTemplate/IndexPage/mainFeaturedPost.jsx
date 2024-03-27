@@ -14,7 +14,7 @@ export default function MainFeaturedPost({ post }) {
         </Link>
 
         <div className="mt-5 space-y-4">
-          <span className={`${categoryColorTheme}  text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded`}>
+          <span className={`${categoryColorTheme} text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded`}>
             {post.frontmatter.category}
           </span>
 
