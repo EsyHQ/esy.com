@@ -7,12 +7,12 @@ const SEO = ({ meta, pathname, children }) => {
   const { title: defaultTitle, description: defaultDescription, image, siteUrl, twitterUsername, type: defaultType } = useSiteMetadata()
 
   const seo = {
-    title: meta.title || defaultTitle,
-    description: meta.description || defaultDescription,
-    image: meta.image || `${image}`,
-    url: meta.url || `${siteUrl}${pathname || ``}`,
-    type: meta.type || defaultType,
-    twitterUsername: meta.twitterUsername || twitterUsername,
+    title: meta?.title || defaultTitle,
+    description: meta?.description || defaultDescription,
+    image: meta?.image || `${image}`,
+    url: meta?.url || `${siteUrl}${pathname || ``}`,
+    type: meta?.type || defaultType,
+    twitterUsername: meta?.twitterUsername || twitterUsername,
   }
 
 
