@@ -90,7 +90,7 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: `${__dirname}/src/images`,
       },
       __key: "images",
     },
@@ -109,13 +109,6 @@ module.exports = {
         path: `${__dirname}/src/pages/`,
       },
       __key: "pages",
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `content`,
-        path: `${__dirname}/src/content`,
-      },
     },
     {
       resolve: 'gatsby-plugin-postcss',
