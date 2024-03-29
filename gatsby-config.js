@@ -24,7 +24,6 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-root-import",
     "gatsby-plugin-sass",
-    "gatsby-transformer-remark",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
@@ -34,7 +33,9 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
+              linkImagesToOriginal: false,
               maxWidth: 1500,
+              quality: 80,
             },
           },
         ],
@@ -93,6 +94,13 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
       __key: "images",
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'mdImages',
+        path: `${__dirname}/src/images/mdImages`,
+      },
     },
     {
       resolve: "gatsby-plugin-react-svg",

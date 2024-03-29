@@ -54,9 +54,8 @@ exports.createSchemaCustomization = ({ actions }) => {
       return;
     }
   
-    result.data.allMarkdownRemark.edges.forEach(({ edge }) => {
-      console.log(node.frontmatter.slug, 'the slug');
-      const { slug } = edge.node.frontmatter;
+    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      const { slug } = node.frontmatter;
 
       createPage({
         path: `${slug}`,

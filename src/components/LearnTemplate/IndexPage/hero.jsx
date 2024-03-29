@@ -6,46 +6,47 @@ import FeaturedPostsList from './featuredPostsList';
 
 
 
-export default function HeroSection({ posts }) {
-  const data = useStaticQuery(graphql`
-    query {
-      allMarkdownRemark(
-        filter: { frontmatter: { featured: { gt: 0 } } }
-        sort: { fields: [frontmatter___featured], order: ASC }
-      ) {
-        edges {
-          node {
-            id
-            frontmatter {
-              slug
-              title
-              date(formatString: "MMM D, YYYY")
-              author
-              authorImage {
-                childImageSharp {
-                  gatsbyImageData(width: 100)
-                }
-              }
-              category
-              featured
-              featuredImagePath
-              featuredImage {
-                childImageSharp {
-                  gatsbyImageData(width: 800)
-                }
-              }
-            }
-            excerpt
-          }
-        }
-      }
-    }
-  `);
+export default function HeroSection({ data }) {
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     allMarkdownRemark(
+  //       filter: { frontmatter: { featured: { gt: 0 } } }
+  //       sort: { fields: [frontmatter___featured], order: ASC }
+  //     ) {
+  //       edges {
+  //         node {
+  //           id
+  //           frontmatter {
+  //             slug
+  //             title
+  //             date(formatString: "MMM D, YYYY")
+  //             author
+  //             authorImage {
+  //               childImageSharp {
+  //                 gatsbyImageData(width: 100)
+  //               }
+  //             }
+  //             category
+  //             featured
+  //             featuredImagePath
+  //             featuredImage {
+  //               childImageSharp {
+  //                 gatsbyImageData(width: 9000, layout: FULL_WIDTH, placeholder: BLURRED, quality: 100, formats: [AUTO, WEBP, AVIF])
+  //               }
+  //             }
+  //           }
+  //           excerpt
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
 
   const featuredPosts = data.allMarkdownRemark.edges;
   const mainFeaturedPost = featuredPosts[0].node;
   const otherFeaturedPosts = featuredPosts.slice(1);
 
+  console.log('all of the fucking dataa', data)
 
 
   return (
