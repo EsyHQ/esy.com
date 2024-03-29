@@ -11,10 +11,14 @@ const BlogPostWrapper = styled.div`
   padding: 2% 5%;
   background: rgba(12,10,29);
 
+  @media(min-width: 600px) {
+    padding-top: 150px;
+  }
+
   .inline-images {
     text-align: center;
     max-width: 900px;
-    margin: 100px auto;
+    margin: 150px auto;
     padding: 0px 10%;
   }
 
