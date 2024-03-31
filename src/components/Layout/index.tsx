@@ -13,10 +13,21 @@ import Footer from "src/components/Footer";
 import '../../styles/_globalstyles.scss'
 
 
-const Layout = ({ children, hasHeader = true, hasHeaderNav = true, 
+interface LayoutProps {
+  children: React.ReactNode;
+  hasHeader?: boolean;
+  hasHeaderNav?: boolean;
+  hasFooter?: boolean;
+  hasFooterStart?: boolean;
+  className?: string;
+}
+
+
+
+const Layout: React.FC<LayoutProps> = ({ children, hasHeader = true, hasHeaderNav = true, 
   hasFooter = true, hasFooterStart = true }) => {
 
-  return (<Grid container spaces={3}>
+  return (<Grid container spacing={3}>
             <CssBaseline />
             <LayoutWrapper>
               {hasHeader && <Header hasHeaderNav={hasHeaderNav} />}

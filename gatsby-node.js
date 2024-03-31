@@ -59,7 +59,7 @@ exports.createSchemaCustomization = ({ actions }) => {
 
       createPage({
         path: `${slug}`,
-        component: path.resolve(`./src/pages/learn/{markdownRemark.frontmatter__slug}.jsx`),
+        component: path.resolve(`./src/pages/learn/{markdownRemark.frontmatter__slug}.tsx`),
         context: {
           slug: `${slug}`,
         },
