@@ -4,11 +4,11 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 // Define the prop types for the component
 interface HeroImageProps {
-    heroImage?: IGatsbyImageData; // Making it optional
+    postFeaturedImage?: IGatsbyImageData;
 }
 
 
-const HeroImage: React.FC<HeroImageProps> = ({ heroImage }) => {
+const HeroImage: React.FC<HeroImageProps> = ({ postFeaturedImage }) => {
     const data = useStaticQuery(graphql`
         query {
             defaultImage: file(relativePath: { eq: "images/mdImages/esy-bg-img.jpeg" }) {
@@ -20,7 +20,7 @@ const HeroImage: React.FC<HeroImageProps> = ({ heroImage }) => {
     `);
 
      // Use default image if heroImage is not provided
-  const displayImage = heroImage ?? data.defaultImage.childImageSharp.gatsbyImageData;
+  const displayImage = postFeaturedImage ?? data.defaultImage.childImageSharp.gatsbyImageData;
 
   return <GatsbyImage image={displayImage} alt="Hero Image" />;
 }

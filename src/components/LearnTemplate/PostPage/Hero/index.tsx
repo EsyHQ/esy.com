@@ -1,30 +1,32 @@
 import React from 'react';
 
-import HeroImage from './HeroImage';
-import HeroMeta from './HeroMeta';
+import HeroImage from './heroImage';
+import HeroMeta from './heroMeta';
+import { IGatsbyImageData } from 'gatsby-plugin-image';
 
-// Define the structure of the props expected by the Hero component.
 interface HeroProps {
-  data: {
-    featuredImage?: IGatsbyImageData; // Optional, adjust according to your needs
-    // Add other properties from `data` as required, for example:
-    // title?: string;
-    // date?: string;
-    // author?: {
-    //   name: string;
-    //   avatar: IGatsbyImageData;
-    // };
-  };
+    postFeaturedImage?: IGatsbyImageData;
+    metaData: {
+        title: string;
+        journal_name?: string;
+        excerpt: string;
+        date: string;
+        slug: string;
+    };
 }
 
-const Hero: React.FC<HeroProps> = ({ data }) => {
-  const { featuredImage } = data;
-  return (
-    <div className="hero">
-      <HeroMeta metaData={data} />
-      <HeroImage heroImage={featuredImage} /> // Assuming HeroImage expects a prop named `heroImage`
-    </div>
-  );
-};
+
+const Hero: React.FC<HeroProps> = ({ postFeaturedImage, metaData }) => {
+    return (
+        <>
+            <div className="relative bg-gray-800">
+                <HeroImage postFeaturedImage={postFeaturedImage} />
+                <HeroMeta metaData={metaData} />
+            </div>
+        </>
+
+    );
+}
+
 
 export default Hero;

@@ -6,6 +6,11 @@ import SEO from "src/components/SEO";
 import LearnPostHero from "src/components/LearnTemplate/PostPage/Hero";
 // Import styled components as needed
 
+
+
+
+
+
 // Define the expected shape of the GraphQL query result
 interface LearnPostBySlugQuery {
   markdownRemark: {
@@ -41,20 +46,22 @@ const LearnPostTemplate: React.FC<LearnPostTemplateProps> = ({ data }) => {
     featuredImagePath,
     slug,
   } = frontmatter;
-  const image = getImage(featuredImage.childImageSharp.gatsbyImageData);
+  const postFeaturedImage = getImage(featuredImage.childImageSharp.gatsbyImageData);
+
+  const heroMeta = {
+    title,
+    journal_name,
+    excerpt,
+    date,
+    slug,
+  };
 
   return (
     <Layout className="blog-layout">
-      <SEO title={title} description={excerpt} image={featuredImagePath} />
+      {/* <SEO /> */}
       <LearnPostHero
-        heroImage={image}
-        heroMeta={{
-          title,
-          journal_name,
-          excerpt,
-          date, // Consider formatting date as needed
-          slug,
-        }}
+        postFeaturedImage={postFeaturedImage}
+        metaData={heroMeta}
       />
       <div
         className="blog-post-content"

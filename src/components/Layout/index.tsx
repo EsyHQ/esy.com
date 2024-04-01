@@ -27,8 +27,7 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children, hasHeader = true, hasHeaderNav = true, 
   hasFooter = true, hasFooterStart = true }) => {
 
-  return (<Grid container spacing={3}>
-            <CssBaseline />
+  return (<Grid container>
             <LayoutWrapper>
               {hasHeader && <Header hasHeaderNav={hasHeaderNav} />}
               {/* <MobileHeader /> */}
