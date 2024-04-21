@@ -1,18 +1,12 @@
 import React from "react";
-import { graphql, PageProps } from "gatsby";
-import { GatsbyImage, getImage, IGatsbyImageData } from "gatsby-plugin-image";
+import { graphql } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "src/components/Layout";
 import SEO from "src/components/SEO";
 import LearnPostHero from "src/components/LearnTemplate/PostPage/Hero";
-// Import styled components as needed
 
-
-
-
-
-
-// Define the expected shape of the GraphQL query result
-interface LearnPostBySlugQuery {
+// Type definitions for the expected GraphQL query result
+interface LearnPostTemplateQuery {
   markdownRemark: {
     html: string;
     frontmatter: {
@@ -31,11 +25,13 @@ interface LearnPostBySlugQuery {
   };
 }
 
-// Define the props type, extending the default PageProps with your query result
-type LearnPostTemplateProps = PageProps<LearnPostBySlugQuery>;
+// Define the props type, extending Gatsby's PageProps with the query result
+type LearnPostTemplateProps = {
+  data: LearnPostTemplateQuery; // Data from GraphQL query
+};
 
 const LearnPostTemplate: React.FC<LearnPostTemplateProps> = ({ data }) => {
-  const { markdownRemark } = data;
+  const { markdownRemark } = data; // Data fetched by the GraphQL query
   const { frontmatter, html } = markdownRemark;
   const {
     title,
@@ -46,35 +42,27 @@ const LearnPostTemplate: React.FC<LearnPostTemplateProps> = ({ data }) => {
     featuredImagePath,
     slug,
   } = frontmatter;
+
+  // Use Gatsby's getImage helper to safely get the image data
   const postFeaturedImage = getImage(featuredImage.childImageSharp.gatsbyImageData);
 
-  const heroMeta = {
-    title,
-    journal_name,
-    excerpt,
-    date,
-    slug,
-  };
-
   return (
-    <Layout className="blog-layout">
-      {/* <SEO /> */}
+    <Layout>
+      <SEO title={title} description={excerpt} />
       <LearnPostHero
         postFeaturedImage={postFeaturedImage}
-        metaData={heroMeta}
+        metaData={{ title, journal_name, excerpt, date, slug }}
       />
-      <div
-        className="blog-post-content"
-        dangerouslySetInnerHTML={{ __html: html }}
-      />
+      <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   );
 };
 
 export default LearnPostTemplate;
 
+// GraphQL query to fetch data based on the slug passed in the page context
 export const query = graphql`
-  query LearnPostBySlug($slug: String!) {
+  query LearnPostTemplateQuery($slug: String!) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       html
       frontmatter {

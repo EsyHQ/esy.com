@@ -56,11 +56,11 @@ exports.createSchemaCustomization = ({ actions }) => {
   
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       const { slug } = node.frontmatter;
-
+      console.log(slug, 'the sluggggggggg')
       createPage({
         path: `${slug}`,
 
-        component: path.resolve(`./src/pages/learn/{markdownRemark.frontmatter__slug}.tsx`),
+        component: path.resolve(`./src/templates/learnTemplate.tsx`),
         context: {
           slug: `${slug}`,
         },
