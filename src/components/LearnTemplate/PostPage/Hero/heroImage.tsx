@@ -33,6 +33,7 @@ const HeroImageWrapper = styled.div`
     overflow: hidden;
     order: 1;
     width: 100%;
+    max-width: 500px;
     .gatsby-image-wrapper {
         height: 100%;
         border-radius: 16px;

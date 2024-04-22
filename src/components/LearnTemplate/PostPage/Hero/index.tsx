@@ -40,4 +40,5 @@ const HeroWrapper = styled.div`
     background-color: var(--color-gray-800);
     margin: 150px 0 50px 0px;
     display: flex;
+    justify-content: space-between;
     `;  

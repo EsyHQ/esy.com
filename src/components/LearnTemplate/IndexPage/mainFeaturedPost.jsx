@@ -10,7 +10,7 @@ export default function MainFeaturedPost({ post }) {
     return (
         <article>
         <Link to={`${post.frontmatter.slug}`} title={post.frontmatter.title}>
-          <GatsbyImage image={getImage(post.frontmatter.featuredImage)} alt={post.frontmatter.title} className="object-cover w-full rounded-lg" />
+          <GatsbyImage image={getImage(post.frontmatter.featuredImage)} alt={post.frontmatter.title} className="object-cover max-h-[300px] w-full rounded-lg" />
         </Link>
 
         <div className="mt-5 space-y-4">

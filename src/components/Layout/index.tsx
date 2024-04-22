@@ -61,6 +61,7 @@ const MainElement = styled.main`
   justify-content: center;
   align-items: center;
   background: #000;
+  background: rgb(12, 10, 29);
   // padding-top: 80px;
 
   @media(max-width: 600px) {
