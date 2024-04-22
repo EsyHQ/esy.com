@@ -94,6 +94,7 @@ const TemplateWrapper = styled.div`
   background: rgb(12, 10, 29);
   padding: 0 2rem;
   width: 100%;
+  max-width: 1300px;
 
   p {  
     color: #fff;
