@@ -7,10 +7,10 @@ authorImage: ../../../images/mdImages/lem-lifts.jpeg
 journal_name: "learn"
 category: "Artificial Intelligence"
 tags: [ "Artificial Intelligence" ]
-featuredImage: ../../../images/mdImages/esy-bg-img.jpeg
-featuredImagePath: "/esy-bg-img.jpeg"
+featuredImage: ../../../images/mdImages/generative-ai-brain.png
+featuredImagePath: "/generative-ai-brain.png"
 featured: 1
-excerpt: "Generative AI is a groundbreaking technology that enables machines to create original content, such as text, images, and music, by learning patterns from vast datasets, opening up new possibilities for creative industries and beyond."
+excerpt: "Generative AI is a groundbreaking technology that enables machines to create original content, such as text, images, and music, by learning patterns from vast datasets."
 ---
 
 In recent years, the field of artificial intelligence has witnessed a remarkable advancement in the form of generative AI. This cutting-edge technology has the potential to revolutionize various industries by enabling machines to create original content that rivals human creativity. This essay will delve into the concept of generative AI, its underlying mechanisms, and its far-reaching implications.

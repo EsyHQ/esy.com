@@ -1,4 +1,6 @@
 import React from 'react';
+import styled from 'styled-components';
+
 
 import HeroImage from './heroImage';
 import HeroMeta from './heroMeta';
@@ -18,15 +20,24 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ postFeaturedImage, metaData }) => {
     return (
-        <>
-            <div className="relative bg-gray-800">
+            <HeroWrapper>
                 <HeroImage postFeaturedImage={postFeaturedImage} />
                 <HeroMeta metaData={metaData} />
-            </div>
-        </>
+            </HeroWrapper>
 
     );
 }
 
 
 export default Hero;
+
+
+
+// Styles
+
+const HeroWrapper = styled.div`
+    position: relative;
+    background-color: var(--color-gray-800);
+    margin: 150px 0 50px 0px;
+    display: flex;
+    `;  

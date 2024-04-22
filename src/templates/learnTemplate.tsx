@@ -4,6 +4,8 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import Layout from "src/components/Layout";
 import SEO from "src/components/SEO";
 import LearnPostHero from "src/components/LearnTemplate/PostPage/Hero";
+import styled from "styled-components";
+
 
 // Type definitions for the expected GraphQL query result
 interface LearnPostTemplateQuery {
@@ -48,12 +50,16 @@ const LearnPostTemplate: React.FC<LearnPostTemplateProps> = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title={title} description={excerpt} />
-      <LearnPostHero
-        postFeaturedImage={postFeaturedImage}
-        metaData={{ title, journal_name, excerpt, date, slug }}
-      />
-      <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
+        <TemplateWrapper>
+            <SEO title={title} description={excerpt} />
+            <LearnPostHero
+              postFeaturedImage={postFeaturedImage}
+              metaData={{ title, journal_name, excerpt, date, slug }}
+            />
+            <ContentWrapper>
+                <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
+            </ContentWrapper>
+        </TemplateWrapper>
     </Layout>
   );
 };
@@ -81,3 +87,30 @@ export const query = graphql`
     }
   }
 `;
+
+
+
+const TemplateWrapper = styled.div`
+  background: rgb(12, 10, 29);
+  padding: 0 2rem;
+  width: 100%;
+
+  p {  
+    color: #fff;
+    font-size: 1.13rem;
+  }
+  `;
+
+  const ContentWrapper = styled.div`
+    padding: 2rem;
+    color: var(--color-white);
+    display: flex;
+    justify-content: flex-end;
+
+    .blog-post-content {
+        max-width: 70%;
+        justify-content: end;
+        line-height: 2rem;
+        opacity: 0.8;
+        }
+`
