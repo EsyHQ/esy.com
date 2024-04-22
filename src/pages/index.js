@@ -42,7 +42,7 @@ export const homePageQuery = graphql`
 
 export const Head = () => {
     const meta = {
-        title: 'esy - The Smart Journal',
+        title: 'esy.com - The Smart Journal',
         description: 'Esy is a digital journaling platform that offers users a suite of analytical tools for writing rich and expressive essays.',
     }
 
