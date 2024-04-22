@@ -1,6 +1,8 @@
 import React from 'react';
 import { GatsbyImage, getImage, IGatsbyImageData } from 'gatsby-plugin-image';
 import { useStaticQuery, graphql } from 'gatsby';
+import styled from 'styled-components';
+
 
 // Define the prop types for the component
 interface HeroImageProps {
@@ -22,7 +24,17 @@ const HeroImage: React.FC<HeroImageProps> = ({ postFeaturedImage }) => {
      // Use default image if heroImage is not provided
   const displayImage = postFeaturedImage ?? data.defaultImage.childImageSharp.gatsbyImageData;
 
-  return <GatsbyImage image={displayImage} alt="Hero Image" />;
+  return <HeroImageWrapper><GatsbyImage image={displayImage} alt="Hero Image" /></HeroImageWrapper>;
 }
 
 export default HeroImage;
+
+const HeroImageWrapper = styled.div`
+    overflow: hidden;
+    order: 1;
+    width: 100%;
+    .gatsby-image-wrapper {
+        height: 100%;
+        border-radius: 16px;
+    }
+    `;
