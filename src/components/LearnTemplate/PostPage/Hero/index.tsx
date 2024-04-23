@@ -14,6 +14,8 @@ interface HeroProps {
         excerpt: string;
         date: string;
         slug: string;
+        category: string;
+        author: string;
     };
 }
 
