@@ -15,6 +15,13 @@ interface LearnPostTemplateQuery {
       date: string;
       slug: string;
       title: string;
+      category: string;
+      author: string;
+      authorImage: {
+        childImageSharp: {
+          gatsbyImageData: IGatsbyImageData;
+        };
+      };
       journal_name?: string;
       excerpt: string;
       featuredImagePath?: string;
@@ -38,11 +45,14 @@ const LearnPostTemplate: React.FC<LearnPostTemplateProps> = ({ data }) => {
   const {
     title,
     date,
+    category,
     featuredImage,
     journal_name,
     excerpt,
     featuredImagePath,
     slug,
+    author,
+    authorImage,
   } = frontmatter;
 
   // Use Gatsby's getImage helper to safely get the image data
@@ -54,7 +64,7 @@ const LearnPostTemplate: React.FC<LearnPostTemplateProps> = ({ data }) => {
             <SEO title={title} description={excerpt} />
             <LearnPostHero
               postFeaturedImage={postFeaturedImage}
-              metaData={{ title, journal_name, excerpt, date, slug }}
+              metaData={{ title, author, authorImage, journal_name, excerpt, date, slug, category }}
             />
             <ContentWrapper>
                 <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
@@ -75,6 +85,13 @@ export const query = graphql`
         date(formatString: "MMMM DD, YYYY")
         slug
         title
+        category
+        author
+        authorImage {
+          childImageSharp {
+            gatsbyImageData(width: 100)
+          }
+        }
         journal_name
         excerpt
         featuredImagePath

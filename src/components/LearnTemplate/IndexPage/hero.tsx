@@ -14,6 +14,7 @@ interface HeroSectionProps {
             slug: string;
             title: string;
             date: string;
+            category: string;
             description: string;
             tags: string[];
             featuredImage: {
