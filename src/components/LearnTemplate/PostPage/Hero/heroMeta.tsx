@@ -28,9 +28,9 @@ const categoryColorTheme = getCategoryColorTheme(category);
 
   return (
     <HeroMetaWrapper>
-      <div className="text-sm font-normal text-shadow-purple opacity-70">Published on {date}</div>
+      <div className="text-sm font-normal text-shadow-purple">Published on {date}</div>
       <div className="article-meta ">
-        <h1 className="font-medium text-white">{title}</h1>
+        <h1 className="font-medium text-white text-51">{title}</h1>
         <p className="text-shadow-purple font-light excerpt ">{excerpt}</p>
       </div>
      

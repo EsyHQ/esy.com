@@ -59,42 +59,6 @@ export const indexQuery = graphql`
       }
     }`
 
-// export const indexQuery = graphql`
-//     query LearnIndexQuery  {
-//         allMarkdownRemark(
-//             sort: { fields: [frontmatter___date], order: DESC }
-//             filter: { frontmatter: { journal_name: { eq: "learn" } } }
-//             ) {
-//                 edges {
-//                     node {
-//                         frontmatter {
-//                             date
-//                             title
-//                             slug
-//                             author
-//                             authorImage {
-//                                 childImageSharp {
-//                                     gatsbyImageData(width: 100, quality: 100, layout: FULL_WIDTH, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
-//                                 }
-//                             }
-//                             category
-//                             journal_name
-//                             excerpt
-//                             featured
-//                             featuredImagePath
-//                             featuredImage {
-//                                 childImageSharp {
-//                                     gatsbyImageData(width: 9000, layout: FULL_WIDTH, placeholder: BLURRED, quality: 100, formats: [AUTO, WEBP, AVIF])
-//                                 }
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
-//       }
-// `
-
-
 
 export const Head = () => {
     const { description, image, siteUrl, type, twitterUsername } = useSiteMetadata()

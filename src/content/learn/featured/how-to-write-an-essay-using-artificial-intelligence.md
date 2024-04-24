@@ -2,7 +2,7 @@
 slug: "/learn/how-to-write-an-essay-using-artificial-intelligence"
 date: "2024-03-14"
 title: "How to Write an Essay using Artificial Intelligence?"
-author: "Zev Uhuru"
+author: "Lem Uhuru"
 authorImage: ../../../images/mdImages/lem-lifts.jpeg
 journal_name: "learn"
 category: "Tutorial"

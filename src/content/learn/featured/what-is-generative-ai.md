@@ -2,7 +2,7 @@
 slug: "/learn/what-is-generative-ai"
 date: "2024-03-14"
 title: "What is Generative Ai?"
-author: "Zev Uhuru"
+author: "Lem Uhuru"
 authorImage: ../../../images/mdImages/lem-lifts.jpeg
 journal_name: "learn"
 category: "Artificial Intelligence"
