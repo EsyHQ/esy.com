@@ -30,7 +30,6 @@ const Hero: React.FC<HeroProps> = ({ postFeaturedImage, metaData }) => {
     );
 }
 
-
 export default Hero;
 
 
@@ -40,7 +39,7 @@ export default Hero;
 const HeroWrapper = styled.div`
     position: relative;
     background-color: var(--color-gray-800);
-    margin: 150px 0 50px 0px;
+    margin: 100px 0 25px 0px;
     display: flex;
     justify-content: space-between;
-    `;  
+`;  

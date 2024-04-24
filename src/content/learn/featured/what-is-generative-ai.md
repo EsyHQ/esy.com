@@ -7,8 +7,8 @@ authorImage: ../../../images/mdImages/lem-lifts.jpeg
 journal_name: "learn"
 category: "Artificial Intelligence"
 tags: [ "Artificial Intelligence" ]
-featuredImage: ../../../images/mdImages/generative-ai-brain.png
-featuredImagePath: "/generative-ai-brain.png"
+featuredImage: ../../../images/mdImages/brain-generative-ai.png
+featuredImagePath: "/brain-generative-ai.png"
 featured: 1
 excerpt: "Generative AI is a groundbreaking technology that enables machines to create original content, such as text, images, and music, by learning patterns from vast datasets."
 ---

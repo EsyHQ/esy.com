@@ -1,3 +1,5 @@
+const { max } = require('lodash');
+
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -5,29 +7,19 @@ module.exports = {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        '30p': '30%',
+        '40p': '40%',
+        '50p': '50%',
+        '60p': '60%',
+        '70p': '70%',
+        '80p': '80%',
+        '90p': '90%',
+        '100p': '100%',
+      },
       colors: {
         'primary': 'rgb(12, 10, 29)',
-      },
-      categoryStyles: {
-        'artificial-intelligence': {
-          backgroundColor: '#dbeafe',
-          color: '#1e40af',
-          '&:hover': {
-            backgroundColor: '#bfdbfe',
-          },
-        },
-        programming: {
-          // ... (programming styles)
-        },
-        tutorial: {
-          // ... (tutorial styles)
-        },
-        interview: {
-          // ... (interview styles)
-        },
-        marketing: {
-          // ... (marketing styles)
-        },
+        'shadow-purple': 'rgb(136 134 168)',
       },
     },
   },

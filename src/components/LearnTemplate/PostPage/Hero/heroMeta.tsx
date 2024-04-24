@@ -28,9 +28,12 @@ const categoryColorTheme = getCategoryColorTheme(category);
 
   return (
     <HeroMetaWrapper>
-      <HeroDate>Published on Dec 23, 2024</HeroDate>
-      <h1>{title}</h1>
-      <p>{excerpt}</p>
+      <div className="text-sm font-normal text-shadow-purple opacity-70">Published on {date}</div>
+      <div className="article-meta ">
+        <h1 className="font-medium text-white">{title}</h1>
+        <p className="text-shadow-purple font-light excerpt ">{excerpt}</p>
+      </div>
+     
       <div className="author-meta flex items-center gap-3">
         <div className="flex items-center gap-3">
         {imageData && (
@@ -40,9 +43,9 @@ const categoryColorTheme = getCategoryColorTheme(category);
             className="w-10 h-10 rounded-full"
           />
         )}
-        <div className="text-lg font-medium leading-tight text-white dark:text-white">
+        <div className="text-md font-medium leading-tight text-white dark:text-white">
           <div>{author}</div>
-          <div className="text-sm font-normal text-gray-500 dark:text-gray-400">
+          <div className="text-sm font-normal text-gray-500 dark:text-gray-400 mt-1">
             Founder, esy.com
           </div>
         </div>
@@ -62,14 +65,12 @@ export default HeroMeta;
 
 // Styles
 const HeroMetaWrapper = styled.div`
-  color: var(--color-white);
   max-width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   gap: 1rem;
-  color: #fff;
   padding-right: 50px;
 
   h1 {
@@ -79,17 +80,11 @@ const HeroMetaWrapper = styled.div`
 
   p {
     font-size: 1.13rem;
-    opacity: 0.4;
+    margin-top: 1rem;
   }
 
   .author-meta {
     gap: 1rem;
     margin-top: 1rem;
   }
-`;
-
-const HeroDate = styled.div`
-  font-size: 0.9rem;
-  color: var(--color-gray-400);
-  opacity: 0.7;
 `;

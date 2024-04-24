@@ -5,7 +5,7 @@ import Layout from "src/components/Layout";
 import SEO from "src/components/SEO";
 import LearnPostHero from "src/components/LearnTemplate/PostPage/Hero";
 import styled from "styled-components";
-
+import Sidebar from "src/components/LearnTemplate/PostPage/Sidebar";
 
 // Type definitions for the expected GraphQL query result
 interface LearnPostTemplateQuery {
@@ -66,8 +66,9 @@ const LearnPostTemplate: React.FC<LearnPostTemplateProps> = ({ data }) => {
               postFeaturedImage={postFeaturedImage}
               metaData={{ title, author, authorImage, journal_name, excerpt, date, slug, category }}
             />
-            <ContentWrapper>
-                <div className="blog-post-content" dangerouslySetInnerHTML={{ __html: html }} />
+            <ContentWrapper className="w-full">
+                <Sidebar />
+                <div className="blog-post-content flex-none max-w-70p justify-end leading-8 opacity-80 pl-12" dangerouslySetInnerHTML={{ __html: html }} />
             </ContentWrapper>
         </TemplateWrapper>
     </Layout>
@@ -109,26 +110,17 @@ export const query = graphql`
 
 const TemplateWrapper = styled.div`
   background: rgb(12, 10, 29);
-  padding: 0 2rem;
+  padding: 2rem;
   width: 100%;
   max-width: 1300px;
 
   p {  
-    color: #fff;
     font-size: 1.13rem;
   }
   `;
 
   const ContentWrapper = styled.div`
-    padding: 2rem;
     color: var(--color-white);
     display: flex;
     justify-content: flex-end;
-
-    .blog-post-content {
-        max-width: 70%;
-        justify-content: end;
-        line-height: 2rem;
-        opacity: 0.8;
-        }
 `
