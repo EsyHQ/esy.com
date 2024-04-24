@@ -2,10 +2,10 @@
 slug: "/learn/what-is-prompt-engineering"
 date: "2024-03-14"
 title: "What is Prompt Engineering?"
-author: "Zev Uhuru"
+author: "Lem Uhuru"
 authorImage: ../../../images/mdImages/lem-lifts.jpeg
 journal_name: "learn"
-category: "Marketing"
+category: "Artificial Intelligence"
 tags: [ "Artificial Intelligence" ]
 featuredImage: ../../../images/mdImages/esy-bg-img.jpeg
 featuredImagePath: "/esy-bg-img.jpeg"

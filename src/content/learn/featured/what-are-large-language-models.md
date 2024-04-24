@@ -2,10 +2,10 @@
 slug: "/learn/what-are-large-language-models"
 date: "2024-03-14"
 title: "What are Large Language Models?"
-author: "Zev Uhuru"
+author: "Lem Uhuru"
 authorImage: ../../../images/mdImages/lem-lifts.jpeg
 journal_name: "learn"
-category: "Programming"
+category: "Artificial Intelligence"
 tags: [ "Artificial Intelligence" ]
 featuredImage: ../../../images/mdImages/esy-bg-img.jpeg
 featuredImagePath: "/esy-bg-img.jpeg"
