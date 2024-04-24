@@ -7,8 +7,8 @@ authorImage: ../../../images/mdImages/lem-lifts.jpeg
 journal_name: "learn"
 category: "Artificial Intelligence"
 tags: [ "Artificial Intelligence" ]
-featuredImage: ../../../images/mdImages/esy-bg-img.jpeg
-featuredImagePath: "/esy-bg-img.jpeg"
+featuredImage: ../../../images/mdImages/prompt-engineering-birds.png
+featuredImagePath: "/prompt-engineering-birds.png"
 featured: 3
 excerpt: "Prompt engineering is the art and science of designing effective prompts to elicit desired responses from AI language models."
 ---

@@ -7,8 +7,8 @@ authorImage: ../../../images/mdImages/lem-lifts.jpeg
 journal_name: "learn"
 category: "Tutorial"
 tags: [ "Artificial Intelligence" ]
-featuredImage: ../../../images/mdImages/esy-bg-img.jpeg
-featuredImagePath: "/esy-bg-img.jpeg"
+featuredImage: ../../../images/mdImages/ai-writer-assistant.png
+featuredImagePath: "/ai-writer-assistant.png"
 featured: 4
 excerpt: "AI-assisted essay writing involves leveraging advanced language models to generate ideas, outline structures."
 ---
