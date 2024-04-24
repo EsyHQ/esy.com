@@ -13,7 +13,7 @@ const HeaderNav = ({ activeNav }) => {
 
   return (<HeaderNavContainer>
               <DesktopNav>
-                <NavItem className={activeNav === 1 ? 'active' : ""}><Link to="/essays">Essays</Link></NavItem> 
+                {/* <NavItem className={activeNav === 1 ? 'active' : ""}><Link to="/essays">Essays</Link></NavItem>  */}
                 <NavItem className={activeNav === 2 ? 'active' : ""}><Link to="/learn">Learn</Link></NavItem> 
                 <NavItem><a target="_blank" href="https://workspace.esy.com/signup">Sign up</a></NavItem>
                 {/* <NavItem className={activeNav === 2 ? 'active' : ""}><Link to="/learn">Blog</Link></NavItem>  */}
@@ -42,6 +42,7 @@ const HeaderNavContainer = styled.div`
     font-weight: 500;
     max-width: 490px;
     max-width: 225px;
+    max-width: 135px;
 
 `
 
@@ -119,7 +120,7 @@ const NavItem = styled.div`
 
     >div {
       width: 100%;
-      max-width: 285px;
+      // max-width: 285px;
       flex-direction: row-reverse;
       align-self: flex-end;
 

@@ -7,8 +7,8 @@ authorImage: ../../../images/mdImages/lem-lifts.jpeg
 journal_name: "learn"
 category: "Artificial Intelligence"
 tags: [ "Artificial Intelligence" ]
-featuredImage: ../../../images/mdImages/esy-bg-img.jpeg
-featuredImagePath: "/esy-bg-img.jpeg"
+featuredImage: ../../../images/mdImages/llm-modern-library.png
+featuredImagePath: "/llm-modern-library.png"
 featured: 2
 excerpt: "Large Language Models (LLMs) are advanced AI systems trained on massive amounts of text data, enabling them to understand."
 ---
