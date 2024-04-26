@@ -1,5 +1,5 @@
 ---
-slug: "/learn/what-are-large-language-models"
+slug: "/journal/what-are-large-language-models"
 date: "2024-03-14"
 title: "What are Large Language Models?"
 author: "Lem Uhuru"

@@ -7,13 +7,11 @@ export default function NewsletterSection() {
         <section class=" border-gray-100 bg-primary dark:bg-gray-800 dark:border-gray-700">
   <div class="max-w-screen-xl px-4 py-8 mx-auto sm:py-16 lg:py-24">
     <div class="max-w-2xl mx-auto text-center">
-      <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl dark:text-white">Stay in touch
+      <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl dark:text-white">
+        Subscribe to esy Journal
       </h2>
       <p class="max-w-xl mx-auto mb-6 text-gray-500 md:text-lg dark:text-gray-400">
-        Stay up to date with the roadmap
-        progress,
-        announcements and
-        exclusive discounts feel free to sign up with your email.
+        Get the latest guides, tutorials, and resources straight to your inbox. No spam, promise.
       </p>
 
       <form action="#" class="max-w-lg mx-auto">
