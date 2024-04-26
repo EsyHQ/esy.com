@@ -14,6 +14,8 @@ const AboutPageContainer = styled.div`
     max-with: 1200px;
     font-size: 23px;
 
+    margin-top: 100px;
+
     p {
         font-family: Poppins, sans-serif; 
     }

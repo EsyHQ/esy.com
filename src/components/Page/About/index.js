@@ -19,10 +19,9 @@ const AboutPage = () => {
                         <SectionElement>
                             <SectionImage><img src={QuillImage2} /></SectionImage>
                                 <SectionContent>
-                                    <ParagraphElement>Esy is for Essay.</ParagraphElement>
+                                    {/* <ParagraphElement>Esy is for Essay.</ParagraphElement> */}
                                     <ParagraphElement>
-                                        Esy is a digital journaling platform that offers users a suite of analytical tools for writing 
-                                        rich and expressive essays while discovering powerful insights about their personal writing habits.
+                                    esy Journal is your personal writing platform powered by advanced language models. Gain powerful insights into your writing style and track your progress over time.
                                     </ParagraphElement>
                                 </SectionContent>
                                 
