@@ -22,9 +22,9 @@ const FooterNav = () => {
         <FooterListItemTitle>Education</FooterListItemTitle>
         <FooterSubNav>
           <FooterSubNavList>
-            <FooterSubNavListItem><Link to="/essays">essays</Link></FooterSubNavListItem>
+            {/* <FooterSubNavListItem><Link to="/essays">essays</Link></FooterSubNavListItem> */}
             {/* <FooterSubNavListItem><Link to="/glossary">glossary</Link></FooterSubNavListItem> */}
-            <FooterSubNavListItem><a href="http://journal.esy.com">esy Journal</a></FooterSubNavListItem>
+            <FooterSubNavListItem><a href="http://esy.com/journal">Journal</a></FooterSubNavListItem>
           </FooterSubNavList>
         </FooterSubNav>
       </FooterListItem>
@@ -34,7 +34,7 @@ const FooterNav = () => {
         <FooterListItemTitle>Organization</FooterListItemTitle>
         <FooterSubNav>
           <FooterSubNavList>
-            <FooterSubNavListItem><Link to="/learn">learn</Link></FooterSubNavListItem>
+            {/* <FooterSubNavListItem><Link to="/learn">learn</Link></FooterSubNavListItem> */}
             <FooterSubNavListItem><Link to="/about">about us</Link></FooterSubNavListItem>
             <FooterSubNavListItem><a href="mailto: support@esy.com">contact us</a></FooterSubNavListItem>
           </FooterSubNavList>
