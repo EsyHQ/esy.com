@@ -1,5 +1,5 @@
 ---
-slug: "/learn/how-to-write-an-essay-using-artificial-intelligence"
+slug: "/journal/how-to-write-an-essay-using-artificial-intelligence"
 date: "2024-03-14"
 title: "How to Write an Essay using Artificial Intelligence?"
 author: "Lem Uhuru"
