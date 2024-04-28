@@ -27,11 +27,11 @@ const HeroMeta: React.FC<HeroMetaProps> = ({
 const categoryColorTheme = getCategoryColorTheme(category);
 
   return (
-    <div className="flex flex-col justify-between items-start gap-4 pr-12 lg:max-w-50p ">
+    <div className="flex flex-col justify-between items-start gap-4 md:pr-12 lg:max-w-50p ">
       <div className="text-sm font-normal text-shadow-purple">Published on {date}</div>
       <div className="article-meta">
-        <h1 className="font-medium text-white text-51 leading-tight">{title}</h1>
-        <p className="text-shadow-purple font-light excerpt text-lg mt-4 ">{excerpt}</p>
+        <h1 className="font-medium text-white text-3xl md:text-51 leading-tight">{title}</h1>
+        <p className="text-shadow-purple font-light text-base md:text-lg mt-4 ">{excerpt}</p>
       </div>
      
       <div className="author-meta flex items-center gap-4 mt-4 mb-6">
