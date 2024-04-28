@@ -60,7 +60,7 @@ const LearnPostTemplate: React.FC<LearnPostTemplateProps> = ({ data }) => {
 
   return (
     <Layout>
-        <TemplateWrapper>
+        <div className="bg-[#0c0a1d] p-5 w-full max-w-[1300px]">
             <SEO title={title} description={excerpt} />
             <LearnPostHero
               postFeaturedImage={postFeaturedImage}
@@ -68,9 +68,9 @@ const LearnPostTemplate: React.FC<LearnPostTemplateProps> = ({ data }) => {
             />
             <div className="flex flex-col lg:flex-row w-full text-white justify-end">
                 <Sidebar />
-                <div className="flex-none mt-24 lg:mt-0 justify-end leading-8 opacity-80 lg:pl-12 lg:max-w-70p " dangerouslySetInnerHTML={{ __html: html }} />
+                <div className="text-base flex-none mt-24 lg:mt-0 justify-end leading-8 opacity-80 lg:pl-12 lg:max-w-70p " dangerouslySetInnerHTML={{ __html: html }} />
             </div>
-        </TemplateWrapper>
+          </div>
     </Layout>
   );
 };
@@ -113,8 +113,4 @@ const TemplateWrapper = styled.div`
   padding: 2rem;
   width: 100%;
   max-width: 1300px;
-
-  p {  
-    font-size: 1.13rem;
-  }
-  `
+`
