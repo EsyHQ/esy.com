@@ -27,14 +27,14 @@ const HeroMeta: React.FC<HeroMetaProps> = ({
 const categoryColorTheme = getCategoryColorTheme(category);
 
   return (
-    <HeroMetaWrapper>
+    <div className="flex flex-col justify-between items-start gap-4 pr-12 lg:max-w-50p ">
       <div className="text-sm font-normal text-shadow-purple">Published on {date}</div>
-      <div className="article-meta ">
-        <h1 className="font-medium text-white text-51">{title}</h1>
-        <p className="text-shadow-purple font-light excerpt ">{excerpt}</p>
+      <div className="article-meta">
+        <h1 className="font-medium text-white text-51 leading-tight">{title}</h1>
+        <p className="text-shadow-purple font-light excerpt text-lg mt-4 ">{excerpt}</p>
       </div>
      
-      <div className="author-meta flex items-center gap-3">
+      <div className="author-meta flex items-center gap-4 mt-4 mb-6">
         <div className="flex items-center gap-3">
         {imageData && (
           <GatsbyImage
@@ -57,7 +57,7 @@ const categoryColorTheme = getCategoryColorTheme(category);
             {category}
         </span>
       </div>
-    </HeroMetaWrapper>
+    </div>
   );
 };
 
@@ -72,11 +72,6 @@ const HeroMetaWrapper = styled.div`
   align-items: flex-start;
   gap: 1rem;
   padding-right: 50px;
-
-  h1 {
-    font-size: 3rem;
-    line-height: 3.8rem;
-  }
 
   p {
     font-size: 1.13rem;

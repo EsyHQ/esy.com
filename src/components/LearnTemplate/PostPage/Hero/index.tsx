@@ -22,10 +22,10 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ postFeaturedImage, metaData }) => {
     return (
-            <HeroWrapper>
+            <div className="relative mt-24 mx-0 mb-6 flex flex-col justify-between lg:flex-row">
                 <HeroImage postFeaturedImage={postFeaturedImage} />
                 <HeroMeta metaData={metaData} />
-            </HeroWrapper>
+            </div>
 
     );
 }
@@ -38,8 +38,7 @@ export default Hero;
 
 const HeroWrapper = styled.div`
     position: relative;
-    background-color: var(--color-gray-800);
-    margin: 100px 0 25px 0px;
+    margin: 100px 0 25px 0;
     display: flex;
     justify-content: space-between;
 `;  

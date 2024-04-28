@@ -18,7 +18,7 @@ const Sidebar = ({ pageHeadersList = ['Intro to Prompt Engineering', 'Generating
     }
 
     return (
-        <div className="sidebar-container flex-none max-w-30p w-full">
+        <div className="sidebar-container flex-none lg:max-w-30p w-full">
             <div className="sidebar-inner sticky">
                 <h3 className="text-md text-shadow-purple  uppercase">Table of Contents</h3>
                 <ul className="ml-6">
