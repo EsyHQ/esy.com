@@ -66,10 +66,10 @@ const LearnPostTemplate: React.FC<LearnPostTemplateProps> = ({ data }) => {
               postFeaturedImage={postFeaturedImage}
               metaData={{ title, author, authorImage, journal_name, excerpt, date, slug, category }}
             />
-            <ContentWrapper className="w-full">
+            <div className="flex flex-col lg:flex-row w-full text-white justify-end">
                 <Sidebar />
-                <div className="blog-post-content flex-none max-w-70p justify-end leading-8 opacity-80 pl-12" dangerouslySetInnerHTML={{ __html: html }} />
-            </ContentWrapper>
+                <div className="flex-none mt-24 lg:mt-0 justify-end leading-8 opacity-80 lg:pl-12 lg:max-w-70p " dangerouslySetInnerHTML={{ __html: html }} />
+            </div>
         </TemplateWrapper>
     </Layout>
   );
@@ -117,10 +117,4 @@ const TemplateWrapper = styled.div`
   p {  
     font-size: 1.13rem;
   }
-  `;
-
-  const ContentWrapper = styled.div`
-    color: var(--color-white);
-    display: flex;
-    justify-content: flex-end;
-`
+  `
