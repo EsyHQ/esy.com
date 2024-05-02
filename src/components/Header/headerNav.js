@@ -13,16 +13,13 @@ const HeaderNav = ({ activeNav }) => {
 
   return (<HeaderNavContainer>
               <DesktopNav>
-                {/* <NavItem className={activeNav === 1 ? 'active' : ""}><Link to="/essays">Essays</Link></NavItem>  */}
-                <NavItem className={activeNav === 2 ? 'active' : ""}><Link to="/journal">Journal</Link></NavItem> 
+                <NavItem className={activeNav === 2 ? 'active' : ""}><Link to="/school">School</Link></NavItem> 
                 <NavItem><a target="_blank" href="https://workspace.esy.com/signup">Sign up</a></NavItem>
-                {/* <NavItem className={activeNav === 2 ? 'active' : ""}><Link to="/learn">Blog</Link></NavItem>  */}
-
-
               </DesktopNav>
+{/*               
               <MobileNav>
                 <NavItem><AppIcon /></NavItem>
-              </MobileNav>
+              </MobileNav> */}
           </HeaderNavContainer>)
 }
 
@@ -52,9 +49,9 @@ const DesktopNav = styled.nav`
   justify-content: space-between;
   width: 100%;
 
-  @media(max-width: 900px) {
-    display: none;
-  }
+  // @media(max-width: 900px) {
+  //   display: none;
+  // }
 `
 
 const MobileNav = styled.nav`

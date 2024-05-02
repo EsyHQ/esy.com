@@ -15,7 +15,7 @@ const Header = ({ hasHeaderNav }) => {
       setActiveNav(0)
     } else if (pathname.includes('essays')) {
         setActiveNav(1)
-    } else if (pathname.includes('journal')) {
+    } else if (pathname.includes('school')) {
         setActiveNav(2)
     } 
   }

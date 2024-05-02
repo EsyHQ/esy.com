@@ -37,7 +37,7 @@ exports.createSchemaCustomization = ({ actions }) => {
   
     const result = await graphql(`
       query {
-        allMarkdownRemark(filter: { frontmatter: { slug: { regex: "^/journal/" } } }) {
+        allMarkdownRemark(filter: { frontmatter: { slug: { regex: "^/school/" } } }) {
           edges {
             node {
               frontmatter {
