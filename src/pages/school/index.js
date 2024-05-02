@@ -67,7 +67,7 @@ export const Head = () => {
         title: "School | esy",
         description,
         image,
-        url: `${siteUrl}/learn/`,
+        url: `${siteUrl}/school/`,
         type,
         twitterUsername,
     }
