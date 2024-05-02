@@ -64,7 +64,7 @@ export const Head = () => {
     const { description, image, siteUrl, type, twitterUsername } = useSiteMetadata()
 
     const meta = {
-        title: "Learn | esy",
+        title: "School | esy",
         description,
         image,
         url: `${siteUrl}/learn/`,
