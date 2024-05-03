@@ -10,7 +10,7 @@ import Layout from "src/components/Layout"
 import PostsList from 'src/components/LearnTemplate/IndexPage/postsList'
 import HeroSection from 'src/components/LearnTemplate/IndexPage/hero'
 import NewsletterSection from 'src/components/LearnTemplate/newsletterSection'
-
+import NewsletterHero from 'src/components/LearnTemplate/IndexPage/newsletterHero'
 
 
 export default function LearnIndexPage({ data }) {

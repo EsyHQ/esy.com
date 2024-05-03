@@ -6,6 +6,7 @@ import SEO from "src/components/SEO";
 import LearnPostHero from "src/components/LearnTemplate/PostPage/Hero";
 import styled from "styled-components";
 import Sidebar from "src/components/LearnTemplate/PostPage/sidebar";
+import NewsletterHero from "src/components/LearnTemplate/IndexPage/newsletterHero"; 
 
 // Type definitions for the expected GraphQL query result
 interface LearnPostTemplateQuery {

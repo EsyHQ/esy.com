@@ -1,7 +1,6 @@
 import React from 'react';
 
 
-
 export default function NewsletterSection() {
     return (
         <section class=" border-gray-100 bg-primary dark:bg-gray-800 dark:border-gray-700">
