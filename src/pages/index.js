@@ -42,8 +42,9 @@ export const homePageQuery = graphql`
 
 export const Head = () => {
     const meta = {
-        title: 'esy.com - The Smart Journal',
-        description: 'Esy is a digital journaling platform that offers users a suite of analytical tools for writing rich and expressive essays.',
+        title: 'esy.com - The Best Ai Essay Writer',
+        description: 'esy Journal is the leading platform for crafting rich and expressive essays with the help of our powerful and trusted AI writing assistant. Unleash your creativity and produce your most impressive work today.',
+        // description: 'esy Journal is the most advanced essay writing platform for composing rich and expressive essays. Unleash your most creative work today with our powerful and trusted AI writing assistant.',
     }
 
     return <SEO meta={meta} />
