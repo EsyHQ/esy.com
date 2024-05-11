@@ -9,7 +9,7 @@ import PostList from 'src/components/Post/postList'
 
 
 
-const EssayIndexPage = ({ data }) => {
+const SEOIndexPage = ({ data }) => {
     const { edges } = data?.allMarkdownRemark
 
     const totalPosts = edges.length
@@ -92,12 +92,12 @@ const EssayIndexPage = ({ data }) => {
 }
 
 
-export default EssayIndexPage
+export default SEOIndexPage
 
 
 
 export const indexQuery = graphql`
-    query EssayIndexQuery  {
+    query SEOIndexQuery  {
         allMarkdownRemark(
             sort: { fields: [frontmatter___date], order: DESC }
             filter: { frontmatter: { journal_name: { eq: "essays" } } }
@@ -127,7 +127,7 @@ export const Head = () => {
     const { description, image, siteUrl, type, twitterUsername } = useSiteMetadata()
 
     const meta = {
-        title: "Essays | esy Journal",
+        title: "SEO Pages | esy Journal",
         description,
         image,
         url: `${siteUrl}/essays`,

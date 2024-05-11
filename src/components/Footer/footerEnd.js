@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { Link } from 'gatsby';
+
 import TwitterIcon from 'src/svg/twitter.svg'
 import GithubIcon from 'src/svg/github-logo.svg'
 
@@ -31,9 +33,9 @@ const FooterEnd = () => {
 
                     <FooterEndRight>
                       <LegalLinks>
-                        <a target="_blank" href={PrivacyPolicy}>Privacy</a>
-                        <a target="_blank" href={TermPolicy}>Terms</a>
-                        <a target="_blank" href={CookiePolicy}>Cookies</a>
+                        <Link target="_blank" to="/terms">Terms</Link>
+                        <Link target="_blank" to="/policy">Policy</Link>
+                        <Link target="_blank" to="/cookies">Cookies</Link>
                       </LegalLinks>
                       {/* <SocialIcons>
                           <a href={TwitterURL} target="_blank"><TwitterIcon /></a>
