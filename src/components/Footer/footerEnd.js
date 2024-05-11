@@ -33,9 +33,9 @@ const FooterEnd = () => {
 
                     <FooterEndRight>
                       <LegalLinks>
-                        <Link target="_blank" to="/terms">Terms</Link>
-                        <Link target="_blank" to="/policy">Policy</Link>
-                        <Link target="_blank" to="/cookies">Cookies</Link>
+                        <Link target="_blank" to="/terms.pdf">Terms</Link>
+                        <Link target="_blank" to="/policy.pdf">Policy</Link>
+                        <Link target="_blank" to="/cookies.pdf">Cookies</Link>
                       </LegalLinks>
                       {/* <SocialIcons>
                           <a href={TwitterURL} target="_blank"><TwitterIcon /></a>
