@@ -5,7 +5,7 @@ import SEO from 'src/components/SEO'
 
 
 const TermsPage = () => {
-  return (
+  return (     
     <Layout hasFooter={false}>
       <embed src="/terms.pdf" className="w-full h-4/5" />
     </Layout>
