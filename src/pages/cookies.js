@@ -5,9 +5,8 @@ import SEO from 'src/components/SEO'
 
 const CookiesPage = () => {
   return (
-    <Layout>
-      <h1>Cookies Policy</h1>
-      <embed src="/cookies.pdf" width="100%" height="600px" />
+    <Layout hasFooter={false}>
+      <embed src="/cookies.pdf" className="w-full h-4/5" />
     </Layout>
   );
 };

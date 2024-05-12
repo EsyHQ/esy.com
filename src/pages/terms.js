@@ -5,8 +5,7 @@ import SEO from 'src/components/SEO'
 const TermsPage = () => {
   return (
     <Layout>
-      <h1>Terms of Service</h1>
-      <embed src="/terms.pdf" width="100%" height="600px" />
+      <embed src="/terms.pdf" className="w-full h-4/5" />
     </Layout>
   );
 };

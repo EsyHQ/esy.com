@@ -7,3 +7,9 @@
   from = "https://*.esy.com/*"
   to = "https://esy.com/"
   status = 301
+
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "frame-ancestors 'self' https://esy.com;"
