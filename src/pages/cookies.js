@@ -6,7 +6,7 @@ import SEO from 'src/components/SEO'
 const CookiesPage = () => {
   return (
     <Layout hasFooter={false}>
-      <embed src="/cookies.pdf" className="w-full h-4/5" />
+      <iframe src="/cookies.pdf" className="w-full h-4/5" />
     </Layout>
   );
 };

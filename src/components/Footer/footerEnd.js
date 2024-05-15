@@ -1,76 +1,73 @@
-import React from 'react'
-import styled from 'styled-components'
-
+import React from 'react';
+import styled from 'styled-components';
 import { Link } from 'gatsby';
-
-import TwitterIcon from 'src/svg/twitter.svg'
-import GithubIcon from 'src/svg/github-logo.svg'
-
-const TwitterURL = 'http://www.twitter.com/EsyJournal'
-const GithubURL = 'http://www.github.com/EsyJournal'
-
-const CookiePolicy = "https://app.termly.io/document/cookie-policy/2c678f2d-a639-46a1-861f-b74b34e8fb23"
-const PrivacyPolicy = "https://app.termly.io/document/privacy-policy/a5285fdd-a501-4dbd-89d2-b1112dc4ee86"
-const TermPolicy = "https://app.termly.io/document/terms-of-use-for-saas/1cfc74df-69a4-4df1-ba18-8153199c1ac3"
-
+import { useMediaQuery } from 'src/hooks/useMediaQuery';
 
 
 const FooterEnd = () => {
-    return (<FooterEndContainer>
-                    <Trademark>
-                        <a
-                        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >
-                        &copy;{' '}
-                        {/* 2022 Esy Research Technologies */}
-                        {/* 2023 Esy Technologies, LLC. */}
-                        {/* 2023 Esy Technologies */}
-                      2024  esy Journal.
-                        </a>
-                    </Trademark>
+  const isMobile = useMediaQuery('(max-width: 768px)');
 
-                    <FooterEndRight>
-                      <LegalLinks>
-                        <Link target="_blank" to="/terms">Terms</Link>
-                        <Link target="_blank" to="/policy">Policy</Link>
-                        <Link target="_blank" to="/cookies">Cookies</Link>
-                      </LegalLinks>
-                      {/* <SocialIcons>
-                          <a href={TwitterURL} target="_blank"><TwitterIcon /></a>
-                          <a href={GithubURL} target="_blank"><GithubIcon /></a>
-                      </SocialIcons> */}
-                    </FooterEndRight>
-            </FooterEndContainer>)
-}
+  return (
+    <FooterEndContainer>
+      <Trademark>
+        <a
+          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          &copy;{' '}
+          2024 esy Journal.
+        </a>
+      </Trademark>
+      <FooterEndRight>
+        <LegalLinks>
+          {isMobile ? (
+            <>
+              <a href="/terms.pdf" target="_blank" rel="noopener noreferrer">
+                Terms
+              </a>
+              <a href="/policy.pdf" target="_blank" rel="noopener noreferrer">
+                Policy
+              </a>
+              <a href="/cookies.pdf" target="_blank" rel="noopener noreferrer">
+                Cookies
+              </a>
+            </>
+          ) : (
+            <>
+              <Link to="/terms">Terms</Link>
+              <Link to="/policy">Policy</Link>
+              <Link to="/cookies">Cookies</Link>
+            </>
+          )}
+        </LegalLinks>
+      </FooterEndRight>
+    </FooterEndContainer>
+  );
+};
 
-export default FooterEnd
-
+export default FooterEnd;
 
 const FooterEndContainer = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 25px 50px;
+  background: #000;
 
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: 25px 50px;
-    background: #000;
+  a {
+    opacity: 0.5;
+    font-size: 12px !important;
 
-    a {
-        opacity: 0.5;
-        font-size: 12px !important;
-
-        @media(max-width: 600px) {
-          font-size: 12px !important;
-        }
+    @media (max-width: 600px) {
+      font-size: 12px !important;
     }
+  }
 
-    @media(max-width: 600px) {
-      padding: 25px;
-    }
-`
-
-
+  @media (max-width: 600px) {
+    padding: 25px;
+  }
+`;
 
 const Trademark = styled.div`
   width: 100%;
@@ -78,32 +75,7 @@ const Trademark = styled.div`
   justify-content: flex-start;
   text-align: center;
   align-items: center;
-`
-
-
-
-const SocialIcons = styled.div`
-  display: flex;
-  align-items: center;
-  align-self: flex-end;
-
-  a {
-    color: #fff;
-    opacity: 1;
-  }
-
-  svg {
-    width: 100%;
-    max-width: 25px;
-    height: 100%;
-    fill: #fff;
-
-    &:first-child {
-      margin-right: 15px;
-    }
-  }
-`
-
+`;
 
 const LegalLinks = styled.div`
   display: flex;
@@ -115,16 +87,10 @@ const LegalLinks = styled.div`
       margin-right: 12px;
     }
   }
-`
-const LegalLink = styled.div`
-
-
-`
+`;
 
 const FooterEndRight = styled.div`
   width: 100%;
   display: flex;
   justify-content: flex-end;
-
-
-`
+`;
