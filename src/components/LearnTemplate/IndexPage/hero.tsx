@@ -35,9 +35,6 @@ const Hero: React.FC<HeroSectionProps> = ({ data }) => {
   const mainFeaturedPost = featuredPosts[0].node;
   const otherFeaturedPosts = featuredPosts.slice(1);
 
-  console.log('all of the fucking dataa', data)
-
-
   return (
     <section className="border-t border-b border-gray-100 bg-primary dark:bg-gray-800 dark:border-gray-700">
       <div className="max-w-screen-xl px-4 py-8 mx-auto sm:py-16 lg:py-24 pt-20 sm:pt-24 lg:pt-32">

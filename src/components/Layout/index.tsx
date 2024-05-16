@@ -10,7 +10,6 @@ import Header from "src/components/Header"
 import MobileHeader from 'src/components/Header/mobileHeader'
 import Footer from "src/components/Footer";
 
-import '../../styles/_globalstyles.scss'
 
 
 interface LayoutProps {

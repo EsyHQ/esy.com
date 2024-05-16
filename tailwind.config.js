@@ -1,9 +1,15 @@
-const { max } = require('lodash');
-
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
     "./node_modules/flowbite/**/*.js",
+  ],
+  safelist: [
+    {
+      pattern: /bg-(red|green|blue|indigo|yellow|purple)-(100|900|800|100)/,
+    },
+    {
+      pattern: /text-(red|green|blue|indigo|yellow|purple)-(100|900|800|100)/,
+    },
   ],
   theme: {
     extend: {
@@ -21,12 +27,12 @@ module.exports = {
         '100p': '100%',
       },
       colors: {
-        'primary': 'rgb(12, 10, 29)',
+        primary: 'rgb(12, 10, 29)',
         'shadow-purple': 'rgb(136 134 168)',
       },
     },
   },
   plugins: [
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
   ],
-} 
+};

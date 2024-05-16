@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { getCategoryColorTheme } from '../utils';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-
-
+import { getCategoryColorTheme } from '../utils';
 import Sidebar from './sidebar';
 
+
+
 export default function PostsList({ posts }) {
-  console.log(posts, 'posts');
+
   return (
     <section className="bg-white dark:bg-gray-900">
       <div className="max-w-screen-xl px-4 py-8 mx-auto sm:pb-16">
@@ -38,12 +38,11 @@ export default function PostsList({ posts }) {
 
             <div className="mt-8 space-y-12 sm:mt-12">
               {posts.map((post, index) => {
-                const categoryColorTheme = getCategoryColorTheme(
-                  post.node.frontmatter.category
-                );
+                const { category } = post.node.frontmatter;
+                const categoryColorTheme = getCategoryColorTheme(category);
 
                 return (
-                  <div key={post.node.id} className="flex flex-col items-start gap-8 xl:flex-row">
+                  <div key={index} className="flex flex-col items-start gap-8 xl:flex-row">
                     <div className="relative aspect-[16/9] sm:aspect-[2/1] w-full xl:aspect-[4/3] xl:w-80 lg:shrink-0">
                       <Link to={`${post.node.frontmatter.slug}`} title={post.node.frontmatter.title}>
                         <GatsbyImage image={getImage(post.node.frontmatter.featuredImage)} alt={post.node.frontmatter.title} className="absolute inset-0 object-cover w-full h-full bg-gray-200 rounded-lg" />

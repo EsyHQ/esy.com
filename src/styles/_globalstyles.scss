@@ -1,6 +1,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import url(./fonts.scss);
 
 @layer base {
   a {
@@ -11,8 +12,6 @@
     @apply text-white;
   }
 }
-
-@import url(./fonts.scss);
 
 html,
 body {

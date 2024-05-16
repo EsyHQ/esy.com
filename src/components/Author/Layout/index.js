@@ -9,8 +9,6 @@ import CssBaseline from '@mui/material/CssBaseline'
 import Sidebar from 'src/components/Sidebar'
 import ToolBar from "../../ToolBar"
 
-import 'src/styles/_globalstyles.scss'
-
 
 const Layout = ({ children }) => {
 
