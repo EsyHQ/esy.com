@@ -18,29 +18,6 @@ export default function LearnIndexPage({ data }) {
 
   return (<Layout>
     <main class="w-full antialiased">
-      <div class="sm:hidden">
-        <label for="category" class="sr-only">
-          Select a category
-        </label>
-        <select id="category"
-          class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-          <option>
-            Select a category
-          </option>
-          <option value="" selected>
-            All categories
-          </option>
-          <option value="">
-            Video
-          </option>
-          <option value="">
-            Interview
-          </option>
-          <option value="">
-            Marketing
-          </option>
-        </select>
-      </div>
       <HeroSection data={data} />
       <PostsList posts={edges} />
       <NewsletterSection />
