@@ -10,7 +10,7 @@ export default function FeaturedPostsList ({ posts }) {
       return (
         <article key={post.node.id}>
           <div className="space-y-4">
-            <span className={`${categoryColorTheme} text-white text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded`} >
+            <span className={`${categoryColorTheme} text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded`} >
               {post.node.frontmatter.category}
             </span>
 
