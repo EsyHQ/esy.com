@@ -3,11 +3,6 @@ import { Link } from 'gatsby';
 import { getCategoryColorTheme } from '../utils';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
-import UserMichaelGough from 'src/images/users/michael-gough.png';
-import UserThomasLean from 'src/images/users/thomas-lean.png';
-import UserBonnieGreen from 'src/images/users/bonnie-green.png';
-import UserHeleneEngels from 'src/images/users/helene-engels.png';
-import UserLanaByrd from 'src/images/users/lana-byrd.png';
 
 import Sidebar from './sidebar';
 
@@ -46,13 +41,6 @@ export default function PostsList({ posts }) {
                 const categoryColorTheme = getCategoryColorTheme(
                   post.node.frontmatter.category
                 );
-                const userImage = [
-                  UserMichaelGough,
-                  UserThomasLean,
-                  UserBonnieGreen,
-                  UserHeleneEngels,
-                  UserLanaByrd,
-                ][index % 5];
 
                 return (
                   <div key={post.node.id} className="flex flex-col items-start gap-8 xl:flex-row">
@@ -65,7 +53,7 @@ export default function PostsList({ posts }) {
 
                     <div className="space-y-4">
                       <span
-                        className={`${categoryColorTheme} text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded`}
+                        className={`${categoryColorTheme} text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded !important`}
                       >
                         {post.node.frontmatter.category}
                       </span>

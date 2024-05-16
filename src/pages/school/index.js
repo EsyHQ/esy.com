@@ -14,15 +14,15 @@ import NewsletterHero from 'src/components/LearnTemplate/IndexPage/newsletterHer
 
 
 export default function LearnIndexPage({ data }) {
-    const { edges } = data?.allMarkdownRemark
+  const { edges } = data?.allMarkdownRemark
 
-    return (<Layout>
-              <main class="w-full antialiased">
-                <HeroSection data={data} />
-                <PostsList posts={edges} />
-                <NewsletterSection />
-              </main>
-            </Layout>)
+  return (<Layout>
+    <main class="w-full antialiased">
+      <HeroSection data={data} />
+      <PostsList posts={edges} />
+      <NewsletterSection />
+    </main>
+  </Layout>)
 }
 
 export const indexQuery = graphql`
@@ -61,16 +61,16 @@ export const indexQuery = graphql`
 
 
 export const Head = () => {
-    const { description, image, siteUrl, type, twitterUsername } = useSiteMetadata()
+  const { description, image, siteUrl, type, twitterUsername } = useSiteMetadata()
 
-    const meta = {
-        title: "School | esy Journal",
-        description,
-        image,
-        url: `${siteUrl}/school/`,
-        type,
-        twitterUsername,
-    }
+  const meta = {
+    title: "School | esy Journal",
+    description,
+    image,
+    url: `${siteUrl}/school/`,
+    type,
+    twitterUsername,
+  }
 
-    return <SEO meta={meta} />
+  return <SEO meta={meta} />
 }
