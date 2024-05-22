@@ -9,7 +9,7 @@ module.exports = {
   siteMetadata: {
     pathPrefix: "/",
     title: "Esy - The Smart Journal",
-    description: `Esy is the leading app for crafting rich and expressive essays with the help of our powerful and trusted AI writing assistant. Unleash your creativity and produce your most impressive work today.`,
+    description: `Esy is the leading platform for crafting rich and expressive essays with the help of our powerful and trusted AI writing assistant. Unleash your creativity and produce your most impressive work today.`,
     twitterUsername: `@esyjournal`,
     image: "images/esyjournal-brand-bg.jpeg",
     siteUrl: process.env.GATSBY_SITE_URL,
