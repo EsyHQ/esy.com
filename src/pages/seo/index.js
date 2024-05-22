@@ -127,7 +127,7 @@ export const Head = () => {
     const { description, image, siteUrl, type, twitterUsername } = useSiteMetadata()
 
     const meta = {
-        title: "SEO Pages | esy Journal",
+        title: "SEO Pages | Esy",
         description,
         image,
         url: `${siteUrl}/essays`,

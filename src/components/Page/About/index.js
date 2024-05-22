@@ -21,7 +21,7 @@ const AboutPage = () => {
                                 <SectionContent>
                                     {/* <ParagraphElement>Esy is for Essay.</ParagraphElement> */}
                                     <ParagraphElement>
-                                    esy Journal is your personal writing platform powered by advanced language models. Gain powerful insights into your writing style and track your progress over time.
+                                    Esy is your personal writing platform powered by advanced language models. Gain powerful insights into your writing style and track your progress over time.
                                     </ParagraphElement>
                                 </SectionContent>
                                 

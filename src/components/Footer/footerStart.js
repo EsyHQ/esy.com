@@ -13,10 +13,7 @@ const FooterStart = () => {
                     </CompanyLogo>
             
                     <CompanyDesc>
-                      {/* esy Journal is your personal writing platform for composing 
-                      rich and expressive essays while capturing powerful insights about their personal writing habits. */}
-
-                      esy Journal is your personal writing platform powered by advanced language models. Gain powerful insights into your writing style and track your progress over time.
+                      Esy is your personal writing platform powered by advanced language models. Gain powerful insights into your writing style and track your progress over time.
                     </CompanyDesc>
          
                 </FooterLeft>

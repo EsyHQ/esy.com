@@ -16,8 +16,8 @@ export default PolicyPage;
 
 export const Head = () => {
   const meta = {
-      title: 'Privacy Policy | esy Journal',
-      description: 'esy Journal is the leading platform for crafting rich and expressive essays with the help of our powerful and trusted AI writing assistant. Unleash your creativity and produce your most impressive work today.',
+      title: 'Privacy Policy | Esy',
+      description: 'Esy is the leading platform for crafting rich and expressive essays with the help of our powerful and trusted AI writing assistant. Unleash your creativity and produce your most impressive work today.',
   }
 
   return <SEO meta={meta} />
