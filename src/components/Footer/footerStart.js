@@ -13,7 +13,7 @@ const FooterStart = () => {
                     </CompanyLogo>
             
                     <CompanyDesc>
-                      Esy is your personal writing platform powered by advanced language models. Gain powerful insights into your writing style and track your progress over time.
+                    Esy is the leading app for crafting rich and expressive essays with the help of our powerful and trusted AI writing assistant. Unleash your creativity and produce your most impressive work today.
                     </CompanyDesc>
          
                 </FooterLeft>

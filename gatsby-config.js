@@ -8,9 +8,8 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     pathPrefix: "/",
-    title: "esy.com | The Smart Journal",
-    description: `Esy is a digital journaling platform that offers users a suite of analytical tools for 
-    discovering powerful insights about their personal writing habits.`,
+    title: "Esy | The Smart Journal",
+    description: `Esy is the leading app for crafting rich and expressive essays with the help of our powerful and trusted AI writing assistant. Unleash your creativity and produce your most impressive work today.`,
     twitterUsername: `@esyjournal`,
     image: "images/esyjournal-brand-bg.jpeg",
     siteUrl: process.env.GATSBY_SITE_URL,
