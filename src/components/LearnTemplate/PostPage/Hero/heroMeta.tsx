@@ -46,7 +46,7 @@ const categoryColorTheme = getCategoryColorTheme(category);
         <div className="text-md font-medium leading-tight text-white dark:text-white">
           <div>{author}</div>
           <div className="text-sm font-normal text-gray-500 dark:text-gray-400 mt-1">
-            Founder, esy.com
+            Founder, Esy
           </div>
         </div>
         </div>
