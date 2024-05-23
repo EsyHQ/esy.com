@@ -16,7 +16,7 @@ const FooterEnd = () => {
           rel="noopener noreferrer"
         >
           &copy;{' '}
-          2024 Esy Journal, LLC.
+          2024 Esy. All Rights Reserved.
         </a>
       </Trademark>
       <FooterEndRight>
