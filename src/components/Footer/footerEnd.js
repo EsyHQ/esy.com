@@ -17,7 +17,7 @@ const FooterEnd = () => {
         >
           &copy;{' '}
           {/* 2024 Esy. All Rights Reserved. */}
-          2024 Esy Journal LLC.
+          2024 Esy LLC.
         </a>
       </Trademark>
       <FooterEndRight>
