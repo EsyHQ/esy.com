@@ -13,3 +13,12 @@
   for = "/*"
   [headers.values]
     Content-Security-Policy = "frame-ancestors 'self' https://esy.com;"
+
+
+[build]
+  command = "npm install && npm run build"
+  functions = "netlify/functions"
+  publish = "build"
+
+[context.production.environment]
+  CLEAR_CACHE = "true"
