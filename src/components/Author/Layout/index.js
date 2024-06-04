@@ -1,9 +1,6 @@
 import React, { useEffect } from "react"
 import styled from 'styled-components'
 import Helmet from 'react-helmet'
-// import Grid from '@material-ui/core/Grid'
-import { Grid } from '@mui/material'
-import CssBaseline from '@mui/material/CssBaseline'
 
 
 import Sidebar from 'src/components/Sidebar'
@@ -12,14 +9,13 @@ import ToolBar from "../../ToolBar"
 
 const Layout = ({ children }) => {
 
-  return (<Grid container spaces={3}>
-            <CssBaseline />
+  return (<>
             <LayoutWrapper>
               <Helmet></Helmet>
               <Sidebar />
               <MainElement>{children}</MainElement>
             </LayoutWrapper>
-          </Grid>)
+            </>)
 }
 
 export default Layout

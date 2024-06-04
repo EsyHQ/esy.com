@@ -17,8 +17,6 @@ const FooterEnd = () => {
         >
           &copy;{' '}
           {/* 2024 Esy LLC. All Rights Reserved. */}
-          {/* 2024 Esy Journal LLC. All rights reserved. */}
-          {/* 2024 Esy LLC. */}
           2024 Esy LLC.
         </a>
       </Trademark>
@@ -84,6 +82,8 @@ const LegalLinks = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  max-width: 150px;
 
   a {
     :not(:last-child) {

@@ -2,8 +2,6 @@ import React, { useEffect } from "react"
 import styled from 'styled-components'
 import Helmet from 'react-helmet'
 // import Grid from '@material-ui/core/Grid';
-import { Grid } from '@mui/material'
-import CssBaseline from '@mui/material/CssBaseline';
 
 
 import Header from "src/components/Header"
@@ -26,7 +24,7 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children, hasHeader = true, hasHeaderNav = true, 
   hasFooter = true, hasFooterStart = true }) => {
 
-  return (<Grid container>
+  return (<>
             <LayoutWrapper>
               {hasHeader && <Header hasHeaderNav={hasHeaderNav} />}
               {/* <MobileHeader /> */}
@@ -35,7 +33,7 @@ const Layout: React.FC<LayoutProps> = ({ children, hasHeader = true, hasHeaderNa
               <MainElement>{children}</MainElement>
               {hasFooter && <Footer hasFooterStart={hasFooterStart} />}
             </LayoutWrapper>
-          </Grid>)
+          </>)
 }
 
 export default Layout
