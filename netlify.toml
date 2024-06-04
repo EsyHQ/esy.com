@@ -8,17 +8,20 @@
   to = "https://esy.com/"
   status = 301
 
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
 [[headers]]
   for = "/*"
   [headers.values]
     Content-Security-Policy = "frame-ancestors 'self' https://esy.com;"
 
-
 [build]
   command = "npm install && npm run build"
   functions = "netlify/functions"
-  publish = "build"
+  publish = "public"
 
 [context.production.environment]
   CLEAR_CACHE = "true"
