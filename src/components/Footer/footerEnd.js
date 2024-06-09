@@ -15,9 +15,8 @@ const FooterEnd = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          &copy;{' '}
-          {/* 2024 Esy LLC. All Rights Reserved. */}
-          2024 Esy LLC.
+          
+          ESY LLC &copy;{' '} 2024
         </a>
       </Trademark>
       <FooterEndRight>

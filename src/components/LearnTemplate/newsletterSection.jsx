@@ -9,8 +9,12 @@ export default function NewsletterSection() {
       <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl dark:text-white">
         Subscribe to Esy School
       </h2>
+      {/* <p class="max-w-xl mx-auto mb-6 text-gray-500 md:text-lg dark:text-gray-400">
+      Get expert tips on AI essay writing and prompt engineering. Delivered to your inbox, no spam.
+      </p> */}
+
       <p class="max-w-xl mx-auto mb-6 text-gray-500 md:text-lg dark:text-gray-400">
-        Get the latest guides, tutorials, and resources straight to your inbox. No spam, promise.
+      Enhance your essay writing with AI and prompt engineering. Expert tips delivered to your inbox, no spam.
       </p>
 
       <form action="#" class="max-w-lg mx-auto">

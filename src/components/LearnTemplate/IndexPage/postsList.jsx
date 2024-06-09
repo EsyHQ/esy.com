@@ -7,6 +7,7 @@ import Sidebar from './sidebar';
 
 
 export default function PostsList({ posts }) {
+  console.log(posts, 'sooooo many posts')
 
   return (
     <section className="bg-white dark:bg-gray-900">

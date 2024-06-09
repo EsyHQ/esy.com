@@ -1,8 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-
-
 import { useSiteMetadata } from 'src/hooks/use-site-metadata'
 
 import SEO from 'src/components/SEO'
@@ -12,53 +10,86 @@ import HeroSection from 'src/components/LearnTemplate/IndexPage/hero'
 import NewsletterSection from 'src/components/LearnTemplate/newsletterSection'
 import NewsletterHero from 'src/components/LearnTemplate/IndexPage/newsletterHero'
 
+export default function SchoolIndexPage({ data }) {
+  const { edges: featuredEdges } = data.featuredPosts
+  const { edges: nonFeaturedEdges } = data.nonFeaturedPosts
 
-export default function LearnIndexPage({ data }) {
-  const { edges } = data?.allMarkdownRemark
-
-  return (<Layout>
-    <main class="w-full antialiased">
-      <HeroSection data={data} />
-      <PostsList posts={edges} />
-      <NewsletterSection />
-    </main>
-  </Layout>)
+  return (
+    <Layout>
+      <main class="w-full antialiased">
+        <HeroSection data={{ allMarkdownRemark: { edges: featuredEdges } }} />
+        <PostsList posts={nonFeaturedEdges} />
+        <NewsletterSection />
+      </main>
+    </Layout>
+  )
 }
 
-export const indexQuery = graphql`
-   query LearnIndexQuery  {
-      allMarkdownRemark(
-        filter: { frontmatter: { featured: { gt: 0 } } }
-        sort: { fields: [frontmatter___featured], order: ASC }
-      ) {
-        edges {
-          node {
-            id
-            frontmatter {
-              slug
-              title
-              date(formatString: "MMM D, YYYY")
-              author
-              authorImage {
-                childImageSharp {
-                  gatsbyImageData(width: 1000, layout: FULL_WIDTH, placeholder: BLURRED, quality: 100, formats: [AUTO, WEBP, AVIF])
-                }
-              }
-              category
-              featured
-              featuredImagePath
-              featuredImage {
-                childImageSharp {
-                  gatsbyImageData(width: 1000, layout: FULL_WIDTH, placeholder: BLURRED, quality: 100, formats: [AUTO, WEBP, AVIF])
-                }
+
+export const SchoolIndexQuery = graphql`
+  query SchoolIndexQuery {
+    featuredPosts: allMarkdownRemark(
+      filter: { frontmatter: { featured: { gt: 0 } } }
+      sort: { fields: [frontmatter___featured], order: ASC }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            slug
+            title
+            date(formatString: "MMM D, YYYY")
+            author
+            authorImage {
+              childImageSharp {
+                gatsbyImageData(width: 1000, layout: FULL_WIDTH, placeholder: BLURRED, quality: 100, formats: [AUTO, WEBP, AVIF])
               }
             }
-            excerpt
+            category
+            featured
+            featuredImagePath
+            featuredImage {
+              childImageSharp {
+                gatsbyImageData(width: 1000, layout: FULL_WIDTH, placeholder: BLURRED, quality: 100, formats: [AUTO, WEBP, AVIF])
+              }
+            }
           }
+          excerpt
         }
       }
-    }`
-
+    }
+    nonFeaturedPosts: allMarkdownRemark(
+      filter: { frontmatter: { featured: { lte: 0 } } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          id
+          frontmatter {
+            slug
+            title
+            date(formatString: "MMM D, YYYY")
+            author
+            authorImage {
+              childImageSharp {
+                gatsbyImageData(width: 1000, layout: FULL_WIDTH, placeholder: BLURRED, quality: 100, formats: [AUTO, WEBP, AVIF])
+              }
+            }
+            category
+            featured
+            featuredImagePath
+            featuredImage {
+              childImageSharp {
+                gatsbyImageData(width: 1000, layout: FULL_WIDTH, placeholder: BLURRED, quality: 100, formats: [AUTO, WEBP, AVIF])
+              }
+            }
+          }
+          excerpt
+        }
+      }
+    }
+  }
+`
 
 export const Head = () => {
   const { description, image, siteUrl, type, twitterUsername } = useSiteMetadata()
