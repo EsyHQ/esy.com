@@ -5,6 +5,12 @@
   force = true
 
 [[redirects]]
+  from = "http://*.esy.com/*"
+  to = "https://esy.netlify.app/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
