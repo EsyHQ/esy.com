@@ -1,6 +1,6 @@
 [[redirects]]
   from = "https://*.esy.com/*"
-  to = "https://www.esy.com/:splat"
+  to = "https://esy.netlify.app/:splat"
   status = 301
   force = true
 
@@ -12,7 +12,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "frame-ancestors 'self' https://www.esy.com;"
+    Content-Security-Policy = "frame-ancestors 'self' https://esy.netlify.app;"
 
 [build]
   command = "npm install && npm run build"
