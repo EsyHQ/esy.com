@@ -1,12 +1,8 @@
 [[redirects]]
-  from = "https://journal.esy.com/*"
-  to = "https://journal.esy.com/:splat"
-  status = 200
-
-[[redirects]]
   from = "https://*.esy.com/*"
-  to = "https://esy.com/"
+  to = "https://www.esy.com/:splat"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/*"
@@ -16,7 +12,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "frame-ancestors 'self' https://esy.com;"
+    Content-Security-Policy = "frame-ancestors 'self' https://www.esy.com;"
 
 [build]
   command = "npm install && npm run build"
