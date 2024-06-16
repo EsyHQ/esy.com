@@ -1,11 +1,11 @@
 import React from "react";
 import { graphql, PageProps } from "gatsby";
-import { getSrc } from "gatsby-plugin-image";
+import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image";
 import Layout from "src/components/Layout";
 import LearnPostHero from "src/components/LearnTemplate/PostPage/Hero";
 import styled from "styled-components";
 import Sidebar from "src/components/LearnTemplate/PostPage/sidebar";
-import { getImage } from "gatsby-plugin-image";
+import { IGatsbyImageData } from "gatsby-plugin-image/dist/src/components/gatsby-image.browser";
 
 
 // Type definitions for the expected GraphQL query result
@@ -77,11 +77,17 @@ const LearnPostTemplate: React.FC<LearnPostTemplateProps> = ({ data }) => {
 
 export default LearnPostTemplate;
 
-export const Head: React.FC<{ data: LearnPostTemplateQuery }> = ({ data, location }) => {
+export const Head: React.FC<{ data: LearnPostTemplateQuery, location: Location }> = ({ data, location }) => {
   const { frontmatter } = data.markdownRemark;
   const { title, excerpt, featuredImage } = frontmatter;
   const imageSrc = getSrc(featuredImage.childImageSharp.gatsbyImageData);
-  const imageUrl = `${location.origin}${imageSrc}`;
+  const origin = typeof window !== 'undefined' ? window.location.origin : '';
+  const imageUrl = imageSrc ? `${origin}${imageSrc}` : null;
+  const pageUrl = location.href;
+
+  console.log('imageSrc:', imageSrc);
+  console.log('imageUrl:', imageUrl);
+  console.log('origin:', origin);
 
   return (
     <>
@@ -89,15 +95,20 @@ export const Head: React.FC<{ data: LearnPostTemplateQuery }> = ({ data, locatio
       <meta name="description" content={excerpt} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={excerpt} />
-      <meta property="og:image" content={imageUrl} />
+      {imageUrl && <meta property="og:image" content={imageUrl} />}
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
       <meta property="og:type" content="article" />
+      <meta property="og:url" content={pageUrl} />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={excerpt} />
-      <meta name="twitter:image" content={imageUrl} />
+      {imageUrl && <meta name="twitter:image" content={imageUrl} />}
+      <meta name="twitter:url" content={pageUrl} />
+
+      {/* Optionally include fb:app_id if you have a Facebook App ID */}
+      {/* <meta property="fb:app_id" content="YOUR_FACEBOOK_APP_ID" /> */}
     </>
   );
 };
