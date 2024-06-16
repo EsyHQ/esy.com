@@ -7,6 +7,7 @@ import styled from "styled-components";
 import Sidebar from "src/components/LearnTemplate/PostPage/sidebar";
 import { getImage } from "gatsby-plugin-image";
 
+
 // Type definitions for the expected GraphQL query result
 interface LearnPostTemplateQuery {
   markdownRemark: {
@@ -76,10 +77,11 @@ const LearnPostTemplate: React.FC<LearnPostTemplateProps> = ({ data }) => {
 
 export default LearnPostTemplate;
 
-export const Head: React.FC<{ data: LearnPostTemplateQuery }> = ({ data }) => {
+export const Head: React.FC<{ data: LearnPostTemplateQuery }> = ({ data, location }) => {
   const { frontmatter } = data.markdownRemark;
   const { title, excerpt, featuredImage } = frontmatter;
   const imageSrc = getSrc(featuredImage.childImageSharp.gatsbyImageData);
+  const imageUrl = `${location.origin}${imageSrc}`;
 
   return (
     <>
@@ -87,8 +89,15 @@ export const Head: React.FC<{ data: LearnPostTemplateQuery }> = ({ data }) => {
       <meta name="description" content={excerpt} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={excerpt} />
-      <meta property="og:image" content={imageSrc} />
+      <meta property="og:image" content={imageUrl} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
       <meta property="og:type" content="article" />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={excerpt} />
+      <meta name="twitter:image" content={imageUrl} />
     </>
   );
 };
@@ -114,7 +123,7 @@ export const query = graphql`
         featuredImagePath
         featuredImage {
           childImageSharp {
-            gatsbyImageData(width: 1400)
+            gatsbyImageData(width: 1200, height: 630)
           }
         }
       }
