@@ -13,7 +13,7 @@ const FooterStart = () => {
                     </CompanyLogo>
             
                     <CompanyDesc>
-                    Esy helps you create unique, original essays with our AI-powered writing assistant, ensuring authenticity and academic integrity.
+                    Write your next paper with Esy, an AI assistant that learns your writing style to create original, authentic essays.
                     </CompanyDesc>
          
                 </FooterLeft>
