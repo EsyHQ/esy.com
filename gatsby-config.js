@@ -6,8 +6,8 @@ module.exports = {
   siteMetadata: {
     pathPrefix: "/",
     title: "Esy - Your Personal Ai Essay Writer",
-    description: `Esy is the leading platform for crafting rich and expressive essays with the help of our powerful and trusted AI writing assistant. Unleash your creativity and produce your most impressive work today.`,
-    twitterUsername: `@esyjournal`,
+    description: `Write your next paper with Esy, an AI assistant that learns your writing style to create original, authentic essays.`,
+    twitterUsername: `@esydotcom`,
     image: "images/esyjournal-brand-bg.jpeg",
     siteUrl: process.env.GATSBY_SITE_URL,
     type: "website",
@@ -67,7 +67,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: `Esy - The Smart Journal`,
+        name: `Esy - Your Personal Ai Essay Writer`,
         short_name: `Esy`,
         start_url: `/`,
         background_color: `#ffffff`,

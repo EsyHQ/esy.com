@@ -43,7 +43,7 @@ export const homePageQuery = graphql`
 export const Head = () => {
     const meta = {
         title: 'Esy - Your Personal AI Essay Writer',
-        description: 'Create unique, original essays that reflect your personal writing style with Esy. Our AI ensures authenticity and helps you maintain your academic integrity.',
+        description: 'Write your next paper with Esy, an AI assistant that learns your writing style to create original, authentic essays.',
     }
 
     return <SEO meta={meta} />
