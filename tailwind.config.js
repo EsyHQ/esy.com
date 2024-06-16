@@ -15,6 +15,7 @@ module.exports = {
     extend: {
       fontSize: {
         '51': '3.1875rem',
+        '72': '4.5rem',   
       },
       maxWidth: {
         '30p': '30%',

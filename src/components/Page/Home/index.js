@@ -15,7 +15,7 @@ export default function IndexPage({ data }) {
             <SectionWrapper>
               <HeroWrapper>
                   <HeroSummary>
-                    <HeroParagraph>The Smart Journal<br/>for Essayist</HeroParagraph>
+                    <h1 className="text-72">Your<br/> Personal Ai Essay<br/>Writer</h1>
                   </HeroSummary>
               </HeroWrapper>
             </SectionWrapper>
