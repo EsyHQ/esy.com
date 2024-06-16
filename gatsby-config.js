@@ -1,14 +1,11 @@
-
-
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
-
 module.exports = {
   siteMetadata: {
     pathPrefix: "/",
-    title: "Esy - The Smart Journal",
+    title: "Esy - Your Personal Ai Essay Writer",
     description: `Esy is the leading platform for crafting rich and expressive essays with the help of our powerful and trusted AI writing assistant. Unleash your creativity and produce your most impressive work today.`,
     twitterUsername: `@esyjournal`,
     image: "images/esyjournal-brand-bg.jpeg",
@@ -43,17 +40,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
           `${process.env.GOOGLE_ANALYTICS_TRACKING_ID}`,
         ],
-        
         pluginConfig: {
-          // Puts tracking script in the head instead of the body
           head: true,
-          // Setting this parameter is also optional
           respectDNT: true,
-          // Avoids sending pageview hits from custom paths
           exclude: ["/preview/**", "/do-not-track/me/too/"],
         },
       },
@@ -61,8 +53,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mailchimp',
       options: {
-          endpoint: 'https://esy.us20.list-manage.com/subscribe/post?u=3b51c8da7ed629b563d12cc11&amp;id=83cab3c485', // string; add your MC list endpoint here; see instructions below
-          timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
+          endpoint: 'https://esy.us20.list-manage.com/subscribe/post?u=3b51c8da7ed629b563d12cc11&amp;id=83cab3c485',
+          timeout: 3500,
       },
     },
     {
@@ -75,7 +67,40 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon:`${__dirname}/src/images/favicon-32x32.png`,
+        name: `Esy - The Smart Journal`,
+        short_name: `Esy`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#663399`,
+        display: `standalone`,
+        icon: `static/favicon/favicon-32x32.png`, // Path to the main favicon
+        icons: [
+          {
+            src: `/favicon/favicon-192x192.png`,
+            sizes: `192x192`,
+            type: `image/png`,
+          },
+          {
+            src: `/favicon/favicon-512x512.png`,
+            sizes: `512x512`,
+            type: `image/png`,
+          },
+          {
+            src: `/favicon/favicon-32x32.png`,
+            sizes: `32x32`,
+            type: `image/png`,
+          },
+          {
+            src: `/favicon/favicon-16x16.png`,
+            sizes: `16x16`,
+            type: `image/png`,
+          },
+          {
+            src: `/favicon/apple-touch-icon.png`,
+            sizes: `180x180`,
+            type: `image/png`,
+          },
+        ],
       },
     },
     {
