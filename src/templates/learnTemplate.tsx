@@ -1,10 +1,11 @@
 import React from "react";
 import { graphql, PageProps } from "gatsby";
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { getSrc } from "gatsby-plugin-image";
 import Layout from "src/components/Layout";
 import LearnPostHero from "src/components/LearnTemplate/PostPage/Hero";
 import styled from "styled-components";
 import Sidebar from "src/components/LearnTemplate/PostPage/sidebar";
+import { getImage } from "gatsby-plugin-image";
 
 // Type definitions for the expected GraphQL query result
 interface LearnPostTemplateQuery {
@@ -77,12 +78,17 @@ export default LearnPostTemplate;
 
 export const Head: React.FC<{ data: LearnPostTemplateQuery }> = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
-  const { title, excerpt } = frontmatter;
+  const { title, excerpt, featuredImage } = frontmatter;
+  const imageSrc = getSrc(featuredImage.childImageSharp.gatsbyImageData);
 
   return (
     <>
       <title>{title}</title>
       <meta name="description" content={excerpt} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={excerpt} />
+      <meta property="og:image" content={imageSrc} />
+      <meta property="og:type" content="article" />
     </>
   );
 };
