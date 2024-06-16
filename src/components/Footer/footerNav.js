@@ -8,13 +8,21 @@ const FooterNav = () => {
 
   return (<FooterNavContainer>
     <FooterList>
+    <FooterListItem>
+        <FooterListItemTitle>Resources</FooterListItemTitle>
+        <FooterSubNav>
+          <FooterSubNavList>
+            <FooterSubNavListItem><Link to="/news">News</Link></FooterSubNavListItem>
+            <FooterSubNavListItem><Link to="/essays">Essays</Link></FooterSubNavListItem>
+          </FooterSubNavList>
+        </FooterSubNav>
+      </FooterListItem>
       <FooterListItem>
         <FooterListItemTitle>Education</FooterListItemTitle>
         <FooterSubNav>
           <FooterSubNavList>
-            {/* <FooterSubNavListItem><Link to="/essays">Essays</Link></FooterSubNavListItem> */}
             <FooterSubNavListItem><Link to="/school">School</Link></FooterSubNavListItem>
-            <FooterSubNavListItem><a href="https://research.esy.com" target="_blank">Research</a></FooterSubNavListItem>
+            <FooterSubNavListItem><a href="https://journal.esy.com" target="_blank">Journal</a></FooterSubNavListItem>
           </FooterSubNavList>
         </FooterSubNav>
       </FooterListItem>

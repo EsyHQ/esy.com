@@ -13,7 +13,7 @@ const FooterStart = () => {
                     </CompanyLogo>
             
                     <CompanyDesc>
-                    Esy is the leading platform for crafting rich and expressive essays with the help of our powerful and trusted AI writing assistant. Unleash your creativity and produce your most impressive work today.
+                    Esy helps you create unique, original essays with our AI-powered writing assistant, ensuring authenticity and academic integrity.
                     </CompanyDesc>
          
                 </FooterLeft>
@@ -70,7 +70,10 @@ const FooterStartContainer = styled.div`
 
 
 const CompanyLogo = styled.div`
-  margin-top: 50px;
+  margin-top: 25px;
+  // @media(max-width: 600px) {
+  //   margin-top: 25px;
+  // }
 `
 
 
@@ -93,6 +96,7 @@ const FooterLeft = styled.div`
 `
 const FooterRight = styled.div`
   width: 100%;
+  margin-top: 40px;
 
   @media(max-width: 1200px) {
     display: flex;
