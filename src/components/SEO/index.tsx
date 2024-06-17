@@ -9,14 +9,17 @@ interface SEOProps {
     url: string
     type: string
     twitterUsername: string
+    structuredData: object
   }
+
   pathname: string
   children: React.ReactNode
 }
 
 
 const SEO: React.FC<SEOProps> = ({ meta, pathname, children }) => {
-  const { title: defaultTitle, description: defaultDescription, image, siteUrl, twitterUsername, type: defaultType } = useSiteMetadata()
+
+  const { title: defaultTitle, description: defaultDescription, image, siteUrl, twitterUsername, type: defaultType, structuredData: {} } = useSiteMetadata()
 
   const seo = {
     title: meta?.title || defaultTitle,
@@ -25,6 +28,7 @@ const SEO: React.FC<SEOProps> = ({ meta, pathname, children }) => {
     url: meta?.url || `${siteUrl}${pathname || ``}`,
     type: meta?.type || defaultType,
     twitterUsername: meta?.twitterUsername || twitterUsername,
+    structuredData: meta?.structuredData || {},
   }
 
 
@@ -44,6 +48,9 @@ const SEO: React.FC<SEOProps> = ({ meta, pathname, children }) => {
       <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:image" content={seo.image} />
       <meta name="twitter:creator" content={seo.twitterUsername} />
+      <script type="application/ld+json">
+        {JSON.stringify(seo.structuredData)}
+      </script>
       {children}
     </>
   )
