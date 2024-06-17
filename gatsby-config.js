@@ -8,7 +8,7 @@ module.exports = {
     title: "Esy - Your Personal Ai Essay Writer",
     description: `Write your next paper with Esy, an AI assistant that learns your writing style to create original, authentic essays.`,
     twitterUsername: `@esydotcom`,
-    image: "images/esyjournal-brand-bg.jpeg",
+    image: "/images/esy-brand-512.png",
     siteUrl: process.env.GATSBY_SITE_URL,
     type: "website",
   },
@@ -73,7 +73,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `standalone`,
-        icon: `static/favicon/favicon-32x32.png`, // Path to the main favicon
+        icon: `static/favicon/favicon-512x512.png`, // Path to the main favicon
         icons: [
           {
             src: `/favicon/favicon-192x192.png`,

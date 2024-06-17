@@ -68,7 +68,6 @@ const HeroSummary = styled.div`
   flex-direction: column;
   color: #fff;
   font-size: 36px;
-  // max-width: 550px;
   max-width: 400px;
   text-align: center;
   align-items: flex-start;
