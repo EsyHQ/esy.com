@@ -8,7 +8,7 @@ module.exports = {
     title: "Esy - Your Personal Ai Essay Writer",
     description: `Write your next paper with Esy, an AI assistant that learns your writing style to create original, authentic essays.`,
     twitterUsername: `@esydotcom`,
-    image: "/images/esy-brand-512.png",
+    image: "/images/esy-brand-bg.png",
     siteUrl: process.env.GATSBY_SITE_URL,
     type: "website",
   },
