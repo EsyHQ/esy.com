@@ -19,7 +19,7 @@ interface SEOProps {
 
 const SEO: React.FC<SEOProps> = ({ meta, pathname, children }) => {
 
-  const { title: defaultTitle, description: defaultDescription, image, siteUrl, twitterUsername, type: defaultType, structuredData: {} } = useSiteMetadata()
+  const { title: defaultTitle, description: defaultDescription, image, siteUrl, twitterUsername, type: defaultType } = useSiteMetadata()
 
   const seo = {
     title: meta?.title || defaultTitle,
