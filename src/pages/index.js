@@ -50,7 +50,7 @@ export const Head = () => {
         name: 'Esy - Your Personal AI Essay Writer',
         description: 'Write your next paper with Esy, an AI assistant that learns your writing style to create original, authentic essays.',
         url: 'https://www.esy.com',
-        logo: 'https://www.esy.com/images/esy-brand-512.png',
+        logo: 'https://www.esy.com/images/esy-logo.png',
         image: 'https://www.esy.com/images/esy-brand-bg.jpeg',
         sameAs: [
           'https://x.com/esydotcom',
