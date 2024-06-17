@@ -22,8 +22,8 @@ const recommendedTopics = [
 ];
 
 const socialLinks = [
-  { name: 'X', icon: 'x', url: 'https://x.com/@esyjournal' },
-  { name: 'Facebook', icon: 'facebook', url: 'https://facebook.com/esyjournal' },
+  { name: 'X', icon: 'x', url: 'https://x.com/@esydotcom' },
+  { name: 'Facebook', icon: 'facebook', url: 'https://facebook.com/esydotcom' },
   { name: 'Medium', icon: 'medium', url: 'https://medium.com/' },
   { name: 'Instagram', icon: 'instagram', url: 'https://instagram.com/' },
 ];
@@ -58,7 +58,7 @@ export default function Sidebar() {
           <ul className="flex space-x-4">
   <li>
     <a
-      href="https://www.x.com/@esyjournal"
+      href="https://www.x.com/@esydotcom"
       target="_blank"
       title=""
       className="flex items-center gap-2.5 text-base font-semibold hover:underline text-gray-900 dark:text-white"
