@@ -1,8 +1,6 @@
 # Esy - Your Personal AI Essay Writer
 
 ![Esy Logo](https://esy.com/images/esy-brand-bg.webp)
-Here is a customized README file for your Gatsby site:
-
 ---
 
 ## Overview
@@ -89,5 +87,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For support or inquiries, please contact us at support@esy.com or visit our [website](https://esy.com).
 
 ---
-
-Feel free to modify this as needed to better fit your specific requirements and any additional information you'd like to include.
