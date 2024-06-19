@@ -58,7 +58,7 @@ export default function Sidebar() {
           <ul className="flex space-x-4">
   <li>
     <a
-      href="https://www.x.com/@esydotcom"
+      href="https://www.x.com/@esywriter"
       target="_blank"
       title=""
       className="flex items-center gap-2.5 text-base font-semibold hover:underline text-gray-900 dark:text-white"
@@ -68,7 +68,7 @@ export default function Sidebar() {
   </li>
   <li>
     <a
-      href="https://www.youtube.com/@esyjournal"
+      href="https://www.youtube.com/@essay-writer"
       target="_blank"
       title=""
       className="flex items-center gap-2.5 text-base font-semibold hover:underline text-gray-900 dark:text-white"
