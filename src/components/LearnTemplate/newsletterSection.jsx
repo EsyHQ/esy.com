@@ -7,7 +7,7 @@ export default function NewsletterSection() {
   <div class="max-w-screen-xl px-4 py-8 mx-auto sm:py-16 lg:py-24">
     <div class="max-w-2xl mx-auto text-center">
       <h2 class="mb-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl dark:text-white">
-        Subscribe to Esy School
+        Subscribe to <span className=" text-secondary">Esy </span> School
       </h2>
       {/* <p class="max-w-xl mx-auto mb-6 text-gray-500 md:text-lg dark:text-gray-400">
       Get expert tips on AI essay writing and prompt engineering. Delivered to your inbox, no spam.
