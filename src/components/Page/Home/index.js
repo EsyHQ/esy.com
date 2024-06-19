@@ -15,7 +15,7 @@ export default function IndexPage({ data }) {
             <SectionWrapper>
               <HeroWrapper>
                   <HeroSummary>
-                  <h1 className="text-72">Your<br/> Personal Ai Es<span className="line-through">sa</span>y<br/>Writer</h1>
+                  <h1 className="text-72">Your<br/> Personal Ai <span className=" text-secondary">Es</span>sa<span className=" text-secondary">y</span><br/>Writer</h1>
                   </HeroSummary>
               </HeroWrapper>
             </SectionWrapper>
