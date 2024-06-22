@@ -53,10 +53,12 @@ export const Head = () => {
         logo: 'https://www.esy.com/images/esy-logo.png',
         image: 'https://www.esy.com/images/esy-brand-bg.webp',
         sameAs: [
-          'https://x.com/esydotcom',
-          'https://www.facebook.com/@esydotcom',
-          'https://www.linkedin.com/company/esydotcom',
-          'https://www.instagram.com/esydotcom',
+          'https://www.x.com/esywriter',
+          'https://www.github.com/esywriter',
+          'https://www.facebook.com/@esywriter',
+          'https://www.linkedin.com/company/esywriter',
+          'https://www.instagram.com/esywriter',
+          'https://www.youtube.com/@essay-writer',
         ],
       },
     };
