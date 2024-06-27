@@ -12,7 +12,7 @@ const FooterNav = () => {
         <FooterListItemTitle>Resources</FooterListItemTitle>
         <FooterSubNav>
           <FooterSubNavList>
-            <FooterSubNavListItem><Link to="/news">News</Link></FooterSubNavListItem>
+            <FooterSubNavListItem><a href="https://news.esy.com">News</a></FooterSubNavListItem>
             <FooterSubNavListItem><Link to="/essays">Essays</Link></FooterSubNavListItem>
           </FooterSubNavList>
         </FooterSubNav>
