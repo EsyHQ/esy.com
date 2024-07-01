@@ -8,19 +8,19 @@ const FooterNav = () => {
 
   return (<FooterNavContainer>
     <FooterList>
-    <FooterListItem>
+    {/* <FooterListItem>
         <FooterListItemTitle>Resources</FooterListItemTitle>
         <FooterSubNav>
           <FooterSubNavList>
-            <FooterSubNavListItem><a href="https://news.esy.com">News</a></FooterSubNavListItem>
             <FooterSubNavListItem><Link to="/essays">Essays</Link></FooterSubNavListItem>
           </FooterSubNavList>
         </FooterSubNav>
-      </FooterListItem>
+      </FooterListItem> */}
       <FooterListItem>
         <FooterListItemTitle>Education</FooterListItemTitle>
         <FooterSubNav>
           <FooterSubNavList>
+          <FooterSubNavListItem><Link to="/essays">Essays</Link></FooterSubNavListItem>
             <FooterSubNavListItem><Link to="/school">School</Link></FooterSubNavListItem>
             <FooterSubNavListItem><a href="https://journal.esy.com" target="_blank">Journal</a></FooterSubNavListItem>
           </FooterSubNavList>
@@ -33,6 +33,8 @@ const FooterNav = () => {
         <FooterSubNav>
           <FooterSubNavList>
             {/* <FooterSubNavListItem><Link to="/learn">learn</Link></FooterSubNavListItem> */}
+            <FooterSubNavListItem><a href="https://www.esy.com/news">News</a></FooterSubNavListItem>
+
             <FooterSubNavListItem><Link to="/about">about</Link></FooterSubNavListItem>
             <FooterSubNavListItem><a href="mailto: support@esy.com">contact</a></FooterSubNavListItem>
           </FooterSubNavList>
