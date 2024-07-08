@@ -27,9 +27,28 @@
 
 # Temporary redirect to /school
 [[redirects]]
-  from = "/*"
+  from = "/"
   to = "/school"
   status = 302
+  force = true
+
+# Exclude assets from redirect
+[[redirects]]
+  from = "/static/*"
+  to = "/static/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/assets/*"
+  to = "/assets/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/page-data/*"
+  to = "/page-data/:splat"
+  status = 200
   force = true
 
 [[redirects]]
