@@ -9,31 +9,30 @@ const FooterNav = () => {
   return (<FooterNavContainer>
     <FooterList>
     <FooterListItem>
-        <FooterListItemTitle>Resources</FooterListItemTitle>
+        <FooterListItemTitle>EXPLORE</FooterListItemTitle>
         <FooterSubNav>
           <FooterSubNavList>
-            <FooterSubNavListItem><a href="https://www.esy.com/news">News</a></FooterSubNavListItem>
-            <FooterSubNavListItem><Link to="/essays">Essays</Link></FooterSubNavListItem>
+            <FooterSubNavListItem><a href="https://www.esy.com/essays">essays</a></FooterSubNavListItem>
           </FooterSubNavList>
         </FooterSubNav>
       </FooterListItem>
       <FooterListItem>
-        <FooterListItemTitle>Education</FooterListItemTitle>
+        <FooterListItemTitle>LEARN</FooterListItemTitle>
         <FooterSubNav>
           <FooterSubNavList>
-            <FooterSubNavListItem><Link to="/school">School</Link></FooterSubNavListItem>
-            <FooterSubNavListItem><a href="https://journal.esy.com" target="_blank">Journal</a></FooterSubNavListItem>
+            <FooterSubNavListItem><Link to="/school">school</Link></FooterSubNavListItem>
+            <FooterSubNavListItem><a href="https://journal.esy.com" target="_blank">journal</a></FooterSubNavListItem>
           </FooterSubNavList>
         </FooterSubNav>
       </FooterListItem>
 
 
       <FooterListItem>
-        <FooterListItemTitle>Organization</FooterListItemTitle>
+        <FooterListItemTitle>ABOUT</FooterListItemTitle>
         <FooterSubNav>
           <FooterSubNavList>
             {/* <FooterSubNavListItem><Link to="/learn">learn</Link></FooterSubNavListItem> */}
-            <FooterSubNavListItem><Link to="/about">about</Link></FooterSubNavListItem>
+            <FooterSubNavListItem><Link to="/about">about us</Link></FooterSubNavListItem>
             <FooterSubNavListItem><a href="mailto: support@esy.com">contact</a></FooterSubNavListItem>
           </FooterSubNavList>
         </FooterSubNav>
@@ -87,8 +86,8 @@ const FooterListItem = styled.li`
   }
 `
 const FooterListItemTitle = styled.span`
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 600;
 `
 
 

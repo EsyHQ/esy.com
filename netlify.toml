@@ -12,15 +12,15 @@
   force = true
 
 [[redirects]]
-  from = "/news/*"
-  to = "https://esy-news.ghost.io/news/:splat"
+  from = "/essays/*"
+  to = "https://esy-news.ghost.io/essays/:splat"
   status = 200
   force = true
   headers = {X-Forwarded-Host = "www.esy.com"}
 
 [[redirects]]
-  from = "/news"
-  to = "https://esy-news.ghost.io/news/"
+  from = "/essays"
+  to = "https://esy-news.ghost.io/essays/"
   status = 200
   force = true
   headers = {X-Forwarded-Host = "www.esy.com"}
