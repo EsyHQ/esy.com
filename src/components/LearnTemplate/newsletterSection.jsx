@@ -1,5 +1,5 @@
 import React from 'react';
-
+import BeehiivEmbed from '../BeeHiivEmbed/slim';
 
 export default function NewsletterSection() {
     return (
@@ -17,7 +17,7 @@ export default function NewsletterSection() {
       Enhance your essay writing with AI and prompt engineering. Expert tips delivered to your inbox, no spam.
       </p>
 
-      <form action="#" class="max-w-lg mx-auto">
+      {/* <form action="#" class="max-w-lg mx-auto">
         <div class="items-center mb-3 space-y-4 sm:flex sm:space-y-0">
           <div class="relative w-full">
             <label for="email" class="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email
@@ -43,7 +43,8 @@ export default function NewsletterSection() {
           your data. Read our <a href="#" class="text-white underline dark:text-white hover:no-underline">Privacy
             Policy</a>.
         </div>
-      </form>
+      </form> */}
+      <BeehiivEmbed />
     </div>
   </div>
 </section>
