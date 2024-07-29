@@ -2,7 +2,7 @@
 slug: "/school/writing-with-ai-evaluating-llms-photonic-chips-essay"
 date: "2024-06-09"
 title: "Evaluating the Use of LLMs in Crafting an Essay on Photonic Chips"
-author: "Lem Uhuru"
+author: "Zev Uhuru"
 authorImage: ../../images/mdImages/lem-lifts.jpeg
 journal_name: "learn"
 category: "Tutorial"

@@ -44,6 +44,7 @@ export default function NewsletterSection() {
             Policy</a>.
         </div>
       </form> */}
+      // Switch back to the commented form above once we transition to SendGrid/BeeHiiv setup. Currently using BeeHiiv embed.
       <BeehiivEmbed />
     </div>
   </div>
