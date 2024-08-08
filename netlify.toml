@@ -25,13 +25,6 @@
   force = true
   headers = {X-Forwarded-Host = "www.esy.com"}
 
-# Temporary redirect to /school
-[[redirects]]
-  from = "/"
-  to = "/school"
-  status = 302
-  force = true
-
 # Exclude assets from redirect
 [[redirects]]
   from = "/static/*"
