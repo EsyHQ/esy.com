@@ -21,7 +21,8 @@ const FooterNav = () => {
         <FooterSubNav>
           <FooterSubNavList>
             <FooterSubNavListItem><Link to="/school">school</Link></FooterSubNavListItem>
-            <FooterSubNavListItem><a href="https://journal.esy.com" target="_blank">journal</a></FooterSubNavListItem>
+            <FooterSubNavListItem><a href="https://research.esy.com" target="_blank">research</a></FooterSubNavListItem>
+
           </FooterSubNavList>
         </FooterSubNav>
       </FooterListItem>
