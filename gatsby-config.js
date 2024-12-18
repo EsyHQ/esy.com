@@ -9,7 +9,7 @@ module.exports = {
     description: `Write your next paper with Esy, an AI assistant that learns your writing style to create original, authentic essays.`,
     twitterUsername: `@esydotcom`,
     image: "/images/esy-brand-bg.webp",
-    siteUrl: process.env.GATSBY_SITE_URL,
+    siteUrl: process.env.GATSBY_SITE_URL || "https://www.esy.com",
     type: "website",
   },
   plugins: [

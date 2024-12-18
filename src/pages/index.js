@@ -58,7 +58,7 @@ export const Head = () => {
           'https://www.facebook.com/@esywriter',
           'https://www.linkedin.com/company/esywriter',
           'https://www.instagram.com/esywriter',
-          'https://www.youtube.com/@essay-writer',
+          'https://www.youtube.com/@EsyHQ',
         ],
       },
     };
