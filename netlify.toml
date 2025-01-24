@@ -1,4 +1,11 @@
 # Redirect rules
+
+[[redirects]]
+ from = "/"
+  to = "/school"
+  status = 302
+  force = true
+
 [[redirects]]
   from = "https://*.esy.com/*"
   to = "https://www.esy.com/:splat"
