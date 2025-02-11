@@ -11,18 +11,16 @@ import NewsletterSection from 'src/components/LearnTemplate/newsletterSection'
 import IntroSection from 'src/components/LearnTemplate/IndexPage/IntroSection'
 import NewsletterHero from 'src/components/LearnTemplate/IndexPage/newsletterHero'
 
-export default function SchoolIndexPage({ data }) {
+export default function ResearchIndexPage({ data }) {
   const { edges: featuredEdges } = data.featuredPosts
   const { edges: nonFeaturedEdges } = data.nonFeaturedPosts
-
-  const title = "School"
-  const descriptionStart = "Enhance your essay writing with AI and prompt engineering."
+  const title = "Research"
+  const descriptionStart = "Demystifying Large Language Models."
   const descriptionEnd = "Expert tips delivered to your inbox, no spam."
-
   return (
     <Layout>
       <main class="w-full antialiased">
-        <IntroSection  title={title} descriptionStart={descriptionStart} descriptionEnd={descriptionEnd}/>
+        <IntroSection title={title} descriptionStart={descriptionStart} descriptionEnd={descriptionEnd} />
         <HeroSection data={{ allMarkdownRemark: { edges: featuredEdges } }} />
         <PostsList posts={nonFeaturedEdges} />
         <NewsletterSection />
@@ -32,10 +30,10 @@ export default function SchoolIndexPage({ data }) {
 }
 
 
-export const SchoolIndexQuery = graphql`
-  query SchoolIndexQuery {
+export const ResearchIndexQuery = graphql`
+  query ResearchIndexQuery {
     featuredPosts: allMarkdownRemark(
-      filter: { frontmatter: { featured: { gt: 0 }, slug: {  regex: "^/school/" } } }
+      filter: { frontmatter: { featured: { gt: 0 }, slug: {  regex: "^/research/" } } }
       sort: { fields: [frontmatter___featured], order: ASC }
     ) {
       edges {
@@ -65,7 +63,7 @@ export const SchoolIndexQuery = graphql`
       }
     }
     nonFeaturedPosts: allMarkdownRemark(
-      filter: { frontmatter: { featured: { lte: 0 }, slug: {  regex: "^/school/" } } }
+      filter: { frontmatter: { featured: { lte: 0 }, slug: {  regex: "^/research/" } } }
       sort: { fields: [frontmatter___date], order: DESC }
     ) {
       edges {
@@ -101,10 +99,10 @@ export const Head = () => {
   const { description, image, siteUrl, type, twitterUsername } = useSiteMetadata()
 
   const meta = {
-    title: "School | Esy",
+    title: "Research | Esy",
     description,
     image,
-    url: `${siteUrl}/school/`,
+    url: `${siteUrl}/research/`,
     type,
     twitterUsername,
   }

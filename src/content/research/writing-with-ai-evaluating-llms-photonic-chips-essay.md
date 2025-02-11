@@ -1,5 +1,5 @@
 ---
-slug: "/school/writing-with-ai-evaluating-llms-photonic-chips-essay"
+slug: "/research/writing-with-ai-evaluating-llms-photonic-chips-essay"
 date: "2025-01-09"
 title: "Evaluating the Use of LLMs in Crafting an Essay on Photonic Chips"
 author: "Zev Uhuru"

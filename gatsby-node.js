@@ -37,7 +37,7 @@ exports.createSchemaCustomization = ({ actions }) => {
   
     const result = await graphql(`
       query {
-        allMarkdownRemark(filter: { frontmatter: { slug: { regex: "^/school/" } } }) {
+        allMarkdownRemark(filter: { frontmatter: { slug: { regex: "/^(\\/school\\/|\\/research\\/)/" } } }) {
           edges {
             node {
               frontmatter {
@@ -56,11 +56,20 @@ exports.createSchemaCustomization = ({ actions }) => {
   
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       const { slug } = node.frontmatter;
-      console.log(slug, 'the sluggggggggg')
+      let pagePath;
+
+      if (slug.includes('/school/')) {
+        pagePath = path.resolve(`./src/templates/learnTemplate.tsx`)
+      } else if (slug.includes('/research/')) {
+        pagePath = path.resolve(`./src/templates/learnTemplate.tsx`)
+      } else {
+        pagePath = path.resolve(`./src/templates/learnTemplate.tsx`)
+      }
+
       createPage({
         path: `${slug}`,
 
-        component: path.resolve(`./src/templates/learnTemplate.tsx`),
+        component: pagePath,
         context: {
           slug: `${slug}`,
         },

@@ -16,7 +16,7 @@ const FooterEnd = () => {
           rel="noopener noreferrer"
         >
           
-          Esy LLC &copy;{' '} 2024
+          Esy Research &copy;{' '} 2025
         </a>
       </Trademark>
       <FooterEndRight>
