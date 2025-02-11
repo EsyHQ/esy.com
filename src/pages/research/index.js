@@ -9,7 +9,7 @@ import PostsList from 'src/components/LearnTemplate/IndexPage/postsList'
 import HeroSection from 'src/components/LearnTemplate/IndexPage/hero'
 import NewsletterSection from 'src/components/LearnTemplate/newsletterSection'
 import IntroSection from 'src/components/LearnTemplate/IndexPage/IntroSection'
-import NewsletterHero from 'src/components/LearnTemplate/IndexPage/newsletterHero'
+
 
 export default function ResearchIndexPage({ data }) {
   const { edges: featuredEdges } = data.featuredPosts
@@ -17,13 +17,15 @@ export default function ResearchIndexPage({ data }) {
   const title = "Research"
   const descriptionStart = "Demystifying Large Language Models."
   const descriptionEnd = "Expert tips delivered to your inbox, no spam."
+
+
   return (
     <Layout>
       <main class="w-full antialiased">
         <IntroSection title={title} descriptionStart={descriptionStart} descriptionEnd={descriptionEnd} />
         <HeroSection data={{ allMarkdownRemark: { edges: featuredEdges } }} />
         <PostsList posts={nonFeaturedEdges} />
-        <NewsletterSection />
+        <NewsletterSection newsletterTitle={title} descriptionStart={descriptionStart} descriptionEnd={descriptionEnd} />
       </main>
     </Layout>
   )

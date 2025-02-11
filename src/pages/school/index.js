@@ -19,13 +19,14 @@ export default function SchoolIndexPage({ data }) {
   const descriptionStart = "Enhance your essay writing with AI and prompt engineering."
   const descriptionEnd = "Expert tips delivered to your inbox, no spam."
 
+
   return (
     <Layout>
       <main class="w-full antialiased">
         <IntroSection  title={title} descriptionStart={descriptionStart} descriptionEnd={descriptionEnd}/>
         <HeroSection data={{ allMarkdownRemark: { edges: featuredEdges } }} />
         <PostsList posts={nonFeaturedEdges} />
-        <NewsletterSection />
+        <NewsletterSection newsletterTitle={title} descriptionStart={descriptionStart} descriptionEnd={descriptionEnd} />
       </main>
     </Layout>
   )
